@@ -1,0 +1,6 @@
+I'm using http://www.jasondavies.com/maps/countries-by-area/ as a starting
+point for projecting shape data using D3.
+
+TopoJSON is similar to GeoJSON, but dramatically more compact.
+Perhaps if I use TopoJSON, I could get away with not having a database!
+
