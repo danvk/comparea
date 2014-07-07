@@ -1,0 +1,37 @@
+svg {
+  display: inline;
+  vertical-align: middle;
+}
+
+svg:hover path {
+  fill-opacity: .75;
+}
+
+.tooltip {
+  position: fixed;
+  display: none;
+  pointer-events: none;
+  background: #fff;
+  padding: 5px;
+  text-align: left;
+  border: solid #ccc 1px;
+  color: #666;
+  font-size: 12px;
+  font-family: sans-serif;
+  bottom: 0;
+  left: 0;
+}
+
+.tooltip p {
+  margin: 0;
+}
+
+.country {
+  font-weight: bold;
+}
+
+.note {
+  margin: 0;
+  font-size: 11px;
+  font-style: italic;
+}

@@ -4,3 +4,6 @@ point for projecting shape data using D3.
 TopoJSON is similar to GeoJSON, but dramatically more compact.
 Perhaps if I use TopoJSON, I could get away with not having a database!
 
+
+This returns a list of GeoJSON objects:
+topojson.feature(world, world.objects.countries).features

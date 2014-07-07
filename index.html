@@ -3,61 +3,38 @@
 <title>Countries by Area</title>
 <style>
 @import url(maps.css);
-
-svg {
-  display: inline;
-  vertical-align: middle;
-}
-
-svg:hover path {
-  fill-opacity: .75;
-}
-
-.tooltip {
-  position: fixed;
-  display: none;
-  pointer-events: none;
-  background: #fff;
-  padding: 5px;
-  text-align: left;
-  border: solid #ccc 1px;
-  color: #666;
-  font-size: 12px;
-  font-family: sans-serif;
-  bottom: 0;
-  left: 0;
-}
-
-.tooltip p {
-  margin: 0;
-}
-
-.country {
-  font-weight: bold;
-}
-
-.note {
-  margin: 0;
-  font-size: 11px;
-  font-style: italic;
-}
+@import url(by-area.css);
 </style>
-
-<div id="map"></div>
 
 <script src="d3.min.js"></script>
 <script src="queue.min.js"></script>
 <script src="topojson.min.js"></script>
 <script src="d3.geo.projection.min.js"></script>
+<script src="shapely.min.js"></script>
+<script src="danvk.js"></script>
+
+<body>
+
 <script>
 
-var scale = 250,
-    R = 6371,
-    projection = d3.geo.stereographic().translate([0, 0]).scale(scale).clipAngle(180),
-    path = d3.geo.path().projection(projection),
-    format = d3.format(",.0f"),
-    tooltip = d3.select("body").append("div").attr("class", "tooltip"),
-    category = d3.scale.category10();
+var width = 960,
+    height = 1160;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+function projectionForCountry(feature) {
+  var centroid = d3.geo.centroid(feature);
+  var lon = centroid[0], lat = centroid[1];
+  var proj = d3.geo.albers()
+    .center([0, lat])
+    .rotate([-lon, 0])
+    .parallels([0, 60])
+    .scale(1000)
+    .translate([width / 2, height / 2]);
+  return proj;
+}
 
 queue()
     .defer(d3.json, "world-110m.json")
@@ -70,61 +47,25 @@ queue()
           areaById = {},
           idByAlpha = {},
           continentById = {};
-      continents.forEach(function(d) {
-        continentById[d.id] = d.continent;
-      });
-      names.forEach(function(d) {
-        nameById[d.id] = d.name;
-      });
-      codes.forEach(function(d) {
-        idByAlpha[d.a3] = d.n3;
-      });
-      areas.forEach(function(d) {
-        areaById[idByAlpha[d.code]] = +d.area;
-      });
+      continents.forEach(function(d) { continentById[d.id] = d.continent; });
+      names.forEach(function(d) { nameById[d.id] = d.name; });
+      codes.forEach(function(d) { idByAlpha[d.a3] = d.n3; });
+      areas.forEach(function(d) { areaById[idByAlpha[d.code]] = +d.area; });
       topojson_features = topojson.feature(world, world.objects.countries).features;
-      var svg = d3.select("#map").selectAll("svg")
-          .data(topojson_features)
-        .enter().append("svg")
-          .each(function(d) {
-            d.area = areaById[d.id] / (R * R) || d3.geo.area(d);
-            var svg = d3.select(this),
-                b = d3.geo.bounds(d),
-                centroid = b[0][0] === -180 && b[1][0] === 180
-                  ? [100, .5 * (b[0][1] + b[1][1])] // Russia
-                  : [.5 * (b[0][0] + b[1][0]), .5 * (b[0][1] + b[1][1])];
-            projection.rotate(Math.abs(b[0][1]) === -90 ? [0, 90] : Math.abs(b[1][1]) === 90 ? [0, -90] : [-centroid[0], -centroid[1]]);
-            var bounds = path.bounds(d),
-                area = path.area(d),
-                s = Math.sqrt(d.area / area) * scale,
-                dx = bounds[1][0] - bounds[0][0],
-                dy = bounds[1][1] - bounds[0][1];
-            svg 
-                .attr("width", dx * s + 20)
-                .attr("height", dy * s + 20)
-              .append("g")
-                .attr("transform", "scale(" + s + ")translate(" + [10 - bounds[0][0], 10 - bounds[0][1]] + ")")
-              .append("path")
-                .style("fill", category(continentById[d.id]))
-                .attr("d", path);
-          })
-          .sort(function(a, b) { return b.area - a.area; })
-          .on("mouseover", function(d, i) {
-            var t = tooltip.html("").style("display", "block");
-            t.append("span").attr("class", "country").text(nameById[d.id]);
-            t.append("span").text(": " + format(d.area * R * R) + " km").append("sup").text("2");
-            t.append("span").text("; ranked " + ++i).append("sup").text(ordinal(i));
-            t.append("span").text("; " + continentById[d.id]);
-            t.append("span").text(".");
-          })
-          .on("mouseout", function() {
-            tooltip.style("display", null);
-          });
+      var subset_features = [topojson_features[0], topojson_features[1]];
+      var paths = subset_features.map(function(feature) {
+        var proj = projectionForCountry(feature);
+        return d3.geo.path().projection(proj);
+      });
+
+      path = paths[0];
+
+      svg.selectAll('.shape1')
+        .data(subset_features)
+      .enter().append('path')
+        .attr('class', function(d, i) { return 'shape' + i; })
+        .attr('d', function(d, i) { return paths[i](d); });
     });
 
-function ordinal(d) {
-  var e = d % 100;
-  return ["st", "nd", "rd", "th"][3 < e && e < 21 ? 3 : Math.min(d % 10 - 1, 3)];
-}
-
 </script>
+</body>
