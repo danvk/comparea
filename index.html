@@ -4,6 +4,8 @@
 <style>
 @import url(maps.css);
 @import url(by-area.css);
+.shape0 { fill: red; }
+.shape1 { fill: blue; }
 </style>
 
 <script src="d3.min.js"></script>
@@ -36,6 +38,17 @@ function projectionForCountry(feature) {
   return proj;
 }
 
+function transform(d) {
+  return 'translate(' + [d.dx,d.dy] + ')';
+}
+
+var drag = d3.behavior.drag()
+  .on('drag', function(d, i) {
+      d.dx += d3.event.dx;
+      d.dy += d3.event.dy;
+      d3.select(this).attr('transform', transform);
+  });
+
 queue()
     .defer(d3.json, "world-110m.json")
     .defer(d3.csv, "codes.csv")
@@ -59,13 +72,18 @@ queue()
       });
 
       path = paths[0];
+      subset_features.forEach(function(d) { d.dx = 0; d.dy = 0; });
 
       svg.selectAll('.shape1')
         .data(subset_features)
-      .enter().append('path')
-        .attr('class', function(d, i) { return 'shape' + i; })
-        .attr('d', function(d, i) { return paths[i](d); });
+      .enter().append('g')
+        .attr('class', 'draggable').append('path')
+          .attr('class', function(d, i) { return 'shape shape' + i; })
+          .attr('d', function(d, i) { return paths[i](d); });
+
+      svg.selectAll('.draggable').call(drag);
     });
+
 
 </script>
 </body>
