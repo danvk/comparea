@@ -2,10 +2,15 @@
 <meta charset="utf-8">
 <title>Countries by Area</title>
 <style>
-@import url(maps.css);
-@import url(by-area.css);
 .shape0 { fill: red; }
 .shape1 { fill: blue; }
+html,body,#svg-container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;  /* why!? */
+}
 </style>
 
 <script src="d3.min.js"></script>
@@ -17,14 +22,16 @@
 
 <body>
 
+<div id="svg-container"></div>
+
 <script>
 
-var width = 960,
-    height = 1160;
+var width = document.getElementById('svg-container').offsetWidth,
+    height = document.getElementById('svg-container').offsetHeight;
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+var svg = d3.select("#svg-container").append("svg")
+    .attr("width", '100%')
+    .attr("height", '100%');
 
 function projectionForCountry(feature) {
   var centroid = d3.geo.centroid(feature);
@@ -48,6 +55,15 @@ var drag = d3.behavior.drag()
       d.dy += d3.event.dy;
       d3.select(this).attr('transform', transform);
   });
+
+var zoom = d3.behavior.zoom().on('zoom', function() {
+  var sx = zoom.scale(), sy = sx, cx = width/2, cy = height/2;
+
+  // See http://stackoverflow.com/questions/6711610/how-to-set-transform-origin-in-svg
+  var matrix = [sx, 0, 0, sy, cx-sx*cx, cy-sy*cy];
+  
+  d3.select('.container').attr('transform', 'matrix(' + matrix + ')')
+});
 
 queue()
     .defer(d3.json, "world-110m.json")
@@ -74,7 +90,9 @@ queue()
       path = paths[0];
       subset_features.forEach(function(d) { d.dx = 0; d.dy = 0; });
 
-      svg.selectAll('.shape1')
+      svg.append('g')
+        .attr('class', 'container')
+        .selectAll('.shape1')
         .data(subset_features)
       .enter().append('g')
         .attr('class', 'draggable').append('path')
@@ -82,8 +100,8 @@ queue()
           .attr('d', function(d, i) { return paths[i](d); });
 
       svg.selectAll('.draggable').call(drag);
+      svg.call(zoom);
     });
-
 
 </script>
 </body>
