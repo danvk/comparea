@@ -68,8 +68,8 @@ function projectionForCountry(feature) {
   var centroid = d3.geo.centroid(feature);
   var lon = centroid[0], lat = centroid[1];
   var proj = d3.geo.albers()
-    .center([0, lat])
-    .rotate([-lon, 0])
+    .center([0, 0])
+    .rotate([-lon, -lat])
     .parallels([0, 60])
     .scale(1000)
     .translate([width / 2, height / 2]);

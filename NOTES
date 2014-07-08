@@ -31,6 +31,7 @@ Path forward:
 x Figure out the best way to scale shapes
 x Automatically place shapes side-by-side
 x Last-clicked country comes to top
+- Why does everything look squished?
 - Determine which type of NE data I should use.
 - Figure out a way to store area, population and description in TopoJSON.
 - Show these attributes in the UI somehow.
