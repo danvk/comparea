@@ -33,6 +33,7 @@ x Automatically place shapes side-by-side
 x Last-clicked country comes to top
 - Why does everything look squished?
 - Determine which type of NE data I should use.
+  -> does subunits contain the contiguous USA?
 - Figure out a way to store area, population and description in TopoJSON.
 - Show these attributes in the UI somehow.
 - Build a Flask server which accepts TopoJSON uploads and serves them.
