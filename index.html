@@ -10,9 +10,14 @@ html,body,#svg-container{
   overflow-y: hidden;  /* why!? */
 }
 
-.shape0 { fill: red; }
-.shape1 { fill: blue; }
 line { stroke: black; }
+
+.shape0 {
+ fill: rgb(128,128,255);
+}
+.shape1 {
+  fill: rgb(128,255,128);
+}
 </style>
 
 <script src="d3.min.js"></script>
@@ -31,6 +36,26 @@ var width = document.getElementById('svg-container').offsetWidth,
 var svg = d3.select("#svg-container").append("svg")
     .attr("width", width)
     .attr("height", height);
+
+// Determine a scaling factor which will make both shapes fit on screen.
+// This uses the initial scale of 1000 as a guess, then adjusts to fit.
+function setScalingFactor(features, paths) {
+  var bounds = features.map(function(d, i) { return paths[i].bounds(d); });
+  var curWidth = 0, curHeight = 0;
+  bounds.forEach(function(b) {
+    curWidth += (b[1][0] - b[0][0])
+    curHeight = Math.max(curHeight, b[1][1] - b[0][1]);
+  });
+
+  var horizScale = curWidth / (0.7 * width);
+  var vertScale = curHeight / (0.7 * height);
+
+  var scaleAdjustment = 1.0 / Math.max(horizScale, vertScale);
+  paths.forEach(function(path) {
+    var proj = path.projection();
+    proj.scale(scaleAdjustment * proj.scale());
+  });
+}
 
 function projectionForCountry(feature) {
   var centroid = d3.geo.centroid(feature);
@@ -86,10 +111,12 @@ queue()
       areas.forEach(function(d) { areaById[idByAlpha[d.code]] = +d.area; });
       topojson_features = topojson.feature(world, world.objects.countries).features;
       var subset_features = [topojson_features[0], topojson_features[1]];
+
       var paths = subset_features.map(function(feature) {
         var proj = projectionForCountry(feature);
         return d3.geo.path().projection(proj);
       });
+      setScalingFactor(subset_features, paths);
 
       var bounds = subset_features.map(function(d, i) {
         return paths[i].bounds(d);
@@ -102,7 +129,7 @@ queue()
       var gapBetweenShapes = 10;
       subset_features.forEach(function(d, i) {
         d.dx = 0; d.dy = 0;  // initial drag offsets
-        
+
         var bounds = paths[i].bounds(d);
 
         if (i == 0) {
