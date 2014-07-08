@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Countries by Area</title>
+<title>Comparea</title>
 <style>
-.shape0 { fill: red; }
-.shape1 { fill: blue; }
 html,body,#svg-container{
   width: 100%;
   height: 100%;
@@ -11,14 +9,15 @@ html,body,#svg-container{
   padding: 0;
   overflow-y: hidden;  /* why!? */
 }
+
+.shape0 { fill: red; }
+.shape1 { fill: blue; }
+line { stroke: black; }
 </style>
 
 <script src="d3.min.js"></script>
 <script src="queue.min.js"></script>
 <script src="topojson.min.js"></script>
-<script src="d3.geo.projection.min.js"></script>
-<script src="shapely.min.js"></script>
-<script src="danvk.js"></script>
 
 <body>
 
@@ -30,8 +29,8 @@ var width = document.getElementById('svg-container').offsetWidth,
     height = document.getElementById('svg-container').offsetHeight;
 
 var svg = d3.select("#svg-container").append("svg")
-    .attr("width", '100%')
-    .attr("height", '100%');
+    .attr("width", width)
+    .attr("height", height);
 
 function projectionForCountry(feature) {
   var centroid = d3.geo.centroid(feature);
@@ -45,15 +44,20 @@ function projectionForCountry(feature) {
   return proj;
 }
 
-function transform(d) {
+function transformForDrag(d) {
   return 'translate(' + [d.dx,d.dy] + ')';
+}
+
+function transformStatic(d) {
+  var xy = [d.static_dx, d.static_dy];
+  return "translate(" + xy + ")";
 }
 
 var drag = d3.behavior.drag()
   .on('drag', function(d, i) {
       d.dx += d3.event.dx;
       d.dy += d3.event.dy;
-      d3.select(this).attr('transform', transform);
+      d3.select(this).attr('transform', transformForDrag);
   });
 
 var zoom = d3.behavior.zoom().on('zoom', function() {
@@ -87,17 +91,52 @@ queue()
         return d3.geo.path().projection(proj);
       });
 
-      path = paths[0];
-      subset_features.forEach(function(d) { d.dx = 0; d.dy = 0; });
+      var bounds = subset_features.map(function(d, i) {
+        return paths[i].bounds(d);
+      });
+      var xSpans = bounds.map(function(b) {
+        var tl = b[0], br = b[1];
+        return br[0] - tl[0];
+      });
+
+      var gapBetweenShapes = 10;
+      subset_features.forEach(function(d, i) {
+        d.dx = 0; d.dy = 0;  // initial drag offsets
+        
+        var bounds = paths[i].bounds(d);
+
+        if (i == 0) {
+          // shift so that the right edge 
+          d.static_dx = -(bounds[1][0] - width/2);
+          d.static_dx -= gapBetweenShapes / 2;
+        } else {
+          d.static_dx = +(width/2 - bounds[0][0]);
+          d.static_dx += gapBetweenShapes / 2;
+        }
+
+        // d.static_dx = 0;  // (i ? 1 : -1) * xSpans[i] / 2;
+        d.static_dy = 0;
+      });
 
       svg.append('g')
         .attr('class', 'container')
         .selectAll('.shape1')
         .data(subset_features)
       .enter().append('g')
-        .attr('class', 'draggable').append('path')
+        .attr('class', 'force')
+        .attr('transform', transformStatic)
+          .append('g')
+          .attr('class', 'draggable').append('path')
           .attr('class', function(d, i) { return 'shape shape' + i; })
           .attr('d', function(d, i) { return paths[i](d); });
+
+      /*
+      svg.append('line')
+        .attr('x1', width/2)
+        .attr('x2', width/2)
+        .attr('y1', 0)
+        .attr('y2', height);
+        */
 
       svg.selectAll('.draggable').call(drag);
       svg.call(zoom);

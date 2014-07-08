@@ -7,3 +7,14 @@ Perhaps if I use TopoJSON, I could get away with not having a database!
 
 This returns a list of GeoJSON objects:
 topojson.feature(world, world.objects.countries).features
+
+
+Path forward:
+- Figure out the best way to scale shapes
+- Automatically place shapes side-by-side
+- Figure out a way to store area, population and description in TopoJSON.
+- Show these attributes in the UI somehow.
+- Build a Flask server which accepts TopoJSON uploads and serves them.
+  - /upload
+  - /get_names
+  - /get_feature
