@@ -80,6 +80,7 @@ var geojson_features;
 
 function setDisplayForFeatures(features) {
   if (features.length != 2) throw "Only two shapes supported (for now!)";
+  if (features[0] == null || features[1] == null) return;
 
   var paths = features.map(function(feature) {
     var proj = projectionForCountry(feature);
