@@ -30,6 +30,13 @@ line { stroke: black; }
 
 <script>
 
+// See http://stackoverflow.com/questions/14167863/how-can-i-bring-a-circle-to-the-front-with-d3
+d3.selection.prototype.moveToFront = function() {
+  return this.each(function(){
+    this.parentNode.appendChild(this);
+  });
+};
+
 var width = document.getElementById('svg-container').offsetWidth,
     height = document.getElementById('svg-container').offsetHeight;
 
@@ -82,7 +89,12 @@ var drag = d3.behavior.drag()
   .on('drag', function(d, i) {
       d.dx += d3.event.dx;
       d.dy += d3.event.dy;
-      d3.select(this).attr('transform', transformForDrag);
+      d3.select(this)
+        .attr('transform', transformForDrag);
+  })
+  .on('dragstart', function(d, i) {
+    // TODO(danvk): look into selection.order() or selection.sort()
+    d3.select(this.parentNode).moveToFront();
   });
 
 var zoom = d3.behavior.zoom().on('zoom', function() {
@@ -147,8 +159,8 @@ queue()
 
       svg.append('g')
         .attr('class', 'container')
-        .selectAll('.shape1')
-        .data(subset_features)
+        .selectAll('.force')
+        .data(subset_features, function(f) { return f.id; })
       .enter().append('g')
         .attr('class', 'force')
         .attr('transform', transformStatic)
@@ -156,14 +168,6 @@ queue()
           .attr('class', 'draggable').append('path')
           .attr('class', function(d, i) { return 'shape shape' + i; })
           .attr('d', function(d, i) { return paths[i](d); });
-
-      /*
-      svg.append('line')
-        .attr('x1', width/2)
-        .attr('x2', width/2)
-        .attr('y1', 0)
-        .attr('y2', height);
-        */
 
       svg.selectAll('.draggable').call(drag);
       svg.call(zoom);
