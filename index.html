@@ -107,22 +107,10 @@ var zoom = d3.behavior.zoom().on('zoom', function() {
 });
 
 queue()
-    .defer(d3.json, "world-110m.json")
-    .defer(d3.csv, "codes.csv")
-    .defer(d3.csv, "areas.csv")
-    .defer(d3.tsv, "world-country-names.tsv")
-    .defer(d3.csv, "continents.csv")
-    .await(function(error, world, codes, areas, names, continents) {
-          nameById = {},
-          areaById = {},
-          idByAlpha = {},
-          continentById = {};
-      continents.forEach(function(d) { continentById[d.id] = d.continent; });
-      names.forEach(function(d) { nameById[d.id] = d.name; });
-      codes.forEach(function(d) { idByAlpha[d.a3] = d.n3; });
-      areas.forEach(function(d) { areaById[idByAlpha[d.code]] = +d.area; });
+    .defer(d3.json, "data/world.json")
+    .await(function(error, world) {
       topojson_features = topojson.feature(world, world.objects.countries).features;
-      var subset_features = [topojson_features[0], topojson_features[1]];
+      var subset_features = [topojson_features[14], topojson_features[225]];
 
       var paths = subset_features.map(function(feature) {
         var proj = projectionForCountry(feature);

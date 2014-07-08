@@ -8,11 +8,30 @@ Perhaps if I use TopoJSON, I could get away with not having a database!
 This returns a list of GeoJSON objects:
 topojson.feature(world, world.objects.countries).features
 
+ogr commands
+------------
+List layers in a shapefile:
+ogrinfo -so foo.shp
+
+List fields in a shapefile layer:
+ogrinfo -so foo.shp ne_50m_admin_0_countries_lakes
+
+Drop the '-so' to see individual records.
+
+Interesting fields in ne_50m_admin_0:
+  pop_est (=313973000.000000)
+  gdp_md_est (=15094000.000000)
+  su_a3 (="USA")
+  type (="Country")
+  admin (="United States of America")
+  name (="United States")
+
 
 Path forward:
 x Figure out the best way to scale shapes
 x Automatically place shapes side-by-side
-- Last-clicked country comes to top
+x Last-clicked country comes to top
+- Determine which type of NE data I should use.
 - Figure out a way to store area, population and description in TopoJSON.
 - Show these attributes in the UI somehow.
 - Build a Flask server which accepts TopoJSON uploads and serves them.
