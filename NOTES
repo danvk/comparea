@@ -33,10 +33,15 @@ x Automatically place shapes side-by-side
 x Last-clicked country comes to top
 - Why does everything look squished?
 - Determine which type of NE data I should use.
-  -> does subunits contain the contiguous USA?
-- Figure out a way to store area, population and description in TopoJSON.
-- Show these attributes in the UI somehow.
-- Build a Flask server which accepts TopoJSON uploads and serves them.
+  -> does subunits contain the contiguous USA? (yes; but includes lakes)
+- Show KP-like panels in the UI.
+- Build a Flask server which accepts GeoJSON uploads and serves them.
   - /upload
   - /get_names
   - /get_feature
+- Data curation:
+  - Merge admin0, admin1 and {area, pop, description, wiki_link} attributes
+  - Sort shapes by "solidity" (area / bbox area).
+    --> should isolate oddities like France overseas & Hawaii
+  - Write & run an upload script
+
