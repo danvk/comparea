@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
 import base64
+import json
 import os
 import requests
 import re
+import sys
 import time
 from bs4 import BeautifulSoup
 
@@ -12,7 +14,7 @@ TMP_DIR = '/var/tmp/wiki'
 
 def get_urls():
     country_codes.iso3_to_wikipedia_url('USA')
-    return [v for k, v in country_codes.iso3_to_url.iteritems()]
+    return country_codes.iso3_to_url.items()
 
 def cache_path(url):
     x = url.replace('http://en.wikipedia.org/wiki/', '')
@@ -53,6 +55,7 @@ def extract_paragraph(html, max_length=500):
 
     txt = re.sub(r' \([^)]+\)', '', txt, count=1)  # rm first parenthetical bit.
     txt = re.sub(r'\[\d+\]', '', txt)  # remove references
+    txt = re.sub(r' , ', ', ', txt)  # cleanup
 
     sentences = txt.split('. ')
     result = ''
@@ -61,13 +64,21 @@ def extract_paragraph(html, max_length=500):
         if len(result) + len(next_sentence) + 2 <= max_length:
             if len(result):
                 result += ' '
-            result += next_sentence + '.'
             del sentences[0]
+            result += next_sentence
+            if sentences:
+                result += '.'
         else:
             break
     return result
 
 
 if __name__ == '__main__':
-    for url in get_urls():
+    out = {}
+    for code, url in get_urls():
+        sys.stderr.write('%s: %s\n' % (code, url))
         html = fetch_url(url)
+        desc = extract_paragraph(html)
+        out[code] = desc
+
+    print json.dumps(out, indent=2, sort_keys=True)

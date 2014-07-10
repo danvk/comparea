@@ -8,8 +8,18 @@ Usage:
 
 import json
 import sys
+import os
 from comparea import geojson_util
 from data import country_codes
+
+
+_descs = None
+def get_description(code):
+    global _descs
+    if not _descs:
+        p = os.path.join(os.path.dirname(__file__), 'descriptions.json')
+        _descs = json.load(file(p))
+    return _descs[code]
 
 
 def process_country(country):
@@ -28,11 +38,12 @@ def process_country(country):
     out_props['pop'] = props['pop_est']
     out_props['pop_year'] = '???'
     out_props['area_km2'] = 1000
-    out_props['description'] = 'A nice place!'
+    out_props['description'] = get_description(iso3)
     wiki_url = country_codes.iso3_to_wikipedia_url(iso3)
     if not wiki_url:
-        sys.stderr.write('Unable to get wikipedia link for %s = %s\n' % (iso3, props['name']))
+        raise ValueError('Unable to get wikipedia link for %s = %s\n' % (iso3, props['name']))
     out_props['wikipedia_url'] = wiki_url
+
     return out
 
 
