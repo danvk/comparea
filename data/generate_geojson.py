@@ -8,6 +8,8 @@ Usage:
 
 import json
 import sys
+from comparea import geojson_util
+from data import country_codes
 
 
 def process_country(country):
@@ -20,12 +22,17 @@ def process_country(country):
         'properties': out_props
     }
 
-    out_props['id'] = props['su_a3']
+    iso3 = props['su_a3']
+    out_props['id'] = iso3
     out_props['name'] = props['name']
     out_props['pop'] = props['pop_est']
     out_props['pop_year'] = '???'
     out_props['area_km2'] = 1000
     out_props['description'] = 'A nice place!'
+    wiki_url = country_codes.iso3_to_wikipedia_url(iso3)
+    if not wiki_url:
+        sys.stderr.write('Unable to get wikipedia link for %s = %s\n' % (iso3, props['name']))
+    out_props['wikipedia_url'] = wiki_url
     return out
 
 
@@ -42,9 +49,10 @@ def run(args):
     geojson = json.load(file(args[1]))
     assert geojson['type'] == 'FeatureCollection'
     comparea_features = process_countries(geojson)
+    geojson_util.check_feature_collection(comparea_features)
 
     print json.dumps(comparea_features)
-    
+
 
 if __name__ == '__main__':
     run(sys.argv)

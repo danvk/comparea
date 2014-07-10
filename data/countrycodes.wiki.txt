@@ -1,0 +1,260 @@
+{| class="wikitable sortable"
+! Flag
+! Country
+! IOC
+! FIFA
+! ISO
+|{{flagicon|AFG}}||[[Afghanistan]]||AFG||AFG||AFG
+|{{flagicon|ALA}}||[[Åland Islands]]|| || ||ALA
+|{{flagicon|ALB}}||[[Albania]]||ALB||ALB||ALB
+|{{flagicon|DZA}}||[[Algeria]]||ALG||ALG||DZA
+|{{flagicon|ASM}}||[[American Samoa]]||ASA||ASA||ASM
+|{{flagicon|AND}}||[[Andorra]]||AND||AND||AND
+|{{flagicon|AGO}}||[[Angola]]||ANG||ANG||AGO
+|{{flagicon|AIA}}||[[Anguilla]]|| ||AIA||AIA
+|||[[Antarctica]]|| || ||ATA
+|{{flagicon|ATG}}||[[Antigua and Barbuda]]||ANT||ATG||ATG
+|{{flagicon|ARG}}||[[Argentina]]||ARG||ARG||ARG
+|{{flagicon|ARM}}||[[Armenia]]||ARM||ARM||ARM
+|{{flagicon|ABW}}||[[Aruba]]||ARU||ARU||ABW
+|{{flagicon|AUS}}||[[Australia]]||AUS||AUS||AUS
+|{{flagicon|AUT}}||[[Austria]]||AUT||AUT||AUT
+|{{flagicon|AZE}}||[[Azerbaijan]]||AZE||AZE||AZE
+|{{flagicon|BHS}}||[[The Bahamas]]||BAH||BAH||BHS
+|{{flagicon|BHR}}||[[Bahrain]]||BRN||BHR||BHR
+|{{flagicon|BGD}}||[[Bangladesh]]||BAN||BAN||BGD
+|{{flagicon|BRB}}||[[Barbados]]||BAR||BRB||BRB
+|{{flagicon|BLR}}||[[Belarus]]||BLR||BLR||BLR
+|{{flagicon|BEL}}||[[Belgium]]||BEL||BEL||BEL
+|{{flagicon|BLZ}}||[[Belize]]||BIZ||BLZ||BLZ
+|{{flagicon|BEN}}||[[Benin]]||BEN||BEN||BEN
+|{{flagicon|BMU}}||[[Bermuda]]||BER||BER||BMU
+|{{flagicon|BTN}}||[[Bhutan]]||BHU||BHU||BTN
+|{{flagicon|BOL}}||[[Bolivia]]||BOL||BOL||BOL
+|{{flagicon|BES}}||[[Caribbean Netherlands]]: Bonaire, Sint Eustatius and Saba|| || ||BES
+|{{flagicon|BIH}}||[[Bosnia and Herzegovina]]||BIH||BIH||BIH
+|{{flagicon|BWA}}||[[Botswana]]||BOT||BOT||BWA
+|{{flagicon|NOR}}||[[Bouvet Island]]|| ||||BVT
+|{{flagicon|BRA}}||[[Brazil]]||BRA||BRA||BRA
+|{{flagicon|IOT}}||[[British Indian Ocean Territory]]|| ||||IOT
+|{{flagicon|VGB}}||[[British Virgin Islands]]
+|{{flagicon|BRU}}||[[Brunei]]||BRU||BRU||BRN
+|{{flagicon|BGR}}||[[Bulgaria]]||BUL||BUL||BGR
+|{{flagicon|BFA}}||[[Burkina Faso]]||BUR||BFA||BFA
+|{{flagicon|BDI}}||[[Burundi]]||BDI||BDI||BDI
+|{{flagicon|KHM}}||[[Cambodia]]||CAM||CAM||KHM
+|{{flagicon|CMR}}||[[Cameroon]]||CMR||CMR||CMR
+|{{flagicon|CAN}}||[[Canada]]||CAN||CAN||CAN
+|{{flagicon|CPV}}||[[Cape Verde]]||CPV||CPV||CPV
+|{{flagicon|CYM}}||[[Cayman Islands]]||CAY||CAY||CYM
+|{{flagicon|CAF}}||[[Central African Republic]]||CAF||CTA||CAF
+|{{flagicon|TCD}}||[[Chad]]||CHA||CHA||TCD
+|{{flagicon|CHL}}||[[Chile]]||CHI||CHI||CHL
+|{{flagicon|CHN}}||[[People's Republic of China|China, People's Republic of]]||CHN||CHN||CHN
+|{{flagicon|CXR}}||[[Christmas Island]]|| || ||CXR
+|{{flagicon|CCK}}||[[Cocos (Keeling) Islands]]|| || ||CCK
+|{{flagicon|COL}}||[[Colombia]]||COL||COL||COL
+|{{flagicon|COM}}||[[Comoros]]||COM||COM||COM
+|{{flagicon|COD}}||[[Democratic Republic of the Congo|Congo, Democratic Republic of the]]||COD||COD||COD
+|{{flagicon|CGO}}||[[Republic of the Congo|Congo, Republic of the]]||CGO||CGO||COG
+|{{flagicon|COK}}||[[Cook Islands]]||COK||COK||COK
+|{{flagicon|CRI}}||[[Costa Rica]]||CRC||CRC||CRI
+|{{flagicon|CIV}}||[[Côte d'Ivoire]]||CIV||CIV||CIV
+|{{flagicon|HRV}}||[[Croatia]]||CRO||CRO||HRV
+|{{flagicon|CUB}}||[[Cuba]]||CUB||CUB||CUB
+|{{flagicon|CUW}}||[[Curaçao]]|| ||CUW||CUW
+|{{flagicon|CYP}}||[[Cyprus]]||CYP||CYP||CYP
+|{{flagicon|CZE}}||[[Czech Republic]]||CZE||CZE||CZE
+|{{flagicon|DNK}}||[[Denmark]]||DEN||DEN||DNK
+|{{flagicon|DJI}}||[[Djibouti]]||DJI||DJI||DJI
+|{{flagicon|DMA}}||[[Dominica]]||DMA||DMA||DMA
+|{{flagicon|DOM}}||[[Dominican Republic]]||DOM||DOM||DOM
+|{{flagicon|ECU}}||[[Ecuador]]||ECU||ECU||ECU
+|{{flagicon|EGY}}||[[Egypt]]||EGY||EGY||EGY
+|{{flagicon|SLV}}||[[El Salvador]]||ESA||SLV||SLV
+|{{flagicon|ENG}}||[[England]]|| ||ENG||
+|{{flagicon|GNQ}}||[[Equatorial Guinea]]||GEQ||EQG||GNQ
+|{{flagicon|ERI}}||[[Eritrea]]||ERI||ERI||ERI
+|{{flagicon|EST}}||[[Estonia]]||EST||EST||EST
+|{{flagicon|ETH}}||[[Ethiopia]]||ETH||ETH||ETH
+|{{flagicon|FLK}}||[[Falkland Islands]]|| || ||FLK
+|{{flagicon|FRO}}||[[Faroe Islands]]|| ||FRO||FRO
+|{{flagicon|FJI}}||[[Fiji]]||FIJ||FIJ||FJI
+|{{flagicon|FIN}}||[[Finland]]||FIN||FIN||FIN
+|{{flagicon|FRA}}||[[France]]||FRA||FRA||FRA
+|{{flagicon|GUF}}||[[French Guiana]]|| || ||GUF
+|{{flagicon|PYF}}||[[French Polynesia]]|| ||TAH||PYF
+|{{flagicon|ATF}}||[[French Southern and Antarctic Lands]]|| || ||ATF
+|{{flagicon|GAB}}||[[Gabon]]||GAB||GAB||GAB
+|{{flagicon|GMB}}||[[The Gambia]]||GAM||GAM||GMB
+|{{flagicon|GEO}}||[[Georgia (country)|Georgia]]||GEO||GEO||GEO
+|{{flagicon|DEU}}||[[Germany]]||GER||GER||DEU
+|{{flagicon|GHA}}||[[Ghana]]||GHA||GHA||GHA
+|{{flagicon|GIB}}||[[Gibraltar]]|| || ||GIB
+|{{flagicon|GRC}}||[[Greece]]||GRE||GRE||GRC
+|{{flagicon|GRL}}||[[Greenland]]|| || ||GRL
+|{{flagicon|GRD}}||[[Grenada]]||GRN||GRN||GRD
+|{{flagicon|GLP}}||[[Guadeloupe]]|| || ||GLP
+|{{flagicon|GUM}}||[[Guam]]||GUM||GUM||GUM
+|{{flagicon|GTM}}||[[Guatemala]]||GUA||GUA||GTM
+|{{flagicon|GGY}}||[[Guernsey]]|| || ||GGY
+|{{flagicon|GIN}}||[[Guinea]]||GUI||GUI||GIN
+|{{flagicon|GNB}}||[[Guinea-Bissau]]||GBS||GNB||GNB
+|{{flagicon|GUY}}||[[Guyana]]||GUY||GUY||GUY
+|{{flagicon|HTI}}||[[Haiti]]||HAI||HAI||HTI
+|{{flagicon|AUS}}||[[Heard Island and McDonald Islands]]|| || ||HMD
+|{{flagicon|HND}}||[[Honduras]]||HON||HON||HND
+|{{flagicon|HKG}}||[[Hong Kong]]||HKG||HKG||HKG
+|{{flagicon|HUN}}||[[Hungary]]||HUN||HUN||HUN
+|{{flagicon|ISL}}||[[Iceland]]||ISL||ISL||ISL
+|{{flagicon|IND}}||[[India]]||IND||IND||IND
+|{{flagicon|IDN}}||[[Indonesia]]||INA||IDN||IDN
+|{{flagicon|IRN}}||[[Iran]]||IRI||IRN||IRN
+|{{flagicon|IRQ}}||[[Iraq]]||IRQ||IRQ||IRQ
+|{{flagicon|IRL}}||[[Republic of Ireland|Ireland]]||IRL||IRL||IRL
+|{{flagicon|IMN}}||[[Isle of Man]]|| || ||IMN
+|{{flagicon|ISR}}||[[Israel]]||ISR||ISR||ISR
+|{{flagicon|ITA}}||[[Italy]]||ITA||ITA||ITA
+|{{flagicon|JAM}}||[[Jamaica]]||JAM||JAM||JAM
+|{{flagicon|JPN}}||[[Japan]]||JPN||JPN||JPN
+|{{flagicon|JEY}}||[[Jersey]]|| || ||JEY
+|{{flagicon|JOR}}||[[Jordan]]||JOR||JOR||JOR
+|{{flagicon|KAZ}}||[[Kazakhstan]]||KAZ||KAZ||KAZ
+|{{flagicon|KEN}}||[[Kenya]]||KEN||KEN||KEN
+|{{flagicon|KIR}}||[[Kiribati]]||KIR|| ||KIR
+|{{flagicon|PRK}}||[[North Korea|Korea, Democratic People's Rep. (North)]] ||PRK||PRK||PRK
+|{{flagicon|KOR}}||[[South Korea|Korea, Republic of (South)]] ||KOR||KOR||KOR
+|{{flagicon|KWT}}||[[Kuwait]]||KUW||KUW||KWT
+|{{flagicon|KGZ}}||[[Kyrgyzstan]]||KGZ||KGZ||KGZ
+|{{flagicon|LAO}}||[[Laos]]||LAO||LAO||LAO
+|{{flagicon|LVA}}||[[Latvia]]||LAT||LVA||LVA
+|{{flagicon|LBN}}||[[Lebanon]]||LIB||LIB||LBN
+|{{flagicon|LSO}}||[[Lesotho]]||LES||LES||LSO
+|{{flagicon|LBR}}||[[Liberia]]||LBR||LBR||LBR
+|{{flagicon|LBY}}||[[Libya]]||LBA||LBY||LBY
+|{{flagicon|LIE}}||[[Liechtenstein]]||LIE||LIE||LIE
+|{{flagicon|LTU}}||[[Lithuania]]||LTU||LTU||LTU
+|{{flagicon|LUX}}||[[Luxembourg]]||LUX||LUX||LUX
+|{{flagicon|MAC}}||[[Macau]]|| ||MAC||MAC
+|{{flagicon|MKD}}||[[Republic of Macedonia|Macedonia]]||MKD||MKD||MKD
+|{{flagicon|MDG}}||[[Madagascar]]||MAD||MAD||MDG
+|{{flagicon|MWI}}||[[Malawi]]||MAW||MWI||MWI
+|{{flagicon|MYS}}||[[Malaysia]]||MAS||MAS||MYS
+|{{flagicon|MDV}}||[[Maldives]]||MDV||MDV||MDV
+|{{flagicon|MLI}}||[[Mali]]||MLI||MLI||MLI
+|{{flagicon|MLT}}||[[Malta]]||MLT||MLT||MLT
+|{{flagicon|MHL}}||[[Marshall Islands]]||MHL|| ||MHL
+|{{flagicon|MTQ}}||[[Martinique]]|| ||  ||MTQ
+|{{flagicon|MRT}}||[[Mauritania]]||MTN||MTN||MRT
+|{{flagicon|MUS}}||[[Mauritius]]||MRI||MRI||MUS
+|{{flagicon|MYT|local}}||[[Mayotte]]|| || ||MYT
+|{{flagicon|MEX}}||[[Mexico]]||MEX||MEX||MEX
+|{{flagicon|FSM}}||[[Federated States of Micronesia|Micronesia, Federated States of]]||FSM||  ||FSM
+|{{flagicon|MDA}}||[[Moldova]]||MDA||MDA||MDA
+|{{flagicon|MCO}}||[[Monaco]]||MON|| ||MCO
+|{{flagicon|MNG}}||[[Mongolia]]||MGL||MGL||MNG
+|{{flagicon|MNE}}||[[Montenegro]]||MNE||MNE||MNE
+|{{flagicon|MSR}}||[[Montserrat]]|| ||MSR||MSR
+|{{flagicon|MAR}}||[[Morocco]]||MAR||MAR||MAR
+|{{flagicon|MOZ}}||[[Mozambique]]||MOZ||MOZ||MOZ
+|{{flagicon|MMR}}||[[Myanmar]]||MYA||MYA||MMR
+|{{flagicon|NAM}}||[[Namibia]]||NAM||NAM||NAM
+|{{flagicon|NRU}}||[[Nauru]]||NRU|| ||NRU
+|{{flagicon|NPL}}||[[Nepal]]||NEP||NEP||NPL
+|{{flagicon|NLD}}||[[Netherlands]]||NED||NED||NLD
+|{{flagicon|NCL}}||[[New Caledonia]]|| ||NCL||NCL
+|{{flagicon|NZL}}||[[New Zealand]]||NZL||NZL||NZL
+|{{flagicon|NIC}}||[[Nicaragua]]||NCA||NCA||NIC
+|{{flagicon|NER}}||[[Niger]]||NIG||NIG||NER
+|{{flagicon|NGA}}||[[Nigeria]]||NGR||NGA||NGA
+|{{flagicon|NIU}}||[[Niue]]|| || ||NIU
+|{{flagicon|NFK}}||[[Norfolk Island]]|| || ||NFK
+|{{flagicon|NIR}}||[[Northern Ireland]]|| ||NIR||
+|{{flagicon|MNP}}||[[Northern Mariana Islands]]|| || ||MNP
+|{{flagicon|NOR}}||[[Norway]]||NOR||NOR||NOR
+|{{flagicon|OMN}}||[[Oman]]||OMA||OMA||OMN
+|{{flagicon|PAK}}||[[Pakistan]]||PAK||PAK||PAK
+|{{flagicon|PLW}}||[[Palau]]||PLW|| ||PLW
+|{{flagicon|PSE}}||[[State of Palestine]]||PLE||PLE||PSE
+|{{flagicon|PAN}}||[[Panama]]||PAN||PAN||PAN
+|{{flagicon|PNG}}||[[Papua New Guinea]]||PNG||PNG||PNG
+|{{flagicon|PRY}}||[[Paraguay]]||PAR||PAR||PRY
+|{{flagicon|PER}}||[[Peru]]||PER||PER||PER
+|{{flagicon|PHL}}||[[Philippines]]||PHI||PHI||PHL
+|{{flagicon|PCN}}||[[Pitcairn Islands]]|| || ||PCN
+|{{flagicon|POL}}||[[Poland]]||POL||POL||POL
+|{{flagicon|PRT}}||[[Portugal]]||POR||POR||PRT
+|{{flagicon|PRI}}||[[Puerto Rico]]||PUR||PUR||PRI
+|{{flagicon|QAT}}||[[Qatar]]||QAT||QAT||QAT
+|{{flagicon|REU}}||[[Réunion]]|| || ||REU
+|{{flagicon|ROU}}||[[Romania]]||ROU||ROU||ROU
+|{{flagicon|RUS}}||[[Russia|Russian Federation]]||RUS||RUS||RUS
+|{{flagicon|RWA}}||[[Rwanda]]||RWA||RWA||RWA
+|{{flagicon|BLM}}||[[Saint Barthélemy]]|| || ||BLM
+|{{flagicon|SHN}}||[[Saint Helena, Ascension and Tristan da Cunha]]|| || ||SHN
+|{{flagicon|KNA}}||[[Saint Kitts and Nevis]]||SKN||SKN||KNA
+|{{flagicon|LCA}}||[[Saint Lucia]]||LCA||LCA||LCA
+|{{flagicon|MAF}}||[[Collectivity of Saint Martin|Saint Martin (French part)]]|| || ||MAF
+|{{flagicon|SPM|local}}||[[Saint Pierre and Miquelon]]|| || ||SPM
+|{{flagicon|VCT}}||[[Saint Vincent and the Grenadines]]||VIN||VIN||VCT
+|{{flagicon|WSM}}||[[Samoa]]||SAM||SAM||WSM
+|{{flagicon|SMR}}||[[San Marino]]||SMR||SMR||SMR
+|{{flagicon|STP}}||[[São Tomé and Príncipe]]||STP||STP||STP
+|{{flagicon|SAU}}||[[Saudi Arabia]]||KSA||KSA||SAU
+|{{flagicon|SCO}}||[[Scotland]]|| ||SCO||
+|{{flagicon|SEN}}||[[Senegal]]||SEN||SEN||SEN
+|{{flagicon|SRB}}||[[Serbia]]||SRB||SRB||SRB
+|{{flagicon|SYC}}||[[Seychelles]]||SEY||SEY||SYC
+|{{flagicon|SLE}}||[[Sierra Leone]]||SLE||SLE||SLE
+|{{flagicon|SGP}}||[[Singapore]]||SIN||SIN||SGP
+|{{flagicon|SXM}}||[[Sint Maarten|Sint Maarten (Dutch part)]]|| || ||SXM
+|{{flagicon|SVK}}||[[Slovakia]]||SVK||SVK||SVK
+|{{flagicon|SVN}}||[[Slovenia]]||SLO||SVN||SVN
+|{{flagicon|SLB}}||[[Solomon Islands]]||SOL||SOL||SLB
+|{{flagicon|SOM}}||[[Somalia]]||SOM||SOM||SOM
+|{{flagicon|ZAF}}||[[South Africa]]||RSA||RSA||ZAF
+|{{flagicon|SGS}}||[[South Georgia and the South Sandwich Islands]]|| || ||SGS
+|{{flagicon|SSD}}||[[South Sudan]]|| ||SSD||SSD
+|{{flagicon|ESP}}||[[Spain]]||ESP||ESP||ESP
+|{{flagicon|LKA}}||[[Sri Lanka]]||SRI||SRI||LKA
+|{{flagicon|SDN}}||[[Sudan]]||SUD||SDN||SDN
+|{{flagicon|SUR}}||[[Suriname]]||SUR||SUR||SUR
+|{{flagicon|NOR}}||[[Svalbard and Jan Mayen]]|| || ||SJM
+|{{flagicon|SWZ}}||[[Swaziland]]||SWZ||SWZ||SWZ
+|{{flagicon|SWE}}||[[Sweden]]||SWE||SWE||SWE
+|{{flagicon|CHE}}||[[Switzerland]]||SUI||SUI||CHE
+|{{flagicon|SYR}}||[[Syria]]||SYR||SYR||SYR
+|{{flagicon|TWN}}||[[Republic of China]] ([[Taiwan]])||TPE||TPE||TWN
+|{{flagicon|TJK}}||[[Tajikistan]]||TJK||TJK||TJK
+|{{flagicon|TZA}}||[[Tanzania]]||TAN||TAN||TZA
+|{{flagicon|THA}}||[[Thailand]]||THA||THA||THA
+|{{flagicon|TLS}}||[[East Timor|Timor-Leste]]||TLS||TLS||TLS
+|{{flagicon|TGO}}||[[Togo]]||TOG||TOG||TGO
+|{{flagicon|TKL}}||[[Tokelau]]|| || ||TKL
+|{{flagicon|TON}}||[[Tonga]]||TGA||TGA||TON
+|{{flagicon|TTO}}||[[Trinidad and Tobago]]||TRI||TRI||TTO
+|{{flagicon|TUN}}||[[Tunisia]]||TUN||TUN||TUN
+|{{flagicon|TUR}}||[[Turkey]]||TUR||TUR||TUR
+|{{flagicon|TKM}}||[[Turkmenistan]]||TKM||TKM||TKM
+|{{flagicon|TCA}}||[[Turks and Caicos Islands]]|| ||TCA||TCA
+|{{flagicon|TUV}}||[[Tuvalu]]||TUV|| ||TUV
+|{{flagicon|UGA}}||[[Uganda]]||UGA||UGA||UGA
+|{{flagicon|UKR}}||[[Ukraine]]||UKR||UKR||UKR
+|{{flagicon|ARE}}||[[United Arab Emirates]]||UAE||UAE||ARE
+|{{flagicon|GBR}}||[[United Kingdom]]||GBR|| ||GBR
+|{{flagicon|USA}}||[[United States]]||USA||USA||USA
+|{{flagicon|USA}}||[[United States Minor Outlying Islands]]|| || ||UMI
+|{{flagicon|VIR}}||[[United States Virgin Islands]]||ISV||VIR||VIR
+|{{flagicon|URY}}||[[Uruguay]]||URU||URU||URY
+|{{flagicon|UZB}}||[[Uzbekistan]]||UZB||UZB||UZB
+|{{flagicon|VUT}}||[[Vanuatu]]||VAN||VAN||VUT
+|{{flagicon|VAT}}||[[Vatican City State]]|| || ||VAT
+|{{flagicon|VEN}}||[[Venezuela]]||VEN||VEN||VEN
+|{{flagicon|VNM}}||[[Vietnam]]||VIE||VIE||VNM
+|{{flagicon|WAL}}||[[Wales]]|| ||WAL||
+|{{flagicon|WLF}}||[[Wallis and Futuna]]|| || ||WLF
+|||[[Western Sahara]]|| || ||ESH
+|{{flagicon|YEM}}||[[Yemen]]||YEM||YEM||YEM
+|{{flagicon|ZMB}}||[[Zambia]]||ZAM||ZAM||ZMB
+|{{flagicon|ZWE}}||[[Zimbabwe]]||ZIM||ZIM||ZWE
+|}
