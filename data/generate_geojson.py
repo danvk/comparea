@@ -9,7 +9,7 @@ Usage:
 import json
 import sys
 import os
-from comparea import geojson_util
+from data import geojson_util
 from data import country_codes
 
 
@@ -33,7 +33,7 @@ def process_country(country):
     }
 
     iso3 = props['su_a3']
-    out_props['id'] = iso3
+    out['id'] = iso3
     out_props['name'] = props['name']
     out_props['pop'] = props['pop_est']
     out_props['pop_year'] = '???'
