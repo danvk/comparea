@@ -35,8 +35,8 @@ def process_country(country):
     iso3 = props['su_a3']
     out['id'] = iso3
     out_props['name'] = props['name']
-    out_props['pop'] = props['pop_est']
-    out_props['pop_year'] = '???'
+    out_props['population'] = props['pop_est']
+    out_props['population_year'] = '???'
     out_props['area_km2'] = 1000
     out_props['description'] = get_description(iso3)
     wiki_url = country_codes.iso3_to_wikipedia_url(iso3)

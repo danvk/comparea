@@ -1,0 +1,18 @@
+{% macro feature_panel(feature) %}
+<div class="feature-panel">
+  <div class="statistics">
+    <p>
+      <span class=stat-name>Area</span>:
+      <span class="stat-value area">{{feature.properties.area_km2|int|format_commas}} km<sup>2</sup></span>
+    </p>
+    <p>
+      <span class=stat-name>Population</span>:
+      <span class="stat-value population">{{feature.properties.population|int|format_commas}}</span>
+     </p>
+  </div>
+  <p class="description">
+    {{feature.properties.description}}
+    <a href="{{feature.properties.wikipedia_url}}">Wikipedia</a>
+  </p>
+</div>
+{% endmacro %}

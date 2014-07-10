@@ -1,3 +1,5 @@
+{% from "macros.html" import feature_panel with context %}
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Comparea</title>
@@ -10,11 +12,18 @@
 
 <body>
 
-<div id="topbar">
-  <select class="choose" id="choose0"></select>
-  <select class="choose" id="choose1"></select>
-</div>
 <div id="svg-container"></div>
+
+<div id="sidebar">
+  <div class='side-panel'>
+    <select class="choose" id="choose0"></select>
+    {{ feature_panel(shape1) }}
+  </div>
+  <div class='side-panel'>
+    <select class="choose" id="choose1"></select>
+    {{ feature_panel(shape2) }}
+  </div>
+</div>
 
 <script type="text/javascript">
 var geojson_features = [

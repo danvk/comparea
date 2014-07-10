@@ -18,3 +18,7 @@ def pair(id1, id2):
         return "No feature with id %s" % id2, 400
 
     return render_template('index.html', shape1=shape1, shape2=shape2, name_id_pairs=name_id_pairs)
+
+@app.route('/get_shape/<shape_id>')
+def get_shape(shape_id):
+    pass

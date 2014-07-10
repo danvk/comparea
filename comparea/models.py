@@ -1,6 +1,7 @@
 import json
 import os
 
+# TODO(danvk): use a database
 p = os.path.join(os.path.dirname(__file__), 'static/data/countries.geo.json')
 data = json.load(file(p))
 

@@ -23,7 +23,7 @@ def check_feature(feature):
     if feature['type'] != 'Feature':
         raise ValueError('Expected type=Feature, got type=%s' % feature['type'])
 
-    for prop in ['name', 'pop', 'pop_year', 'area_km2', 'description']:
+    for prop in ['name', 'population', 'population_year', 'area_km2', 'description']:
         if prop not in feature['properties']:
             raise ValueError('Feature is missing %s property' % prop)
 
