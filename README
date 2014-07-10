@@ -1,0 +1,7 @@
+To iterate on the UI:
+
+    cd comparea/static
+    python -m SimpleHTTPServer
+    open http://localhost:8000/
+
+
