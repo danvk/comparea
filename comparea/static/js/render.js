@@ -7,5 +7,5 @@ $(function() {
   $('#choose1 option[value=' + getId(1) + ']').attr('selected', true);
   addChooserListeners();
 
-  setDisplayForSelection();
+  setDisplayForFeatures(geojson_features);
 });

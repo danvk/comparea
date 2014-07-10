@@ -12,7 +12,7 @@ html,body{
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 250px;
 }
 
 #sidebar {
@@ -20,11 +20,11 @@ html,body{
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 200px;
+  width: 250px;
   right: 0;
   border-left: 1px solid black;
   padding: 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 line { stroke: black; }

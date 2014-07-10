@@ -1,10 +1,11 @@
 from . import app
 from . import models
-from flask import render_template
+from flask import render_template, jsonify
 
 @app.route('/')
 def index():
     return pair('USA', 'AUS')
+
 
 @app.route('/<id1>+<id2>')
 def pair(id1, id2):
@@ -19,6 +20,14 @@ def pair(id1, id2):
 
     return render_template('index.html', shape1=shape1, shape2=shape2, name_id_pairs=name_id_pairs)
 
-@app.route('/get_shape/<shape_id>')
+
+@app.route('/shape/<shape_id>')
 def get_shape(shape_id):
-    pass
+    shape = models.feature_for_iso3(shape_id)
+    if not shape:
+        return "No feature with id %s" % shape_id, 400
+
+    return jsonify({
+        'panel': render_template('panel.html', shape=shape),
+        'feature': shape
+    })

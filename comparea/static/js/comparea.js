@@ -155,8 +155,10 @@ function featureForId(id) {
 function addChooserListeners() {
   $('.choose').on('change', function(e) {
     var id = $(this).val();
-    var feature = featureForId(id);
-    setDisplayForSelection();
+    var ids = [$('#choose0').val(), $('#choose1').val()];
+    var changedIdx = $('.choose').index(this);
+    updateEl(changedIdx, ids[changedIdx]);
+    history.pushState(null, '', '/' + ids[0] + '+' + ids[1]);
   });
 }
 
@@ -166,4 +168,16 @@ function populateChoosers(name_id_pairs) {
     var id = pair[1];
     $('.choose').append($('<option>').attr('value', id).text(name));
   });
+}
+
+function updateEl(changedIdx, newId) {
+  $.get('/shape/' + newId)
+    .success(function(data) {
+      geojson_features[changedIdx] = data.feature;
+      $('#side-panel' + changedIdx + ' .feature-panel').html(data.panel);
+      setDisplayForFeatures(geojson_features);
+    })
+    .fail(function(e) {
+      console.log(e);
+    });
 }
