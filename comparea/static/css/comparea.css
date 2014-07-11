@@ -16,15 +16,27 @@ html,body{
 }
 
 #sidebar {
-  background: #eee;
   position: absolute;
   top: 0;
   bottom: 0;
   width: 250px;
   right: 0;
-  border-left: 1px solid black;
-  padding: 10px;
   overflow-y: auto;
+}
+
+.side-panel {
+  background: #eee;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
+  padding: 5px;
+  margin: 5px;
+  margin-top: 10px;
+  max-height: 50%;
+  overflow-y: auto;
+}
+
+.feature-panel .description {
+  font-size: small;
 }
 
 line { stroke: black; }

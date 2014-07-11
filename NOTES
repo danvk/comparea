@@ -30,23 +30,28 @@ Interesting fields in ne_50m_admin_0:
 Path forward:
 - UI
   - Why does everything look squished?
-  - Show KP-like panels in the UI.
   - Support window resize
   - Click+drag on background should pan both shapes
   - Shapes jump on first click after change
+  - Add share links
+  - Add transitions
+  - Be smarter about layout
+  - Plugin in Chosen for the dropdown lists
+  x Show KP-like panels in the UI.
 
 - Build a Flask server which accepts GeoJSON uploads and serves them.
   - /upload
-  - /get_names
-  - /get_feature
+  x /shape
 
 - Data curation:
   - Merge admin0, admin1 and {area, pop, description, wiki_link} attributes
+  - Add continents
   - Sort shapes by "solidity" (area / bbox area).
     --> should isolate oddities like France overseas & Hawaii
-  - Write & run an upload script
   - Determine which type of NE data I should use.
     -> does subunits contain the contiguous USA? (yes; but includes lakes)
+  - Improve quality of descriptions (maybe scrape Google?)
+  - Write & run an upload script (or don't)
 
 
 x Figure out the best way to scale shapes

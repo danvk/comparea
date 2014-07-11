@@ -37,7 +37,7 @@ def process_country(country):
     out_props['name'] = props['name']
     out_props['population'] = props['pop_est']
     out_props['population_year'] = '???'
-    out_props['area_km2'] = 1000
+    out_props['area_km2'] = geojson_util.get_area_of_feature(country) / 1e6
     out_props['description'] = get_description(iso3)
     wiki_url = country_codes.iso3_to_wikipedia_url(iso3)
     if not wiki_url:

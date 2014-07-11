@@ -1,4 +1,6 @@
 import json
+from pyproj import Proj
+from shapely.geometry import shape
 
 '''
 GeoJSON looks like:
@@ -43,3 +45,22 @@ def check_feature_collection(collection):
             check_feature(feature)
         except ValueError as e:
             raise ValueError('(feature %d) %s' % (i, e))
+
+
+pa = Proj("+proj=aea +lat_1=37.0 +lat_2=41.0 +lat_0=39.0 +lon_0=-106.55")
+def get_area_of_polygon(lat_lons):
+    '''lat_lons is an Nx2 list. Returns area in m^2.'''
+    global pa
+    lon, lat = zip(*lat_lons)
+    x, y = pa(lon, lat)
+    cop = {"type": "Polygon", "coordinates": [zip(x, y)]}
+    return shape(cop).area
+
+
+def get_area_of_feature(feature):
+    geom = feature['geometry']
+    if geom['type'] == 'Polygon':
+        return get_area_of_polygon(geom['coordinates'][0])
+    elif geom['type'] == 'MultiPolygon':
+        return sum([get_area_of_polygon(part[0]) for part in geom['coordinates']])
+    # 9,300,085.21879031
