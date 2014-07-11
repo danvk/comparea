@@ -44,12 +44,13 @@ Path forward:
   x /shape
 
 - Data curation:
-  - Add continent shapes
   - Sort shapes by "solidity" (area / bbox area).
     --> should isolate oddities like France overseas & Hawaii
   - Improve quality of descriptions (maybe scrape Google?)
-  - Write & run an upload script (or don't)
-  - Get descriptions & wiki links for all provinces
+  - Get descriptions & wiki links for all provinces & continents
+  - Find better continent shapes
+  - Source areas from CIA factbook (and look at large differences)
+  x Add continent shapes
   x Determine which type of NE data I should use.
     -> does subunits contain the contiguous USA? (yes; but includes lakes)
   x Merge admin0, admin1 and {area, pop, description, wiki_link} attributes

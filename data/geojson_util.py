@@ -68,25 +68,8 @@ def get_area_of_feature(feature):
         return sum([get_area_of_polygon(part[0]) for part in geom['coordinates']])
 
 
-def get_bbox_of_polygon(lon_lats, p):
-    return _lon_lats_to_shape(lon_lats, p).bounds
-
-
-def get_bbox_of_feature(feature, p):
-    geom = feature['geometry']
-    if geom['type'] == 'Polygon':
-        return get_bbox_of_polygon(geom['coordinates'][0], p)
-    elif geom['type'] == 'MultiPolygon':
-        boxes = [get_bbox_of_polygon(part[0], p) for part in geom['coordinates']]
-        col = lambda i: [b[i] for b in boxes]
-        return (min(col(0)), min(col(1)), max(col(2)), max(col(3)))
-
-
-def get_bbox_area_of_feature(feature):
-    cx, cy = centroid_of_feature(feature)
-    p = Proj(proj='sterea', lat_0=cy, lon_0=cx, k_0=0.9999079, x_0=0, y_0=0)
-    x_min, y_min, x_max, y_max = get_bbox_of_feature(feature, p)
-    return (x_max - x_min) * (y_max - y_min)
+def get_convex_area_of_feature(feature):
+    return convex_hull_of_feature(feature).area
 
 
 def centroid_of_feature(feature):
@@ -108,3 +91,28 @@ def _centroid_of_polygon(lon_lats):
     cop = {"type": "Polygon", "coordinates": [lon_lats]}
     s = shape(cop)
     return s.centroid, s.area
+
+
+def _make_multiploygon(geom, p):
+    if geom['type'] == 'Polygon':
+        return _lon_lats_to_shape(geom['coordinates'][0])
+    elif geom['type'] == 'MultiPolygon':
+        p = None
+        for part in geom['coordinates']:
+            shp = _lon_lats_to_shape(part[0])
+            if not p:
+                p = shp
+            else:
+                p = p.union(shp)
+        return p
+
+
+def convex_hull_of_feature(feature):
+    geom = feature['geometry']
+    cx, cy = centroid_of_feature(feature)
+    p = Proj(proj='sterea', lat_0=cy, lon_0=cx, k_0=0.9999079, x_0=0, y_0=0)
+    return _make_multiploygon(geom, p).convex_hull
+
+
+def solidity_of_feature(feature):
+    return get_area_of_feature(feature) / get_convex_area_of_feature(feature)

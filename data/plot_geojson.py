@@ -53,6 +53,7 @@ def show_feature(feature):
     map.ax = ax
 
     plt.show()
+    return map
 
 
 def show_feature_centered(feature):
@@ -82,3 +83,4 @@ def show_feature_centered(feature):
     map.ax = ax
 
     plt.show()
+    return map

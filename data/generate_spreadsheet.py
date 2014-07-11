@@ -4,8 +4,9 @@
 
 import json
 import sys
+import geojson_util
 
-fields = ['su_a3', 'name', 'name_long', 'pop_est', 'pop_year', 'continent', 'region_un', 'subregion']
+fields = ['su_a3', 'name', 'name_long', 'pop_est', 'pop_year', 'continent', 'region_un', 'subregion', 'area_km2', 'bbox_area_km2', 'solidity']
 
 
 def fmt(x):
@@ -21,9 +22,24 @@ def process_country(country):
     print ('\t'.join([fmt(props[f]) for f in fields])).encode('utf-8')
 
 
+def calculate_properties(feature):
+    area_km2 = geojson_util.get_area_of_feature(feature) / 1e6
+    bbox_area_km2 = geojson_util.get_convex_area_of_feature(feature) / 1e6
+    try:
+        solidity = area_km2 / bbox_area_km2
+    except ZeroDivisionError:
+        solidity = 0
+    feature['properties'].update({
+        'area_km2': area_km2,
+        'bbox_area_km2': bbox_area_km2,
+        'solidity': solidity
+    })
+
+
 def process_countries(geojson):
     features = []
     for feature in geojson['features']:
+        calculate_properties(feature)
         process_country(feature)
 
 
