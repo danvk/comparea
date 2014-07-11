@@ -16,7 +16,9 @@ from data import geojson_util
 
 def _plot_polygon(map, lon_lats):
     lon, lat = zip(*lon_lats)
-    map.plot(lon, lat, color='r', latlon=True)
+    xx, yy = map(lon, lat)
+    #map.plot(lon, lat, color='r', latlon=True)
+    plt.fill(xx, yy, color='r')
 
 
 def plot_feature(map, feature):
@@ -32,7 +34,35 @@ def show_feature(feature):
     fig, ax = plt.subplots(figsize=(12,12))
     map = Basemap(projection='merc', llcrnrlat=-80, urcrnrlat=80,
                 llcrnrlon=-180, urcrnrlon=180, resolution='l')
-    # draw great circle route
+
+    land_color = 'lightgray'
+    water_color = 'lightblue'
+
+    map.fillcontinents(color=land_color, lake_color=water_color)
+    map.drawcoastlines()
+    map.drawparallels(np.arange(-90.,120.,30.))
+    map.drawmeridians(np.arange(0.,420.,60.))
+    map.drawmapboundary(fill_color=water_color)
+    try:
+        ax.set_title(feature['properties']['name'])
+    except KeyError:
+        pass
+
+    plot_feature(map, feature)
+
+    map.ax = ax
+
+    plt.show()
+
+
+def show_feature_centered(feature):
+    fig, ax = plt.subplots(figsize=(12,12))
+    cx, cy = geojson_util.centroid_of_feature(feature)
+
+    map = Basemap(projection='aea',
+            width=8000000,height=7000000,
+            resolution='l',
+            lat_1=40.,lat_2=60,lon_0=cx,lat_0=cy)
 
     land_color = 'lightgray'
     water_color = 'lightblue'
