@@ -1,3 +1,5 @@
 ne*
 *.pyc
 env
+.ipynb_checkpoints
+*.ipynb
