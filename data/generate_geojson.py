@@ -74,29 +74,69 @@ def process_province(province):
     return out
 
 
+def process_continent(continent):
+    assert continent['type'] == 'Feature'
+    props = continent['properties']
+    ids = {
+            'Australia': None,  # covered by admin-0,
+            'Antarctica': None,  # covered by admin-0
+            'Africa': 'AF',
+            'South America': 'SA',
+            'North America': 'NA',
+            'Europe': 'EU',
+            'Asia': 'Asia'
+    }
+    name = props['name'].title()
+    if ids[name] == None:
+        return None
+
+    out_props = {}
+    out = {
+        'type': continent['type'],
+        'geometry': continent['geometry'],
+        'properties': out_props
+    }
+
+    out['id'] = ids[name]
+    out_props['name'] = name
+    out_props['population'] = -1
+    out_props['population_year'] = '???'
+    out_props['area_km2'] = geojson_util.get_area_of_feature(continent) / 1e6
+    out_props['description'] = 'A nice place'
+    out_props['wikipedia_url'] = '#'
+
+    return out
+
 
 def process_features(geojson, fn):
     features = []
     for feature in geojson['features']:
-        features.append(fn(feature))
+        f = fn(feature)
+        if f:
+            features.append(f)
 
     return { 'type': 'FeatureCollection', 'features': features }
 
 
+def load_geojson(filename, process_fn):
+    p = os.path.join(os.path.dirname(__file__), filename)
+    geojson = json.load(file(p))
+    assert geojson['type'] == 'FeatureCollection'
+    features = process_features(geojson, process_fn)
+    geojson_util.check_feature_collection(features)
+    return features
+
+
 def run(args):
-    assert len(args) == 3
-    countries_geojson = json.load(file(args[1]))
-    assert countries_geojson['type'] == 'FeatureCollection'
-    country_features = process_features(countries_geojson, process_country)
-    geojson_util.check_feature_collection(country_features)
+    collections = [
+        load_geojson('countries.json', process_country),
+        load_geojson('provinces.json', process_province),
+        load_geojson('continents.json', process_continent)
+            ]
 
-    provinces_geojson = json.load(file(args[2]))
-    assert provinces_geojson['type'] == 'FeatureCollection'
-    province_features = process_features(provinces_geojson, process_province)
-    geojson_util.check_feature_collection(province_features)
-
-    comparea_features = country_features
-    comparea_features['features'] += province_features['features']
+    comparea_features = collections[0]
+    for collection in collections[1:]:
+        comparea_features['features'] += collection['features']
 
     print json.dumps(comparea_features)
 
