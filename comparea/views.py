@@ -9,8 +9,8 @@ def index():
 
 @app.route('/<id1>+<id2>')
 def pair(id1, id2):
-    shape1 = models.feature_for_iso3(id1)
-    shape2 = models.feature_for_iso3(id2)
+    shape1 = models.feature_for_code(id1)
+    shape2 = models.feature_for_code(id2)
     name_id_pairs = models.all_countries()
 
     if not shape1:
@@ -23,7 +23,7 @@ def pair(id1, id2):
 
 @app.route('/shape/<shape_id>')
 def get_shape(shape_id):
-    shape = models.feature_for_iso3(shape_id)
+    shape = models.feature_for_code(shape_id)
     if not shape:
         return "No feature with id %s" % shape_id, 400
 

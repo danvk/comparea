@@ -47,20 +47,56 @@ def process_country(country):
     return out
 
 
-def process_countries(geojson):
+def process_province(province):
+    assert province['type'] == 'Feature'
+    props = province['properties']
+    out_props = {}
+    out = {
+        'type': province['type'],
+        'geometry': province['geometry'],
+        'properties': out_props
+    }
+
+    short_admin = 'USA' if props['iso_a2'] == 'US' else props['admin']
+    code = props['code_hasc'].replace('.', '_')
+    out['id'] = code
+    out_props['name'] = '%s (%s)' % (props['name'], short_admin)
+    out_props['population'] = -1
+    out_props['population_year'] = '???'
+    out_props['area_km2'] = geojson_util.get_area_of_feature(province) / 1e6
+    out_props['description'] = 'A nice place'
+    wiki_url = props['wikipedia']
+    if wiki_url:
+        out_props['wikipedia_url'] = wiki_url
+    else:
+        out_props['wikipedia_url'] = '#'
+
+    return out
+
+
+
+def process_features(geojson, fn):
     features = []
     for feature in geojson['features']:
-        features.append(process_country(feature))
+        features.append(fn(feature))
 
     return { 'type': 'FeatureCollection', 'features': features }
 
 
 def run(args):
-    assert len(args) == 2
-    geojson = json.load(file(args[1]))
-    assert geojson['type'] == 'FeatureCollection'
-    comparea_features = process_countries(geojson)
-    geojson_util.check_feature_collection(comparea_features)
+    assert len(args) == 3
+    countries_geojson = json.load(file(args[1]))
+    assert countries_geojson['type'] == 'FeatureCollection'
+    country_features = process_features(countries_geojson, process_country)
+    geojson_util.check_feature_collection(country_features)
+
+    provinces_geojson = json.load(file(args[2]))
+    assert provinces_geojson['type'] == 'FeatureCollection'
+    province_features = process_features(provinces_geojson, process_province)
+    geojson_util.check_feature_collection(province_features)
+
+    comparea_features = country_features
+    comparea_features['features'] += province_features['features']
 
     print json.dumps(comparea_features)
 

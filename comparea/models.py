@@ -2,15 +2,15 @@ import json
 import os
 
 # TODO(danvk): use a database
-p = os.path.join(os.path.dirname(__file__), 'static/data/countries.geo.json')
+p = os.path.join(os.path.dirname(__file__), 'static/data/comparea.geo.json')
 data = json.load(file(p))
 
-def feature_for_iso3(iso3):
+def feature_for_code(code):
     for feature in data['features']:
-        if feature['id'] == iso3:
+        if feature['id'] == code:
             return feature
     return None
 
 def all_countries():
-    '''Returns (country name, id) tuples.'''
+    '''Returns (name, id) tuples.'''
     return sorted([(f['properties']['name'], f['id']) for f in data['features']])
