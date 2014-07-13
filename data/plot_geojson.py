@@ -17,8 +17,8 @@ from data import geojson_util
 def _plot_polygon(map, lon_lats):
     lon, lat = zip(*lon_lats)
     xx, yy = map(lon, lat)
-    #map.plot(lon, lat, color='r', latlon=True)
     plt.fill(xx, yy, color='r')
+    plt.plot(xx, yy, color='b', linewidth=10)
 
 
 def plot_feature(map, feature):
@@ -84,3 +84,12 @@ def show_feature_centered(feature):
 
     plt.show()
     return map
+
+
+def show_shape(shape, color='r'):
+    '''Displays a shapely.geometry.Shape object.'''
+    pts = shape.exterior.coords  # TODO(danvk): remove .interiors
+    
+    xx, yy = zip(*pts)
+    plt.fill(xx, yy, color)
+    plt.show()

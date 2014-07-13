@@ -1,3 +1,4 @@
+import copy
 import json
 from pyproj import Proj
 from shapely.geometry import shape
@@ -48,7 +49,9 @@ def check_feature_collection(collection):
 
 
 pa = Proj("+proj=aea +lat_1=37.0 +lat_2=41.0 +lat_0=39.0 +lon_0=-106.55")
-def _lon_lats_to_shape(lon_lats, p=pa):
+def _lon_lats_to_shape(lon_lats, p=None):
+    global pa
+    if not p: p = pa
     lon, lat = zip(*lon_lats)
     x, y = p(lon, lat)
     cop = {"type": "Polygon", "coordinates": [zip(x, y)]}
@@ -93,13 +96,13 @@ def _centroid_of_polygon(lon_lats):
     return s.centroid, s.area
 
 
-def _make_multiploygon(geom, p):
+def _make_multiploygon(geom, proj):
     if geom['type'] == 'Polygon':
-        return _lon_lats_to_shape(geom['coordinates'][0])
+        return _lon_lats_to_shape(geom['coordinates'][0], proj)
     elif geom['type'] == 'MultiPolygon':
         p = None
         for part in geom['coordinates']:
-            shp = _lon_lats_to_shape(part[0])
+            shp = _lon_lats_to_shape(part[0], proj)
             if not p:
                 p = shp
             else:
