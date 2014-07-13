@@ -4,3 +4,4 @@ Flask-SQLAlchemy==1.0
 SQLAlchemy==0.9.6
 geojson==1.0.7
 pyshp==1.2.1
+gunicorn==19.0.0
