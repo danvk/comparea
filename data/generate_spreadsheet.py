@@ -25,9 +25,9 @@ def process_country(country):
 def calculate_properties(feature):
     area_km2 = geojson_util.get_area_of_feature(feature) / 1e6
     try:
-        # something weird w/ antarctica
         bbox_area_km2 = geojson_util.get_convex_area_of_feature(feature) / 1e6
     except:
+        # something weird w/ antarctica
         bbox_area_km2 = 0
 
     try:

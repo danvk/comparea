@@ -119,3 +119,27 @@ def convex_hull_of_feature(feature):
 
 def solidity_of_feature(feature):
     return get_area_of_feature(feature) / get_convex_area_of_feature(feature)
+
+
+def subset_feature(in_feature, lng_range, lat_range):
+    '''Return a feature containing only polygons centered in the box.'''
+    feature = copy.deepcopy(in_feature)
+    geom = feature['geometry']
+
+    def is_in_bounds(polygon):
+        pt, _ = _centroid_of_polygon(polygon)
+        return (lng_range[0] < pt.x < lng_range[1] and
+                lat_range[0] < pt.y < lat_range[1])
+
+    if geom['type'] == 'Polygon':
+        if not is_in_bounds(geom['coordinates'][0]):
+            del geom['coordinates'][0]  # empty shape
+        return feature
+    elif geom['type'] == 'MultiPolygon':
+        indices_to_kill = []
+        for idx, part in enumerate(geom['coordinates']):
+            if not is_in_bounds(part[0]):
+                indices_to_kill.append(idx)
+        for idx in reversed(indices_to_kill):
+            del geom['coordinates'][idx]
+        return feature

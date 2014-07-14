@@ -36,7 +36,7 @@ Path forward:
   - Add share links
   - Add transitions
   - Be smarter about layout
-  - Plugin in Chosen for the dropdown lists
+  - Plug in Chosen for the dropdown lists
   x Show KP-like panels in the UI.
 
 - Build a Flask server which accepts GeoJSON uploads and serves them.
@@ -44,12 +44,14 @@ Path forward:
   x /shape
 
 - Data curation:
-  - Sort shapes by "solidity" (area / bbox area).
-    --> should isolate oddities like France overseas & Hawaii
   - Improve quality of descriptions (maybe scrape Google?)
   - Get descriptions & wiki links for all provinces & continents
   - Find better continent shapes
   - Source areas from CIA factbook (and look at large differences)
+  - Consider down-sampling some shapes?
+  x Add ~10 new shapes like "United States (contiguous 48)"
+  x Sort shapes by "solidity" (area / bbox area).
+    --> should isolate oddities like France overseas & Hawaii
   x Add continent shapes
   x Determine which type of NE data I should use.
     -> does subunits contain the contiguous USA? (yes; but includes lakes)

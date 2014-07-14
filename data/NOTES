@@ -1,19 +1,19 @@
 Countries with overseas territories which skew the map:
 - France
-    subunits.json has "Metropolitan France"
+    x subunits.json has "Metropolitan France"
 - Netherlands
-    subunits.json has "Kingdom of the Netherlands"
+    x subunits.json has "Kingdom of the Netherlands"
 - New Zealand
     subunits.json has North Island / South Island
 - Portugal
-    subunits.json has "Portuguese Republic"
+    x subunits.json has "Portuguese Republic"
 - Chile
-    subunits.json has "Republic of Chile"
+    x subunits.json has "Republic of Chile"
 - Norway
-    subunits.json has "Kingdom of Norway"
+    x subunits.json has "Kingdom of Norway"
 - United States
     subunits.json has "USB", but this has issues with Lakes
 - Spain
-    su_a3 = ESX
+    x su_a3 = ESX
 - South Africa
-    su_a3 = ZAX
+    x su_a3 = ZAX
