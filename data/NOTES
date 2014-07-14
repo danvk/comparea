@@ -1,3 +1,15 @@
+Continents:
+- Europe
+    (includes all of Russia, which is wrong)
+- Asia
+    missing Asian Russia?
+- North America
+    good, probably shouldn't include Hawaii
+- South America, Africa
+  great!
+
+
+
 Countries with overseas territories which skew the map:
 - France
     x subunits.json has "Metropolitan France"
@@ -17,3 +29,6 @@ Countries with overseas territories which skew the map:
     x su_a3 = ESX
 - South Africa
     x su_a3 = ZAX
+
+
+

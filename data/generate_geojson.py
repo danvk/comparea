@@ -115,8 +115,7 @@ def process_province(province):
 
 
 def process_continent(continent):
-    assert continent['type'] == 'Feature'
-    props = continent['properties']
+    assert continent['type'] == 'FeatureCollection'
     ids = {
             'Australia': None,  # covered by admin-0,
             'Antarctica': None,  # covered by admin-0
@@ -124,16 +123,17 @@ def process_continent(continent):
             'South America': 'SA',
             'North America': 'NA',
             'Europe': 'EU',
-            'Asia': 'Asia'
+            'Asia': 'ASIA',
+            'Oceania': None
     }
-    name = props['name'].title()
+    name = continent['name'].title()
     if ids[name] == None:
         return None
 
     out_props = {}
     out = {
         'type': continent['type'],
-        'geometry': continent['geometry'],
+        'features': continent['features'],
         'properties': out_props
     }
 
@@ -141,7 +141,7 @@ def process_continent(continent):
     out_props['name'] = name
     out_props['population'] = -1
     out_props['population_year'] = '???'
-    out_props['area_km2'] = geojson_util.get_area_of_feature(continent) / 1e6
+    out_props['area_km2'] = -1
     out_props['description'] = 'A nice place'
     out_props['wikipedia_url'] = '#'
 
@@ -231,10 +231,13 @@ def run(args):
     subunits = load_geojson('subunits.json', process_subunit)
     admin0 = adjust_countries(countries, subunits)
 
+    continent_list = map(process_continent, json.load(file('data/continents.geo.json')))
+    continent_list = [c for c in continent_list if c]
+
     collections = [
         admin0,
         load_geojson('provinces.json', process_province),
-        load_geojson('continents.json', process_continent)
+        continent_list
             ]
 
     comparea_features = {

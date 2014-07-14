@@ -30,7 +30,6 @@ Interesting fields in ne_50m_admin_0:
 Path forward:
 - UI
   - Inline the <option> arrays
-  - Support window resize
   - Click+drag on background should pan both shapes
   - Touch: two finger both zooms and drags one of the shapes
   - Shapes jump on first click after change
@@ -38,6 +37,7 @@ Path forward:
   - Add transitions
   - Be smarter about layout
   - Plug in Chosen for the dropdown lists
+  x Support window resize
   x Show KP-like panels in the UI.
 
 - Build a Flask server which accepts GeoJSON uploads and serves them.
@@ -45,7 +45,8 @@ Path forward:
   x /shape
 
 - Data curation:
-  - Improve quality of descriptions (maybe scrape Google?)
+  - Improve quality of descriptions.
+      use freebase: http://www.freebase.com/m/0h3y?any=%2Fcommon%2Ftopic
   - Get descriptions & wiki links for all provinces & continents
   - Find better continent shapes
   - Source areas from CIA factbook (and look at large differences)
