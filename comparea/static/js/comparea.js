@@ -42,7 +42,7 @@ function projectionForCountry(feature) {
     .rotate([-lon, -lat])
     .parallels([0, 60])
     .scale(1000)
-    .translate([width / 2, height / 2]);
+    .translate([0,0]);
   return proj;
 }
 
@@ -91,28 +91,34 @@ function setDisplayForFeatures(features) {
   var bounds = features.map(function(d, i) {
     return paths[i].bounds(d);
   });
-  var xSpans = bounds.map(function(b) {
+  var spans = bounds.map(function(b) {
     var tl = b[0], br = b[1];
-    return br[0] - tl[0];
+    return Math.max(br[0] - tl[0], br[1] - tl[1]);
   });
 
-  var gapBetweenShapes = 10;
+  var classes = {
+    children: [
+      {idx: 0, value: spans[0]},
+      {idx: 1, value: spans[1]}
+    ]
+  };
+  var pack = d3.layout.pack()
+    .sort(null)
+    .size([width, height])
+    .radius(function(v) {
+      return v/2;
+    })
+    .padding(1.5);
+  var layout = pack.nodes(classes)
+    .filter(function(d) { return !d.children; });
+  // console.log(layout);
+
+  // TODO(danvk): be more D3-y about this.
+  // TODO(danvk): also use d3.layout.pack to set the scale
   features.forEach(function(d, i) {
     d.dx = 0; d.dy = 0;  // initial drag offsets
-
-    var bounds = paths[i].bounds(d);
-
-    if (i == 0) {
-      // shift so that the right edge is at the center
-      d.static_dx = -(bounds[1][0] - width/2);
-      d.static_dx -= gapBetweenShapes / 2;
-    } else {
-      // shift so that the left edge is at the center
-      d.static_dx = +(width/2 - bounds[0][0]);
-      d.static_dx += gapBetweenShapes / 2;
-    }
-
-    d.static_dy = 0;
+    d.static_dx = layout[i].x;
+    d.static_dy = layout[i].y;
   });
 
   var dataEls = svg.select('.container').selectAll('.force')
