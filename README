@@ -1,7 +1,19 @@
+To get started:
+
+    virtualenv env
+    source env/bin/activate
+    pip install -r requirements.txt
+
 To iterate on the UI:
 
-    cd comparea/static
-    python -m SimpleHTTPServer
-    open http://localhost:8000/
+    ./run.py
+    open http://localhost:5000/
 
+To regenerate GeoJSON:
 
+    ./data/generate_geojson.py > comparea/static/data/comparea.geo.json
+
+To regenerate metadata:
+
+    ./data/fetch_metadata.py > data/metadata.json
+    ./data/generate_geojson.py > comparea/static/data/comparea.geo.json
