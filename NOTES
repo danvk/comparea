@@ -45,10 +45,10 @@ Path forward:
   x /shape
 
 - Data curation:
-  - Find better continent shapes
   - Source areas from CIA factbook (and look at large differences)
-  - Consider down-sampling some shapes?
+  - Consider down-sampling some shapes? (perf boost on mobile/tablet)
   - Download Freebase Topics for all features & regenerate metadata
+  x Find better continent shapes
   x Reduce lat/lon precision (home page is 233k)
     --> .6f reduced it from 239369 --> 161739 (59292 --> 49696 gz)
   x Improve quality of descriptions.

@@ -203,6 +203,31 @@ def adjust_countries(countries, subunits):
     return countries + subunits
 
 
+def adjust_continents(continents, subunits):
+    '''Put European Russia in Europe, Asian Russia in Asia.'''
+    russias = [f for f in subunits['features'] if f['properties']['sov_a3'] == 'RUS']
+    asian_russia = russias[0]
+    european_russia = russias[1]
+
+    europe = None
+    asia = None
+    for continent in continents:
+        if continent['id'] == 'EU': europe = continent
+        if continent['id'] == 'ASIA': asia = continent
+
+    assert europe
+    assert asia
+
+    asia['features'].append(asian_russia)
+    idx = [i for i, f in enumerate(europe['features']) if f['properties']['name'] == 'Russia'][0]
+    europe['features'][idx] = european_russia
+
+    # strip out some overseas possessions
+    ef = europe['features']
+    for idx, feature in enumerate(ef):
+        ef[idx] = geojson_util.subset_feature(feature, [-30, 180], [0, 90])
+
+
 def assert_no_id_collisions(comparea_features):
     id_to_name = {}
     for feature in comparea_features['features']:
@@ -241,6 +266,8 @@ def run(args):
 
     continent_list = map(process_continent, json.load(file('data/continents.geo.json')))
     continent_list = [c for c in continent_list if c]
+    raw_subunits = json.load(file('data/subunits.json'))
+    adjust_continents(continent_list, raw_subunits)
 
     collections = [
         admin0,
