@@ -12,6 +12,11 @@ import os
 from data import geojson_util
 from data import country_codes
 
+# hack to reduce floating point precision.
+from json import encoder
+encoder.c_make_encoder = None
+encoder.FLOAT_REPR = lambda o: format(o, '.6f')
+
 
 DEFAULT_METADATA = {
         'area_km2': -1,

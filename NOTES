@@ -29,7 +29,6 @@ Interesting fields in ne_50m_admin_0:
 
 Path forward:
 - UI
-  - Inline the <option> arrays
   - Click+drag on background should pan both shapes
   - Touch: two finger both zooms and drags one of the shapes
   - Shapes jump on first click after change
@@ -37,6 +36,7 @@ Path forward:
   - Add transitions
   - Be smarter about layout
   - Plug in Chosen for the dropdown lists
+  x Inline the <option> arrays
   x Support window resize
   x Show KP-like panels in the UI.
 
@@ -49,6 +49,8 @@ Path forward:
   - Source areas from CIA factbook (and look at large differences)
   - Consider down-sampling some shapes?
   - Download Freebase Topics for all features & regenerate metadata
+  x Reduce lat/lon precision (home page is 233k)
+    --> .6f reduced it from 239369 --> 161739 (59292 --> 49696 gz)
   x Improve quality of descriptions.
       use freebase: http://www.freebase.com/m/0h3y?any=%2Fcommon%2Ftopic
   x Get descriptions & wiki links for all provinces & continents
