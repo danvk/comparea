@@ -14,7 +14,9 @@ class Freebase(object):
     service_url = 'https://www.googleapis.com/freebase/v1/topic'
     cache_dir = '/var/tmp/wiki'
 
-    def __init__(self, api_key):
+    def __init__(self, api_key=None):
+        if not api_key:
+            api_key = open(os.path.join(os.path.dirname(__file__), '.freebase_api_key')).read()
         self._key = api_key
 
     def _cache_file(self, title):
@@ -54,20 +56,20 @@ class Freebase(object):
         return json.loads(data)
 
 
-api_key = open("data/.freebase_api_key").read()
-freebase = Freebase(api_key)
+if __name__ == '__main__':
+    freebase = Freebase()
 
-wiki_url_prefix = 'http://en.wikipedia.org/wiki/'
-gj = json.load(file("comparea/static/data/comparea.geo.json"))
-for feature in gj['features']:
-    props = feature['properties']
-    url = props['wikipedia_url']
-    if wiki_url_prefix not in url:
-        sys.stderr.write('ERROR %s has invalid wiki URL: %s\n' % (title, url))
-        continue
+    wiki_url_prefix = 'http://en.wikipedia.org/wiki/'
+    gj = json.load(file("comparea/static/data/comparea.geo.json"))
+    for feature in gj['features']:
+        props = feature['properties']
+        url = props['wikipedia_url']
+        if wiki_url_prefix not in url:
+            sys.stderr.write('ERROR %s has invalid wiki URL: %s\n' % (title, url))
+            continue
 
-    title = url.replace(wiki_url_prefix, '')
-    try:
-        d = freebase.get_topic_json(title)
-    except IOError:
-        sys.stderr.write('ERROR unable to fetch %s\n' % title)
+        title = url.replace(wiki_url_prefix, '')
+        try:
+            d = freebase.get_topic_json(title)
+        except IOError:
+            sys.stderr.write('ERROR unable to fetch %s\n' % title)
