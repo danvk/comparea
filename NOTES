@@ -29,9 +29,10 @@ Interesting fields in ne_50m_admin_0:
 
 Path forward:
 - UI
-  - Why does everything look squished?
+  - Inline the <option> arrays
   - Support window resize
   - Click+drag on background should pan both shapes
+  - Touch: two finger both zooms and drags one of the shapes
   - Shapes jump on first click after change
   - Add share links
   - Add transitions

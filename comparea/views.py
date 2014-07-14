@@ -4,7 +4,7 @@ from flask import render_template, jsonify
 
 @app.route('/')
 def index():
-    return pair('USA', 'AUS')
+    return pair('USA48', 'AUS')
 
 
 @app.route('/<id1>+<id2>')
