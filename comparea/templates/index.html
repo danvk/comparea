@@ -14,13 +14,23 @@
 
 <div id="svg-container"></div>
 
+{% macro option_list(name_id_pairs, selected_id) %}
+{% for pair in name_id_pairs %}
+<option {% if pair[1] == selected_id %}selected {% endif %}value="{{pair[1]}}">{{pair[0]}}</option>
+{% endfor %}
+{% endmacro %}
+
 <div id="sidebar">
   <div class='side-panel' id='side-panel0'>
-    <select class="choose" id="choose0"></select>
+    <select class="choose" id="choose0">
+      {{ option_list(name_id_pairs, shape1.id) }}
+    </select>
     <div class="feature-panel">{{ feature_panel(shape1) }}</div>
   </div>
   <div class='side-panel' id='side-panel1'>
-    <select class="choose" id="choose1"></select>
+    <select class="choose" id="choose1">
+      {{ option_list(name_id_pairs, shape2.id) }}
+    </select>
     <div class="feature-panel">{{ feature_panel(shape2) }}</div>
   </div>
 </div>
@@ -30,7 +40,6 @@ var geojson_features = [
     {{shape1|tojson}},
     {{shape2|tojson}}
   ];
-var name_id_pairs = {{name_id_pairs|tojson}};
 </script>
 
 <script src="/static/js/comparea.js"></script>
