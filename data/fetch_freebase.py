@@ -4,25 +4,70 @@
 This includes goodies like descriptions, population and area.
 '''
 
+import os
 import json
+import sys
 import urllib
 
+class Freebase(object):
+    '''Freebase Topic API wrapper. Maps wikipedia title --> topic JSON.'''
+    service_url = 'https://www.googleapis.com/freebase/v1/topic'
+    cache_dir = '/var/tmp/wiki'
+
+    def __init__(self, api_key):
+        self._key = api_key
+
+    def _cache_file(self, title):
+        return os.path.join(self.cache_dir, '%s.json' % title)
+
+    def _get_from_cache(self, title):
+        p = self._cache_file(title)
+        if os.path.exists(p):
+            try:
+                d = json.load(file(p))
+            except ValueError:
+                sys.stderr.write('Unable to decode json for %s, %s\n' % (title, p))
+                raise
+
+            if 'error' in d:
+                return None
+            sys.stderr.write('Loaded %s from cache.\n' % title)
+            return d
+        else:
+            return None
+
+    def get_topic_json(self, title):
+        '''title is a Wikipedia title for the topic.'''
+        d = self._get_from_cache(title)
+        if d: return d
+
+        params = {
+            'key': self._key,
+            'filter': 'commons'
+        }
+        topic_id = '/wikipedia/en_title/%s' % title
+        # TODO: encode ala http://wiki.freebase.com/wiki/MQL_key_escaping
+        url = self.service_url + topic_id + '?' + urllib.urlencode(params)
+        sys.stderr.write('Fetching %s\n' % url)
+        data = urllib.urlopen(url).read()
+        open(self._cache_file(title), 'w').write(data)
+        return json.loads(data)
+
+
 api_key = open("data/.freebase_api_key").read()
-service_url = 'https://www.googleapis.com/freebase/v1/topic'
-params = {
-    'key': api_key,
-    'filter': 'commons'
-}
+freebase = Freebase(api_key)
 
-TMP_DIR = '/var/tmp/wiki'
-
-keys = []
+wiki_url_prefix = 'http://en.wikipedia.org/wiki/'
 gj = json.load(file("comparea/static/data/comparea.geo.json"))
 for feature in gj['features']:
     props = feature['properties']
     url = props['wikipedia_url']
-    title = url.replace('http://en.wikipedia.org/wiki/', '')
-    topic_id = '/wikipedia/en_title/%s' % title
-    url = service_url + topic_id + '?' + urllib.urlencode(params)
-    print url
-    open(TMP_DIR + '/%s.json' % title, 'w').write(urllib.urlopen(url).read())
+    if wiki_url_prefix not in url:
+        sys.stderr.write('ERROR %s has invalid wiki URL: %s\n' % (title, url))
+        continue
+
+    title = url.replace(wiki_url_prefix, '')
+    try:
+        d = freebase.get_topic_json(title)
+    except IOError:
+        sys.stderr.write('ERROR unable to fetch %s\n' % title)
