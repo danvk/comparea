@@ -3,3 +3,5 @@ ne*
 env
 .ipynb_checkpoints
 *.ipynb
+
+.freebase_api_key
