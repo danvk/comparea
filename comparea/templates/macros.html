@@ -4,9 +4,11 @@
     <span class=stat-name>Area</span>:
     <span class="stat-value area">{{feature.properties.area_km2|int|format_commas}} km<sup>2</sup></span>
   </p>
-  <p>
-    <span class=stat-name>Population</span>:
-    <span class="stat-value population">{{feature.properties.population|int|format_commas}}</span>
+  <p class="population">
+    <span class="stat-name">Population</span>:
+    <span class="stat-value">{{feature.properties.population|int|format_commas}}</span>
+    (<span class="stat-year">{{feature.properties.population_year}}</span>)
+    <a class="stat-source" href="{{feature.properties.population_source_url}}">{{feature.properties.population_source}}</a>
    </p>
 </div>
 <p class="description">

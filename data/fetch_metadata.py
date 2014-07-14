@@ -80,7 +80,7 @@ def extract_metadata(title, d):
     try:
         desc_topic = d['property']['/common/topic/description']
         en_value = [v['value'] for v in desc_topic['values'] if v['lang'] == 'en'][0]
-        metadata['description'] = trim_description(en_value)
+        metadata['description'] = trim_description(en_value, max_chars=300)
     except KeyError:
         sys.stderr.write('Missing description for %s\n' % title)
 
@@ -124,7 +124,7 @@ def run():
         
         output[key] = extract_metadata(title, d)
 
-    print json.dumps(output)
+    print json.dumps(output, indent=2, sort_keys=True)
 
 
 if __name__ == '__main__':

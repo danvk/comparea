@@ -45,12 +45,13 @@ Path forward:
   x /shape
 
 - Data curation:
-  - Improve quality of descriptions.
-      use freebase: http://www.freebase.com/m/0h3y?any=%2Fcommon%2Ftopic
-  - Get descriptions & wiki links for all provinces & continents
   - Find better continent shapes
   - Source areas from CIA factbook (and look at large differences)
   - Consider down-sampling some shapes?
+  - Download Freebase Topics for all features & regenerate metadata
+  x Improve quality of descriptions.
+      use freebase: http://www.freebase.com/m/0h3y?any=%2Fcommon%2Ftopic
+  x Get descriptions & wiki links for all provinces & continents
   x Add ~10 new shapes like "United States (contiguous 48)"
   x Sort shapes by "solidity" (area / bbox area).
     --> should isolate oddities like France overseas & Hawaii

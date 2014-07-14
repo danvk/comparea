@@ -38,6 +38,9 @@ html,body{
 .feature-panel .description {
   font-size: small;
 }
+.population {
+  font-size: small;
+}
 
 line { stroke: black; }
 

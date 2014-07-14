@@ -13,16 +13,28 @@ from data import geojson_util
 from data import country_codes
 
 
-_descs = None
-def get_description(code):
-    global _descs
-    if not _descs:
-        p = os.path.join(os.path.dirname(__file__), 'descriptions.json')
-        _descs = json.load(file(p))
+DEFAULT_METADATA = {
+        'area_km2': -1,
+        'population': -1,
+        'population_year': -1,
+        'population_source': 'None',
+        'population_source_url': 'http://google.com',
+        'description': 'A nice place!',
+        'freebase_mid': '/m/123'
+}
+_metadata = None
+def get_metadata(code):
+    global _metadata
+    if not _metadata:
+        p = os.path.join(os.path.dirname(__file__), 'metadata.json')
+        _metadata = json.load(file(p))
+    d = {}
+    d.update(DEFAULT_METADATA)
     try:
-        return _descs[code]
+        d.update(_metadata[code])
     except KeyError:
-        return 'A lovely place!'
+        pass
+    return d
 
 
 def process_country(country):
@@ -38,10 +50,7 @@ def process_country(country):
     iso3 = props['su_a3']
     out['id'] = iso3
     out_props['name'] = props['name']
-    out_props['population'] = props['pop_est']
-    out_props['population_year'] = '???'
-    out_props['area_km2'] = geojson_util.get_area_of_feature(country) / 1e6
-    out_props['description'] = get_description(iso3)
+    out_props.update(get_metadata(iso3))
     wiki_url = country_codes.iso3_to_wikipedia_url(iso3)
     if not wiki_url:
         raise ValueError('Unable to get wikipedia link for %s = %s\n' % (iso3, props['name']))
@@ -76,10 +85,7 @@ def process_subunit(country):
     }
     out['id'] = su_a3
     out_props['name'] = ids[su_a3]
-    out_props['population'] = props['pop_est']
-    out_props['population_year'] = '???'
-    out_props['area_km2'] = geojson_util.get_area_of_feature(country) / 1e6
-    out_props['description'] = get_description(su_a3)
+    out_props.update(get_metadata(su_a3))
     out_props['wikipedia_url'] = 'http://google.com'
 
     return out
@@ -101,10 +107,7 @@ def process_province(province):
         code = props['hasc_maybe'].split('|')[0].replace('.', '_')
     out['id'] = code
     out_props['name'] = '%s (%s)' % (props['name'], short_admin)
-    out_props['population'] = -1
-    out_props['population_year'] = '???'
-    out_props['area_km2'] = geojson_util.get_area_of_feature(province) / 1e6
-    out_props['description'] = 'A nice place'
+    out_props.update(get_metadata(code))
     wiki_url = props['wikipedia']
     if wiki_url:
         out_props['wikipedia_url'] = wiki_url

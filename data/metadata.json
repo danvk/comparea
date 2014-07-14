@@ -1,0 +1,1257 @@
+{
+  "ABW": {
+    "area_km2": 193.0, 
+    "description": "Aruba is an island 33 kilometres long; it is located about 1,600 kilometres west of the Lesser Antilles in the southern Caribbean Sea and 27 kilometres north of the coast of Venezuela. Together with Bonaire and Cura\u00e7ao, it forms a group referred to as the ABC islands.", 
+    "freebase_mid": "/m/0j11", 
+    "population": 58725.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "AFG": {
+    "area_km2": 652225.0, 
+    "description": "Afghanistan, officially the Islamic Republic of Afghanistan, is a landlocked country located in Central Asia and South Asia. It has a population of around 31 million people making it the 42nd most populous country.", 
+    "freebase_mid": "/m/0jdd", 
+    "population": 35320445.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "AGO": {
+    "area_km2": 1246700.0, 
+    "description": "Angola, officially the Republic of Angola, is a country in Southern Africa bordered by Namibia on the south, the Democratic Republic of the Congo on the north, and Zambia on the east; its west coast is on the Atlantic Ocean and Luanda is its capital city.", 
+    "freebase_mid": "/m/0j4b", 
+    "population": 5617242.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1967"
+  }, 
+  "AIA": {
+    "area_km2": 91.0, 
+    "description": "Anguilla is a British overseas territory in the Caribbean. It is one of the most northerly of the Leeward Islands in the Lesser Antilles, lying east of Puerto Rico and the Virgin Islands and directly north of Saint Martin.", 
+    "freebase_mid": "/m/0n3g"
+  }, 
+  "ALB": {
+    "area_km2": 28748.0, 
+    "description": "Albania, officially known as the Republic of Albania, is a country in Southeastern Europe. It is bordered by Montenegro to the northwest, Kosovo to the northeast, Macedonia to the east, and Greece to the south and southeast.", 
+    "freebase_mid": "/m/0jdx", 
+    "population": 3289483.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1990"
+  }, 
+  "AND": {
+    "area_km2": 468.0, 
+    "description": "Andorra, officially the Principality of Andorra, also called the Principality of the Valleys of Andorra, is a landlocked microstate in Southwestern Europe, located in the eastern Pyrenees mountains and bordered by Spain and France.", 
+    "freebase_mid": "/m/0hg5", 
+    "population": 86165.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "ARE": {
+    "area_km2": 83600.0, 
+    "description": "The United Arab Emirates, sometimes simply called the Emirates or the UAE, is a country located in the southeast end of the Arabian Peninsula on the Persian Gulf, bordering Oman to the east and Saudi Arabia to the south, as well as sharing sea borders with Qatar, Iran and Pakistan.", 
+    "freebase_mid": "/m/0j1z8", 
+    "population": 201308.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "ARG": {
+    "area_km2": 2780400.0, 
+    "description": "Argentina, officially the Argentine Republic is a federal republic located in southeastern South America.", 
+    "freebase_mid": "/m/0jgd", 
+    "population": 40764561.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "ARM": {
+    "area_km2": 29743.0, 
+    "description": "Armenia, officially the Republic of Armenia, is a mountainous country in the South Caucasus region of Eurasia.", 
+    "freebase_mid": "/m/0jgx", 
+    "population": 3100236.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "ASM": {
+    "area_km2": 199.0, 
+    "description": "American Samoa is an unincorporated territory of the United States located in the South Pacific Ocean, southeast of Samoa. American Samoa consists of 5 main islands and 2 coral atolls.", 
+    "freebase_mid": "/m/0h8d", 
+    "population": 26608.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "ATA": {
+    "area_km2": 14000000.0, 
+    "description": "Antarctica is Earth's southernmost continent, containing the geographic South Pole. It is situated in the Antarctic region of the Southern Hemisphere, almost entirely south of the Antarctic Circle, and is surrounded by the Southern Ocean.", 
+    "freebase_mid": "/m/0jfx"
+  }, 
+  "ATC": {
+    "area_km2": 5.0, 
+    "description": "The Territory of Ashmore and Cartier Islands is an uninhabited external territory of Australia consisting of four low-lying tropical islands in two separate reefs, and the 12 nautical mile territorial sea generated by the islands.", 
+    "freebase_mid": "/m/0n3z"
+  }, 
+  "ATF": {
+    "area_km2": 439781.0, 
+    "description": "The French Southern and Antarctic Lands, in full the Territory of the French Southern and Antarctic Lands is an overseas territory of France.", 
+    "freebase_mid": "/m/02x1k"
+  }, 
+  "ATG": {
+    "area_km2": 440.0, 
+    "description": "Antigua and Barbuda is a twin-island nation lying between the Caribbean Sea and the Atlantic Ocean. It consists of two major inhabited islands, Antigua and Barbuda, and a number of smaller islands. The permanent population numbers about 81,800 and the capital and largest port and city is St.", 
+    "freebase_mid": "/m/0l3h", 
+    "population": 64528.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "AUS": {
+    "area_km2": 7692024.0, 
+    "description": "Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island of Tasmania, and numerous smaller islands. It is the world's sixth-largest country by total area.", 
+    "freebase_mid": "/m/0chghy", 
+    "population": 22323900.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "AUT": {
+    "area_km2": 83855.0, 
+    "description": "Austria, officially the Republic of Austria, is a federal republic and a landlocked country of roughly 8.5 million people in Central Europe.", 
+    "freebase_mid": "/m/0h7x", 
+    "population": 8419000.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "AZE": {
+    "area_km2": 86600.0, 
+    "description": "Azerbaijan, officially the Republic of Azerbaijan, is the largest country in the Caucasus region located at the crossroads of Western Asia and Eastern Europe. It is bounded by the Caspian Sea to the east, Russia to the north, Georgia to the northwest, Armenia to the west and Iran to the south.", 
+    "freebase_mid": "/m/0jhd", 
+    "population": 9168000.0, 
+    "population_year": "2011"
+  }, 
+  "BDI": {
+    "area_km2": 27830.0, 
+    "description": "Burundi, officially the Republic of Burundi, is a landlocked country in the African Great Lakes region of Southeast Africa, bordered by Rwanda to the north, Tanzania to the east and south and the Democratic Republic of the Congo to the west. It is also sometimes considered part of Central Africa.", 
+    "freebase_mid": "/m/0169t", 
+    "population": 4129997.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1980"
+  }, 
+  "BEL": {
+    "area_km2": 30528.0, 
+    "description": "Belgium, officially the Kingdom of Belgium, is a federal monarchy in Western Europe. It is a founding member of the European Union and hosts the EU's headquarters as well as those of several other major international organisations such as NATO.", 
+    "freebase_mid": "/m/0154j", 
+    "population": 10547958.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2006"
+  }, 
+  "BEN": {
+    "area_km2": 112620.0, 
+    "description": "Benin, officially the Republic of Benin, is a country in West Africa. It is bordered by Togo to the west, by Nigeria to the east and by Burkina Faso and Niger to the north.", 
+    "freebase_mid": "/m/0164v", 
+    "population": 2793872.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "BFA": {
+    "area_km2": 274200.0, 
+    "description": "Burkina Faso, also known by its short-form name Burkina, is a landlocked country in West Africa around 274,200 square kilometres in size. It is surrounded by six countries: Mali to the north; Niger to the east; Benin to the southeast; Togo and Ghana to the south; and Ivory Coast to the southwest.", 
+    "freebase_mid": "/m/01699", 
+    "population": 5694428.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "BGD": {
+    "area_km2": 147570.0, 
+    "description": "Bangladesh; officially the People's Republic of Bangladesh, is a country in South Asia. It is bordered by India to its west, north and east; Burma to its southeast and separated from Nepal and Bhutan by the Chicken\u2019s Neck corridor. To its south, it faces the Bay of Bengal.", 
+    "freebase_mid": "/m/0162b", 
+    "population": 150493658.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "BGR": {
+    "area_km2": 110994.0, 
+    "description": "Bulgaria, officially the Republic of Bulgaria, is a country in southeastern Europe. It is bordered by Romania to the north, Serbia and Macedonia to the west, Greece and Turkey to the south, and the Black Sea to the east.", 
+    "freebase_mid": "/m/015qh", 
+    "population": 7623395.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "BHR": {
+    "area_km2": 765.3, 
+    "description": "Bahrain, officially the Kingdom of Bahrain is a small island country situated near the western shores of the Persian Gulf. It is an archipelago with Bahrain Island, the largest land mass, at 55 km long by 18 km wide.", 
+    "freebase_mid": "/m/0161c", 
+    "population": 205291.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "BHS": {
+    "area_km2": 13940.0, 
+    "description": "The Bahamas, officially the Commonwealth of the Bahamas, is an island country consisting of more than 700 islands, cays, and islets in the Atlantic Ocean; north of Cuba and Hispaniola; northwest of the Turks and Caicos Islands; southeast of the U.S. state of Florida and east of the Florida Keys.", 
+    "freebase_mid": "/m/0160w", 
+    "population": 164263.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "BIH": {
+    "area_km2": 51209.2, 
+    "description": "Bosnia and Herzegovina, sometimes called Bosnia-Herzegovina, abbreviated BiH, and in short often known informally as Bosnia, is a country in Southeastern Europe located on the Balkan Peninsula. Its capital and largest city is Sarajevo.", 
+    "freebase_mid": "/m/0166b", 
+    "population": 4121595.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1985"
+  }, 
+  "BLR": {
+    "area_km2": 207560.0, 
+    "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe bordered by Russia to the northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest.", 
+    "freebase_mid": "/m/0163v", 
+    "population": 9732500.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2006"
+  }, 
+  "BLZ": {
+    "area_km2": 22966.0, 
+    "description": "Belize is a country on the northeastern coast of Central America. It is the only country in the area that has English as its official language; an English creole and Spanish are also commonly spoken.", 
+    "freebase_mid": "/m/0164b", 
+    "population": 344700.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2010"
+  }, 
+  "BMU": {
+    "area_km2": 53.2, 
+    "description": "Bermuda, also referred to as the Bermudas or the Somers Isles, is a British Overseas Territory in the North Atlantic Ocean, located off the east coast of the United States. Its nearest landmass is Cape Hatteras, North Carolina, about 1,030 kilometres to the west-northwest.", 
+    "freebase_mid": "/m/0165b", 
+    "population": 64400.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2009"
+  }, 
+  "BOL": {
+    "area_km2": 1098580.0, 
+    "description": "Bolivia, officially known as the Plurinational State of Bolivia, is a landlocked country located in western-central South America. It is bordered by Brazil to the north and east, Paraguay and Argentina to the south, Chile to the southwest, and Peru to the west.", 
+    "freebase_mid": "/m/0165v", 
+    "population": 4117259.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "BRA": {
+    "freebase_mid": "/m/0ng44ys"
+  }, 
+  "BRB": {
+    "area_km2": 431.0, 
+    "description": "Barbados is a sovereign island country in the Lesser Antilles. It is 34 kilometres in length and up to 23 kilometres in width, covering an area of 432 square kilometres.", 
+    "freebase_mid": "/m/0162v", 
+    "population": 237657.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "BRN": {
+    "area_km2": 5770.0, 
+    "description": "Brunei, broo-NY or broo-NAY; officially the Nation of Brunei, the Abode of Peace, is a sovereign state located on the north coast of the island of Borneo in Southeast Asia.", 
+    "freebase_mid": "/m/0167v", 
+    "population": 119440.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "BTN": {
+    "area_km2": 47000.0, 
+    "description": "Bhutan, officially the Kingdom of Bhutan, is a landlocked country in South Asia located at the eastern end of the Himalayas. It is bordered to the north by China and to the south, east and west by India.", 
+    "freebase_mid": "/m/07bxhl", 
+    "population": 738267.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "BWA": {
+    "area_km2": 600370.0, 
+    "description": "Botswana, officially the Republic of Botswana, is a landlocked country located in Southern Africa. The citizens refer to themselves as Batswana. Formerly the British protectorate of Bechuanaland, Botswana adopted its new name after becoming independent within the Commonwealth on 30 September 1966.", 
+    "freebase_mid": "/m/0166v", 
+    "population": 671247.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "CAF": {
+    "area_km2": 622984.0, 
+    "description": "The Central African Republic is a landlocked country in Central Africa. It is bordered by Chad in the north, Sudan in the northeast, South Sudan in the east, the Democratic Republic of the Congo and the Republic of the Congo in the south and Cameroon in the west.", 
+    "freebase_mid": "/m/01nyl", 
+    "population": 1792147.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "CAN": {
+    "area_km2": 9984670.0, 
+    "description": "Canada is a country in North America consisting of 10 provinces and 3 territories. Located in the northern part of the continent, it extends from the Atlantic to the Pacific and northward into the Arctic Ocean.", 
+    "freebase_mid": "/m/0d060g", 
+    "population": 34994000.0, 
+    "population_year": "2012"
+  }, 
+  "CHE": {
+    "area_km2": 41285.0, 
+    "description": "Switzerland, officially the Swiss Confederation, is a federal parliamentary republic consisting of 26 cantons, with Bern as the seat of the federal authorities, the so-called Bundesstadt.", 
+    "freebase_mid": "/m/06mzp", 
+    "population": 7483934.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2006"
+  }, 
+  "CMR": {
+    "area_km2": 475440.0, 
+    "description": "Cameroon, officially the Republic of Cameroon, is a country in the west Central Africa region. It is bordered by Nigeria to the west; Chad to the northeast; the Central African Republic to the east; and Equatorial Guinea, Gabon, and the Republic of the Congo to the south.", 
+    "freebase_mid": "/m/01nln", 
+    "population": 6668834.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "COD": {
+    "area_km2": 2345409.0, 
+    "description": "The Congo Democratic Republic officialy, the Democratic Republic of the Congo, sometimes referred to as DR Congo, DRC, Congo, Congo-kinshasa, DROC, or RDC, is a country located in the African Great Lakes region of Central Africa.", 
+    "freebase_mid": "/m/088xp", 
+    "population": 19694467.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "COG": {
+    "area_km2": 342000.0, 
+    "description": "The Republic of the Congo, also known as Congo or Congo-Brazzaville, is a country located in Central Africa. It is bordered by Gabon, Cameroon, the Central African Republic, the Democratic Republic of the Congo and the Angolan exclave of Cabinda.", 
+    "freebase_mid": "/m/01rxw", 
+    "population": 1296244.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "COK": {
+    "area_km2": 237.0, 
+    "description": "The Cook Islands is an island country in the South Pacific Ocean in free association with New Zealand. It comprises 15 small islands whose total land area is 240 square kilometres. The Cook Islands' Exclusive Economic Zone, however, covers 1,800,000 square kilometres of ocean.", 
+    "freebase_mid": "/m/020p1"
+  }, 
+  "COL": {
+    "area_km2": 1141748.0, 
+    "description": "", 
+    "freebase_mid": "/m/01ls2", 
+    "population": 46927125.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "COM": {
+    "area_km2": 2170.0, 
+    "description": "The Comoros, officially the Union of the Comoros is a sovereign archipelago island nation in the Indian Ocean, located at the northern end of the Mozambique Channel off the eastern coast of Africa, between northeastern Mozambique and northwestern Madagascar.", 
+    "freebase_mid": "/m/01n6c", 
+    "population": 232529.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "CPV": {
+    "area_km2": 4033.0, 
+    "description": "Cape Verde or Cabo Verde, officially the Republic of Cabo Verde, is an island country spanning an archipelago of 10 volcanic islands in the central Atlantic Ocean. Located 570 kilometres off the coast of Western Africa, the islands cover a combined area of slightly over 4,000 square kilometres.", 
+    "freebase_mid": "/m/01nqj", 
+    "population": 500585.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "CRI": {
+    "area_km2": 51100.0, 
+    "description": "Costa Rica, officially the Republic of Costa Rica, is a country in Central America, bordered by Nicaragua to the north, Panama to the southeast, the Pacific Ocean to the west, the Caribbean Sea to the east, and Ecuador to the south of Cocos Island.", 
+    "freebase_mid": "/m/01p8s", 
+    "population": 4726575.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "CUB": {
+    "area_km2": 109884.0, 
+    "description": "Cuba, officially the Republic of Cuba, is an island country in the Caribbean. The nation of Cuba comprises the main island of Cuba, the Isla de la Juventud, and several archipelagos. Havana is the capital of Cuba and its largest city. The second largest city is Santiago de Cuba.", 
+    "freebase_mid": "/m/0d04z6", 
+    "population": 11253665.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "CYM": {
+    "area_km2": 259.0, 
+    "description": "The Cayman Islands are a British Overseas Territory in the western Caribbean Sea. The territory comprises the three islands of Grand Cayman, Cayman Brac and Little Cayman, south of Cuba and northwest of Jamaica.", 
+    "freebase_mid": "/m/01nty", 
+    "population": 9216.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "CYN": {
+    "area_km2": 3355.0, 
+    "description": "Northern Cyprus, officially the Turkish Republic of Northern Cyprus, is a self-declared state that comprises the northeastern portion of the island of Cyprus.", 
+    "freebase_mid": "/m/01nx28"
+  }, 
+  "CYP": {
+    "area_km2": 9250.0, 
+    "description": "Cyprus, officially the Republic of Cyprus, is an island country in the Eastern Mediterranean Sea. Cyprus is the third largest and third most populous island in the Mediterranean, and a member state of the European Union.", 
+    "freebase_mid": "/m/01ppq", 
+    "population": 1116564.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "CZE": {
+    "area_km2": 78866.0, 
+    "description": "The Czech Republic is a landlocked country in Central Europe. The country is bordered by Germany to the west and north-west, Austria to the south, Slovakia to the east and Poland to the north-east. Prague is the capital and largest city, with 1.3 million residents.", 
+    "freebase_mid": "/m/01mjq", 
+    "population": 10424336.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "DEU": {
+    "freebase_mid": "/m/0qx8765"
+  }, 
+  "DJI": {
+    "area_km2": 23000.0, 
+    "description": "Djibouti, officially the Republic of Djibouti, is a country located in the Horn of Africa. It is bordered by Eritrea in the north, Ethiopia in the west and south, and Somalia in the southeast. The remainder of the border is formed by the Red Sea and the Gulf of Aden at the east.", 
+    "freebase_mid": "/m/027jk", 
+    "population": 151782.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "DMA": {
+    "area_km2": 754.0, 
+    "description": "Dominica, officially the Commonwealth of Dominica, is an island nation in the Lesser Antilles region of the Caribbean Sea, south-southeast of Guadeloupe and northwest of Martinique.", 
+    "freebase_mid": "/m/027nb", 
+    "population": 67675.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "DNK": {
+    "area_km2": 43094.0, 
+    "description": "Denmark, is a Nordic country in Northern Europe, located southwest of Sweden and south of Norway, and bordered to the south by Germany. The Kingdom of Denmark comprises Denmark and two autonomous constituent countries in the North Atlantic Ocean, the Faroe Islands and Greenland.", 
+    "freebase_mid": "/m/0k6nt", 
+    "population": 5437272.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2006"
+  }, 
+  "DOM": {
+    "area_km2": 48442.0, 
+    "description": "The Dominican Republic is a nation on the island of Hispaniola, part of the Greater Antilles archipelago in the Caribbean region.", 
+    "freebase_mid": "/m/027rn", 
+    "population": 10056181.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "DZA": {
+    "area_km2": 2381741.0, 
+    "description": "Algeria, officially People's Democratic Republic of Algeria, is a country in the Maghreb region of North Africa on the Mediterranean coast. Its capital and most populous city is Algiers.", 
+    "freebase_mid": "/m/0h3y", 
+    "population": 12945462.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1968"
+  }, 
+  "ECU": {
+    "area_km2": 283560.0, 
+    "description": "Ecuador, officially the Republic of Ecuador is a representative democratic republic in northwestern South America, bordered by Colombia on the north, Peru on the east and south, and the Pacific Ocean to the west.", 
+    "freebase_mid": "/m/02k1b", 
+    "population": 14464739.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2010"
+  }, 
+  "EGY": {
+    "area_km2": 1001450.0, 
+    "description": "Egypt, officially: the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia, via a land bridge formed by the Sinai Peninsula.", 
+    "freebase_mid": "/m/02k54", 
+    "population": 82536770.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "ERI": {
+    "area_km2": 117600.0, 
+    "description": "Eritrea, officially the State of Eritrea, is a country in the Horn of Africa. Eritrea is the Italian form of the Greek name \u1f18\u03c1\u03c5\u03b8\u03c1\u03b1\u03af\u03b1, meaning \"red [land]\". With its capital at Asmara, it is bordered by Sudan to the west, Ethiopia in the south, and Djibouti in the east.", 
+    "freebase_mid": "/m/02khs", 
+    "population": 1798934.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "EST": {
+    "area_km2": 45226.0, 
+    "description": "Estonia, officially the Republic of Estonia, is a country in the Baltic region of Northern Europe. It is bordered to the north by the Gulf of Finland, to the west by the Baltic Sea, to the south by Latvia, and to the east by Lake Peipus and Russia.", 
+    "freebase_mid": "/m/02kmm", 
+    "population": 1340675.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "ETH": {
+    "area_km2": 1127127.0, 
+    "description": "Ethiopia, officially known as the Federal Democratic Republic of Ethiopia, is a country located in the Horn of Africa. It is bordered by Eritrea to the north and northeast, Djibouti and Somalia to the east, Sudan and South Sudan to the west, and Kenya to the south.", 
+    "freebase_mid": "/m/019pcs", 
+    "population": 84734262.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "FIN": {
+    "area_km2": 338424.0, 
+    "description": "Finland, officially the Republic of Finland, is a Nordic country situated in the Fennoscandian region of Northern Europe. It is bordered by Sweden to the west, Norway to the north, Russia to the east, and Estonia to the south across the Gulf of Finland.", 
+    "freebase_mid": "/m/02vzc", 
+    "population": 5313399.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "FJI": {
+    "area_km2": 18270.0, 
+    "description": "An island nation in the South Pacific Ocean east of Vanuatu, west of Tonga and south of Tuvalu. The country occupies an archipelago of about 322 islands, of which 106 are permanently inhabited, and 522 islets. The two major islands, Viti Levu and Vanua Levu, account for 87% of the population.", 
+    "freebase_mid": "/m/02wt0", 
+    "population": 868400.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "FLK": {
+    "area_km2": 12173.0, 
+    "description": "The Falkland Islands are an archipelago in the South Atlantic Ocean on the Patagonian Shelf. The principal islands are about 300 miles east of the southern Patagonian coast, at a latitude of about 52\u00b0S.", 
+    "freebase_mid": "/m/02wmy"
+  }, 
+  "FRA": {
+    "area_km2": 640679.0, 
+    "description": "France, officially the French Republic, is a sovereign country in Western Europe that includes several overseas regions and territories. Metropolitan France extends from the Mediterranean Sea to the English Channel and the North Sea, and from the Rhine to the Atlantic Ocean.", 
+    "freebase_mid": "/m/0f8l9c", 
+    "population": 65371613.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "FRO": {
+    "area_km2": 1398.85, 
+    "description": "The Faroe Islands is an archipelago and autonomous country within the Kingdom of Denmark, situated between the Norwegian Sea and the North Atlantic Ocean, approximately halfway between Norway and Iceland, at about 320 kilometres north-north-west of mainland Scotland.", 
+    "freebase_mid": "/m/02w9s", 
+    "population": 38139.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "FSM": {
+    "area_km2": 702.0, 
+    "description": "The Federated States of Micronesia is an independent sovereign island nation consisting of four states \u2013 from west to east, Yap, Chuuk, Pohnpei and Kosrae \u2013 that are spread across the Western Pacific Ocean.", 
+    "freebase_mid": "/m/03188", 
+    "population": 60166.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "GAB": {
+    "area_km2": 267667.0, 
+    "description": "Gabon, officially the Gabonese Republic, is a sovereign state on the west coast of Central Africa. Located on the equator, Gabon is bordered by Equatorial Guinea to the northwest, Cameroon to the north, the Republic of the Congo on the east and south, and the Gulf of Guinea to the west.", 
+    "freebase_mid": "/m/03548", 
+    "population": 521339.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "GBR": {
+    "area_km2": 243610.0, 
+    "description": "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom or simply Britain, is a sovereign state located off the north-western coast of continental Europe.", 
+    "freebase_mid": "/m/07ssc", 
+    "population": 62744081.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "GGY": {
+    "area_km2": 78.0, 
+    "description": "Guernsey, officially the Bailiwick of Guernsey, is a British Crown dependency in the English Channel off the coast of Normandy.", 
+    "freebase_mid": "/m/0366c"
+  }, 
+  "GHA": {
+    "area_km2": 238535.0, 
+    "description": "Ghana, officially called the Republic of Ghana, is a sovereign multinational state and unitary presidential constitutional democracy, located along the Gulf of Guinea and Atlantic Ocean, in the subregion of West Africa.", 
+    "freebase_mid": "/m/035dk", 
+    "population": 8484140.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "GIN": {
+    "area_km2": 245857.0, 
+    "description": "Guinea, officially the Republic of Guinea, is a country in West Africa. Formerly known as French Guinea, it is today sometimes called Guinea-Conakry to distinguish it from its neighbour Guinea-Bissau and the Republic of Equatorial Guinea.", 
+    "freebase_mid": "/m/03676", 
+    "population": 4099723.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "GMB": {
+    "area_km2": 11300.0, 
+    "description": "The Gambia is a country in West Africa. It is surrounded by Senegal, apart from a short strip of Atlantic coastline at its western end. It is the smallest country on mainland Africa.", 
+    "freebase_mid": "/m/0hdx8", 
+    "population": 446488.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "GNB": {
+    "area_km2": 36120.0, 
+    "description": "Guinea-Bissau, officially the Republic of Guinea-Bissau, GI-nee-bi-SOW, is a country in West Africa. It is bordered by Senegal to the north and Guinea to the south and east, with the Atlantic Ocean to its west. It covers 36,125 km\u00b2 with an estimated population of 1,600,000.", 
+    "freebase_mid": "/m/036b_", 
+    "population": 594145.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1968"
+  }, 
+  "GNQ": {
+    "area_km2": 28051.0, 
+    "description": "Equatorial Guinea, officially the Republic of Equatorial Guinea, is a small country located in Central Africa, with an area of 28,000 square kilometres. It has two parts, an insular and a mainland region.", 
+    "freebase_mid": "/m/02kcz", 
+    "population": 700401.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2010"
+  }, 
+  "GRC": {
+    "area_km2": 131957.0, 
+    "description": "Greece, officially the Hellenic Republic and known since ancient times as Hellas, is a country in Southern Europe. According to the 2011 census, Greece's population is around 11 million. Athens is the nation's capital and largest city.", 
+    "freebase_mid": "/m/035qy", 
+    "population": 11237094.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "GRD": {
+    "area_km2": 344.0, 
+    "description": "Grenada is an island country consisting of the island of Grenada and six smaller islands at the southern end of the Grenadines in the southeastern Caribbean Sea. Grenada is located northwest of Trinidad and Tobago, northeast of Venezuela, and southwest of Saint Vincent and the Grenadines.", 
+    "freebase_mid": "/m/035yg", 
+    "population": 94649.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "GRL": {
+    "area_km2": 2166086.0, 
+    "description": "Greenland is an autonomous country within the Kingdom of Denmark, located between the Arctic and Atlantic Oceans, east of the Canadian Arctic Archipelago.", 
+    "freebase_mid": "/m/035v3", 
+    "population": 44900.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "GTM": {
+    "area_km2": 108890.0, 
+    "description": "Guatemala, officially the Republic of Guatemala, is a country in Central America bordered by Mexico to the north and west, the Pacific Ocean to the southwest, Belize to the northeast, the Caribbean to the east, Honduras to the east and El Salvador to the southeast.", 
+    "freebase_mid": "/m/0345_", 
+    "population": 14757316.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "GUM": {
+    "area_km2": 549.0, 
+    "description": "Guam is an organized, unincorporated territory of the United States in the western Pacific Ocean. It is one of five U.S. territories with an established civilian government.", 
+    "freebase_mid": "/m/034tl", 
+    "population": 147481.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1996"
+  }, 
+  "GUY": {
+    "area_km2": 214970.0, 
+    "description": "Guyana, officially the Co-operative Republic of Guyana, is a sovereign state on the northern coast of South America. Although Guyana is part of the Anglophone Caribbean, it is one of the few Caribbean countries that is not an island.", 
+    "freebase_mid": "/m/034m8", 
+    "population": 708276.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "HKG": {
+    "freebase_mid": "/m/0bwddys"
+  }, 
+  "HMD": {
+    "description": "The Heard Island and McDonald Islands are an Australian external territory and volcanic group of barren Antarctic islands, about two-thirds of the way from Madagascar to Antarctica. The group's overall size is 372 square kilometres in area and it has 101.9 km of coastline.", 
+    "freebase_mid": "/m/03h1f"
+  }, 
+  "HND": {
+    "area_km2": 112090.0, 
+    "description": "Honduras, officially the Republic of Honduras, is a republic in Central America. It was at times referred to as Spanish Honduras to differentiate it from British Honduras, which became the modern-day state of Belize.", 
+    "freebase_mid": "/m/03h2c", 
+    "population": 7754687.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "HRV": {
+    "area_km2": 56594.0, 
+    "description": "Croatia, officially the Republic of Croatia, is a unitary democratic parliamentary republic at the crossroads of Central Europe, Southeast Europe, and the Mediterranean. Its capital and largest city is Zagreb. The country is divided into 20 counties and the city of Zagreb.", 
+    "freebase_mid": "/m/01pj7", 
+    "population": 4434000.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "HTI": {
+    "area_km2": 27751.0, 
+    "description": "Haiti, officially the Republic of Haiti, is a Caribbean country. It occupies the western, smaller portion of the island of Hispaniola, in the Greater Antillean archipelago, which it shares with the Dominican Republic. Ayiti was the indigenous Ta\u00edno name for the island.", 
+    "freebase_mid": "/m/03gyl", 
+    "population": 10123787.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "HUN": {
+    "area_km2": 93030.0, 
+    "description": "Hungary is a landlocked country in Central Europe. It is situated in the Carpathian Basin and is bordered by Slovakia to the north, Ukraine and Romania to the east, Serbia and Croatia to the south, Slovenia to the southwest and Austria to the west. The country's capital and largest city is Budapest.", 
+    "freebase_mid": "/m/03gj2", 
+    "population": 10038188.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "IDN": {
+    "area_km2": 1919440.0, 
+    "description": "Indonesia, officially the Republic of Indonesia, is a sovereign state in Southeast Asia and Oceania. Indonesia is an archipelago comprising 13,466 islands.", 
+    "freebase_mid": "/m/03ryn", 
+    "population": 243801639.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "IMN": {
+    "area_km2": 572.0, 
+    "description": "The Isle of Man, otherwise known simply as Mann, is a self-governing British Crown Dependency, located in the Irish Sea between the islands of Great Britain and Ireland. The head of state is Queen Elizabeth II, who holds the title of Lord of Mann.", 
+    "freebase_mid": "/m/03t1s", 
+    "population": 55559.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "IND": {
+    "freebase_mid": "/m/0ng5fsr"
+  }, 
+  "IOA": {
+    "area_km2": 60.0, 
+    "description": "The British Indian Ocean Territory or Chagos Islands is an overseas territory of the United Kingdom situated in the Indian Ocean halfway between Tanzania and Indonesia.", 
+    "freebase_mid": "/m/0168b"
+  }, 
+  "IOT": {
+    "area_km2": 60.0, 
+    "description": "The British Indian Ocean Territory or Chagos Islands is an overseas territory of the United Kingdom situated in the Indian Ocean halfway between Tanzania and Indonesia.", 
+    "freebase_mid": "/m/0168b"
+  }, 
+  "IRL": {
+    "area_km2": 70273.0, 
+    "description": "Ireland, also commonly referred to as the Republic of Ireland, is a sovereign state in Europe occupying about five-sixths of the island of Ireland.", 
+    "freebase_mid": "/m/03rt9", 
+    "population": 3590386.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1994"
+  }, 
+  "IRN": {
+    "area_km2": 1648195.0, 
+    "description": "Iran, also known as Persia, officially the Islamic Republic of Iran, is a country in Western Asia.", 
+    "freebase_mid": "/m/03shp", 
+    "population": 75424285.0, 
+    "population_year": "2011"
+  }, 
+  "IRQ": {
+    "area_km2": 437072.0, 
+    "description": "Iraq, officially the Republic of Iraq, is a country in the Middle East that borders Turkey to the north, Iran to the east, Kuwait to the southeast, Saudi Arabia to the south, Jordan to the southwest, and Syria to the west. The capital, Baghdad, is in the center of the country.", 
+    "freebase_mid": "/m/0d05q4", 
+    "population": 32961959.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "ISL": {
+    "area_km2": 103001.0, 
+    "description": "Iceland, in full the Republic of Iceland, is a Nordic country between the North Atlantic and the Arctic Ocean. It has a population of 325,671 and an area of 103,000 km\u00b2, making it the most sparsely populated country in Europe.", 
+    "freebase_mid": "/m/03rj0", 
+    "population": 319014.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "ISR": {
+    "area_km2": 20770.0, 
+    "description": "Israel, officially the State of Israel, is a country in Western Asia, on the south-eastern shore of the Mediterranean Sea.", 
+    "freebase_mid": "/m/03spz", 
+    "population": 7765900.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "ITA": {
+    "area_km2": 301338.0, 
+    "description": "Italy, officially the Italian Republic, is a unitary parliamentary republic in Southern Europe. To the north, Italy borders France, Switzerland, Austria, and Slovenia, and is approximately delimited by the Alpine watershed, enclosing the Po Valley and the Venetian Plain.", 
+    "freebase_mid": "/m/03rjj", 
+    "population": 60723603.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "JAM": {
+    "area_km2": 10991.0, 
+    "description": "Jamaica is an island country situated in the Caribbean Sea, comprising the third-largest island of the Greater Antilles.", 
+    "freebase_mid": "/m/03_r3", 
+    "population": 2706500.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "JEY": {
+    "area_km2": 119.49, 
+    "description": "Jersey is a British Crown dependency just off the coast of Normandy, France. The bailiwick consists of the island of Jersey, along with surrounding uninhabited islands and rocks collectively named Les Dirouilles, Les \u00c9cr\u00e9hous, Les Minquiers, Les Pierres de Lecq, and other reefs.", 
+    "freebase_mid": "/m/03_xj"
+  }, 
+  "JOR": {
+    "area_km2": 92300.0, 
+    "description": "Jordan, officially the Hashemite Kingdom of Jordan, is an Arab kingdom in Western Asia, on the East Bank of the Jordan River, and extending into the historic region of Palestine.", 
+    "freebase_mid": "/m/03__y", 
+    "population": 5411500.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2005"
+  }, 
+  "JPN": {
+    "area_km2": 377944.0, 
+    "description": "Japan is an island nation in East Asia. Located in the Pacific Ocean, it lies to the east of the Sea of Japan, China, North Korea, South Korea and Russia, stretching from the Sea of Okhotsk in the north to the East China Sea and Taiwan in the south.", 
+    "freebase_mid": "/m/03_3d", 
+    "population": 127817277.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "KAS": {
+    "area_km2": 700.0, 
+    "description": "The Siachen Glacier is located in the eastern Karakoram range in the Himalaya Mountains at about 35\u00b025\u203216\u2033N 77\u00b006\u203234\u2033E\ufeff / \ufeff35.421226\u00b0N 77.109540\u00b0E, just northeast of the point NJ9842 where the Line of Control between India and Pakistan ends.", 
+    "freebase_mid": "/m/05mc3q"
+  }, 
+  "KAZ": {
+    "area_km2": 2717300.0, 
+    "description": "Kazakhstan, officially the Republic of Kazakhstan, is a contiguous transcontinental country in Central Asia, with its smaller part west of the Ural River in Europe.", 
+    "freebase_mid": "/m/047lj", 
+    "population": 14928426.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1999"
+  }, 
+  "KEN": {
+    "area_km2": 582650.0, 
+    "description": "Kenya, officially the Republic of Kenya, is a country in the African Great Lakes region of East Africa. Its capital and largest city is Nairobi.", 
+    "freebase_mid": "/m/019rg5", 
+    "population": 41609728.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "KGZ": {
+    "area_km2": 199900.0, 
+    "description": "Kyrgyzstan, officially the Kyrgyz Republic, formerly known as Kirghizia, is a country located in Central Asia. Landlocked and mountainous, Kyrgyzstan is bordered by Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest and China to the east.", 
+    "freebase_mid": "/m/0jt3tjf", 
+    "population": 5383300.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2009"
+  }, 
+  "KHM": {
+    "area_km2": 181035.0, 
+    "description": "Cambodia, officially known as the Kingdom of Cambodia and once known as the Khmer Empire, is a country located in the southern portion of the Indochina Peninsula in Southeast Asia.", 
+    "freebase_mid": "/m/01xbgx", 
+    "population": 14305183.0, 
+    "population_year": "2011"
+  }, 
+  "KIR": {
+    "area_km2": 811.0, 
+    "description": "Kiribati, officially the Independent and Sovereign Republic of Kiribati, is an island nation in the central tropical Pacific Ocean. The permanent population is just over 100,000 on 800 square kilometres.", 
+    "freebase_mid": "/m/047t_", 
+    "population": 71845.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1990"
+  }, 
+  "KNA": {
+    "area_km2": 261.0, 
+    "description": "The Federation of Saint Christopher and Nevis, located in the Leeward Islands, is a federal two-island country in the West Indies. It is the smallest sovereign state in the Americas, in both area and population.", 
+    "freebase_mid": "/m/06ryl", 
+    "population": 53051.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "KOR": {
+    "freebase_mid": "/m/0ngfqzd"
+  }, 
+  "KOS": {
+    "area_km2": 10908.0, 
+    "description": "Kosovo is a partially recognised state in Southeastern Europe, which declared independence from Serbia in February 2008 as the Republic of Kosovo. While Serbia recognises the Republic's governance of the territory, it still continues to claim it as its own Autonomous Province of Kosovo and Metohija.", 
+    "freebase_mid": "/m/04fh3", 
+    "population": 1761474.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2009"
+  }, 
+  "KWT": {
+    "area_km2": 17820.0, 
+    "description": "Kuwait, officially the State of Kuwait, is an Arab country in Western Asia. Situated in the northern edge of Eastern Arabia at the tip of the Persian Gulf, it shares borders with Iraq to the north and Saudi Arabia to the south. According to the CIA, Kuwait has a population of 2.6 million as of 2012.", 
+    "freebase_mid": "/m/047yc", 
+    "population": 696610.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "LAO": {
+    "freebase_mid": "/m/0qr4gd7"
+  }, 
+  "LBN": {
+    "area_km2": 10400.0, 
+    "description": "Lebanon, officially the Lebanese Republic, is a country in Western Asia. It is bordered by Syria to the north and east and Israel to the south.", 
+    "freebase_mid": "/m/04hqz", 
+    "population": 4259405.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "LBR": {
+    "area_km2": 111370.0, 
+    "description": "Liberia, officially the Republic of Liberia, is a country in West Africa bordered by Sierra Leone to its west, Guinea to its north and Ivory Coast to its east. It covers an area of 111,369 square kilometres and is home to about 4 million people.", 
+    "freebase_mid": "/m/04hzj", 
+    "population": 1401077.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "LBY": {
+    "area_km2": 1759540.0, 
+    "description": "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa bordered by the Mediterranean Sea to the north, Egypt to the east, Sudan to the southeast, Chad and Niger to the south, and Algeria and Tunisia to the west.", 
+    "freebase_mid": "/m/04gqr", 
+    "population": 3849801.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1985"
+  }, 
+  "LCA": {
+    "area_km2": 617.01, 
+    "description": "Saint Lucia is a sovereign island country in the eastern Caribbean Sea on the boundary with the Atlantic Ocean. Part of the Lesser Antilles, it is located north/northeast of the island of Saint Vincent, northwest of Barbados and south of Martinique.", 
+    "freebase_mid": "/m/06s0l", 
+    "population": 166387.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2006"
+  }, 
+  "LIE": {
+    "area_km2": 160.0, 
+    "description": "Liechtenstein, officially the Principality of Liechtenstein, is a doubly landlocked alpine country in Central Europe, bordered by Switzerland to the west and south and by Austria to the east and north. Its area is just over 160 square kilometres, and it has an estimated population of 35,000.", 
+    "freebase_mid": "/m/04j53", 
+    "population": 20867.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "LKA": {
+    "area_km2": 65610.0, 
+    "description": "Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, is an island country in the northern Indian Ocean off the southern coast of the Indian subcontinent in South Asia.", 
+    "freebase_mid": "/m/06m_5", 
+    "population": 12252000.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "LSO": {
+    "area_km2": 30355.0, 
+    "description": "Lesotho, officially the Kingdom of Lesotho, is a landlocked country completely surrounded by South Africa. It is just over 30,000 km\u00b2 in size and has a population slightly over two million. Its capital and largest city is Maseru. Lesotho is a member of the Commonwealth of Nations.", 
+    "freebase_mid": "/m/04hvw", 
+    "population": 1012087.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "LTU": {
+    "area_km2": 65200.0, 
+    "description": "Lithuania, officially the Republic of Lithuania, is a country in Northern Europe, the largest of the three Baltic states. It is situated along the southeastern shore of the Baltic Sea, to the east of Sweden and Denmark.", 
+    "freebase_mid": "/m/04gzd", 
+    "population": 3358115.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "LUX": {
+    "area_km2": 2586.0, 
+    "description": "Luxembourg, officially the Grand Duchy of Luxembourg, is a landlocked country in Western Europe. It is bordered by Belgium to the west and north, Germany to the east, and France to the south.", 
+    "freebase_mid": "/m/04g61", 
+    "population": 488650.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "LVA": {
+    "area_km2": 64589.0, 
+    "description": "Latvia officially the Republic of Latvia, is a country in the Baltic region of Northern Europe. It is bordered by Estonia, Lithuania, Russia, Belarus and by a maritime border to the west with Sweden. Latvia has 1,997,500 inhabitants and a territory of 64,589 km\u00b2.", 
+    "freebase_mid": "/m/04g5k", 
+    "population": 2266094.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "MAC": {
+    "area_km2": 29.5, 
+    "description": "Macau, also spelled Macao, is one of the two Special Administrative Regions of the People's Republic of China, the other being Hong Kong.", 
+    "freebase_mid": "/m/04thp", 
+    "population": 245308.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MAF": {
+    "area_km2": 53.2, 
+    "description": "Saint Martin, officially the Collectivity of Saint Martin is an overseas collectivity of France located in the Caribbean. It came into being on 15 July 2007, encompassing the northern parts of Saint Martin island and neighbouring islets, the largest of which is \u00cele Tintamarre.", 
+    "freebase_mid": "/m/02phy_9"
+  }, 
+  "MAR": {
+    "area_km2": 446550.0, 
+    "description": "Morocco, officially the Kingdom of Morocco, is a country in the Maghreb region of North Africa. Geographically, Morocco is characterized by a rugged mountainous interior and large portions of desert. The Arabic name al-Mamlakah al-Ma\u0121ribiyah and Al-Maghrib are commonly used as alternate names.", 
+    "freebase_mid": "/m/04wgh", 
+    "population": 32272974.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "MCO": {
+    "area_km2": 2.02, 
+    "description": "Monaco, officially the Principality of Monaco, is a sovereign city-state, located on the French Riviera in Western Europe. It is bordered by France on three sides; one side borders the Mediterranean Sea.", 
+    "freebase_mid": "/m/04w58", 
+    "population": 35430.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "MDA": {
+    "area_km2": 33846.0, 
+    "description": "Moldova, officially the Republic of Moldova is a landlocked country in Eastern Europe located between Romania to its west and Ukraine to its north, east and south. Its capital city is Chi\u0219in\u0103u.", 
+    "freebase_mid": "/m/04w4s", 
+    "population": 3002000.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MDG": {
+    "area_km2": 587040.0, 
+    "description": "Madagascar, officially the Republic of Madagascar and previously known as the Malagasy Republic, is an island country in the Indian Ocean, off the coast of Southeast Africa. The nation comprises the island of Madagascar, as well as numerous smaller peripheral islands.", 
+    "freebase_mid": "/m/04sj3", 
+    "population": 6379309.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MDV": {
+    "area_km2": 300.0, 
+    "description": "Maldives, officially the Republic of the Maldives and also referred to as the Maldive Islands, is an island nation in the Indian Ocean\u2013Arabian Sea area, consisting of a double chain of twenty-six atolls, oriented north-south, that lie between Minicoy Island and the Chagos Archipelago.", 
+    "freebase_mid": "/m/04ty8", 
+    "population": 112714.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MEX": {
+    "freebase_mid": "/m/0ng8r36"
+  }, 
+  "MHL": {
+    "area_km2": 181.0, 
+    "description": "The Marshall Islands, officially the Republic of the Marshall Islands, is an island country located in the northern Pacific Ocean.", 
+    "freebase_mid": "/m/04v6v", 
+    "population": 19622.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MKD": {
+    "freebase_mid": "/m/0qn08v1"
+  }, 
+  "MLI": {
+    "area_km2": 1240000.0, 
+    "description": "Mali, officially the Republic of Mali, is a landlocked country in West Africa. Mali is bordered by Algeria to the north, Niger to the east, Burkina Faso and Ivory Coast to the south, Guinea to the south-west, and Senegal and Mauritania to the west.", 
+    "freebase_mid": "/m/04v09", 
+    "population": 15839538.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "MLT": {
+    "area_km2": 316.0, 
+    "description": "Malta is a southern European country in the Mediterranean Sea. It lies 80 km south of Sicily, 284 km east of Tunisia, and 333 km north of Libya. The country covers just over 316 km\u00b2, making it one of the world's smallest and most densely populated countries.", 
+    "freebase_mid": "/m/04v3q", 
+    "population": 411950.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "MNE": {
+    "area_km2": 13812.0, 
+    "description": "Montenegro is a country in Southeastern Europe. It has a coast on the Adriatic Sea to the south-west and is bordered by Croatia to the west, Bosnia and Herzegovina to the northwest, Serbia to the northeast, Kosovo to the east and Albania to the south-east.", 
+    "freebase_mid": "/m/056vv", 
+    "population": 631490.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2010"
+  }, 
+  "MNG": {
+    "area_km2": 1565000.0, 
+    "description": "Mongolia is a landlocked country in east-central Asia. It is bordered by Russia to the north and China to the south, east and west. Ulaanbaatar, the capital and also the largest city, is home to about 45% of the population. Mongolia's political system is a parliamentary republic.", 
+    "freebase_mid": "/m/04w8f", 
+    "population": 1244846.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MNP": {
+    "area_km2": 477.0, 
+    "description": "The Northern Mariana Islands, officially the Commonwealth of the Northern Mariana Islands, is one of the five inhabited U.S. island territories. It is one of two territories with \"Commonwealth\" status; the other is Puerto Rico.", 
+    "freebase_mid": "/m/05cnr", 
+    "population": 12766.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MOZ": {
+    "area_km2": 801590.0, 
+    "description": "Mozambique, officially the Republic of Mozambique, is a country in Southeast Africa bordered by the Indian Ocean to the east, Tanzania to the north, Malawi and Zambia to the northwest, Zimbabwe to the west, and Swaziland and South Africa to the southwest.", 
+    "freebase_mid": "/m/04wlh", 
+    "population": 8473839.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1965"
+  }, 
+  "MRT": {
+    "area_km2": 1030700.0, 
+    "description": "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of western North Africa.", 
+    "freebase_mid": "/m/04vjh", 
+    "population": 1101457.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MSR": {
+    "area_km2": 102.0, 
+    "description": "Montserrat is a British Overseas Territory located in the Caribbean. The island is located in the Leeward Islands, part of the chain of islands known as the Lesser Antilles, in the West Indies.", 
+    "freebase_mid": "/m/04wcf"
+  }, 
+  "MUS": {
+    "area_km2": 2040.0, 
+    "description": "Mauritius, officially the Republic of Mauritius, is an island nation in the Indian Ocean about 2,000 kilometres off the southeast coast of the African continent. The country includes the island of Mauritius, Rodrigues, the islands of Agalega and the archipelago of Saint Brandon.", 
+    "freebase_mid": "/m/04vs9", 
+    "population": 1286051.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "MWI": {
+    "area_km2": 118480.0, 
+    "description": "Malawi, officially the Republic of Malawi, is a landlocked country in southeast Africa that was formerly known as Nyasaland. It is bordered by Zambia to the northwest, Tanzania to the northeast, and Mozambique on the east, south and west.", 
+    "freebase_mid": "/m/04tr1", 
+    "population": 4404709.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "MYS": {
+    "freebase_mid": "/m/0qny7g3"
+  }, 
+  "NAM": {
+    "area_km2": 825418.0, 
+    "description": "Namibia, officially the Republic of Namibia, is a country in southern Africa whose western border is the Atlantic Ocean. It shares land borders with Angola and Zambia to the north, Botswana to the east and South Africa to the south and east.", 
+    "freebase_mid": "/m/05bmq", 
+    "population": 2283289.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2010"
+  }, 
+  "NCL": {
+    "area_km2": 18575.0, 
+    "description": "New Caledonia is a special collectivity of France located in the southwest Pacific Ocean, 1,210 km east of Australia and 16,136 km east of Metropolitan France.", 
+    "freebase_mid": "/m/05c17", 
+    "population": 103840.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "NER": {
+    "area_km2": 1267000.0, 
+    "description": "Niger, officially the Republic of Niger, is a landlocked country in Western Africa, named after the Niger River. It borders Nigeria and Benin to the south, Burkina Faso and Mali to the west, Algeria and Libya to the north and Chad to the east.", 
+    "freebase_mid": "/m/05cc1", 
+    "population": 16068994.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "NFK": {
+    "area_km2": 34.6, 
+    "description": "Norfolk Island is a small island in the Pacific Ocean located between Australia, New Zealand and New Caledonia, 1,412 kilometres directly east of mainland Australia's Evans Head, and about 900 kilometres from Lord Howe Island.", 
+    "freebase_mid": "/m/05cqm"
+  }, 
+  "NGA": {
+    "area_km2": 923768.0, 
+    "description": "Nigeria, officially the Federal Republic of Nigeria, is a federal constitutional republic comprising 36 states and its Federal Capital Territory, Abuja.", 
+    "freebase_mid": "/m/05cgv", 
+    "population": 56023503.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "NIC": {
+    "area_km2": 129494.0, 
+    "description": "Nicaragua, officially the Republic of Nicaragua, is the largest country in the Central American isthmus, bordering Honduras to the north and Costa Rica to the south.", 
+    "freebase_mid": "/m/05c74", 
+    "population": 2326261.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "1969"
+  }, 
+  "NIU": {
+    "area_km2": 260.0, 
+    "description": "Niue is an island country in the South Pacific Ocean, 2,400 kilometres northeast of New Zealand within the triangle formed by Tonga to the west, Samoa to the north, and the Cook Islands to the east. Its land area is 260 square kilometres and its population, predominantly Polynesian, is around 1,400.", 
+    "freebase_mid": "/m/05b2h"
+  }, 
+  "NLX": {
+    "area_km2": 41526.0, 
+    "description": "The Netherlands is the main constituent country of the Kingdom of the Netherlands. It is a small, densely populated country, lying mainly in Western Europe, but also including three islands in the Caribbean.", 
+    "freebase_mid": "/m/059j2", 
+    "population": 16445593.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2008"
+  }, 
+  "Spain (Overseas Territories)": {
+    "area_km2": 505992.0, 
+    "description": "Spain, officially the Kingdom of Spain, is a sovereign state and a member state of the European Union. It is located on the Iberian Peninsula in southwestern Europe.", 
+    "freebase_mid": "/m/06mkj", 
+    "population": 47190493.0, 
+    "population_source": "Instituto Nacional de Estad\u00edstica", 
+    "population_source_url": "http://www.ine.es/en", 
+    "population_year": "2011"
+  }
+}
