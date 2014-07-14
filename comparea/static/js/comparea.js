@@ -134,7 +134,7 @@ function setDisplayForFeatures(features) {
   // exit
   dataEls.exit().remove();
 
-  svg.selectAll('.draggable').call(drag);
+  svg.selectAll('.draggable').attr('transform', transformForDrag).call(drag);
   svg.call(zoom);
 }
 

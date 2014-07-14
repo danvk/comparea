@@ -31,11 +31,14 @@ Path forward:
 - UI
   - Click+drag on background should pan both shapes
   - Touch: two finger both zooms and drags one of the shapes
-  - Shapes jump on first click after change
   - Add share links
   - Add transitions
   - Be smarter about layout
   - Plug in Chosen for the dropdown lists
+  x Shapes jump on first click after change
+      1. move the USA
+      2. change Australia to Austria
+      3. move the USA again
   x Inline the <option> arrays
   x Support window resize
   x Show KP-like panels in the UI.
