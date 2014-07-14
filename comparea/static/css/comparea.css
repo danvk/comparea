@@ -50,3 +50,13 @@ line { stroke: black; }
 .shape0 {
   fill: rgb(128,255,128);
 }
+circle {
+  stroke-width: 1;
+  fill: none;
+}
+.force0 circle {
+  stroke: rgb(128,255,128);
+}
+.force1 circle {
+  stroke: rgb(128,128,255);
+}

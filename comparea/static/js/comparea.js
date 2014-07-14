@@ -125,13 +125,21 @@ function setDisplayForFeatures(features) {
     .data(features, function(f) { return f.id; });
 
   // enter
-  dataEls.enter().append('g')
-    .attr('class', 'force')
+  var draggableG = dataEls.enter().append('g')
+    .attr('class', function(d, i) { return 'force force' + i; })
     .attr('transform', transformStatic)
       .append('g')
-      .attr('class', 'draggable').append('path')
+      .attr('class', 'draggable');
+      
+   draggableG.append('path')
       .attr('class', function(d, i) { return 'shape shape' + i; })
       .attr('d', function(d, i) { return paths[i](d); });
+      
+   // ... for layout debugging
+   draggableG.append('circle')
+      .attr('cx', 0)
+      .attr('cy', 0)
+      .attr('r', function(d, i) { return layout[i].r; });
 
   // update
   dataEls.select('.shape')
