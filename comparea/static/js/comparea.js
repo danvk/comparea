@@ -91,9 +91,16 @@ function setDisplayForFeatures(features) {
   var bounds = features.map(function(d, i) {
     return paths[i].bounds(d);
   });
-  var spans = bounds.map(function(b) {
+  var offsets = bounds.map(function(b) {
     var tl = b[0], br = b[1];
-    return Math.max(br[0] - tl[0], br[1] - tl[1]);
+  });
+  var spans = bounds.map(function(b) {
+    // we'd like the features to be centered around their centroid,
+    // not the center of their bounding box. This produces unnecessarily
+    // large bounding circles, but tends to look better.
+    var tl = b[0], br = b[1];
+    var offX = Math.abs(tl[0] + br[0])/2, offY = Math.abs(tl[1] + br[1])/2;
+    return Math.max(br[0] - tl[0] + 2*offX, br[1] - tl[1] + 2*offY);
   });
 
   var classes = {
@@ -111,7 +118,6 @@ function setDisplayForFeatures(features) {
     .padding(1.5);
   var layout = pack.nodes(classes)
     .filter(function(d) { return !d.children; });
-  // console.log(layout);
 
   // TODO(danvk): be more D3-y about this.
   // TODO(danvk): also use d3.layout.pack to set the scale
