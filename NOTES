@@ -33,8 +33,8 @@ Path forward:
   - Touch: two finger both zooms and drags one of the shapes
   - Add share links
   - Add transitions
-  - Be smarter about layout
   - Plug in Chosen for the dropdown lists
+  x Be smarter about layout
   x Shapes jump on first click after change
       1. move the USA
       2. change Australia to Austria
@@ -51,6 +51,7 @@ Path forward:
   - Source areas from CIA factbook (and look at large differences)
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
   - Download Freebase Topics for all features & regenerate metadata
+  - Generate my own continent features w/ higher resolution
   x Find better continent shapes
   x Reduce lat/lon precision (home page is 233k)
     --> .6f reduced it from 239369 --> 161739 (59292 --> 49696 gz)

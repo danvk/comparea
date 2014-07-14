@@ -144,12 +144,6 @@ function setDisplayForFeatures(features) {
   svg.call(zoom);
 }
 
-function setDisplayForSelection() {
-  var feature0 = featureForId($('#choose0').val()),
-      feature1 = featureForId($('#choose1').val());
-  setDisplayForFeatures([feature0, feature1]);
-}
-
 function featureForId(id) {
   for (var i = 0; i < geojson_features.length; i++) {
     var feature = geojson_features[i];
@@ -165,14 +159,6 @@ function addChooserListeners() {
     var changedIdx = $('.choose').index(this);
     updateEl(changedIdx, ids[changedIdx]);
     history.pushState(null, '', '/' + ids[0] + '+' + ids[1]);
-  });
-}
-
-function populateChoosers(name_id_pairs) {
-  name_id_pairs.forEach(function(pair) {
-    var name = pair[0];
-    var id = pair[1];
-    $('.choose').append($('<option>').attr('value', id).text(name));
   });
 }
 
