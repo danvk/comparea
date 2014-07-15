@@ -98,6 +98,8 @@ function setDisplayForFeatures(features) {
     // we'd like the features to be centered around their centroid,
     // not the center of their bounding box. This produces unnecessarily
     // large bounding circles, but tends to look better.
+    // Additionally, to get a true bounding circle, we'd need to go out to
+    // the farthest corner, not the farthest side.
     var tl = b[0], br = b[1];
     var offX = Math.abs(tl[0] + br[0])/2, offY = Math.abs(tl[1] + br[1])/2;
     return Math.max(br[0] - tl[0] + 2*offX, br[1] - tl[1] + 2*offY);
