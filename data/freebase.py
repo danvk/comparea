@@ -9,6 +9,8 @@ import json
 import sys
 import urllib
 
+from data import mqlkey
+
 class Freebase(object):
     '''Freebase Topic API wrapper. Maps wikipedia title --> topic JSON.'''
     service_url = 'https://www.googleapis.com/freebase/v1/topic'
@@ -47,8 +49,8 @@ class Freebase(object):
             'key': self._key,
             'filter': 'commons'
         }
-        topic_id = '/wikipedia/en_title/%s' % title
-        # TODO: encode ala http://wiki.freebase.com/wiki/MQL_key_escaping
+        title_key = mqlkey.quotekey(title)
+        topic_id = '/wikipedia/en_title/%s' % title_key
         url = self.service_url + topic_id + '?' + urllib.urlencode(params)
         sys.stderr.write('Fetching %s\n' % url)
         data = urllib.urlopen(url).read()
