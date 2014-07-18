@@ -57,6 +57,7 @@ Path forward:
   - Download Freebase Topics for all features & regenerate metadata
   - Add wiki URLs (and Freebase data) for generated features
   - Population source defaults to Freebase if not specified
+  - Lots of missing population sources
   x Find better continent shapes
   x Reduce lat/lon precision (home page is 233k)
     --> .6f reduced it from 239369 --> 161739 (59292 --> 49696 gz)
