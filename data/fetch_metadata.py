@@ -121,6 +121,10 @@ def run():
         except IOError:
             sys.stderr.write('ERROR unable to fetch %s\n' % title)
             continue
+
+        if 'error' in d:
+            sys.stderr.write('ERROR unable to fetch %s\n' % title)
+            continue
         
         output[key] = extract_metadata(title, d)
 

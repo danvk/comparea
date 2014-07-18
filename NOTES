@@ -34,6 +34,9 @@ Path forward:
   - Add share links
   - Add transitions
   - Plug in Chosen for the dropdown lists
+  - Add Google Analytics
+  - Change "USA" to "United Kingdom" on home page
+    --> placement is different than if you reload.
   x Be smarter about layout
   x Shapes jump on first click after change
       1. move the USA
@@ -50,8 +53,10 @@ Path forward:
 - Data curation:
   - Source areas from CIA factbook (and look at large differences)
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
-  - Download Freebase Topics for all features & regenerate metadata
   - Generate my own continent features w/ higher resolution
+  - Download Freebase Topics for all features & regenerate metadata
+  - Add wiki URLs (and Freebase data) for generated features
+  - Population source defaults to Freebase if not specified
   x Find better continent shapes
   x Reduce lat/lon precision (home page is 233k)
     --> .6f reduced it from 239369 --> 161739 (59292 --> 49696 gz)

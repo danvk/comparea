@@ -11,20 +11,24 @@ import urllib
 
 from data import mqlkey
 
+PREDICATE_PREFIXES = ['/location/statistical_region', '/common/topic']
+
 class Freebase(object):
     '''Freebase Topic API wrapper. Maps wikipedia title --> topic JSON.'''
     service_url = 'https://www.googleapis.com/freebase/v1/topic'
-    cache_dir = '/var/tmp/wiki'
+    cache_dir = '/var/tmp/freebase'
 
-    def __init__(self, api_key=None):
+    def __init__(self, api_key=None, use_cache=True):
         if not api_key:
             api_key = open(os.path.join(os.path.dirname(__file__), '.freebase_api_key')).read()
         self._key = api_key
+        self._use_cache = use_cache
 
     def _cache_file(self, title):
         return os.path.join(self.cache_dir, '%s.json' % title)
 
     def _get_from_cache(self, title):
+        if not self._use_cache: return None
         p = self._cache_file(title)
         if os.path.exists(p):
             try:
@@ -45,10 +49,10 @@ class Freebase(object):
         d = self._get_from_cache(title)
         if d: return d
 
-        params = {
-            'key': self._key,
-            'filter': 'commons'
-        }
+        params = [
+            ('key', self._key),
+            ('limit', 1000)  # get population at lots of dates!
+        ] + map(lambda x: ('filter', x), PREDICATE_PREFIXES)
         title_key = mqlkey.quotekey(title)
         topic_id = '/wikipedia/en_title/%s' % title_key
         url = self.service_url + topic_id + '?' + urllib.urlencode(params)
