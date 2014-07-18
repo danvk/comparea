@@ -1492,7 +1492,7 @@
   }, 
   "THA": {
     "area_km2": 513120.0, 
-    "description": "ELF925 is jewelry factory, located in Bangkok, Thailand, established in 1999. Our products include sterling silver rings, earrings, pendants, bracelets, beads, studs, charms and more.", 
+    "description": "Thailand, officially the Kingdom of Thailand, formerly known as Siam, is a country at the centre of the Indochina peninsula in Southeast Asia.", 
     "freebase_mid": "/m/07f1x", 
     "population": 69518555.0, 
     "population_year": "2011"
@@ -1596,10 +1596,8 @@
     "population_year": "2012"
   }, 
   "USA48": {
-    "description": "The United States of America, commonly referred to as the United States, America, and sometimes the States, is a federal republic consisting of 50 states and a federal district. The 48 contiguous states and Washington, D.C., are in central North America between Canada and Mexico.", 
-    "freebase_mid": "/m/09c7w0", 
-    "population": 313914040.0, 
-    "population_year": "2012"
+    "description": "The contiguous United States is the 48 adjoining US states plus Washington, DC on the continent of North America that are south of Canada and north of Mexico.", 
+    "freebase_mid": "/m/04_1l0v"
   }, 
   "US_AK": {
     "area_km2": 1717854.0, 
@@ -1638,7 +1636,7 @@
   }, 
   "US_CO": {
     "area_km2": 269837.0, 
-    "description": "The State of Colorado is a state in the Rocky Mountain region of the United States of America. Colorado may also be considered to be a part of the Mountain, Southwestern, Midwestern, and Central regions of the United States.", 
+    "description": "Colorado is a U.S. state encompassing most of the Southern Rocky Mountains as well as the northeastern portion of the Colorado Plateau and the western edge of the Great Plains. Colorado is part of the Western United States, the Southwestern United States, and the Mountain States.", 
     "freebase_mid": "/m/01n4w", 
     "population": 5187582.0, 
     "population_year": "2012"
