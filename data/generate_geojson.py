@@ -192,6 +192,7 @@ def adjust_countries(countries, subunits):
             [-126.782227, -66.269531], [24.246965, 49.61071])
     usa48['id'] = 'USA48'
     usa48['properties']['name'] = 'United States (Contiguous 48)'
+    usa48['properties'].update(get_metadata('USA48'))
     usa48['properties']['wikipedia_url'] = 'http://en.wikipedia.org/wiki/Contiguous_United_States'
     countries.append(usa48)
 
