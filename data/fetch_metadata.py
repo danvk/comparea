@@ -113,11 +113,11 @@ def run():
         key = feature['id']
         props = feature['properties']
         url = props['wikipedia_url']
-        if wiki_url_prefix not in url:
+        title = freebase.wiki_url_to_title(url)
+        if not title:
             sys.stderr.write('ERROR %s has invalid wiki URL: %s\n' % (title, url))
             continue
 
-        title = url.replace(wiki_url_prefix, '')
         try:
             d = freebase_api.get_topic_json(title)
         except IOError:

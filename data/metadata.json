@@ -40,6 +40,10 @@
     "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
     "population_year": "2011"
   }, 
+  "ALD": {
+    "description": "The \u00c5land Islands or \u00c5land is an autonomous, demilitarised, monolingually Swedish-speaking region of Finland that consists of an archipelago lying at the entrance to the Gulf of Bothnia in the Baltic Sea.", 
+    "freebase_mid": "/m/014mxp"
+  }, 
   "AND": {
     "area_km2": 468.0, 
     "description": "Andorra, officially the Principality of Andorra, also called the Principality of the Valleys of Andorra, is a landlocked microstate in Southwestern Europe, located in the eastern Pyrenees mountains and bordered by Spain and France.", 
@@ -193,6 +197,10 @@
     "population": 3834000.0, 
     "population_year": "2012"
   }, 
+  "BLM": {
+    "description": "Saint Barth\u00e9lemy, officially the Territorial collectivity of Saint Barth\u00e9lemy, is an overseas collectivity of France. Often abbreviated to Saint-Barth in French, or St. Barts or St. Barths in English, the indigenous people called the island Ouanalao. St.", 
+    "freebase_mid": "/m/0h7f9"
+  }, 
   "BLR": {
     "area_km2": 207560.0, 
     "description": "Belarus, officially the Republic of Belarus, is a landlocked country in Eastern Europe bordered by Russia to the northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest.", 
@@ -342,6 +350,12 @@
     "population": 7997000.0, 
     "population_year": "2012"
   }, 
+  "CHN": {
+    "freebase_mid": "/m/076rxwv"
+  }, 
+  "CIV": {
+    "freebase_mid": "/m/0j39gpk"
+  }, 
   "CMR": {
     "area_km2": 475440.0, 
     "description": "Cameroon, officially the Republic of Cameroon, is a country in the west Central Africa region. It is bordered by Nigeria to the west; Chad to the northeast; the Central African Republic to the east; and Equatorial Guinea, Gabon, and the Republic of the Congo to the south.", 
@@ -405,6 +419,14 @@
     "description": "Cuba, officially the Republic of Cuba, is an island country in the Caribbean. The nation of Cuba comprises the main island of Cuba, the Isla de la Juventud, and several archipelagos. Havana is the capital of Cuba and its largest city. The second largest city is Santiago de Cuba.", 
     "freebase_mid": "/m/0d04z6", 
     "population": 11253665.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "CUW": {
+    "description": "Cura\u00e7ao is an island in the southern Caribbean Sea, off the Venezuelan coast, that forms part of the Dutch Caribbean. The Country of Cura\u00e7ao, which includes the main island and the small, uninhabited island of Klein Cura\u00e7ao, is a constituent country of the Kingdom of the Netherlands.", 
+    "freebase_mid": "/m/0hbgh", 
+    "population": 145619.0, 
     "population_source": "World Bank", 
     "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
     "population_year": "2011"
@@ -574,6 +596,14 @@
     "description": "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom or simply Britain, is a sovereign state located off the north-western coast of continental Europe.", 
     "freebase_mid": "/m/07ssc", 
     "population": 62744081.0, 
+    "population_year": "2011"
+  }, 
+  "GEO": {
+    "description": "Georgia is a country in the Caucasus region of Eurasia. Located at the crossroads of Western Asia and Eastern Europe, it is bounded to the west by the Black Sea, to the north by Russia, to the south by Turkey and Armenia, and to the southeast by Azerbaijan. The capital of Georgia is Tbilisi.", 
+    "freebase_mid": "/m/0d0kn", 
+    "population": 4486000.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
     "population_year": "2011"
   }, 
   "GGY": {
@@ -1033,6 +1063,12 @@
     "population": 419000.0, 
     "population_year": "2011"
   }, 
+  "MMR": {
+    "description": "Burma, officially the Republic of the Union of Myanmar, commonly shortened to Myanmar, is a sovereign state in Southeast Asia bordered by Laos, Thailand, China, Bangladesh, and India.", 
+    "freebase_mid": "/m/04xn_", 
+    "population": 52797319.0, 
+    "population_year": "2012"
+  }, 
   "MNE": {
     "area_km2": 13812.0, 
     "description": "Montenegro is a country in Southeastern Europe. It has a coast on the Adriatic Sea to the south-west and is bordered by Croatia to the west, Bosnia and Herzegovina to the northwest, Serbia to the northeast, Kosovo to the east and Albania to the south-east.", 
@@ -1348,6 +1384,10 @@
     "description": "South Georgia and the South Sandwich Islands is a British overseas territory in the southern Atlantic Ocean. It is a remote and inhospitable collection of islands, consisting of South Georgia and a chain of smaller islands, known as the South Sandwich Islands.", 
     "freebase_mid": "/m/06tnn"
   }, 
+  "SHN": {
+    "description": "Saint Helena, Ascension and Tristan da Cunha is a British Overseas Territory in the southern Atlantic Ocean consisting of the island of Saint Helena, Ascension Island and the island group called Tristan da Cunha.", 
+    "freebase_mid": "/m/080pfr5"
+  }, 
   "SLB": {
     "area_km2": 28450.0, 
     "description": "Solomon Islands is a sovereign country consisting of a large number of islands in Oceania lying to the east of Papua New Guinea and northwest of Vanuatu and covering a land area of 28,400 square kilometres. The country's capital, Honiara, is located on the island of Guadalcanal.", 
@@ -1402,6 +1442,14 @@
     "description": "Serbia, officially the Republic of Serbia, is a country located at the crossroads of Central and Southeast Europe, covering the southern part of the Pannonian Plain and the central Balkans.", 
     "freebase_mid": "/m/077qn", 
     "population": 7261000.0, 
+    "population_source": "World Bank", 
+    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
+    "population_year": "2011"
+  }, 
+  "STP": {
+    "description": "S\u00e3o Tom\u00e9 and Pr\u00edncipe officially the Democratic Republic of S\u00e3o Tom\u00e9 and Pr\u00edncipe, is a Portuguese-speaking island nation in the Gulf of Guinea, off the western equatorial coast of Central Africa.", 
+    "freebase_mid": "/m/0j681", 
+    "population": 168526.0, 
     "population_source": "World Bank", 
     "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
     "population_year": "2011"
@@ -1960,6 +2008,12 @@
     "population_source": "World Bank", 
     "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL", 
     "population_year": "2011"
+  }, 
+  "VAT": {
+    "description": "Vatican City, officially Vatican City State, is one of the last six remaining absolute monarchies whose territory consists of a walled enclave within the city of Rome. It has an area of approximately 44 hectares, and a population of around 840.", 
+    "freebase_mid": "/m/07ytt", 
+    "population": 798.0, 
+    "population_year": "2000"
   }, 
   "VCT": {
     "area_km2": 389.0, 
