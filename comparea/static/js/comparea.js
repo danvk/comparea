@@ -144,10 +144,10 @@ function setDisplayForFeatures(features) {
       .attr('d', function(d, i) { return paths[i](d); });
       
    // ... for layout debugging
-   draggableG.append('circle')
-      .attr('cx', 0)
-      .attr('cy', 0)
-      .attr('r', function(d, i) { return layout[i].r; });
+   // draggableG.append('circle')
+   //    .attr('cx', 0)
+   //    .attr('cy', 0)
+   //    .attr('r', function(d, i) { return layout[i].r; });
 
   // update
   dataEls.select('.shape')
