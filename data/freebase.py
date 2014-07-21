@@ -13,6 +13,11 @@ from data import mqlkey
 
 PREDICATE_PREFIXES = ['/location/statistical_region', '/common/topic']
 
+MONKEY_PATCHES = {
+    'Myanmar': 'Burma',
+    'Vatican City State': 'Vatican City'
+}
+
 class Freebase(object):
     '''Freebase Topic API wrapper. Maps wikipedia title --> topic JSON.'''
     service_url = u'https://www.googleapis.com/freebase/v1/topic'
@@ -25,6 +30,7 @@ class Freebase(object):
         self._use_cache = use_cache
 
     def _cache_file(self, title):
+        title = title.replace(' ', '_')
         return os.path.join(self.cache_dir, '%s.json' % title)
 
     def _get_from_cache(self, title):
@@ -49,6 +55,10 @@ class Freebase(object):
             ('key', self._key),
             ('limit', 1000)  # get population at lots of dates!
         ] + map(lambda x: ('filter', x), PREDICATE_PREFIXES)
+
+        if title in MONKEY_PATCHES:
+            title = MONKEY_PATCHES[title]
+
         title_key = quotekey(title)
         topic_id = '/wikipedia/en_title/%s' % title_key
         url = self.service_url + topic_id + '?' + urllib.urlencode(params)
@@ -82,6 +92,7 @@ def wiki_url_to_title(uurl):
 
     title = url.replace(WIKI_URL_PREFIX, '')
     title = urllib.unquote(title)
+    title = title.replace('_', ' ')
     return title.decode('utf-8')
 
 
