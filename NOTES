@@ -1,3 +1,33 @@
+Path forward:
+- UI
+  - Click+drag on background should pan both shapes
+  - Touch: two finger both zooms and drags one of the shapes
+  - Add share links
+    ... which preserve the position of the features
+  - Add transitions
+  - Plug in Chosen for the dropdown lists
+  - Add Google Analytics
+  - Change "USA" to "United Kingdom" on home page
+    --> placement is different than if you reload.
+  - Get a new UI from Raven
+  - Put the shapes on top of one another by default
+  - Expand the <svg> behind the info boxes
+  - Show "20% larger" in the UI somewhere
+
+- Data curation:
+  - Update information:
+    - Source areas & populations from CIA factbook
+    - Source state areas & populations from Wikipedia
+    - Compare calculated and displayed areas
+  - Consider down-sampling some shapes? (perf boost on mobile/tablet)
+  - Generate my own continent features w/ higher resolution
+  ~ Download Freebase Topics for all features & regenerate metadata
+  - Add wiki URLs (and Freebase data) for generated features
+  - Population source defaults to Freebase if not specified
+  - Lots of missing population sources
+
+
+
 I'm using http://www.jasondavies.com/maps/countries-by-area/ as a starting
 point for projecting shape data using D3.
 
@@ -25,54 +55,3 @@ Interesting fields in ne_50m_admin_0:
   type (="Country")
   admin (="United States of America")
   name (="United States")
-
-
-Path forward:
-- UI
-  - Click+drag on background should pan both shapes
-  - Touch: two finger both zooms and drags one of the shapes
-  - Add share links
-  - Add transitions
-  - Plug in Chosen for the dropdown lists
-  - Add Google Analytics
-  - Change "USA" to "United Kingdom" on home page
-    --> placement is different than if you reload.
-  x Be smarter about layout
-  x Shapes jump on first click after change
-      1. move the USA
-      2. change Australia to Austria
-      3. move the USA again
-  x Inline the <option> arrays
-  x Support window resize
-  x Show KP-like panels in the UI.
-
-- Build a Flask server which accepts GeoJSON uploads and serves them.
-  - /upload
-  x /shape
-
-- Data curation:
-  - Source areas from CIA factbook (and look at large differences)
-  - Consider down-sampling some shapes? (perf boost on mobile/tablet)
-  - Generate my own continent features w/ higher resolution
-  - Download Freebase Topics for all features & regenerate metadata
-  - Add wiki URLs (and Freebase data) for generated features
-  - Population source defaults to Freebase if not specified
-  - Lots of missing population sources
-  x Find better continent shapes
-  x Reduce lat/lon precision (home page is 233k)
-    --> .6f reduced it from 239369 --> 161739 (59292 --> 49696 gz)
-  x Improve quality of descriptions.
-      use freebase: http://www.freebase.com/m/0h3y?any=%2Fcommon%2Ftopic
-  x Get descriptions & wiki links for all provinces & continents
-  x Add ~10 new shapes like "United States (contiguous 48)"
-  x Sort shapes by "solidity" (area / bbox area).
-    --> should isolate oddities like France overseas & Hawaii
-  x Add continent shapes
-  x Determine which type of NE data I should use.
-    -> does subunits contain the contiguous USA? (yes; but includes lakes)
-  x Merge admin0, admin1 and {area, pop, description, wiki_link} attributes
-
-
-x Figure out the best way to scale shapes
-x Automatically place shapes side-by-side
-x Last-clicked country comes to top
