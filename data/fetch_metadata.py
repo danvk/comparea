@@ -12,6 +12,8 @@ import json
 import re
 import sys
 
+from data import census
+from data import cia
 from data import freebase
 
 
@@ -64,14 +66,14 @@ def extract_population(pop_topic, metadata):
     latest_value = vals[-1]
 
     metadata['population'] = get_value(latest_value, '/measurement_unit/dated_integer/number')
-    metadata['population_year'] = get_value(latest_value, '/measurement_unit/dated_integer/year')
+    metadata['population_date'] = get_value(latest_value, '/measurement_unit/dated_integer/year')
 
     source = get_value_obj(latest_value, '/measurement_unit/dated_integer/source')
     metadata['population_source'] = source['citation']['provider']
     metadata['population_source_url'] = source['citation']['uri']
 
 
-def extract_metadata(title, d):
+def extract_freebase_metadata(title, d):
     '''d is the freebase Topic JSON response'''
     metadata = {}
     metadata['freebase_mid'] = d['id']
@@ -128,7 +130,16 @@ def run():
             sys.stderr.write('ERROR unable to fetch %s\n' % title)
             continue
         
-        output[key] = extract_metadata(title, d)
+        md = extract_freebase_metadata(title, d)
+        try:
+            md.update(cia.get_country_data(key))
+        except KeyError:
+            pass  # no CIA data
+        try:
+            md.update(census.get_state_data(key))
+        except KeyError:
+            pass  # no census data
+        output[key] = md
 
     print json.dumps(output, indent=2, sort_keys=True)
 

@@ -20,10 +20,12 @@ encoder.FLOAT_REPR = lambda o: format(o, '.6f')
 
 DEFAULT_METADATA = {
         'area_km2': -1,
+        'area_km2_source': 'None',
+        'area_km2_source_url': 'None',
         'population': -1,
-        'population_year': -1,
+        'population_date': -1,
         'population_source': 'None',
-        'population_source_url': 'http://google.com',
+        'population_source_url': 'None',
         'description': 'A nice place!',
         'freebase_mid': '/m/123'
 }

@@ -1,0 +1,222 @@
+SUA3	ISOA3	COUNTRY	Population	Population Date
+AFG	AFG	Afghanistan	31,822,848	July 2014
+ALB	ALB	Albania	3,020,209	July 2014
+DZA	DZA	Algeria	38,813,722	July 2014
+ASM	ASM	American Samoa	54,517	July 2014
+AND	AND	Andorra	85,458	July 2014
+AGO	AGO	Angola	19,088,106	July 2014
+AIA	AIA	Anguilla	16,086	July 2014
+ATG	ATG	Antigua and Barbuda	91,295	July 2014
+ARG	ARG	Argentina	43,024,374	July 2014
+ARM	ARM	Armenia	3,060,631	July 2014
+ABW	ABW	Aruba	110,663	July 2014
+AUS	AUS	Australia	22,507,617	July 2014
+AUT	AUT	Austria	8,223,062	July 2014
+AZE	AZE	Azerbaijan	9,686,210	July 2014
+BHS	BHS	Bahamas, The	321,834	July 2014
+BHR	BHR	Bahrain	1,314,089	July 2014
+BGD	BGD	Bangladesh	166,280,712	July 2014
+BRB	BRB	Barbados	289,680	July 2014
+BLR	BLR	Belarus	9,608,058	July 2014
+BEL	BEL	Belgium	10,449,361	July 2014
+BLZ	BLZ	Belize	340,844	July 2014
+BEN	BEN	Benin	10,160,556	July 2014
+BMU	BMU	Bermuda	69,839	July 2014
+BTN	BTN	Bhutan	733,643	July 2014
+BOL	BOL	Bolivia	10,631,486	July 2014
+BIH	BIH	Bosnia and Herzegovina	3,871,643	July 2014
+BWA	BWA	Botswana	2,155,784	July 2014
+BRA	BRA	Brazil	202,656,788	July 2014
+VGB	VGB	British Virgin Islands	32,680	July 2014
+BRN	BRN	Brunei	422,675	July 2014
+BGR	BGR	Bulgaria	6,924,716	July 2014
+BFA	BFA	Burkina Faso	18,365,123	July 2014
+MMR	MMR	Burma	55,746,253	July 2014
+BDI	BDI	Burundi	10,395,931	July 2014
+CPV	CPV	Cabo Verde	538,535	July 2014
+KHM	KHM	Cambodia	15,458,332	July 2014
+CMR	CMR	Cameroon	23,130,708	July 2014
+CAN	CAN	Canada	34,834,841	July 2014
+CYM	CYM	Cayman Islands	54,914	July 2013
+CAF	CAF	Central African Republic	5,277,959	July 2014
+TCD	TCD	Chad	11,412,107	July 2014
+CHL	CHL	Chile	17,363,894	July 2014
+CHN	CHN	China	1,355,692,576	July 2014
+AUS	AUS	Cocos (Keeling) Islands	596	July 2014
+COL	COL	Colombia	46,245,297	July 2014
+COM	COM	Comoros	766,865	July 2014
+COD	COD	Congo, Democratic Republic of the	77,433,744	July 2014
+COG	COG	Congo, Republic of the	4,662,446	July 2014
+COK	COK	Cook Islands	10,134	July 2014
+CRI	CRI	Costa Rica	4,755,234	July 2014
+CIV	CIV	Cote d'Ivoire	22,848,945	July 2014
+HRV	HRV	Croatia	4,470,534	July 2014
+CUB	CUB	Cuba	11,047,251	July 2014
+CYP	CYP	Cyprus	1,172,458	July 2014
+CZE	CZE	Czech Republic	10,627,448	July 2014
+DNK	DNK	Denmark	5,569,077	July 2014
+DJI	DJI	Djibouti	810,179	July 2014
+DMA	DMA	Dominica	73,449	July 2014
+DOM	DOM	Dominican Republic	10,349,741	July 2014
+ECU	ECU	Ecuador	15,654,411	July 2014
+EGY	EGY	Egypt	86,895,099	July 2014
+SLV	SLV	El Salvador	6,125,512	July 2014
+GNQ	GNQ	Equatorial Guinea	722,254	July 2014
+ERI	ERI	Eritrea	6,380,803	July 2014
+EST	EST	Estonia	1,257,921	July 2014
+ETH	ETH	Ethiopia	96,633,458	July 2014
+FLK	FLK	Falkland Islands (Islas Malvinas)	2,840	July 2012
+FRO	FRO	Faroe Islands	49,947	July 2014
+FJI	FJI	Fiji	903,207	July 2014
+FIN	FIN	Finland	5,268,799	July 2014
+FRA	FRA	France	66,259,012	July 2014
+PYF	PYF	French Polynesia	280,026	July 2014
+GAB	GAB	Gabon	1,672,597	July 2014
+GMB	GMB	Gambia, The	1,925,527	July 2014
+PSX	PSE	Gaza Strip	1,816,379	July 2014
+GEO	GEO	Georgia	4,935,880	July 2014
+DEU	DEU	Germany	80,996,685	July 2014
+GHA	GHA	Ghana	25,758,108	July 2014
+GRC	GRC	Greece	10,775,557	July 2014
+GRL	GRL	Greenland	57,728	July 2014
+GRD	GRD	Grenada	110,152	July 2014
+GUM	GUM	Guam	161,001	July 2014
+GTM	GTM	Guatemala	14,647,083	July 2014
+GIN	GIN	Guinea	11,474,383	July 2014
+GNB	GNB	Guinea-Bissau	1,693,398	July 2014
+GUY	GUY	Guyana	735,554	July 2014
+HTI	HTI	Haiti	9,996,731	July 2014
+VAT	VAT	Holy See (Vatican City)	842	July 2014
+HND	HND	Honduras	8,598,561	July 2014
+HKG	HKG	Hong Kong	7,112,688	July 2014
+HUN	HUN	Hungary	9,919,128	July 2014
+ISL	ISL	Iceland	317,351	July 2014
+IND	IND	India	1,236,344,631	July 2014
+IDN	IDN	Indonesia	253,609,643	July 2014
+IRN	IRN	Iran	80,840,713	July 2014
+IRQ	IRQ	Iraq	32,585,692	July 2014
+IRL	IRL	Ireland	4,832,765	July 2014
+ISR	ISR	Israel	7,821,850	July 2014
+ITA	ITA	Italy	61,680,122	July 2014
+JAM	JAM	Jamaica	2,930,050	July 2014
+JPN	JPN	Japan	127,103,388	July 2014
+JOR	JOR	Jordan	7,930,491	July 2014
+KAZ	KAZ	Kazakhstan	17,948,816	July 2014
+KEN	KEN	Kenya	45,010,056	July 2014
+KIR	KIR	Kiribati	104,488	July 2014
+PRK	PRK	Korea, North	24,851,627	July 2014
+KOR	KOR	Korea, South	49,039,986	July 2014
+KWT	KWT	Kuwait	2,742,711	July 2014
+KGZ	KGZ	Kyrgyzstan	5,604,212	July 2014
+LAO	LAO	Laos	6,803,699	July 2014
+LVA	LVA	Latvia	2,165,165	July 2014
+LBN	LBN	Lebanon	5,882,562	July 2014
+LSO	LSO	Lesotho	1,942,008	July 2014
+LBR	LBR	Liberia	4,092,310	July 2014
+LBY	LBY	Libya	6,244,174	July 2014
+LIE	LIE	Liechtenstein	37,313	July 2014
+LTU	LTU	Lithuania	3,505,738	July 2014
+LUX	LUX	Luxembourg	520,672	July 2014
+MAC	MAC	Macau	587,914	July 2014
+MDG	MDG	Madagascar	23,201,926	July 2014
+MWI	MWI	Malawi	17,377,468	July 2014
+MYS	MYS	Malaysia	30,073,353	July 2014
+MDV	MDV	Maldives	393,595	July 2014
+MLI	MLI	Mali	16,455,903	July 2014
+MLT	MLT	Malta	412,655	July 2014
+MHL	MHL	Marshall Islands	70,983	July 2014
+MRT	MRT	Mauritania	3,516,806	July 2014
+MUS	MUS	Mauritius	1,331,155	July 2014
+MEX	MEX	Mexico	120,286,655	July 2014
+FSM	FSM	Micronesia, Federated States of	105,681	July 2014
+MDA	MDA	Moldova	3,583,288	July 2014
+MCO	MCO	Monaco	30,508	July 2014
+MNG	MNG	Mongolia	2,953,190	July 2014
+MNE	MNE	Montenegro	650,036	July 2014
+MSR	MSR	Montserrat	5,215	July 2014
+MAR	MAR	Morocco	32,987,206	July 2014
+MOZ	MOZ	Mozambique	24,692,144	July 2014
+NAM	NAM	Namibia	2,198,406	July 2014
+NRU	NRU	Nauru	9,488	July 2014
+NPL	NPL	Nepal	30,986,975	July 2014
+NLD	NLD	Netherlands	16,877,351	July 2014
+NCL	NCL	New Caledonia	267,840	July 2014
+NZL	NZL	New Zealand	4,401,916	July 2014
+NIC	NIC	Nicaragua	5,848,641	July 2014
+NER	NER	Niger	17,466,172	July 2014
+NGA	NGA	Nigeria	177,155,754	July 2014
+NIU	NIU	Niue	1,190	July 2014
+NFK	NFK	Norfolk Island	2,210	July 2014
+MNP	MNP	Northern Mariana Islands	51,483	July 2014
+NOR	NOR	Norway	5,147,792	July 2014
+OMN	OMN	Oman	3,219,775	July 2014
+PAK	PAK	Pakistan	196,174,380	July 2014
+PLW	PLW	Palau	21,186	July 2014
+PAN	PAN	Panama	3,608,431	July 2014
+PN1	PNG	Papua New Guinea	6,552,730	July 2014
+PRY	PRY	Paraguay	6,703,860	July 2014
+PER	PER	Peru	30,147,935	July 2014
+PHL	PHL	Philippines	107,668,231	July 2014
+PCN	PCN	Pitcairn Islands	48	July 2014
+POL	POL	Poland	38,346,279	July 2014
+PR1	PRT	Portugal	10,813,834	July 2014
+PRI	PRI	Puerto Rico	3,620,897	July 2014
+QAT	QAT	Qatar	2,123,160	July 2014
+ROU	ROU	Romania	21,729,871	July 2014
+RUS	RUS	Russia	142,470,272	July 2014
+RWA	RWA	Rwanda	12,337,138	July 2014
+SHN	SHN	Saint Helena, Ascension, and Tristan da Cunha	7,776	July 2014
+KNA	KNA	Saint Kitts and Nevis	51,538	July 2014
+LCA	LCA	Saint Lucia	163,362	July 2014
+SPM	SPM	Saint Pierre and Miquelon	5,716	July 2014
+VCT	VCT	Saint Vincent and the Grenadines	102,918	July 2014
+WSM	WSM	Samoa	196,628	July 2014
+SMR	SMR	San Marino	32,742	July 2014
+STP	STP	Sao Tome and Principe	190,428	July 2014
+SAU	SAU	Saudi Arabia	27,345,986	July 2014
+SEN	SEN	Senegal	13,635,927	July 2014
+SYC	SYC	Seychelles	91,650	July 2014
+SLE	SLE	Sierra Leone	5,743,725	July 2014
+SGP	SGP	Singapore	5,567,301	July 2014
+SVK	SVK	Slovakia	5,443,583	July 2014
+SVN	SVN	Slovenia	1,988,292	July 2014
+SLB	SLB	Solomon Islands	609,883	July 2014
+SOM	SOM	Somalia	10,428,043	July 2014
+ZAF	ZAF	South Africa	48,375,645	July 2014
+ESP	ESP	Spain	47,737,941	July 2014
+LKA	LKA	Sri Lanka	21,866,445	July 2014
+SDN	SDN	Sudan	35,482,233	July 2014
+SUR	SUR	Suriname	573,311	July 2014
+SWZ	SWZ	Swaziland	1,419,623	July 2014
+SWE	SWE	Sweden	9,723,809	July 2014
+CHE	CHE	Switzerland	8,061,516	July 2014
+SYR	SYR	Syria	17,951,639	July 2014
+TWN	TWN	Taiwan	23,359,928	July 2014
+TJK	TJK	Tajikistan	8,051,512	July 2014
+TZA	TZA	Tanzania	49,639,138	July 2014
+THA	THA	Thailand	67,741,401	July 2014
+TLS	TLS	Timor-Leste	1,201,542	July 2014
+TGO	TGO	Togo	7,351,374	July 2014
+TON	TON	Tonga	106,440	July 2014
+TTO	TTO	Trinidad and Tobago	1,223,916	July 2014
+TUN	TUN	Tunisia	10,937,521	July 2014
+TUR	TUR	Turkey	81,619,392	July 2014
+TKM	TKM	Turkmenistan	5,171,943	July 2014
+TCA	TCA	Turks and Caicos Islands	49,070	July 2014
+UGA	UGA	Uganda	35,918,915	July 2014
+UKR	UKR	Ukraine	44,291,413	July 2014
+ARE	ARE	United Arab Emirates	5,628,805	July 2014
+GBR	GBR	United Kingdom	63,742,977	July 2014
+USA	USA	United States	318,892,103	July 2014
+URY	URY	Uruguay	3,332,972	July 2014
+UZB	UZB	Uzbekistan	28,929,716	July 2014
+VUT	VUT	Vanuatu	266,937	July 2014
+VEN	VEN	Venezuela	28,868,486	July 2014
+VNM	VNM	Vietnam	93,421,835	July 2014
+VIR	VIR	Virgin Islands	104,170	July 2014
+WLF	WLF	Wallis and Futuna	15,561	July 2014
+PSX	PSE	West Bank	2,731,052	July 2014
+SAH	ESH	Western Sahara	554,795	July 2013
+YEM	YEM	Yemen	26,052,966	July 2014
+ZMB	ZMB	Zambia	14,638,505	July 2014
+ZWE	ZWE	Zimbabwe	13,771,721	July 2014
