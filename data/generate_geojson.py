@@ -193,7 +193,7 @@ def adjust_countries(countries, subunits):
     find(countries, 'PR1')['properties']['name'] = 'Portugal (Overseas Territories)'
     find(countries, 'NOR')['properties']['name'] = 'Norway (Overseas Territories)'
     find(subunits, 'NOR')['id'] = 'NRX'
-    find(countries, 'ESP')['id'] = 'Spain (Overseas Territories)'
+    find(countries, 'ESP')['name'] = 'Spain (Overseas Territories)'
 
     delete(countries, 'CHL')  # replaced by "mainland Chile"
     delete(countries, 'ZAF')  # I don't care about the Prince Edward Islands
