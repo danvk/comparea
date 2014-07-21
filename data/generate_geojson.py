@@ -18,6 +18,10 @@ encoder.c_make_encoder = None
 encoder.FLOAT_REPR = lambda o: format(o, '.6f')
 
 
+def _path(filename):
+    return os.path.join(os.path.dirname(__file__), filename)
+
+
 DEFAULT_METADATA = {
         'area_km2': -1,
         'area_km2_source': 'None',
@@ -33,8 +37,7 @@ _metadata = None
 def get_metadata(code):
     global _metadata
     if not _metadata:
-        p = os.path.join(os.path.dirname(__file__), 'metadata.json')
-        _metadata = json.load(file(p))
+        _metadata = json.load(file(_path('metadata.json')))
     d = {}
     d.update(DEFAULT_METADATA)
     try:
@@ -42,6 +45,7 @@ def get_metadata(code):
     except KeyError:
         pass
     return d
+
 
 
 def process_country(country):
@@ -119,7 +123,11 @@ def process_province(province):
     if wiki_url:
         out_props['wikipedia_url'] = wiki_url
     else:
-        out_props['wikipedia_url'] = '#'
+        br = json.load(open(_path('extra-wiki.json')))  # lazy!
+        if code in br:
+            out_props['wikipedia_url'] = br[code]
+        else:
+            out_props['wikipedia_url'] = '#'
 
     return out
 
@@ -255,8 +263,7 @@ def process_features(geojson, fn):
 
 
 def load_geojson(filename, process_fn):
-    p = os.path.join(os.path.dirname(__file__), filename)
-    geojson = json.load(file(p))
+    geojson = json.load(file(_path(filename)))
     assert geojson['type'] == 'FeatureCollection'
     features = process_features(geojson, process_fn)
     # geojson_util.check_feature_collection(features)

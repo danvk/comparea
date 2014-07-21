@@ -1,0 +1,108 @@
+Code,Name,area_km2,area_km2_source,area_km2_source_url,population,population_date,population_source,population_source_url
+US States,,,,,,,,
+US_AK,Alaska,1477953,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,735132,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_AL,Alabama,131171,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,4833722,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_AR,Arkansas,134771,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,2959373,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_AZ,Arizona,294207,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,6626624,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_CA,California,403466,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,38332521,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_CO,Colorado,268431,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,5268367,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_CT,Connecticut,12542,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,3596080,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_DC,District of Columbia,158,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,646449,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_DE,Delaware,5047,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,925749,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_FL,Florida,138887,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,19552860,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_GA,Georgia,148959,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,9992167,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_HI,Hawaii,16635,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,1404054,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_IA,Iowa,144669,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,3090416,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_ID,Idaho,214045,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,1612136,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_IL,Illinois,143793,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,12882135,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_IN,Indiana,92789,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,6570902,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_KS,Kansas,211754,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,2893957,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_KY,Kentucky,102269,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,4395295,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_LA,Louisiana,111898,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,4625470,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_MA,Massachusetts,20202,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,6692824,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_MD,Maryland,25142,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,5928814,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_ME,Maine,79883,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,1328302,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_MI,Michigan,146435,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,9895622,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_MN,Minnesota,206232,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,5420380,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_MO,Missouri,178040,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,6044171,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_MS,Mississippi,121531,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,2991207,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_MT,Montana,376962,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,1015165,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_NC,North Carolina,125920,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,9848060,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_ND,North Dakota,178711,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,723393,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_NE,Nebraska,198974,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,1868516,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_NH,New Hampshire,23187,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,1323459,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_NJ,New Jersey,19047,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,8899339,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_NM,New Mexico,314161,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,2085287,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_NV,Nevada,284332,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,2790136,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_NY,New York,122057,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,19651127,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_OH,Ohio,105829,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,11570808,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_OK,Oklahoma,177660,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,3850568,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_OR,Oregon,248608,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,3930065,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_PA,Pennsylvania,115883,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,12773801,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_RI,Rhode Island,2678,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,1051511,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_SC,South Carolina,77857,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,4774839,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_SD,South Dakota,196350,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,844877,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_TN,Tennessee,106798,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,6495978,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_TX,Texas,676587,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,26448193,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_UT,Utah,212818,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,2900872,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_VA,Virginia,102279,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,8260405,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_VT,Vermont,23871,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,626630,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_WA,Washington,172119,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,6971406,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_WI,Wisconsin,140268,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,5742713,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_WV,West Virginia,62259,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,1854304,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+US_WY,Wyoming,251470,US Census,http://www.census.gov/prod/cen2010/cph-2-1.pdf,582658,July 2013,US Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+,,,,,,,,
+Australian States,,,,,,,,
+AU_CT,Australian Capital Territory,"2,358",ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,"382,900",Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+AU_JB,Jervis Bay Territory,73,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,611,Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+AU_NS,New South Wales,"800,642",ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,"7,439,200",Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+AU_NT,Northern Territory,"1,349,129",ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,"241,800",Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+AU_QL,Queensland,"1,730,648",ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,"4,676,400",Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+AU_SA,South Australia,"983,482",ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,"1,674,700",Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+AU_TS,Tasmania,"68,401",ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,"513,400",Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+AU_VI,Victoria,"227,416",ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,"5,768,600",Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+AU_WA,Western Australia,"2,529,875",ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/,"2,535,700",Sep 2014,ABS,http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/
+,,,,,,,,
+Brazilian States,,,,,,,,
+BR_AC,Acre,"152,581.40",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"776,463",July 2013,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_AL,Alagoas,"27,767.70",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"3,300,938",July 2014,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_AP,Amapá,"142,814.60",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"734,995",July 2015,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_AM,Amazonas,"1,570,745.70",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"3,807,923",July 2016,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_BA,Bahia,"564,692.70",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"15,044,127",July 2017,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_CE,Ceará,"148,825.60",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"8,778,575",July 2018,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_DF,Distrito Federal,"5,801.90",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"3,839,363",July 2019,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_ES,Espírito Santo,"46,077.50",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"2,789,761",July 2020,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_GO,Goiás,"340,086.70",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"6,434,052",July 2021,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_MA,Maranhão,"331,983.30",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"6,794,298",July 2022,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_MT,Mato Grosso,"903,357.90",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"3,182,114",July 2023,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_MS,Mato Grosso do Sul,"357,125.00",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"2,587,267",July 2024,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_MG,Minas Gerais,"586,528.30",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"20,593,366",July 2025,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_PA,Pará,"1,247,689.50",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"7,969,655",July 2026,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_PB,Paraíba,"56,439.80",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"3,914,418",July 2027,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_PR,Paraná,"199,314.90",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"10,997,462",July 2028,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_PE,Pernambuco,"98,311.60",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"9,208,551",July 2029,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_PI,Piauí,"251,529.20",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"3,184,165",July 2030,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_RJ,Rio de Janeiro,"43,696.10",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"16,369,178",July 2031,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_RN,Rio Grande do Norte,"52,796.80",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"3,373,960",July 2032,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_RS,Rio Grande do Sul,"281,748.50",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"11,164,050",July 2033,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_RO,Rondônia,"237,576.20",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"1,728,214",July 2034,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_RR,Roraima,"224,299.00",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"488,072",July 2035,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_SC,Santa Catarina,"95,346.20",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"6,634,250",July 2036,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_SP,São Paulo,"248,209.40",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"43,663,672",July 2037,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_SE,Sergipe,"21,910.30",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"2,195,662",July 2038,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+BR_TO,Tocantins,"277,620.90",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"1,478,163",July 2039,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
+,,,,,,,,
+Canadian Provinces,,,,,,,,
+CA_AB,Alberta,"642,317",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"3,645,257",May 2011,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_BC,British Columbia,"925,186",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"4,400,057",May 2012,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_MB,Manitoba,"553,556",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"1,208,268",May 2013,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NB,New Brunswick,"71,450",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"751,171",May 2014,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NF,Newfoundland and Labrador,"373,872",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"514,536",May 2015,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NS,Nova Scotia,"53,338",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"921,727",May 2016,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NT,Northwest Territories,"1,183,085",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"41,462",May 2017,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NU,Nunavut,"1,936,113",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"31,906",May 2018,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_ON,Ontario,"917,741",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"12,851,821",May 2019,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_PE,Prince Edward Island,"5,660",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"140,204",May 2020,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_QC,Québec,"1,356,128",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"7,903,001",May 2021,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_SK,Saskatchewan,"591,670",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"1,033,381",May 2022,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_YT,Yukon,"474,391",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"33,897",May 2023,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A

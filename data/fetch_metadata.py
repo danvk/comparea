@@ -12,9 +12,9 @@ import json
 import re
 import sys
 
-from data import census
 from data import cia
 from data import freebase
+from data import spreadsheet
 
 
 def trim_description(desc, max_chars=200):
@@ -136,9 +136,9 @@ def run():
         except KeyError:
             pass  # no CIA data
         try:
-            md.update(census.get_state_data(key))
+            md.update(spreadsheet.get_feature_data(key))
         except KeyError:
-            pass  # no census data
+            pass  # no manual data
         output[key] = md
 
     print json.dumps(output, indent=2, sort_keys=True)

@@ -161,6 +161,105 @@
     "population_source": "World Factbook", 
     "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
   }, 
+  "AU_CT": {
+    "area_km2": 2358, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "Australian Capital Territory is a territory in the south east of Australia, enclaved within New South Wales. It is the smaller of the two self-governing internal territories in Australia. The only city and by far the most populous community is Canberra, the capital city of Australia.", 
+    "freebase_mid": "/m/0vh3", 
+    "population": 382900, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
+  "AU_JB": {
+    "area_km2": 73, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "The Jervis Bay Territory is a territory of the Commonwealth of Australia. It was surrendered by the state of New South Wales to the Commonwealth Government in 1915 so that the Federal capital at Canberra would have \"access to the sea\".", 
+    "freebase_mid": "/m/0pmwq", 
+    "population": 611, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
+  "AU_NS": {
+    "area_km2": 800642, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "New South Wales (abbreviated as NSW), is Australia's most populous state, and is located in the south-east of the country, north of Victoria, south of Queensland, east of South Australia, west of Jervis Bay Territory and encompasses the whole of the Australian Capital Territory.", 
+    "freebase_mid": "/m/05fly", 
+    "population": 7439200, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
+  "AU_NT": {
+    "area_km2": 1349129, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "Northern Territory is a federal Australian territory in the centre and central northern regions. It shares borders with Western Australia to the west, South Australia to the south, and Queensland to the east.", 
+    "freebase_mid": "/m/05ff6", 
+    "population": 241800, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
+  "AU_QL": {
+    "area_km2": 1730648, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "Queensland is the second-largest and third-most populous state in Australia. Situated in the north-east of the country, it is bordered by the Northern Territory, South Australia and New South Wales to the west, south-west and south respectively.", 
+    "freebase_mid": "/m/0g39h", 
+    "population": 4676400, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
+  "AU_SA": {
+    "area_km2": 983482, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "South Australia is a state in the southern central part of Australia. It covers some of the most arid parts of the continent. With a total land area of 983,482 square kilometres, it is the fourth largest of Australia's states and territories.", 
+    "freebase_mid": "/m/06mtq", 
+    "population": 1674700, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
+  "AU_TS": {
+    "area_km2": 68401, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "Tasmania is an island state, part of the Commonwealth of Australia, located 240 kilometres to the south of the Australian continent, separated by Bass Strait. The state includes the island of Tasmania, the 26th largest island in the world, and the surrounding 334 islands.", 
+    "freebase_mid": "/m/07cfx", 
+    "population": 513400, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
+  "AU_VI": {
+    "area_km2": 227416, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "Victoria is a state in the south-east of Australia. Victoria is Australia's most densely populated state and its second-most populous state overall.", 
+    "freebase_mid": "/m/0chgr2", 
+    "population": 5768600, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
+  "AU_WA": {
+    "area_km2": 2529875, 
+    "area_km2_source": "ABS", 
+    "area_km2_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/", 
+    "description": "Western Australia is a state occupying the entire western third of Australia. It is bounded by the Indian Ocean to the north and west, the Great Australian Bight and Southern Ocean to the south, the Northern Territory to the north-east and South Australia to the south-east.", 
+    "freebase_mid": "/m/0847q", 
+    "population": 2535700, 
+    "population_date": "Sep 2014", 
+    "population_source": "ABS", 
+    "population_source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3101.0/"
+  }, 
   "AZE": {
     "area_km2": 82629, 
     "area_km2_source": "World Factbook", 
@@ -351,6 +450,303 @@
     "population_source": "World Factbook", 
     "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
   }, 
+  "BR_AC": {
+    "area_km2": 152581, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Acre is one of the 27 states of Brazil. It is situated in the southwest of the Northern Region, bordering Amazonas to the north, Rond\u00f4nia to the east, Bolivia to the southeast and the Ucayali Region of Peru to the south and west.", 
+    "freebase_mid": "/m/01hdgz", 
+    "population": 776463, 
+    "population_date": "July 2013", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_AL": {
+    "area_km2": 27767, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Alagoas is one of the 27 states of Brazil and is situated in the eastern part of the Northeast Region. It borders: Pernambuco; Sergipe; Bahia; and the Atlantic Ocean. It occupies an area of 27,767 km\u00b2, being slightly larger than Haiti. Its capital is the city of Macei\u00f3.", 
+    "freebase_mid": "/m/015zxx", 
+    "population": 3300938, 
+    "population_date": "July 2014", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_AM": {
+    "area_km2": 1570745, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Amazonas is a state of Brazil, located in the northwestern corner of the country. It is the largest Brazilian State by area and the 9th largest country subdivision in the world. Neighbouring states are Roraima, Par\u00e1, Mato Grosso, Rond\u00f4nia, and Acre. It also borders Peru, Colombia and Venezuela.", 
+    "freebase_mid": "/m/01hdky", 
+    "population": 3807923, 
+    "population_date": "July 2016", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_AP": {
+    "area_km2": 142814, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Amap\u00e1, also known as the Brazilian Guiana, is one of the states of Brazil, located in the extreme north, bordering French Guiana and Suriname to the north. To the east is the Atlantic Ocean, and to the south and west is the Brazilian state of Par\u00e1.", 
+    "freebase_mid": "/m/01hdj9", 
+    "population": 734995, 
+    "population_date": "July 2015", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_BA": {
+    "area_km2": 564692, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Bahia is one of the 26 states of Brazil, and is located in the eastern part of the country on the Atlantic coast. It is the fourth most populous Brazilian state after S\u00e3o Paulo, Minas Gerais and Rio de Janeiro, and the fifth-largest in size.", 
+    "freebase_mid": "/m/01c8c6", 
+    "population": 15044127, 
+    "population_date": "July 2017", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_CE": {
+    "area_km2": 148825, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Cear\u00e1 is one of the 27 states of Brazil, located in the northeastern part of the country, on the Atlantic coast. It is the eighth-largest Brazilian State by population and the 17th by area. It is also one of the main touristic destinations in Brazil. The state capital is the city of Fortaleza.", 
+    "freebase_mid": "/m/01hdlf", 
+    "population": 8778575, 
+    "population_date": "July 2018", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_DF": {
+    "area_km2": 5801, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "The Federal District, is one of 27 federative units of Brazil. Located in the Central Plateau of the Brazilian Highlands, the Federal District is divided into 31 administrative regions, and contains the Brazilian capital city, Bras\u00edlia.", 
+    "freebase_mid": "/m/012l8y", 
+    "population": 3839363, 
+    "population_date": "July 2019", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_ES": {
+    "area_km2": 46077, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Esp\u00edrito Santo is one of the states of southeastern Brazil, often referred to by the abbreviation \"ES\". Its capital is Vit\u00f3ria and the largest city is Vila Velha. The name of the state means literally \"holy spirit\" after the Holy Ghost of Christianity.", 
+    "freebase_mid": "/m/021tyb", 
+    "population": 2789761, 
+    "population_date": "July 2020", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_GO": {
+    "area_km2": 340086, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Goi\u00e1s is a state of Brazil, located in the central part of the country. The name Goi\u00e1s comes from the name of an indigenous community.", 
+    "freebase_mid": "/m/012yz_", 
+    "population": 6434052, 
+    "population_date": "July 2021", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_MA": {
+    "area_km2": 331983, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Maranh\u00e3o is a northeastern state of Brazil. To the north lies the Atlantic Ocean. Maranh\u00e3o is neighboured by the states of Piau\u00ed, Tocantins and Par\u00e1. The people of Maranh\u00e3o have a distinctive accent inside the common Northeastern Brazilian dialect.", 
+    "freebase_mid": "/m/01hd3y", 
+    "population": 6794298, 
+    "population_date": "July 2022", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_MG": {
+    "area_km2": 586528, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Minas Gerais is one of the 26 states of Brazil. It ranks as the second most populous, the third by gross domestic product, and the fourth largest by area in the country.", 
+    "freebase_mid": "/m/01gh6z", 
+    "population": 20593366, 
+    "population_date": "July 2025", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_MS": {
+    "area_km2": 357125, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Mato Grosso do Sul is one of the Central-Western states of Brazil. Its total area of 357,125 square kilometers, or 137,891 square miles, is slightly larger than Germany. Neighboring Brazilian states are Mato Grosso, Goi\u00e1s, Minas Gerais, S\u00e3o Paulo and Paran\u00e1.", 
+    "freebase_mid": "/m/01hdn5", 
+    "population": 2587267, 
+    "population_date": "July 2024", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_MT": {
+    "area_km2": 903357, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Mato Grosso is one of the states of Brazil, the third largest by area, located in the western part of the country. Neighboring states are Rond\u00f4nia, Amazonas, Par\u00e1, Tocantins, Goi\u00e1s and Mato Grosso do Sul. It also borders Bolivia to the southwest.", 
+    "freebase_mid": "/m/01hdly", 
+    "population": 3182114, 
+    "population_date": "July 2023", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_PA": {
+    "area_km2": 1247689, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Par\u00e1 is a state in northern Brazil. It borders the Brazilian states of Amap\u00e1, Maranh\u00e3o, Tocantins, Mato Grosso, Amazonas and Roraima. To the northwest it also borders Guyana and Suriname, and to the northeast it borders the Atlantic Ocean.", 
+    "freebase_mid": "/m/01hdnp", 
+    "population": 7969655, 
+    "population_date": "July 2026", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_PB": {
+    "area_km2": 56439, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Para\u00edba is a state of Brazil. It is located in the Brazilian Northeast, and it is bordered by Rio Grande do Norte to the north, Cear\u00e1 to the west, Pernambuco to the south and the Atlantic Ocean to the east.", 
+    "freebase_mid": "/m/01hdp5", 
+    "population": 3914418, 
+    "population_date": "July 2027", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_PE": {
+    "area_km2": 98311, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Pernambuco is a state of Brazil, located in the Northeast region of the country. The state of Pernambuco also includes the archipelago Fernando de Noronha.", 
+    "freebase_mid": "/m/01hdpp", 
+    "population": 9208551, 
+    "population_date": "July 2029", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_PI": {
+    "area_km2": 251529, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Piau\u00ed is one of the states of Brazil, located in the country's Northeast Region. Piau\u00ed has the shortest coastline of any of the non-landlocked Brazilian states at 66 km, and the capital, Teresina, is the only state capital in the northeast to be located inland.", 
+    "freebase_mid": "/m/01hdqj", 
+    "population": 3184165, 
+    "population_date": "July 2030", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_PR": {
+    "area_km2": 199314, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "", 
+    "freebase_mid": "/m/01hd3f", 
+    "population": 10997462, 
+    "population_date": "July 2028", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_RJ": {
+    "area_km2": 43696, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Rio de Janeiro is one of the 27 states of Brazil. It has the third largest economy of Brazil, with the largest being that of the state of S\u00e3o Paulo, and the second being that of Minas Gerais. The state of Rio de Janeiro is located within the Brazilian geopolitical region classified as the Southeast.", 
+    "freebase_mid": "/m/01hd4s", 
+    "population": 16369178, 
+    "population_date": "July 2031", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_RN": {
+    "area_km2": 52796, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Rio Grande do Norte is one of the states of Brazil, located in the northeastern region of the country, occupying the northeasternmost tip of the South American continent. Because of its geographic position, Rio Grande do Norte has a strategic importance. The capital and largest city is Natal.", 
+    "freebase_mid": "/m/01hdrc", 
+    "population": 3373960, 
+    "population_date": "July 2032", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_RO": {
+    "area_km2": 237576, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Rond\u00f4nia is a state in Brazil, located in the north-western part of the country. To the west is a short border with the state of Acre, to the north is the state of Amazonas, in the east is Mato Grosso, and in the south is Bolivia. Its capital is Porto Velho.", 
+    "freebase_mid": "/m/01hds7", 
+    "population": 1728214, 
+    "population_date": "July 2034", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_RR": {
+    "area_km2": 224299, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Roraima is the northernmost and least populated state of Brazil, located in the Amazon region. It borders the states of Amazonas and Par\u00e1, as well as the nations of Venezuela and Guyana. The population is approximately 450,000 and the capital is Boa Vista.", 
+    "freebase_mid": "/m/01tq_j", 
+    "population": 488072, 
+    "population_date": "July 2035", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_RS": {
+    "area_km2": 281748, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Rio Grande do Sul is the southernmost state in Brazil, and the state with the fourth highest Human Development Index in the country, and the third and last in the Brazilian South Region.", 
+    "freebase_mid": "/m/01l_9d", 
+    "population": 11164050, 
+    "population_date": "July 2033", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_SC": {
+    "area_km2": 95346, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Santa Catarina is a state in southern Brazil. According to the Index of Economic Well-Being calculated between 2002 and 2008, Santa Catarina was the Brazilian state that revealed the highest economic well-being in relation to the others.", 
+    "freebase_mid": "/m/01l_jz", 
+    "population": 6634250, 
+    "population_date": "July 2036", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_SE": {
+    "area_km2": 21910, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Sergipe, is the smallest state of the Brazilian Federation, located on the northeastern Atlantic coast of the country. It borders on two other states, Bahia to the south and west and Alagoas to the north, and to the east is the Atlantic Ocean.", 
+    "freebase_mid": "/m/01hdt7", 
+    "population": 2195662, 
+    "population_date": "July 2038", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_SP": {
+    "area_km2": 248209, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "S\u00e3o Paulo is a state in Brazil. It is the major industrial and economic powerhouse of the Brazilian economy. Named after Saint Paul, S\u00e3o Paulo has the largest population, industrial complex, and economic production in the country. It is the richest state in Brazil.", 
+    "freebase_mid": "/m/01hd58", 
+    "population": 43663672, 
+    "population_date": "July 2037", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
+  "BR_TO": {
+    "area_km2": 277620, 
+    "area_km2_source": "IBGE", 
+    "area_km2_source_url": "http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm", 
+    "description": "Tocantins is one of the states of Brazil.. It is the newest Brazilian state, formed in 1988 and encompassing what had formerly been the northern part of Goi\u00e1s. Construction of its capital, Palmas, began in 1989; most of the other cities in the state date to the Portuguese colonial period.", 
+    "freebase_mid": "/m/0d0k4", 
+    "population": 1478163, 
+    "population_date": "July 2039", 
+    "population_source": "IBGE", 
+    "population_source_url": "http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm"
+  }, 
   "BTN": {
     "area_km2": 38394, 
     "area_km2_source": "World Factbook", 
@@ -396,69 +792,147 @@
     "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
   }, 
   "CA_AB": {
-    "area_km2": 661848.0, 
+    "area_km2": 642317, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Alberta is a province of Canada. With a population of 3,645,257 in 2011 and an estimated population of 4,082,571 as of January 1, 2014, it is Canada's fourth-most populous province and most populous of Canada's three prairie provinces.", 
-    "freebase_mid": "/m/0j95"
+    "freebase_mid": "/m/0j95", 
+    "population": 3645257, 
+    "population_date": "May 2011", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_BC": {
-    "area_km2": 944735.0, 
+    "area_km2": 925186, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "British Columbia, also commonly referred to by its initials BC, is a province located on the west coast of Canada. British Columbia is also a component of the Pacific Northwest, along with the U.S. states of Oregon and Washington.", 
-    "freebase_mid": "/m/015jr"
+    "freebase_mid": "/m/015jr", 
+    "population": 4400057, 
+    "population_date": "May 2012", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_MB": {
-    "area_km2": 647797.0, 
+    "area_km2": 553556, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Manitoba is a Canadian prairie province. The province, with an area of 649,950 square kilometres, has a largely continental climate, with thousands of lakes and many rivers.", 
-    "freebase_mid": "/m/04s7y"
+    "freebase_mid": "/m/04s7y", 
+    "population": 1208268, 
+    "population_date": "May 2013", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_NB": {
-    "area_km2": 72908.0, 
+    "area_km2": 71450, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "New Brunswick is one of Canada's three Maritime provinces and is the only province in the Canadian federation that is constitutionally bilingual. It was created as a result of the partitioning of the British Colony of Nova Scotia in 1784.", 
-    "freebase_mid": "/m/059s8"
+    "freebase_mid": "/m/059s8", 
+    "population": 751171, 
+    "population_date": "May 2014", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_NF": {
-    "area_km2": 405212.0, 
+    "area_km2": 373872, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Newfoundland and Labrador is the easternmost province of Canada. Situated in the country's Atlantic region, it incorporates the island of Newfoundland and mainland Labrador to the northwest, with a combined area of 405,212 square kilometres.", 
-    "freebase_mid": "/m/05j49"
+    "freebase_mid": "/m/05j49", 
+    "population": 514536, 
+    "population_date": "May 2015", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_NS": {
-    "area_km2": 55283.0, 
+    "area_km2": 53338, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Nova Scotia is one of Canada's three Maritime provinces and constitutes one of the four Atlantic Canada provinces. Located almost exactly halfway between the Equator and the North Pole, its provincial capital is Halifax.", 
-    "freebase_mid": "/m/059t8"
+    "freebase_mid": "/m/059t8", 
+    "population": 921727, 
+    "population_date": "May 2016", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_NT": {
-    "area_km2": 1140835.0, 
+    "area_km2": 1183085, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "The Northwest Territories is a territory of Canada. With a population of 41,462 in 2011 and an estimated population of 43,537 in 2013, the Northwest Territories is the most populous territory in Northern Canada.", 
-    "freebase_mid": "/m/059ts"
+    "freebase_mid": "/m/059ts", 
+    "population": 41462, 
+    "population_date": "May 2017", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_NU": {
-    "area_km2": 2093190.0, 
+    "area_km2": 1936113, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Nunavut is the largest, northernmost and newest territory of Canada. It was separated officially from the Northwest Territories on April 1, 1999, via the Nunavut Act and the Nunavut Land Claims Agreement Act, though the boundaries had been contemplatively drawn in 1993.", 
-    "freebase_mid": "/m/0h5qxv"
+    "freebase_mid": "/m/0h5qxv", 
+    "population": 31906, 
+    "population_date": "May 2018", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_ON": {
-    "area_km2": 1076395.0, 
+    "area_km2": 917741, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Ontario is one of the ten provinces of Canada, located in east-central Canada. It is Canada's most populous province by a large margin, accounting for nearly 40% of all Canadians, and is the second largest province in total area.", 
-    "freebase_mid": "/m/05kr_"
+    "freebase_mid": "/m/05kr_", 
+    "population": 12851821, 
+    "population_date": "May 2019", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_PE": {
-    "area_km2": 5660.0, 
+    "area_km2": 5660, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Prince Edward Island is a Canadian province consisting of the main island itself, as well as other islands. It is one of the three Maritime provinces and is the smallest province in both land area and population.", 
-    "freebase_mid": "/m/05rh2"
+    "freebase_mid": "/m/05rh2", 
+    "population": 140204, 
+    "population_date": "May 2020", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_QC": {
-    "area_km2": 1542056.0, 
+    "area_km2": 1356128, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Quebec is a province in east-central Canada. It is the only Canadian province that has a predominantly French-speaking population, and the only one to have French as its sole provincial official language.", 
-    "freebase_mid": "/m/0694j"
+    "freebase_mid": "/m/0694j", 
+    "population": 7903001, 
+    "population_date": "May 2021", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_SK": {
-    "area_km2": 651900.0, 
+    "area_km2": 591670, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Saskatchewan is a prairie province in Canada, which has a total area of 651,900 square kilometres and a land area of 592,534 square kilometres, the remainder being water area.", 
-    "freebase_mid": "/m/06nrt"
+    "freebase_mid": "/m/06nrt", 
+    "population": 1033381, 
+    "population_date": "May 2022", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CA_YT": {
-    "area_km2": 482443.0, 
+    "area_km2": 474391, 
+    "area_km2_source": "StatCan", 
+    "area_km2_source_url": "http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm", 
     "description": "Yukon is the westernmost and smallest of Canada's three federal territories. Whitehorse is the territorial capital and Yukon's only city. The territory was split from the Northwest Territories in 1898.", 
-    "freebase_mid": "/m/087r4"
+    "freebase_mid": "/m/087r4", 
+    "population": 33897, 
+    "population_date": "May 2023", 
+    "population_source": "StatCan", 
+    "population_source_url": "http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A"
   }, 
   "CHE": {
     "area_km2": 39997, 
