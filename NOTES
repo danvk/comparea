@@ -16,15 +16,16 @@ Path forward:
 
 - Data curation:
   - Update information:
-    - Source areas & populations from CIA factbook
-    - Source state areas & populations from Wikipedia
-    - Compare calculated and displayed areas
+    - No missing data
+    - Add wiki URLs (and Freebase data) for generated features
+    - Figure out why Brazil, Germany and friends are missing Freebase topics
+    x Source areas & populations from CIA factbook
+    x Source state areas & populations from Wikipedia
+  - Compare calculated and displayed areas
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
   - Generate my own continent features w/ higher resolution
-  ~ Download Freebase Topics for all features & regenerate metadata
-  - Add wiki URLs (and Freebase data) for generated features
-  - Population source defaults to Freebase if not specified
-  - Lots of missing population sources
+  x Download Freebase Topics for all features & regenerate metadata
+  x Lots of missing population sources
 
 
 
