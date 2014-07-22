@@ -17,10 +17,12 @@ Path forward:
 - Data curation:
   - Update information:
     - No missing data
-    - Add wiki URLs (and Freebase data) for generated features
-    - Figure out why Brazil, Germany and friends are missing Freebase topics
+    x Figure out why Brazil, Germany and friends are missing Freebase topics
+    x Add wiki URLs (and Freebase data) for generated features
     x Source areas & populations from CIA factbook
     x Source state areas & populations from Wikipedia
+  - Add "New Zealand (North Island)"
+  - Add "Spain (Overseas territories)"
   - Compare calculated and displayed areas
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
   - Generate my own continent features w/ higher resolution

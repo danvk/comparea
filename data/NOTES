@@ -1,24 +1,37 @@
 There are 20 features with missing data that I care about:
-  ATA	Antarctica
-  USA48	United States (Contiguous 48)
-  NZS	New Zealand (South Island)
-  PRX	Portugal
-  ASIA	Asia
-  AF	Africa
-  EU	Europe
-  SA	South America
-  NLX	Netherlands (Overseas Territories)
-  ESX	Spain
-  NRX	Norway
-  ZAX	South Africa
-  NA	North America
-  CUW	Curaçao
-  IMN	Isle of Man
-  KOS	Kosovo
-  MKD	Macedonia
-  SRB	Serbia
-  KOR	Korea
-  MEX	Mexico
+ATA	Antarctica
+USA48	United States (Contiguous 48)
+NZS	New Zealand (South Island)
+PRX	Portugal
+ASIA	Asia
+AF	Africa
+EU	Europe
+SA	South America
+NLX	Netherlands (Overseas Territories)
+ESX	Spain
+NRX	Norway
+ZAX	South Africa
+NA	North America
+CUW	Curaçao
+IMN	Isle of Man
+KOS	Kosovo
+MKD	Macedonia
+SRB	Serbia
+KOR	Korea
+MEX	Mexico
+
+
+Sanity checks:
+- Should have different values for area/population for these:
+  Netherlands (overseas)
+  Spain (overseas)
+  France (metro/overseas)
+  New Zealand (North/South/Total)
+  Portugal (overseas)
+  Norway (overseas)
+  USA (total, 48)
+- Denmark's area should be smaller than Greenland's
+- Calculated and displayed areas should be within ~10%
 
 
 Freebase issues:

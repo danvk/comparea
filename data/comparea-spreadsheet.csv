@@ -110,3 +110,25 @@ CA_YT,Yukon,"474,391",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.ht
 Overrides,,,,,,,,
 SDS,S. Sudan,"644,329",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"11,562,695",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html
 SDN,Sudan,"1,861,484",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"35,482,233",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html
+,,,,,,,,
+ATA,Antarctica,"14,000,000",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/geos/ay.html,"4,490",Summer 2009,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/geos/ay.html
+PRX,Portugal,"92,145",Wikipedia,https://en.wikipedia.org/wiki/Continental_Portugal,"10,459,806","2,013",World Bank,http://data.worldbank.org/indicator/SP.POP.TOTL
+ASIA,Asia,"43,820,000",DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm,"4,164,252,000",2012,DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm
+AF,Africa,"30,370,000",DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm,"1,022,234,000",2012,DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm
+EU,Europe,"10,180,000",DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm,"738,199,000",2012,DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm
+SA,South America,"17,840,000",DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm,"392,555,000",2012,DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm
+NLX,Netherlands (Overseas Territories),"42,525",CBS,"http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&PA=37230ned&D1=0-17&D2=0-4&D3=130-134&HDR=G2&STB=G1,T&VW=T","17,034,544",1 Jan 2012,CBS,"http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&PA=37230ned&D1=0-17&D2=0-4&D3=130-134&HDR=G2&STB=G1,T&VW=T"
+NLD,Netherlands,"41,526",CBS,"http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&PA=37230ned&D1=0-17&D2=0-4&D3=130-134&HDR=G2&STB=G1,T&VW=T","16,748,205",1 Jan 2012,CBS,"http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&PA=37230ned&D1=0-17&D2=0-4&D3=130-134&HDR=G2&STB=G1,T&VW=T"
+NRX,Norway,"304,225",SSB,http://www.ssb.no/en/natur-og-miljo/statistikker/arealdekke,"5,145,150",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
+NOR,Norway (Overseas Territories),"365,223",SSB,http://www.ssb.no/en/natur-og-miljo/statistikker/arealdekke,"5,147,792",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
+NA,North America,"24,490,000",DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm,"542,056,000",2012,DESA,http://esa.un.org/unpd/wpp/Excel-Data/population.htm
+ZAX,South Africa,"1,214,470",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"48,375,645",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
+USA48,United States (Contiguous 48),"7,653,006",Census,http://www.census.gov/geo/reference/state-area.html,"313,989,653",July 2013,Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+USA,United States,"9,147,593",Census,http://www.census.gov/geo/reference/state-area.html,"316,128,839",July 2013,Census,http://www.census.gov/popest/data/state/totals/2013/index.html
+ESX,Spain,"492,175",INE,http://www.ine.es/prodyser/pubweb/anuario06/anu06_01entor.pdf,"43,731,572",1 Jan 2013,INE,http://ine.es
+ESP,Spain (Overseas Territories),"504,645",INE,http://www.ine.es/prodyser/pubweb/anuario06/anu06_01entor.pdf,"46,507,760",1 Jan 2014,INE,http://www.ine.es/jaxi/tabla.do?path=/t20/p321/serie/l0/&file=01001.px&type=pcaxis&L=0
+CUW,Curaçao,444,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"146,836",July 2013,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
+IMN,Isle of Man,572,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"86,866",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
+KOS,Kosovo,"10,887",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"1,859,203",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
+MKD,Macedonia,"25,433",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"2,091,719",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
+SRB,Serbia,"77,474",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"7,209,764",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
