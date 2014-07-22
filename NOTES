@@ -15,17 +15,18 @@ Path forward:
   - Show "20% larger" in the UI somewhere
 
 - Data curation:
-  - Update information:
-    - No missing data
+  - Add "New Zealand (North Island)"
+  - Add "Spain (Overseas territories)"
+  - Rename "Korea" and "Dem. Rep. Korea"
+  - Compare calculated and displayed areas
+  - Consider down-sampling some shapes? (perf boost on mobile/tablet)
+  - Generate my own continent features w/ higher resolution
+  x Update information:
+    x No missing data
     x Figure out why Brazil, Germany and friends are missing Freebase topics
     x Add wiki URLs (and Freebase data) for generated features
     x Source areas & populations from CIA factbook
     x Source state areas & populations from Wikipedia
-  - Add "New Zealand (North Island)"
-  - Add "Spain (Overseas territories)"
-  - Compare calculated and displayed areas
-  - Consider down-sampling some shapes? (perf boost on mobile/tablet)
-  - Generate my own continent features w/ higher resolution
   x Download Freebase Topics for all features & regenerate metadata
   x Lots of missing population sources
 

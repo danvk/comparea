@@ -9,6 +9,7 @@ These include:
 '''
 
 import json
+import os
 import re
 import sys
 
@@ -16,6 +17,8 @@ from data import cia
 from data import freebase
 from data import spreadsheet
 
+def _path(filename):
+    return os.path.join(os.path.dirname(__file__), filename)
 
 def trim_description(desc, max_chars=200):
     '''Cut off the description on sentence boundaries.'''
@@ -73,7 +76,7 @@ def extract_population(pop_topic, metadata):
     metadata['population_source_url'] = source['citation']['uri']
 
 
-def extract_freebase_metadata(title, d):
+def extract_freebase_metadata(key, title, d):
     '''d is the freebase Topic JSON response'''
     metadata = {}
     metadata['freebase_mid'] = d['id']
@@ -86,7 +89,8 @@ def extract_freebase_metadata(title, d):
         try:
             en_value = en_values[0]
         except IndexError:
-            en_value = 'A nice place!'  # South Korea
+            descs = json.load(file(_path('descriptions.json')))
+            en_value = descs[key]
         metadata['description'] = trim_description(en_value, max_chars=300)
     except KeyError:
         sys.stderr.write('Missing description for %s\n' % title)
@@ -133,7 +137,7 @@ def run():
             sys.stderr.write('ERROR unable to fetch %s\n' % title)
             continue
         
-        md = extract_freebase_metadata(title, d)
+        md = extract_freebase_metadata(key, title, d)
         try:
             md.update(cia.get_country_data(key))
         except KeyError:

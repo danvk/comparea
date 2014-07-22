@@ -23,15 +23,15 @@ def _path(filename):
 
 
 DEFAULT_METADATA = {
-        'area_km2': -1,
-        'area_km2_source': 'None',
-        'area_km2_source_url': 'None',
-        'population': -1,
-        'population_date': -1,
-        'population_source': 'None',
-        'population_source_url': 'None',
-        'description': 'A nice place!',
-        'freebase_mid': '/m/123'
+        'area_km2': None,
+        'area_km2_source': None,
+        'area_km2_source_url': None,
+        'population': None,
+        'population_date': None,
+        'population_source': None,
+        'population_source_url': None,
+        'description': None,
+        'freebase_mid': None
 }
 _metadata = None
 def get_metadata(code, existing_props=None):
@@ -278,6 +278,21 @@ def update_metadata(feature_collection):
         feat['properties'] = get_metadata(code, existing_props=props)
 
 
+def remove_features_with_missing_properties(feature_collection):
+    new_collect = []
+    for feat in feature_collection['features']:
+        props = feat['properties']
+        missing = False
+        for k, v in props.iteritems():
+            if v == None:
+                missing = True
+                break
+        if not missing:
+            new_collect.append(feat)
+
+    feature_collection['features'] = new_collect
+
+
 def run(args):
     countries = load_geojson('countries.json', process_country)
     subunits = load_geojson('subunits.json', process_subunit)
@@ -304,6 +319,7 @@ def run(args):
     fill_missing_wiki_urls(comparea_features)
     update_metadata(comparea_features)
 
+    remove_features_with_missing_properties(comparea_features)
     assert_no_id_collisions(comparea_features)
 
     print json.dumps(comparea_features)
