@@ -1,3 +1,26 @@
+There are 20 features with missing data that I care about:
+  ATA	Antarctica
+  USA48	United States (Contiguous 48)
+  NZS	New Zealand (South Island)
+  PRX	Portugal
+  ASIA	Asia
+  AF	Africa
+  EU	Europe
+  SA	South America
+  NLX	Netherlands (Overseas Territories)
+  ESX	Spain
+  NRX	Norway
+  ZAX	South Africa
+  NA	North America
+  CUW	Curaçao
+  IMN	Isle of Man
+  KOS	Kosovo
+  MKD	Macedonia
+  SRB	Serbia
+  KOR	Korea
+  MEX	Mexico
+
+
 Freebase issues:
 x Myanmar should be Burma
 - Germany, Brazil & a few others seem to have the wrong topics
