@@ -2541,7 +2541,7 @@
     "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
   }, 
   "SDN": {
-    "area_km2": 0, 
+    "area_km2": 1861484, 
     "area_km2_source": "World Factbook", 
     "area_km2_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html", 
     "description": "Sudan, officially the Republic of the Sudan, is an Arab republic in the Nile Valley of North Africa, bordered by Egypt to the north, the Red Sea, Eritrea and Ethiopia to the east, South Sudan to the south, the Central African Republic to the southwest, Chad to the west and Libya to the northwest.", 
@@ -2549,15 +2549,18 @@
     "population": 35482233, 
     "population_date": "July 2014", 
     "population_source": "World Factbook", 
-    "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
+    "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html"
   }, 
   "SDS": {
+    "area_km2": 644329, 
+    "area_km2_source": "World Factbook", 
+    "area_km2_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html", 
     "description": "South Sudan, officially the Republic of South Sudan, is a landlocked country in northeastern Africa that gained its independence from Sudan in 2011. Its current capital is Juba, which is also its largest city.", 
     "freebase_mid": "/m/05rznz", 
-    "population": 10314021.0, 
-    "population_date": "2011", 
-    "population_source": "World Bank", 
-    "population_source_url": "http://data.worldbank.org/indicator/SP.POP.TOTL"
+    "population": 11562695, 
+    "population_date": "July 2014", 
+    "population_source": "World Factbook", 
+    "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html"
   }, 
   "SEN": {
     "area_km2": 192530, 

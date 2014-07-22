@@ -106,3 +106,7 @@ CA_PE,Prince Edward Island,"5,660",StatCan,http://www40.statcan.gc.ca/l01/cst01/
 CA_QC,Québec,"1,356,128",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"7,903,001",May 2021,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
 CA_SK,Saskatchewan,"591,670",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"1,033,381",May 2022,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
 CA_YT,Yukon,"474,391",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"33,897",May 2023,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+,,,,,,,,
+Overrides,,,,,,,,
+SDS,S. Sudan,"644,329",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"11,562,695",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html
+SDN,Sudan,"1,861,484",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"35,482,233",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html
