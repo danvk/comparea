@@ -34,12 +34,14 @@ DEFAULT_METADATA = {
         'freebase_mid': '/m/123'
 }
 _metadata = None
-def get_metadata(code):
+def get_metadata(code, existing_props=None):
     global _metadata
     if not _metadata:
         _metadata = json.load(file(_path('metadata.json')))
     d = {}
     d.update(DEFAULT_METADATA)
+    if existing_props:
+        d.update(existing_props)
     try:
         d.update(_metadata[code])
     except KeyError:
@@ -61,7 +63,6 @@ def process_country(country):
     iso3 = props['su_a3']
     out['id'] = iso3
     out_props['name'] = props['name']
-    out_props.update(get_metadata(iso3))
     wiki_url = country_codes.iso3_to_wikipedia_url(iso3)
     if not wiki_url:
         raise ValueError('Unable to get wikipedia link for %s = %s\n' % (iso3, props['name']))
@@ -88,16 +89,14 @@ def process_subunit(country):
     if su_a3 not in ids:
         return None
 
-    out_props = {}
     out = {
+        'id': su_a3,
         'type': country['type'],
         'geometry': country['geometry'],
-        'properties': out_props
+        'properties': {
+            'name': ids[su_a3]
+        }
     }
-    out['id'] = su_a3
-    out_props['name'] = ids[su_a3]
-    out_props.update(get_metadata(su_a3))
-    out_props['wikipedia_url'] = 'http://google.com'
 
     return out
 
@@ -118,16 +117,11 @@ def process_province(province):
         code = props['hasc_maybe'].split('|')[0].replace('.', '_')
     out['id'] = code
     out_props['name'] = '%s (%s)' % (props['name'], short_admin)
-    out_props.update(get_metadata(code))
     wiki_url = props['wikipedia']
     if wiki_url:
         out_props['wikipedia_url'] = wiki_url
     else:
-        br = json.load(open(_path('extra-wiki.json')))  # lazy!
-        if code in br:
-            out_props['wikipedia_url'] = br[code]
-        else:
-            out_props['wikipedia_url'] = '#'
+        out_props['wikipedia_url'] = '#'
 
     return out
 
@@ -148,20 +142,15 @@ def process_continent(continent):
     if ids[name] == None:
         return None
 
-    out_props = {}
     out = {
         'type': continent['type'],
         'features': continent['features'],
-        'properties': out_props
+        'properties': {
+            'name': name
+        }
     }
 
     out['id'] = ids[name]
-    out_props['name'] = name
-    out_props['population'] = -1
-    out_props['population_year'] = '???'
-    out_props['area_km2'] = -1
-    out_props['description'] = 'A nice place'
-    out_props['wikipedia_url'] = '#'
 
     return out
 
@@ -202,8 +191,6 @@ def adjust_countries(countries, subunits):
             [-126.782227, -66.269531], [24.246965, 49.61071])
     usa48['id'] = 'USA48'
     usa48['properties']['name'] = 'United States (Contiguous 48)'
-    usa48['properties'].update(get_metadata('USA48'))
-    usa48['properties']['wikipedia_url'] = 'http://en.wikipedia.org/wiki/Contiguous_United_States'
     countries.append(usa48)
 
     nz = geojson_util.subset_feature(find(countries, 'NZL'),
@@ -244,6 +231,8 @@ def assert_no_id_collisions(comparea_features):
     id_to_name = {}
     for feature in comparea_features['features']:
         this_id = feature['id']
+        props = feature['properties']
+        assert 'name' in props, 'Feature %s has no name' % this_id
         this_name = feature['properties']['name']
 
         if this_id in id_to_name:
@@ -270,6 +259,25 @@ def load_geojson(filename, process_fn):
     return features
 
 
+def fill_missing_wiki_urls(feature_collection):
+    urls = json.load(open(_path('extra-wiki.json')))
+    for feat in feature_collection['features']:
+        code = feat['id']
+        props = feat['properties']
+        if code in urls:
+            props['wikipedia_url'] = urls[code]
+
+        if 'wikipedia_url' not in props:
+            props['wikipedia_url'] = '#'
+
+
+def update_metadata(feature_collection):
+    for feat in feature_collection['features']:
+        code = feat['id']
+        props = feat.get('properties')
+        feat['properties'] = get_metadata(code, existing_props=props)
+
+
 def run(args):
     countries = load_geojson('countries.json', process_country)
     subunits = load_geojson('subunits.json', process_subunit)
@@ -292,6 +300,9 @@ def run(args):
 
     for collection in collections[1:]:
         comparea_features['features'] += collection
+
+    fill_missing_wiki_urls(comparea_features)
+    update_metadata(comparea_features)
 
     assert_no_id_collisions(comparea_features)
 

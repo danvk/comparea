@@ -35,5 +35,25 @@
   "AU_SA": "http://en.wikipedia.org/wiki/South_Australia",
   "AU_TS": "http://en.wikipedia.org/wiki/Tasmania",
   "AU_VI": "http://en.wikipedia.org/wiki/Victoria_(Australia)",
-  "AU_WA": "http://en.wikipedia.org/wiki/Western_Australia"
+  "AU_WA": "http://en.wikipedia.org/wiki/Western_Australia",
+
+  "FRA": "http://en.wikipedia.org/wiki/Metropolitan_France",
+  "NLD": "http://en.wikipedia.org/wiki/European_Netherlands",
+  "NLX": "http://en.wikipedia.org/wiki/Netherlands",
+  "PRX": "http://en.wikipedia.org/wiki/Continental_Portugal",
+  "NZS": "http://en.wikipedia.org/wiki/South_Island",
+  "PR1": "http://en.wikipedia.org/wiki/Portugal",
+  "USA48": "http://en.wikipedia.org/wiki/Contiguous_United_States",
+
+  "CHL": "http://en.wikipedia.org/wiki/Chile",
+  "NOR": "http://en.wikipedia.org/wiki/Norway",
+  "NRX": "http://en.wikipedia.org/wiki/Norway",
+  "ZAX": "http://en.wikipedia.org/wiki/South_Africa",
+  "ESX": "http://en.wikipedia.org/wiki/Spain",
+
+  "AF": "http://en.wikipedia.org/wiki/Africa",
+  "SA": "http://en.wikipedia.org/wiki/South_America",
+  "NA": "http://en.wikipedia.org/wiki/North_America",
+  "EU": "http://en.wikipedia.org/wiki/Europe",
+  "ASIA": "http://en.wikipedia.org/wiki/Asia"
 }
