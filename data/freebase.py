@@ -18,6 +18,11 @@ MONKEY_PATCHES = {
     'Vatican City State': 'Vatican City'
 }
 
+def _path(filename):
+    return os.path.join(os.path.dirname(__file__), filename)
+
+TOPIC_OVERRIDES = json.load(file(_path('topic-overrides.json')))
+
 class Freebase(object):
     '''Freebase Topic API wrapper. Maps wikipedia title --> topic JSON.'''
     service_url = u'https://www.googleapis.com/freebase/v1/topic'
@@ -59,8 +64,11 @@ class Freebase(object):
         if title in MONKEY_PATCHES:
             title = MONKEY_PATCHES[title]
 
-        title_key = quotekey(title)
-        topic_id = '/wikipedia/en_title/%s' % title_key
+        if title in TOPIC_OVERRIDES:
+            topic_id = TOPIC_OVERRIDES[title]
+        else:
+            title_key = quotekey(title)
+            topic_id = '/wikipedia/en_title/%s' % title_key
         url = self.service_url + topic_id + '?' + urllib.urlencode(params)
         return url
 
@@ -72,8 +80,8 @@ class Freebase(object):
         url = self._construct_url(title)
         sys.stderr.write('Fetching %s\n' % url)
         data = urllib.urlopen(url).read()
-        if self._use_cache:
-            open(self._cache_file(title), 'w').write(data)
+        #if self._use_cache:
+        open(self._cache_file(title), 'w').write(data)
         return json.loads(data)
 
 
@@ -102,6 +110,7 @@ def quotekey(title):
 
 if __name__ == '__main__':
     freebase = Freebase()
+    freebase_nocache = Freebase(use_cache=False)
 
     gj = json.load(file("comparea/static/data/comparea.geo.json"))
     for feature in gj['features']:
@@ -113,5 +122,7 @@ if __name__ == '__main__':
 
         try:
             d = freebase.get_topic_json(title)
+            if 'property' not in d or len(d['property']) == 0:
+                d = freebase_nocache.get_topic_json(title)
         except IOError:
             sys.stderr.write('ERROR unable to fetch %s\n' % title)

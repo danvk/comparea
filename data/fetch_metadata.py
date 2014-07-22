@@ -83,7 +83,10 @@ def extract_freebase_metadata(title, d):
         desc_topic = d['property']['/common/topic/description']
         en_values = [v['value'] for v in desc_topic['values'] if v['lang'] == 'en']
         en_values.sort(key=lambda x: -len(x))
-        en_value = en_values[0]
+        try:
+            en_value = en_values[0]
+        except IndexError:
+            en_value = 'A nice place!'  # South Korea
         metadata['description'] = trim_description(en_value, max_chars=300)
     except KeyError:
         sys.stderr.write('Missing description for %s\n' % title)
