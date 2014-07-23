@@ -64,6 +64,9 @@ def get_area_of_polygon(lon_lats):
 
 
 def get_area_of_feature(feature):
+    if feature['type'] == 'FeatureCollection':
+        return sum([get_area_of_feature(feat) for feat in feature['features']])
+
     geom = feature['geometry']
     if geom['type'] == 'Polygon':
         return get_area_of_polygon(geom['coordinates'][0])
