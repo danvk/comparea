@@ -1241,7 +1241,7 @@
     "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
   }, 
   "ERI": {
-    "area_km2": 101000, 
+    "area_km2": 117600, 
     "area_km2_source": "World Factbook", 
     "area_km2_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html", 
     "description": "Eritrea, officially the State of Eritrea, is a country in the Horn of Africa. Eritrea is the Italian form of the Greek name \u1f18\u03c1\u03c5\u03b8\u03c1\u03b1\u03af\u03b1, meaning \"red [land]\". With its capital at Asmara, it is bordered by Sudan to the west, Ethiopia in the south, and Djibouti in the east.", 
@@ -1362,8 +1362,15 @@
     "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
   }, 
   "FXX": {
+    "area_km2": 549970, 
+    "area_km2_source": "World Factbook", 
+    "area_km2_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html", 
     "description": "Metropolitan France is the part of France located in Europe. It includes mainland and the nearby islands in the Atlantic Ocean, the English Channel and the Mediterranean Sea, including Corsica.", 
-    "freebase_mid": "/m/030zzx"
+    "freebase_mid": "/m/030zzx", 
+    "population": 64036000, 
+    "population_date": "June 2014", 
+    "population_source": "INSEE", 
+    "population_source_url": "http://www.bdm.insee.fr/bdm2/affichageSeries.action?idbank=000436387&bouton=OK&codeGroupe=62"
   }, 
   "GAB": {
     "area_km2": 257667, 
@@ -2328,17 +2335,6 @@
     "population_source": "World Factbook", 
     "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
   }, 
-  "NRX": {
-    "area_km2": 304225, 
-    "area_km2_source": "SSB", 
-    "area_km2_source_url": "http://www.ssb.no/en/natur-og-miljo/statistikker/arealdekke", 
-    "description": "Norway, officially the Kingdom of Norway, is a Scandinavian unitary constitutional monarchy whose territory comprises the western portion of the Scandinavian Peninsula, Jan Mayen, the Arctic archipelago of Svalbard, and the sub-Antarctic Bouvet Island.", 
-    "freebase_mid": "/m/05b4w", 
-    "population": 5145150, 
-    "population_date": "July 2014", 
-    "population_source": "World Factbook", 
-    "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
-  }, 
   "NZL": {
     "area_km2": 267710, 
     "area_km2_source": "World Factbook", 
@@ -2580,17 +2576,6 @@
     "population_date": "2012", 
     "population_source": "DESA", 
     "population_source_url": "http://esa.un.org/unpd/wpp/Excel-Data/population.htm"
-  }, 
-  "SAH": {
-    "area_km2": 266000, 
-    "area_km2_source": "World Factbook", 
-    "area_km2_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html", 
-    "description": "The Western Sahara is a disputed Moroccan territory in the Maghreb region of North Africa, bordered by Morocco to the north, Algeria to the extreme northeast, Mauritania to the east and south, and the Atlantic Ocean to the west. Its surface area amounts to 266,000 square kilometres.", 
-    "freebase_mid": "/m/082qk", 
-    "population": 554795, 
-    "population_date": "July 2013", 
-    "population_source": "World Factbook", 
-    "population_source_url": "https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html"
   }, 
   "SAU": {
     "area_km2": 2149690, 

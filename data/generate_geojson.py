@@ -209,6 +209,10 @@ def adjust_countries(countries, subunits):
     geojson_util.add_feature_geometry(
             find(countries, 'CYP'), find(subunits, 'CYN'))
 
+    # Add Corsica to Metropolitan France
+    geojson_util.add_feature_geometry(
+            find(subunits, 'FXX'), find(subunits, 'FXC'))
+
     ok_subunit_ids = {
             'FXX': 'France (Metropolitan)',
             'NLD': 'Netherlands',
@@ -312,6 +316,8 @@ def remove_features_with_missing_properties(feature_collection):
         missing = False
         for k, v in props.iteritems():
             if v == None:
+                sys.stderr.write('Dropping %s %s (missing %s)\n' % (
+                    feat['id'], props['name'], k))
                 missing = True
                 break
         if not missing:
@@ -357,7 +363,7 @@ def run(args):
     fill_missing_wiki_urls(comparea_features)
     update_metadata(comparea_features)
 
-    #remove_features_with_missing_properties(comparea_features)
+    remove_features_with_missing_properties(comparea_features)
     remove_blacklisted_features(comparea_features)
 
     assert_no_id_collisions(comparea_features)
