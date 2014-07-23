@@ -192,6 +192,18 @@ def adjust_countries(countries, subunits):
     delete(countries, 'NZL')
     countries.append(nz)
 
+    # Add Somaliland to Somalia
+    geojson_util.add_feature_geometry(
+            find(countries, 'SOM'), find(subunits, 'SOL'))
+
+    # Add Western Sahara to Morocco
+    geojson_util.add_feature_geometry(
+            find(countries, 'MAR'), find(subunits, 'SAH'))
+
+    # Add Northern Cyprus to Cyprus
+    geojson_util.add_feature_geometry(
+            find(countries, 'CYP'), find(subunits, 'CYN'))
+
     ok_subunit_ids = {
             'FXX': 'France (Metropolitan)',
             'NLD': 'Netherlands',

@@ -15,16 +15,12 @@ Path forward:
   - Show "20% larger" in the UI somewhere
 
 - Data curation:
-  x Missing features:
-    x Add "Spain (Overseas territories)"
-    x Remove "New Zealand (South Island)"
-    x Add "France (Metropolitan)"
   - Rename "Korea" and "Dem. Rep. Korea"
   - Compare calculated and displayed areas
-    - Add Somaliland to Somalia
-    - Add Western Sahara to Morocco
-    - Add North Cyprus to Cyprus
     - Update cia-area.txt one more time
+    x Add Somaliland to Somalia
+    x Add Western Sahara to Morocco
+    x Add North Cyprus to Cyprus
     x Remove "France (Overseas Territories)"
     x Blacklist Western Sahara
     x Use Total Area for Eritrea (not sure why land area is so different)
@@ -32,6 +28,10 @@ Path forward:
   - Generate my own continent features w/ higher resolution
   - What are the other polygons in geometry.coordintes? (after index 0)
     --> e.g. in KGZ. Are they negative polygons?
+  x Missing features:
+    x Add "Spain (Overseas territories)"
+    x Remove "New Zealand (South Island)"
+    x Add "France (Metropolitan)"
   x Update information:
     x No missing data
     x Figure out why Brazil, Germany and friends are missing Freebase topics

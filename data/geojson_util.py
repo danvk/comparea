@@ -157,4 +157,5 @@ def add_feature_geometry(base_feature, new_feature):
         base_feature['type'] = 'FeatureCollection'
         base_feature['features'] = [subfeature, new_feature]
         del base_feature['geometry']
-    raise ValueError('Unknown feature type %s' % base_feature['type'])
+    else:
+        raise ValueError('Unknown feature type %s' % base_feature['type'])
