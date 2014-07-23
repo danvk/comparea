@@ -1,5 +1,6 @@
 import copy
 import json
+import sys
 from pyproj import Proj
 from shapely.geometry import shape
 
@@ -48,7 +49,7 @@ def check_feature_collection(collection):
             raise ValueError('(feature %d) %s' % (i, e))
 
 
-pa = Proj("+proj=aea +lat_1=37.0 +lat_2=41.0 +lat_0=39.0 +lon_0=-106.55")
+pa = Proj("+proj=aea")  # +lat_1=37.0 +lat_2=41.0 +lat_0=39.0 +lon_0=-106.55")
 def _lon_lats_to_shape(lon_lats, p=None):
     global pa
     if not p: p = pa

@@ -3,11 +3,12 @@
   <p>
     <span class=stat-name>Area</span>:
     <span class="stat-value area">{{feature.properties.area_km2|int|format_commas}} km<sup>2</sup></span>
+    <a class="stat-source" href="{{feature.properties.area_km2_source_url}}">{{feature.properties.area_km2_source}}</a>
   </p>
   <p class="population">
     <span class="stat-name">Population</span>:
     <span class="stat-value">{{feature.properties.population|int|format_commas}}</span>
-    (<span class="stat-year">{{feature.properties.population_year}}</span>)
+    (<span class="stat-year">{{feature.properties.population_date}}</span>)
     <a class="stat-source" href="{{feature.properties.population_source_url}}">{{feature.properties.population_source}}</a>
    </p>
 </div>

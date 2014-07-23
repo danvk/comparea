@@ -41,6 +41,9 @@ html,body{
 .population {
   font-size: small;
 }
+.stat-source {
+  font-size: small;
+}
 
 line { stroke: black; }
 

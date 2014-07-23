@@ -28,6 +28,7 @@ BTN	BTN	Bhutan	38,394 sq km 	38,394 sq km 	0 sq km	38394
 BOL	BOL	Bolivia	1,098,581 sq km 	1,083,301 sq km 	15,280 sq km	1083301
 BIH	BIH	Bosnia and Herzegovina	51,197 sq km 	51,187 sq km 	10 sq km	51187
 BWA	BWA	Botswana	581,730 sq km 	566,730 sq km 	15,000 sq km	566730
+	BVT	Bouvet Island	49 sq km 	49 sq km 	0 sq km	49
 BRA	BRA	Brazil	8,514,877 sq km 	8,459,417 sq km 	55,460 sq km 	8459417
 IOT	IOT	British Indian Ocean Territory	54,400 sq km 	60 sq km	54,340 sq km 	60
 VGB	VGB	British Virgin Islands	151 sq km 	151 sq km 	0 sq km 	151
@@ -45,6 +46,8 @@ CAF	CAF	Central African Republic	622,984 sq km 	622,984 sq km 	0 sq km	622984
 TCD	TCD	Chad	1.284 million sq km 	1,259,200 sq km 	24,800 sq km	1259200
 CHL	CHL	Chile	756,102 sq km 	743,812 sq km 	12,290 sq km 	743812
 CHN	CHN	China	9,596,960 sq km 	9,326,410 sq km 	270,550 sq km	9326410
+	CXR	Christmas Island	135 sq km 	135 sq km 	0 sq km	135
+	FYP	Clipperton Island	6 sq km 	6 sq km 	0 sq km	6
 AUS	AUS	Cocos (Keeling) Islands	14 sq km 	14 sq km 	0 sq km 	14
 COL	COL	Colombia	1,138,910 sq km 	1,038,700 sq km 	100,210 sq km 	1038700
 COM	COM	Comoros	2,235 sq km 	2,235 sq km 	0 sq km	2235
@@ -55,6 +58,7 @@ CRI	CRI	Costa Rica	51,100 sq km 	51,060 sq km 	40 sq km 	51060
 CIV	CIV	Cote d'Ivoire	322,463 sq km 	318,003 sq km 	4,460 sq km	318003
 HRV	HRV	Croatia	56,594 sq km 	55,974 sq km 	620 sq km	55974
 CUB	CUB	Cuba	110,860 sq km 	109,820 sq km 	1,040 sq km	109820
+CUW	-	Curacao	444 sq km 	444 sq km 	0 sq km	444
 CYP	CYP	Cyprus	9,251 sq km (of which 3,355 sq km are in north Cyprus) 	9,241 sq km 	10 sq km	9241
 CZE	CZE	Czech Republic	78,867 sq km 	77,247 sq km 	1,620 sq km	77247
 DNK	DNK	Denmark	43,094 sq km 	42,434 sq km 	660 sq km 	42434
@@ -80,19 +84,22 @@ PSX	PSE	Gaza Strip	360 sq km 	360 sq km 	0 sq km	360
 GEO	GEO	Georgia	69,700 sq km 	69,700 sq km 	0 sq km	69700
 DEU	DEU	Germany	357,022 sq km 	348,672 sq km 	8,350 sq km	348672
 GHA	GHA	Ghana	238,533 sq km 	227,533 sq km 	11,000 sq km	227533
+	GIB	Gibraltar	6.5 sq km 	6.5 sq km 	0 sq km	6
 GRC	GRC	Greece	131,957 sq km 	130,647 sq km 	1,310 sq km	130647
 GRL	GRL	Greenland	2,166,086 sq km 	2,166,086 sq km		2166086
 GRD	GRD	Grenada	344 sq km 	344 sq km 	0 sq km	344
 GUM	GUM	Guam	544 sq km 	544 sq km 	0 sq km	544
 GTM	GTM	Guatemala	108,889 sq km 	107,159 sq km 	1,730 sq km	107159
+GGY	UK	Guernsey	78 sq km 	78 sq km 	0 sq km 	78
 GIN	GIN	Guinea	245,857 sq km 	245,717 sq km 	140 sq km	245717
 GNB	GNB	Guinea-Bissau	36,125 sq km 	28,120 sq km 	8,005 sq km	28120
 GUY	GUY	Guyana	214,969 sq km 	196,849 sq km 	18,120 sq km	196849
 HTI	HTI	Haiti	27,750 sq km 	27,560 sq km 	190 sq km	27560
 HMD	HMD	Heard Island and McDonald Islands	412 sq km 	412 sq km 	0 sq km	412
-VAT	VAT	Holy See (Vatican City)	0.44 sq km 	0.44 sq km 	0 sq km	0
+VAT	VAT	Holy See (Vatican City)	0.44 sq km 	0.44 sq km 	0 sq km	0.44
 HND	HND	Honduras	112,090 sq km 	111,890 sq km 	200 sq km	111890
 HKG	HKG	Hong Kong	1,104 sq km 	1,054 sq km 	50 sq km	1054
+	UMI	Howland Island	1.6 sq km 	1.6 sq km 	0 sq km	1
 HUN	HUN	Hungary	93,028 sq km 	89,608 sq km 	3,420 sq km	89608
 ISL	ISL	Iceland	103,000 sq km 	100,250 sq km 	2,750 sq km	100250
 IND	IND	India	3,287,263 sq km 	2,973,193 sq km 	314,070 sq km	2973193
@@ -100,16 +107,23 @@ IDN	IDN	Indonesia	1,904,569 sq km 	1,811,569 sq km 	93,000 sq km	1811569
 IRN	IRN	Iran	1,648,195 sq km 	1,531,595 sq km 	116,600 sq km	1531595
 IRQ	IRQ	Iraq	438,317 sq km 	437,367 sq km 	950 sq km	437367
 IRL	IRL	Ireland	70,273 sq km 	68,883 sq km 	1,390 sq km	68883
+IMN	UK	Isle of Man	572 sq km 	572 sq km 	0 sq km	572
 ISR	ISR	Israel	20,770 sq km 	20,330 sq km 	440 sq km	20330
 ITA	ITA	Italy	301,340 sq km 	294,140 sq km 	7,200 sq km 	294140
 JAM	JAM	Jamaica	10,991 sq km 	10,831 sq km 	160 sq km	10831
+	SJM	Jan Mayen	377 sq km 	377 sq km 	0 sq km	377
 JPN	JPN	Japan	377,915 sq km 	364,485 sq km 	13,430 sq km 	364485
+	UMI	Jarvis Island	4.5 sq km 	4.5 sq km 	0 sq km	4
+JEY	UK	Jersey	116 sq km 	116 sq km 	0 sq km	116
+	UMI	Johnston Atoll	2.63 sq km 	2.63 sq km 	0 sq km	2
 JOR	JOR	Jordan	89,342 sq km 	88,802 sq km 	540 sq km	88802
 KAZ	KAZ	Kazakhstan	2,724,900 sq km 	2,699,700 sq km 	25,200 sq km	2699700
 KEN	KEN	Kenya	580,367 sq km 	569,140 sq km 	11,227 sq km	569140
+	UMI	Kingman Reef	1 sq km 	1 sq km 	0 sq km	1
 KIR	KIR	Kiribati	811 sq km 	811 sq km 	0 sq km 	811
 PRK	PRK	Korea, North	120,538 sq km 	120,408 sq km 	130 sq km	120408
 KOR	KOR	Korea, South	99,720 sq km 	96,920 sq km 	2,800 sq km	96920
+KOS	-	Kosovo	10,887 sq km 	10,887 sq km 	0 sq km	10887
 KWT	KWT	Kuwait	17,818 sq km 	17,818 sq km 	0 sq km	17818
 KGZ	KGZ	Kyrgyzstan	199,951 sq km 	191,801 sq km 	8,150 sq km	191801
 LAO	LAO	Laos	236,800 sq km 	230,800 sq km 	6,000 sq km	230800
@@ -122,6 +136,7 @@ LIE	LIE	Liechtenstein	160 sq km 	160 sq km 	0 sq km	160
 LTU	LTU	Lithuania	65,300 sq km 	62,680 sq km 	2,620 sq km	62680
 LUX	LUX	Luxembourg	2,586 sq km 	2,586 sq km 	0 sq km	2586
 MAC	MAC	Macau	28.2 sq km 	28.2 sq km 	0 sq km	28
+MKD	FYR	Macedonia	25,713 sq km 	25,433 sq km 	280 sq km	25433
 MDG	MDG	Madagascar	587,041 sq km 	581,540 sq km 	5,501 sq km	581540
 MWI	MWI	Malawi	118,484 sq km 	94,080 sq km 	24,404 sq km	94080
 MYS	MYS	Malaysia	329,847 sq km 	328,657 sq km 	1,190 sq km	328657
@@ -133,6 +148,7 @@ MRT	MRT	Mauritania	1,030,700 sq km 	1,030,700 sq km 	0 sq km	1030700
 MUS	MUS	Mauritius	2,040 sq km 	2,030 sq km 	10 sq km 	2030
 MEX	MEX	Mexico	1,964,375 sq km 	1,943,945 sq km 	20,430 sq km	1943945
 FSM	FSM	Micronesia, Federated States of	702 sq km 	702 sq km 	0 sq km (fresh water only) 	702
+	UMI	Midway Islands	6.2 sq km 	6.2 sq km 	0 sq km 	6
 MDA	MDA	Moldova	33,851 sq km 	32,891 sq km 	960 sq km	32891
 MCO	MCO	Monaco	2 sq km 	2 sq km 	0 sq km	2
 MNG	MNG	Mongolia	1,564,116 sq km 	1,553,556 sq km 	10,560 sq km	1553556
@@ -142,6 +158,7 @@ MAR	MAR	Morocco	446,550 sq km 	446,300 sq km 	250 sq km	446300
 MOZ	MOZ	Mozambique	799,380 sq km 	786,380 sq km 	13,000 sq km	786380
 NAM	NAM	Namibia	824,292 sq km 	823,290 sq km 	1,002 sq km	823290
 NRU	NRU	Nauru	21 sq km 	21 sq km 	0 sq km	21
+	UMI	Navassa Island	5.4 sq km 	5.4 sq km 	0 sq km	5
 NPL	NPL	Nepal	147,181 sq km 	143,351 sq km 	3,830 sq km	143351
 NLD	NLD	Netherlands	41,543 sq km 	33,893 sq km 	7,650 sq km	33893
 NCL	NCL	New Caledonia	18,575 sq km 	18,275 sq km 	300 sq km	18275
@@ -156,6 +173,7 @@ NOR	NOR	Norway	323,802 sq km 	304,282 sq km 	19,520 sq km	304282
 OMN	OMN	Oman	309,500 sq km 	309,500 sq km 	0 sq km	309500
 PAK	PAK	Pakistan	796,095 sq km 	770,875 sq km 	25,220 sq km	770875
 PLW	PLW	Palau	459 sq km 	459 sq km 	0 sq km	459
+	UMI	Palmyra Atoll	11.9 sq km 	11.9 sq km 	0 sq km	11
 PAN	PAN	Panama	75,420 sq km 	74,340 sq km 	1,080 sq km	74340
 PN1	PNG	Papua New Guinea	462,840 sq km 	452,860 sq km 	9,980 sq km	452860
 PRY	PRY	Paraguay	406,752 sq km 	397,302 sq km 	9,450 sq km	397302
@@ -169,9 +187,10 @@ QAT	QAT	Qatar	11,586 sq km 	11,586 sq km 	0 sq km	11586
 ROU	ROU	Romania	238,391 sq km 	229,891 sq km 	8,500 sq km	229891
 RUS	RUS	Russia	17,098,242 sq km 	16,377,742 sq km 	720,500 sq km	16377742
 RWA	RWA	Rwanda	26,338 sq km 	24,668 sq km 	1,670 sq km	24668
-SHN	SHN	Saint Helena, Ascension, and Tristan da Cunha	308 sq km 		0 sq km	0
+SHN	SHN	Saint Helena, Ascension, and Tristan da Cunha	308 sq km 	308 sq km 	0 sq km	308
 KNA	KNA	Saint Kitts and Nevis	261 sq km (Saint Kitts 168 sq km; Nevis 93 sq km) 	261 sq km 	0 sq km	261
 LCA	LCA	Saint Lucia	616 sq km 	606 sq km 	10 sq km	606
+MAF	-	Saint Martin	54.4 sq km 	54.4 sq km 	NEGL	54
 SPM	SPM	Saint Pierre and Miquelon	242 sq km 	242 sq km 	0 sq km 	242
 VCT	VCT	Saint Vincent and the Grenadines	389 sq km (Saint Vincent 344 sq km) 	389 sq km 	0 sq km	389
 WSM	WSM	Samoa	2,831 sq km 	2,821 sq km 	10 sq km	2821
@@ -179,9 +198,11 @@ SMR	SMR	San Marino	61 sq km 	61 sq km 	0 sq km	61
 STP	STP	Sao Tome and Principe	964 sq km 	964 sq km 	0 sq km	964
 SAU	SAU	Saudi Arabia	2,149,690 sq km 	2,149,690 sq km 	0 sq km	2149690
 SEN	SEN	Senegal	196,722 sq km 	192,530 sq km 	4,192 sq km	192530
+SRB	-	Serbia	77,474 sq km 	77,474 sq km 	0 sq km	77474
 SYC	SYC	Seychelles	455 sq km 	455 sq km 	0 sq km	455
 SLE	SLE	Sierra Leone	71,740 sq km 	71,620 sq km 	120 sq km	71620
 SGP	SGP	Singapore	697 sq km 	687 sq km 	10 sq km	687
+SXM	-	Sint Maarten	34 sq km 	34 sq km 	0 sq km 	34
 SVK	SVK	Slovakia	49,035 sq km 	48,105 sq km 	930 sq km	48105
 SVN	SVN	Slovenia	20,273 sq km 	20,151 sq km 	122 sq km	20151
 SLB	SLB	Solomon Islands	28,896 sq km 	27,986 sq km 	910 sq km	27986
@@ -191,6 +212,7 @@ ESP	ESP	Spain	505,370 sq km 	498,980 sq km 	6,390 sq km 	498980
 LKA	LKA	Sri Lanka	65,610 sq km 	64,630 sq km 	980 sq km	64630
 SDN	SDN	Sudan	1,861,484 sq km 			0
 SUR	SUR	Suriname	163,820 sq km 	156,000 sq km 	7,820 sq km	156000
+	SJM	Svalbard	62,045 sq km 	62,045 sq km 	0 sq km 	62045
 SWZ	SWZ	Swaziland	17,364 sq km 	17,204 sq km 	160 sq km	17204
 SWE	SWE	Sweden	450,295 sq km 	410,335 sq km 	39,960 sq km	410335
 CHE	CHE	Switzerland	41,277 sq km 	39,997 sq km 	1,280 sq km	39997
@@ -201,12 +223,14 @@ TZA	TZA	Tanzania	947,300 sq km 	885,800 sq km 	61,500 sq km 	885800
 THA	THA	Thailand	513,120 sq km 	510,890 sq km 	2,230 sq km	510890
 TLS	TLS	Timor-Leste	14,874 sq km 	14,874 sq km 	0 sq km	14874
 TGO	TGO	Togo	56,785 sq km 	54,385 sq km 	2,400 sq km	54385
+	TKL	Tokelau	12 sq km 	12 sq km 	0 sq km	12
 TON	TON	Tonga	747 sq km 	717 sq km 	30 sq km	717
 TTO	TTO	Trinidad and Tobago	5,128 sq km 	5,128 sq km 	0 sq km	5128
 TUN	TUN	Tunisia	163,610 sq km 	155,360 sq km 	8,250 sq km	155360
 TUR	TUR	Turkey	783,562 sq km 	769,632 sq km 	13,930 sq km	769632
 TKM	TKM	Turkmenistan	488,100 sq km 	469,930 sq km 	18,170 sq km	469930
 TCA	TCA	Turks and Caicos Islands	948 sq km 	948 sq km 	0 sq km	948
+	TUV	Tuvalu	26 sq km 	26 sq km 	0 sq km	26
 UGA	UGA	Uganda	241,038 sq km 	197,100 sq km 	43,938 sq km	197100
 UKR	UKR	Ukraine	603,550 sq km 	579,330 sq km 	24,220 sq km	579330
 ARE	ARE	United Arab Emirates	83,600 sq km 	83,600 sq km 	0 sq km	83600
@@ -218,6 +242,7 @@ VUT	VUT	Vanuatu	12,189 sq km 	12,189 sq km 	0 sq km 	12189
 VEN	VEN	Venezuela	912,050 sq km 	882,050 sq km 	30,000 sq km	882050
 VNM	VNM	Vietnam	331,210 sq km 	310,070 sq km 	21,140 sq km	310070
 VIR	VIR	Virgin Islands	1,910 sq km 	346 sq km 	1,564 sq km	346
+	UMI	Wake Island	6.5 sq km 	6.5 sq km 	0 sq km	6
 WLF	WLF	Wallis and Futuna	142 sq km 	142 sq km 	0 sq km 	142
 PSX	PSE	West Bank	5,860 sq km 	5,640 sq km 	220 sq km 	5640
 SAH	ESH	Western Sahara	266,000 sq km 	266,000 sq km 	0 sq km	266000

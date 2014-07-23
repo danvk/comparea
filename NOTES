@@ -21,6 +21,8 @@ Path forward:
   - Compare calculated and displayed areas
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
   - Generate my own continent features w/ higher resolution
+  - What are the other polygons in geometry.coordintes? (after index 0)
+    --> e.g. in KGZ. Are they negative polygons?
   x Update information:
     x No missing data
     x Figure out why Brazil, Germany and friends are missing Freebase topics
