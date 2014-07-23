@@ -31,3 +31,9 @@ def get_shape(shape_id):
         'panel': render_template('panel.html', shape=shape),
         'feature': shape
     })
+
+
+@app.route('/reloadfish', methods=['POST'])
+def reloadfish():
+    models.reload_data()
+    return "OK"

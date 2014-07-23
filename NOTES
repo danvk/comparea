@@ -15,9 +15,8 @@ Path forward:
   - Show "20% larger" in the UI somewhere
 
 - Data curation:
-  x Rename "Korea" and "Dem. Rep. Korea"
   - Compare calculated and displayed areas
-    - Update cia-area.txt one more time
+    x Update cia-area.txt one more time
     x Add Somaliland to Somalia
     x Add Western Sahara to Morocco
     x Add North Cyprus to Cyprus
@@ -28,6 +27,8 @@ Path forward:
   - Generate my own continent features w/ higher resolution
   - What are the other polygons in geometry.coordintes? (after index 0)
     --> e.g. in KGZ. Are they negative polygons?
+  - What are the two Congos?
+  x Rename "Korea" and "Dem. Rep. Korea"
   x Missing features:
     x Add "Spain (Overseas territories)"
     x Remove "New Zealand (South Island)"

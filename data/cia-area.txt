@@ -69,7 +69,7 @@ ECU	ECU	Ecuador	283,561 sq km 	276,841 sq km 	6,720 sq km 	276841
 EGY	EGY	Egypt	1,001,450 sq km 	995,450 sq km 	6,000 sq km	995450
 SLV	SLV	El Salvador	21,041 sq km 	20,721 sq km 	320 sq km	20721
 GNQ	GNQ	Equatorial Guinea	28,051 sq km 	28,051 sq km 	0 sq km	28051
-ERI	ERI	Eritrea	117,600 sq km 	101,000 sq km 	16,600 sq km	101000
+ERI	ERI	Eritrea	117,600 sq km 	101,000 sq km 	16,600 sq km	117600
 EST	EST	Estonia	45,228 sq km 	42,388 sq km 	2,840 sq km 	42388
 ETH	ETH	Ethiopia	1,104,300 sq km 	1,000,000 sq km 	104,300 sq km	1000000
 FLK	FLK	Falkland Islands (Islas Malvinas)	12,173 sq km 	12,173 sq km 	0 sq km 	12173

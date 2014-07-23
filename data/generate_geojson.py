@@ -180,6 +180,7 @@ def adjust_countries(countries, subunits):
     rename(countries, 'ESP', 'Spain (with Islands)')
     rename(countries, 'KOR', 'Korea (South)')
     rename(countries, 'PRK', 'Korea (North)')
+    rename(countries, 'COD', 'Congo, Dem. Rep.')
 
     delete(countries, 'CHL')  # replaced by "mainland Chile"
     delete(countries, 'ZAF')  # I don't care about the Prince Edward Islands
