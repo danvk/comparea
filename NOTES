@@ -15,8 +15,10 @@ Path forward:
   - Show "20% larger" in the UI somewhere
 
 - Data curation:
-  - Add "New Zealand (North Island)"
-  - Add "Spain (Overseas territories)"
+  - Missing features:
+    - Add "New Zealand (North Island)"
+    - Add "Spain (Overseas territories)"
+    - Add "France (Metropolitan)"
   - Rename "Korea" and "Dem. Rep. Korea"
   - Compare calculated and displayed areas
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
