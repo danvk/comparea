@@ -74,27 +74,15 @@ def process_country(country):
 def process_subunit(country):
     assert country['type'] == 'Feature'
     props = country['properties']
-    ids = {
-            'FRX': 'France (Metropolitan)',
-            'NLD': 'Netherlands',
-            'NZ1': 'New Zealand (North Island)',
-            'NZS': 'New Zealand (South Island)',
-            'PRX': 'Portugal',
-            'CHL': 'Chile',
-            'NOR': 'Norway',
-            'ESX': 'Spain',
-            'ZAX': 'South Africa'
-    }
     su_a3 = props['su_a3']
-    if su_a3 not in ids:
-        return None
 
     out = {
         'id': su_a3,
         'type': country['type'],
         'geometry': country['geometry'],
         'properties': {
-            'name': ids[su_a3]
+            'name': props['name'],
+            'sov_a3': props['sov_a3']  # see adjust_continents
         }
     }
 
@@ -173,7 +161,12 @@ def adjust_countries(countries, subunits):
         idx = [i for i, c in enumerate(collection) if c['id'] == key][0]
         del collection[idx]
 
-    find(countries, 'FRA')['properties']['name'] = 'France (Overseas Territories)'
+    metro_france = find(subunits, 'FXX')
+    metro_france['properties'].update({
+        'name': 'France (Metropolitan)',
+        'wikipedia_url': 'http://en.wikipedia.org/wiki/Metropolitan_France'
+    })
+    delete(countries, 'FRA')  # Not interesting to look at
 
     nld = find(countries, 'NLD')
     nld['properties']['name'] = 'Netherlands (Overseas Territories)'
@@ -182,7 +175,7 @@ def adjust_countries(countries, subunits):
     find(countries, 'PR1')['properties']['name'] = 'Portugal (Overseas Territories)'
     find(countries, 'NOR')['properties']['name'] = 'Norway (Overseas Territories)'
     find(subunits, 'NOR')['id'] = 'NRX'
-    find(countries, 'ESP')['name'] = 'Spain (Overseas Territories)'
+    find(countries, 'ESP')['properties']['name'] = 'Spain (with Islands)'
 
     delete(countries, 'CHL')  # replaced by "mainland Chile"
     delete(countries, 'ZAF')  # I don't care about the Prince Edward Islands
@@ -199,12 +192,29 @@ def adjust_countries(countries, subunits):
     delete(countries, 'NZL')
     countries.append(nz)
 
-    return countries + subunits
+    ok_subunit_ids = {
+            'FXX': 'France (Metropolitan)',
+            'NLD': 'Netherlands',
+            #'NZ1': 'New Zealand (North Island)',
+            #'NZS': 'New Zealand (South Island)',
+            'PRX': 'Portugal',
+            'CHL': 'Chile',
+            'NOR': 'Norway',
+            'ESX': 'Spain',
+            'ZAX': 'South Africa'
+    }
+    ok_subunits = []
+    for feature in subunits:
+        if feature['id'] in ok_subunit_ids:
+            feature['properties']['name'] = ok_subunit_ids[feature['id']]
+            ok_subunits.append(feature)
+
+    return countries + ok_subunits
 
 
 def adjust_continents(continents, subunits):
     '''Put European Russia in Europe, Asian Russia in Asia.'''
-    russias = [f for f in subunits['features'] if f['properties']['sov_a3'] == 'RUS']
+    russias = [f for f in subunits if f['properties']['sov_a3'] == 'RUS']
     asian_russia = russias[0]
     european_russia = russias[1]
 
@@ -293,6 +303,18 @@ def remove_features_with_missing_properties(feature_collection):
     feature_collection['features'] = new_collect
 
 
+def remove_blacklisted_features(feature_collection):
+    blacklist = json.load(file(_path('blacklist.json')))
+    blacklist_ids = [f['id'] for f in blacklist]
+
+    new_collect = []
+    for feat in feature_collection['features']:
+        if feat['id'] not in blacklist_ids:
+            new_collect.append(feat)
+
+    feature_collection['features'] = new_collect
+
+
 def run(args):
     countries = load_geojson('countries.json', process_country)
     subunits = load_geojson('subunits.json', process_subunit)
@@ -300,8 +322,7 @@ def run(args):
 
     continent_list = map(process_continent, json.load(file('data/continents.geo.json')))
     continent_list = [c for c in continent_list if c]
-    raw_subunits = json.load(file('data/subunits.json'))
-    adjust_continents(continent_list, raw_subunits)
+    adjust_continents(continent_list, subunits)
 
     collections = [
         admin0,
@@ -319,7 +340,9 @@ def run(args):
     fill_missing_wiki_urls(comparea_features)
     update_metadata(comparea_features)
 
-    remove_features_with_missing_properties(comparea_features)
+    #remove_features_with_missing_properties(comparea_features)
+    remove_blacklisted_features(comparea_features)
+
     assert_no_id_collisions(comparea_features)
 
     print json.dumps(comparea_features)

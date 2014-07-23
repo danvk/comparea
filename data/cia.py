@@ -42,9 +42,11 @@ def _load_data():
         su_a3 = fields[0]
         try:
             area = fields[6]
-            area = int(area.replace(',', ''))
+            area = float(area.replace(',', ''))
+            if area == round(area):
+                area = int(area)
         except ValueError:
-            raise ValueError('Bad area %s for %s' % (area, su_a3))
+            raise ValueError('Bad area %s for %s' % (fields[6], su_a3))
 
         if su_a3 in AREA:
             if area < AREA[su_a3]:

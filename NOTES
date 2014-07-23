@@ -15,12 +15,19 @@ Path forward:
   - Show "20% larger" in the UI somewhere
 
 - Data curation:
-  - Missing features:
-    - Add "New Zealand (North Island)"
-    - Add "Spain (Overseas territories)"
-    - Add "France (Metropolitan)"
+  x Missing features:
+    x Add "Spain (Overseas territories)"
+    x Remove "New Zealand (South Island)"
+    x Add "France (Metropolitan)"
   - Rename "Korea" and "Dem. Rep. Korea"
   - Compare calculated and displayed areas
+    - Add Somaliland to Somalia
+    - Add Western Sahara to Morocco
+    - Add North Cyprus to Cyprus
+    - Update cia-area.txt one more time
+    x Remove "France (Overseas Territories)"
+    x Blacklist Western Sahara
+    x Use Total Area for Eritrea (not sure why land area is so different)
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
   - Generate my own continent features w/ higher resolution
   - What are the other polygons in geometry.coordintes? (after index 0)

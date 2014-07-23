@@ -147,3 +147,14 @@ def subset_feature(in_feature, lng_range, lat_range):
         for idx in reversed(indices_to_kill):
             del geom['coordinates'][idx]
         return feature
+
+
+def add_feature_geometry(base_feature, new_feature):
+    if base_feature['type'] == 'FeatureCollection':
+        base_feature['features'].append(new_feature)
+    elif base_feature['type'] == 'Feature':
+        subfeature = copy.deepcopy(base_feature)
+        base_feature['type'] = 'FeatureCollection'
+        base_feature['features'] = [subfeature, new_feature]
+        del base_feature['geometry']
+    raise ValueError('Unknown feature type %s' % base_feature['type'])
