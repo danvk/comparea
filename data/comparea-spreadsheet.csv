@@ -93,19 +93,19 @@ BR_SE,Sergipe,"21,910.30",IBGE,http://www.ibge.gov.br/home/geociencias/areaterri
 BR_TO,Tocantins,"277,620.90",IBGE,http://www.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm,"1,478,163",July 2039,IBGE,http://www.ibge.gov.br/home/estatistica/populacao/estimativa2013/estimativa_dou.shtm
 ,,,,,,,,
 Canadian Provinces,,,,,,,,
-CA_AB,Alberta,"642,317",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"3,645,257",May 2011,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_BC,British Columbia,"925,186",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"4,400,057",May 2012,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_MB,Manitoba,"553,556",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"1,208,268",May 2013,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_NB,New Brunswick,"71,450",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"751,171",May 2014,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_NF,Newfoundland and Labrador,"373,872",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"514,536",May 2015,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_NS,Nova Scotia,"53,338",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"921,727",May 2016,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_NT,Northwest Territories,"1,183,085",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"41,462",May 2017,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_NU,Nunavut,"1,936,113",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"31,906",May 2018,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_ON,Ontario,"917,741",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"12,851,821",May 2019,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_AB,Alberta,"661,848",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"3,645,257",May 2011,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_BC,British Columbia,"944,735",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"4,400,057",May 2012,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_MB,Manitoba,"647,797",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"1,208,268",May 2013,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NB,New Brunswick,"72,908",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"751,171",May 2014,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NF,Newfoundland and Labrador,"405,212",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"514,536",May 2015,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NS,Nova Scotia,"55,284",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"921,727",May 2016,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NT,Northwest Territories,"1,346,106",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"41,462",May 2017,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_NU,Nunavut,"2,093,190",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"31,906",May 2018,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_ON,Ontario,"1,076,395",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"12,851,821",May 2019,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
 CA_PE,Prince Edward Island,"5,660",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"140,204",May 2020,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_QC,Québec,"1,356,128",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"7,903,001",May 2021,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_SK,Saskatchewan,"591,670",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"1,033,381",May 2022,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
-CA_YT,Yukon,"474,391",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"33,897",May 2023,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_QC,Québec,"1,542,056",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"7,903,001",May 2021,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_SK,Saskatchewan,"651,036",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"1,033,381",May 2022,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
+CA_YT,Yukon,"482,443",StatCan,http://www40.statcan.gc.ca/l01/cst01/phys01-eng.htm,"33,897",May 2023,StatCan,http://www12.statcan.ca/census-recensement/2011/dp-pd/hlt-fst/pd-pl/Table-Tableau.cfm?LANG=Eng&T=101&S=50&O=A
 ,,,,,,,,
 Overrides,,,,,,,,
 SDS,S. Sudan,"644,329",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"11,562,695",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html
@@ -133,3 +133,4 @@ KOS,Kosovo,"10,887",World Factbook,https://www.cia.gov/library/publications/the-
 MKD,Macedonia,"25,433",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"2,091,719",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
 SRB,Serbia,"77,474",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"7,209,764",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html
 FXX,France (Metropolitan),"549,970",World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2147.html,"64,036,000",June 2014,INSEE,http://www.bdm.insee.fr/bdm2/affichageSeries.action?idbank=000436387&bouton=OK&codeGroupe=62
+MAR,Morocco,"710,600",Wikipedia,https://en.wikipedia.org/wiki/Geography_of_Morocco,"32,987,206",July 2014,World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html

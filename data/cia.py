@@ -38,15 +38,17 @@ def _load_data():
     for idx, line in enumerate(open(_path('cia-area.txt'))):
         if idx == 0: continue  # skip header
         fields = line.strip().split('\t')
-        if len(fields) < 7: continue
+        if len(fields) < 8: continue
         su_a3 = fields[0]
         try:
-            area = fields[6]
+            # area = fields[6]  # land
+            area = fields[7]  # total
             area = float(area.replace(',', ''))
             if area == round(area):
                 area = int(area)
         except ValueError:
-            raise ValueError('Bad area %s for %s' % (fields[6], su_a3))
+            #raise ValueError('Bad area %s for %s' % (fields[6], su_a3))
+            raise ValueError('Bad area %s for %s' % (fields[7], su_a3))
 
         if su_a3 in AREA:
             if area < AREA[su_a3]:

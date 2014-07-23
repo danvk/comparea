@@ -15,8 +15,12 @@ Path forward:
   - Show "20% larger" in the UI somewhere
 
 - Data curation:
-  - Compare calculated and displayed areas
-    - Try total area instead of land area
+  - Consider down-sampling some shapes? (perf boost on mobile/tablet)
+  - Generate my own continent features w/ higher resolution
+  - What are the other polygons in geometry.coordintes? (after index 0)
+    --> e.g. in KGZ. Are they negative polygons?
+  x Compare calculated and displayed areas
+    x Try total area instead of land area
     x Update cia-area.txt one more time
     x Add Somaliland to Somalia
     x Add Western Sahara to Morocco
@@ -24,11 +28,6 @@ Path forward:
     x Remove "France (Overseas Territories)"
     x Blacklist Western Sahara
     x Use Total Area for Eritrea (not sure why land area is so different)
-  - Consider down-sampling some shapes? (perf boost on mobile/tablet)
-  - Generate my own continent features w/ higher resolution
-  - What are the other polygons in geometry.coordintes? (after index 0)
-    --> e.g. in KGZ. Are they negative polygons?
-  - What are the two Congos?
   x Rename "Korea" and "Dem. Rep. Korea"
   x Missing features:
     x Add "Spain (Overseas territories)"
