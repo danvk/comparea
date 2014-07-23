@@ -160,6 +160,8 @@ def adjust_countries(countries, subunits):
     def delete(collection, key):
         idx = [i for i, c in enumerate(collection) if c['id'] == key][0]
         del collection[idx]
+    def rename(collection, key, new_name):
+        find(collection, key)['properties']['name'] = new_name
 
     metro_france = find(subunits, 'FXX')
     metro_france['properties'].update({
@@ -172,10 +174,12 @@ def adjust_countries(countries, subunits):
     nld['properties']['name'] = 'Netherlands (Overseas Territories)'
     nld['id'] = 'NLX'
 
-    find(countries, 'PR1')['properties']['name'] = 'Portugal (Overseas Territories)'
-    find(countries, 'NOR')['properties']['name'] = 'Norway (Overseas Territories)'
+    rename(countries, 'PR1', 'Portugal (Overseas Territories)')
+    rename(countries, 'NOR', 'Norway (Overseas Territories)')
     find(subunits, 'NOR')['id'] = 'NRX'
-    find(countries, 'ESP')['properties']['name'] = 'Spain (with Islands)'
+    rename(countries, 'ESP', 'Spain (with Islands)')
+    rename(countries, 'KOR', 'Korea (South)')
+    rename(countries, 'PRK', 'Korea (North)')
 
     delete(countries, 'CHL')  # replaced by "mainland Chile"
     delete(countries, 'ZAF')  # I don't care about the Prince Edward Islands
