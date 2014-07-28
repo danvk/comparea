@@ -1,18 +1,26 @@
 Path forward:
 - UI
+  - Plug in Chosen for the dropdown lists
   - Click+drag on background should pan both shapes
   - Touch: two finger both zooms and drags one of the shapes
-  - Add share links
-    ... which preserve the position of the features
+  - Add share links which preserve the position of the features
   - Add transitions
-  - Plug in Chosen for the dropdown lists
   - Add Google Analytics
-  - Change "USA" to "United Kingdom" on home page
+  - Bug: change "USA" to "United Kingdom" on home page
     --> placement is different than if you reload.
   - Get a new UI from Raven
-  - Put the shapes on top of one another by default
+  - Put the shapes on top of one another by default?
   - Expand the <svg> behind the info boxes
   - Show "20% larger" in the UI somewhere
+  - Add a favicon
+  - Write an About page and link to it.
+  - Make the UI responsive:
+    - Hide the descriptions on mobile, tablet/portrait
+    - Look into making the mobile UI landscape-only
+
+- Productionization
+  - Set up Cloudfront, with an appropriate versioning scheme.
+  - Use a CDN where appropriate (jQuery, D3, ...)
 
 - Data curation:
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)

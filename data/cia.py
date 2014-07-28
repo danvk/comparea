@@ -1,3 +1,7 @@
+'''Load in CIA Factbook area & population estimates from text files.
+
+These come from a spreadsheet in Google Docs.
+'''
 import os
 
 POPULATION = None

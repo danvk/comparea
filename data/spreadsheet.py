@@ -1,3 +1,8 @@
+'''Load area and population data from a spreadsheet.
+
+The spreadsheet lives in Google Docs & must be manually exported to
+data/comparea-spreadsheet.csv before use.
+'''
 import os
 import csv
 import copy
