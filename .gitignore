@@ -8,3 +8,4 @@ env
 
 .idea
 *.iml
+comparea/static/lib

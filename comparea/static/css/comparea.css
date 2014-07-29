@@ -45,6 +45,10 @@ html,body{
   font-size: small;
 }
 
+.choose {
+  width: 100%;
+}
+
 line { stroke: black; }
 
 .shape1 {

@@ -17,6 +17,9 @@ Path forward:
   - Make the UI responsive:
     - Hide the descriptions on mobile, tablet/portrait
     - Look into making the mobile UI landscape-only
+  - Bug: shapes disappear when you rotate to lanscape on mobile
+  - Bug: expanding window should expand existing shapes.
+  - Bug: chosen dropdowns get hidden
 
 - Productionization
   - Set up Cloudfront, with an appropriate versioning scheme.

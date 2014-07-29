@@ -1,4 +1,5 @@
 $(function() {
+  $(".choose").select2();
   addChooserListeners();
 
   setDisplayForFeatures(geojson_features);

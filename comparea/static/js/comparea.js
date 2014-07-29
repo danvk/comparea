@@ -169,10 +169,10 @@ function featureForId(id) {
 }
 
 function addChooserListeners() {
-  $('.choose').on('change', function(e) {
+  $('select.choose').on('change', function(e) {
     var id = $(this).val();
     var ids = [$('#choose0').val(), $('#choose1').val()];
-    var changedIdx = $('.choose').index(this);
+    var changedIdx = $('select.choose').index(this);
     updateEl(changedIdx, ids[changedIdx]);
     history.pushState(null, '', '/' + ids[0] + '+' + ids[1]);
   });
