@@ -86,50 +86,32 @@ function setDisplayForFeatures(features) {
     var proj = projectionForCountry(feature);
     return d3.geo.path().projection(proj);
   });
-  setScalingFactor(features, paths);
 
-  var bounds = features.map(function(d, i) {
-    return paths[i].bounds(d);
+  var bounds = features.map(function(d, i) { return paths[i].bounds(d); });
+  var layout =
+      calculatePositionsAndScale({width: width, height: height}, bounds);
+  paths.forEach(function(path) {
+    var proj = path.projection();
+    proj.scale(layout.scaleMult * proj.scale());
   });
-  var offsets = bounds.map(function(b) {
-    var tl = b[0], br = b[1];
-    var offX = tl[0] + br[0], offY = tl[1] + br[1];
-    return [offX, offY];
-  });
-  var spans = bounds.map(function(b) {
-    // we'd like the features to be centered around their centroid,
-    // not the center of their bounding box. This produces unnecessarily
-    // large bounding circles, but tends to look better.
-    // Additionally, to get a true bounding circle, we'd need to go out to
-    // the farthest corner, not the farthest side.
-    var tl = b[0], br = b[1];
-    var offX = Math.abs(tl[0] + br[0])/2, offY = Math.abs(tl[1] + br[1])/2;
-    offX = 0, offY = 0;
-    return Math.max(br[0] - tl[0] + 2*offX, br[1] - tl[1] + 2*offY);
+  bounds = features.map(function(d, i) { return paths[i].bounds(d); });
+
+  var centers = bounds.map(function(b, i) {
+    var b = bounds[i],
+        tl = b[0], br = b[1];
+    return {
+      x: (tl[0] + br[0]) / 2,
+      y: (tl[1] + br[1]) / 2
+    }
   });
 
-  var classes = {
-    children: [
-      {idx: 0, value: spans[0]},
-      {idx: 1, value: spans[1]}
-    ]
-  };
-  var pack = d3.layout.pack()
-    .sort(null)
-    .size([width, height])
-    .radius(function(v) {
-      return v/2;
-    })
-    .padding(1.5);
-  var layout = pack.nodes(classes)
-    .filter(function(d) { return !d.children; });
-
-  // TODO(danvk): be more D3-y about this.
-  // TODO(danvk): also use d3.layout.pack to set the scale
   features.forEach(function(d, i) {
+    // offsets are computed from the center of the bounding box, whereas
+    // comparea features are centered around the centroid.
+    var center = centers[i];
     d.dx = 0; d.dy = 0;  // initial drag offsets
-    d.static_dx = layout[i].x;
-    d.static_dy = layout[i].y;
+    d.static_dx = layout.offsets[i].x - center.x;
+    d.static_dy = layout.offsets[i].y - center.y;
   });
 
   var dataEls = svg.select('.container').selectAll('.force')
@@ -147,10 +129,12 @@ function setDisplayForFeatures(features) {
       .attr('d', function(d, i) { return paths[i](d); });
       
    // ... for layout debugging
-   draggableG.append('circle')
-      .attr('cx', function(d, i) { return offsets[i][0] })
-      .attr('cy', function(d, i) { return offsets[i][1] })
-      .attr('r', function(d, i) { return layout[i].r; });
+   spans = boundsToSpans(bounds);
+   draggableG.append('rect')
+      .attr('x', function(d, i) { return centers[i].x - spans[i].width / 2 })
+      .attr('y', function(d, i) { return centers[i].y - spans[i].height / 2 })
+      .attr('width', function(d, i) { return spans[i].width })
+      .attr('height', function(d, i) { return spans[i].height; });
 
   // update
   dataEls.select('.shape')
@@ -164,23 +148,29 @@ function setDisplayForFeatures(features) {
 }
 
 
-/**
- * Places the centroids of the features along the main (TL to BR) diagonal
- * of the svg area and adjusts the scale so that the features fit snugly.
- *
- * @param {{width:number, height:number}} svgArea
- * @param {Array.<Array.<Array.<number>>>} extents List of [[t,l], [b,r]] pairs.
- * @return {{offsets: Array.<{x:number,y:number}>, scaleMult:number}} Computed
- *      offsets for each shape and a multiplier to apply to the scales.
- */
-function calculatePositionsAndScale(svgArea, extents) {
-  // bounding boxes for the features under the current projections
-  var bounds = extents.map(function(b, i) {
+// Converts [[t,l], [b,r]] array to {width, height} array.
+function boundsToSpans(bounds) {
+  return bounds.map(function(b, i) {
     return {
       width: b[1][0] - b[0][0],
       height: b[1][1] - b[0][1]
     }
   });
+}
+
+
+/**
+ * Places the centroids of the features along the main (TL to BR) diagonal
+ * of the svg area and adjusts the scale so that the features fit snugly.
+ *
+ * @param {{width:number, height:number}} svgArea
+ * @param {Array.<Array.<Array.<number>>>} bounds List of [[t,l], [b,r]] pairs.
+ * @return {{offsets: Array.<{x:number,y:number}>, scaleMult:number}} Computed
+ *      offsets for each shape and a multiplier to apply to the scales.
+ */
+function calculatePositionsAndScale(svgArea, bounds) {
+  // bounding boxes for the features under the current projections
+  var spans = boundsToSpans(bounds);
 
   var DIR_X = 0, DIR_Y = 1; 
 
@@ -194,11 +184,11 @@ function calculatePositionsAndScale(svgArea, extents) {
   // compute the gap (or overlap) between the two features along the main
   // diagonal. We could be limited by either dimension, so we compute both.
   var yGapT = svgScaleY.invert(
-          (svgScaleY(centroidsT[1]) - bounds[1].height / 2) -
-          (svgScaleY(centroidsT[0]) + bounds[0].height / 2)),
+          (svgScaleY(centroidsT[1]) - spans[1].height / 2) -
+          (svgScaleY(centroidsT[0]) + spans[0].height / 2)),
       xGapT = svgScaleX.invert(
-          (svgScaleX(centroidsT[1]) - bounds[1].width / 2) -
-          (svgScaleX(centroidsT[0]) + bounds[0].width / 2)),
+          (svgScaleX(centroidsT[1]) - spans[1].width / 2) -
+          (svgScaleX(centroidsT[0]) + spans[0].width / 2)),
       dir = xGapT < yGapT ? DIR_X : DIR_Y,
       tGap = Math.min(xGapT, yGapT);
 
@@ -213,14 +203,14 @@ function calculatePositionsAndScale(svgArea, extents) {
   var xSpan, ySpan;
   if (dir == DIR_X) {
     // feature will line up left/right
-    xSpan = bounds[0].width + bounds[1].width;
-    ySpan = (offsets[1].y + bounds[1].height / 2) -
-        (offsets[0].y - bounds[0].height / 2);
+    xSpan = spans[0].width + spans[1].width;
+    ySpan = (offsets[1].y + spans[1].height / 2) -
+        (offsets[0].y - spans[0].height / 2);
   } else {
     // features will line up top/bottom
-    ySpan = bounds[0].height + bounds[1].height;
-    xSpan = (offsets[1].x + bounds[1].width / 2) -
-        (offsets[0].x - bounds[0].width / 2);
+    ySpan = spans[0].height + spans[1].height;
+    xSpan = (offsets[1].x + spans[1].width / 2) -
+        (offsets[0].x - spans[0].width / 2);
   }
   var xScale = svgArea.width / xSpan,
       yScale = svgArea.height / ySpan,
@@ -228,14 +218,14 @@ function calculatePositionsAndScale(svgArea, extents) {
 
   // The scale is nailed down. Now we have to reposition the features one
   // more time.
-  bounds.forEach(function(b) { b.width *= scaleMult; b.height *= scaleMult; });
+  spans.forEach(function(b) { b.width *= scaleMult; b.height *= scaleMult; });
 
   yGapT = svgScaleY.invert(
-      (svgScaleY(centroidsT[1]) - bounds[1].height / 2) -
-      (svgScaleY(centroidsT[0]) + bounds[0].height / 2)),
+      (svgScaleY(centroidsT[1]) - spans[1].height / 2) -
+      (svgScaleY(centroidsT[0]) + spans[0].height / 2)),
   xGapT = svgScaleX.invert(
-      (svgScaleX(centroidsT[1]) - bounds[1].width / 2) -
-      (svgScaleX(centroidsT[0]) + bounds[0].width / 2)),
+      (svgScaleX(centroidsT[1]) - spans[1].width / 2) -
+      (svgScaleX(centroidsT[0]) + spans[0].width / 2)),
   dir = xGapT < yGapT ? DIR_X : DIR_Y,
   tGap = Math.min(xGapT, yGapT);
 
