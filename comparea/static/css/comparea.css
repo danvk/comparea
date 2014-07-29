@@ -3,8 +3,17 @@ html,body{
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-y: hidden;  /* why!? */
   box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  /* disable scroll bounce on Mac OS X */
+  html {
+    overflow: hidden;
+  }
+  body {
+    overflow: auto;
+  }
 }
 
 #svg-container {
@@ -25,7 +34,7 @@ html,body{
 }
 
 .side-panel {
-  background: #eee;
+  background: #f7f7f7;
   border: 1px solid #ddd;
   box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
   padding: 5px;
@@ -49,13 +58,32 @@ html,body{
   width: 100%;
 }
 
+#side-panel0 .select2-chosen {
+  color: green;
+}
+#side-panel1 .select2-chosen {
+  color: blue;
+}
+
+/* Responsive UI for mobile/tablet */
+@media (max-width: 768px) {
+  /* This covers phones in either orientation and iPads in portrait */
+  .feature-panel .description {
+    display: none;
+  }
+}
+
+
 line { stroke: black; }
 
 .shape1 {
- fill: rgb(128,128,255);
+  fill: rgb(128,128,255);
 }
 .shape0 {
   fill: rgb(128,255,128);
+}
+.shape {
+  fill-opacity: 0.9;
 }
 circle {
   stroke-width: 1;
