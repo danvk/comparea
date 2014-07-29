@@ -35,5 +35,11 @@ def get_shape(shape_id):
 
 @app.route('/reloadfish', methods=['POST'])
 def reloadfish():
-    models.reload_data()
+    if app.config['DEBUG']:
+        models.reload_data()
     return "OK"
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')

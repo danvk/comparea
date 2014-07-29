@@ -67,3 +67,9 @@ circle {
 .force1 circle {
   stroke: rgb(128,128,255);
 }
+
+body.about {
+  overflow-y: auto;
+  padding: 5px 20px;
+  max-width: 800px;
+}

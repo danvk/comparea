@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Comparea</title>
+  <link rel="stylesheet" href="/static/css/comparea.css">
+</head>
+
+<body class="about">
+<h2>About Comparea</h2>
+
+<p>The idea for Comparea came when I moved from San Francisco to New York City and wanted to relate new geographic features to familiar ones. I quickly found that, due to the inestimable Natural Earth Data (see below), the &ldquo;Golden Gate Park vs. Central Park&rdquo; comparison was quite a bit harder to get at than &ldquo;California vs. New York&rdquo;. This led me to sit on my initial demo for a few years. But myriad conversations where Comparea would have been helpful made me realize that I was letting <a href="https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good">the perfect be the enemy of the good</a>. And so Comparea was released!</p>
+
+<h3>Acknowledgements</h3>
+<p>Comparea is completely dependent on the fabulous <a href="http://www.naturalearthdata.com/">Natural Earth Data</a> for feature outlines. Specifically, it uses a combination of:</p>
+
+<ul>
+  <li><a href="http://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/">Admin 0 - Countries</a> without boundary lakes</li></li>
+  <li><a href="http://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-details/">Admin 0 - Details</a> for subunits (e.g. European/Asian Russia, North Cyprus, Somaliland)</a></li>
+<li><a href="http://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-1-states-provinces/">Admin 1 – States, provinces</a> also without large lakes</a>
+</ul>
+
+<p>Feature descriptions come from <a href="https://www.freebase.com/m/035dk#/common/topic/description">Freebase</a>, which gets them from Wikipedia.</p>
+
+<p>Feature areas and populations come largely from the CIA World Factbook and the US Census, with a smattering of other sources. A reasonablely thorough effort has been made to ensure that the stated area and population are for the same feature that Comparea shows, but this may not always be precisely true. In general, if you calculate the area of the polygon that Comparea displays, it will differ by no more than 10% from the stated area.</p>
+
+<p>Comparea relies on a few third party libraries. Highlights:</p>
+<ul>
+  <li>D3.js</li>
+  <li>jQuery</li>
+  <li>Select2</li>
+  <li>Flask</li>
+  <li>GDAL</li>
+  <li>pyproj</li>
+  <li>shapely</li>
+</ul>
+
+<p>Have a bug to report? A feature to request? <a href="https://github.com/danvk/comparea/issues/new">File it on github</a>.
+
+{% include 'analytics.html' %}
+
+</body>
+
+</html>
