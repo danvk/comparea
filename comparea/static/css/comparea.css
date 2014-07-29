@@ -6,7 +6,7 @@ html,body{
   box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   /* disable scroll bounce on Mac OS X */
   html {
     overflow: hidden;
@@ -66,10 +66,45 @@ html,body{
 }
 
 /* Responsive UI for mobile/tablet */
-@media (max-width: 768px) {
-  /* This covers phones in either orientation and iPads in portrait */
+@media only screen and (max-width: 768px) and (max-height: 800px) {
+  /* This covers phones in either orientation, but not tablets */
   .feature-panel .description {
     display: none;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 800px) and (orientation: portrait){
+  /* This covers phones in portrait */
+  #sidebar {
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 290px;
+  }
+  .side-panel {
+    width: 90%;  /* hack! TODO: undo margins or move them into @media */
+  }
+  #svg-container {
+    top: 290px;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-height: 800px) {
+  /* tablet, portrait mode */
+  #sidebar {
+    left: 0;
+    right: auto;
+    height: 375px;
+    width: auto;
+  }
+  .side-panel {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+  }
+  #svg-container {
+    right: 0;
   }
 }
 
