@@ -170,19 +170,13 @@ function setDisplayForFeatures(features) {
  *
  * @param {{width:number, height:number}} svgArea
  * @param {Array.<Array.<Array.<number>>>} extents List of [[t,l], [b,r]] pairs.
- * @return {{offsets: Array.<{x:number,y:number}>, scale:number}} Computed
+ * @return {{offsets: Array.<{x:number,y:number}>, scaleMult:number}} Computed
  *      offsets for each shape and a multiplier to apply to the scales.
  */
 function calculatePositionsAndScale(svgArea, extents) {
   // bounding boxes for the features under the current projections
-  // their centroids are each at (0, 0)
   var bounds = extents.map(function(b, i) {
-    // var b = paths[i].bounds(d);
     return {
-      // left: b[0][0],
-      // top: b[0][1],
-      // right: b[1][0],
-      // bottom: b[1][1],
       width: b[1][0] - b[0][0],
       height: b[1][1] - b[0][1]
     }
@@ -191,8 +185,8 @@ function calculatePositionsAndScale(svgArea, extents) {
   var DIR_X = 0, DIR_Y = 1; 
 
   // This defines a line mapping a param, t \in [0, 1], to the main diagonal.
-  var svgScaleX = d3.scale.linear().domain([0,1]).range([svgArea.width]),
-      svgScaleY = d3.scale.linear().domain([0,1]).range([svgArea.height]);
+  var svgScaleX = d3.scale.linear().domain([0,1]).range([0, svgArea.width]),
+      svgScaleY = d3.scale.linear().domain([0,1]).range([0, svgArea.height]);
 
   // start with a guess for placement -- we'll adjust momentarily.
   var centroidsT = [0.25, 0.75];
@@ -234,7 +228,7 @@ function calculatePositionsAndScale(svgArea, extents) {
 
   // The scale is nailed down. Now we have to reposition the features one
   // more time.
-  bounds.each(function(b) { b.width *= scaleMult; b.height *= scaleMult; });
+  bounds.forEach(function(b) { b.width *= scaleMult; b.height *= scaleMult; });
 
   yGapT = svgScaleY.invert(
       (svgScaleY(centroidsT[1]) - bounds[1].height / 2) -
@@ -254,7 +248,7 @@ function calculatePositionsAndScale(svgArea, extents) {
 
   return {
     offsets: offsets,
-    scale: scaleMult
+    scaleMult: scaleMult
   };
 }
 
