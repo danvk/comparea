@@ -1,11 +1,9 @@
 Path forward:
 - UI
-  - Plug in Chosen for the dropdown lists
   - Click+drag on background should pan both shapes
   - Touch: two finger both zooms and drags one of the shapes
   - Add share links which preserve the position of the features
   - Add transitions
-  - Add Google Analytics
   - Bug: change "USA" to "United Kingdom" on home page
     --> placement is different than if you reload.
   - Get a new UI from Raven
@@ -19,7 +17,8 @@ Path forward:
     - Look into making the mobile UI landscape-only
   - Bug: shapes disappear when you rotate to lanscape on mobile
   - Bug: expanding window should expand existing shapes.
-  - Bug: chosen dropdowns get hidden
+  x Add Google Analytics
+  x Plug in -Chosen- Select2 for the dropdown lists
 
 - Productionization
   - Set up Cloudfront, with an appropriate versioning scheme.
