@@ -119,6 +119,8 @@ line { stroke: black; }
 }
 .shape {
   fill-opacity: 0.9;
+  stroke-width: 1;
+  stroke: black;
 }
 circle {
   stroke-width: 1;

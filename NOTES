@@ -7,19 +7,29 @@ Path forward:
   - Bug: change "USA" to "United Kingdom" on home page
     --> placement is different than if you reload.
   - Get a new UI from Raven
-  - Put the shapes on top of one another by default?
+  - Tweak layout algorithm:
+    - Use diagonal positioning to show larger shapes?
+    - Show shapes on top of one another?
+    - Detect where the info boxes are and avoid them.
+    - Idea: put centroids on longest diagonal of <svg>
+            scootch shapes to avoid overlap & shrink to fit.
   - Expand the <svg> behind the info boxes
   - Show "20% larger" in the UI somewhere
   - Add a favicon
   - Make the UI responsive:
-    - Look into making the mobile UI landscape-only
     - Use standard CSS @media breakpoints
     ~ Hide the URL bar on mobile
+    x Look into making the mobile UI landscape-only (not possible)
     x Hide the descriptions on mobile, tablet/portrait
     x Tablet/Portrait: panels side-by-side
     x Phone/Portrait: panels on top of one another
   - Bug: shapes disappear when you rotate to lanscape on mobile
   - Bug: expanding window should expand existing shapes.
+  - Get Heroku to run "bower install"
+  - Write perceptual diff tests for various browser resolutions
+  - Add links to github on about page (for data download)
+  - Add zoom in/out buttons
+  - Add hand icon when hovering/dragging
   x Write an About page and link to it.
   x Add Google Analytics
   x Plug in -Chosen- Select2 for the dropdown lists
@@ -85,3 +95,14 @@ Interesting fields in ne_50m_admin_0:
   type (="Country")
   admin (="United States of America")
   name (="United States")
+
+
+packing
+-------
+
+Using bounding boxes is appealing, but it's very sensitive to small outlying
+islands. For example, there's a speck way to the southeast of Australia that
+significantly affects its bounding box.
+
+Using convex hulls, or dropping polygons representing <1% of the total area
+could help here.
