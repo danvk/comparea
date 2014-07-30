@@ -88,30 +88,23 @@ function setDisplayForFeatures(features) {
   });
 
   var bounds = features.map(function(d, i) { return paths[i].bounds(d); });
-  var layout =
-      calculatePositionsAndScale({width: width, height: height}, bounds);
+  /*var*/ spans = boundsToSpans(bounds);
+  origSpans = spans;
+  console.log(origSpans);
+  var layout = overlappingPacker({width: width, height: height}, bounds);
+  //     calculatePositionsAndScale({width: width, height: height}, bounds);
   paths.forEach(function(path) {
     var proj = path.projection();
     proj.scale(layout.scaleMult * proj.scale());
   });
   bounds = features.map(function(d, i) { return paths[i].bounds(d); });
-
-  var centers = bounds.map(function(b, i) {
-    var b = bounds[i],
-        tl = b[0], br = b[1];
-    return {
-      x: (tl[0] + br[0]) / 2,
-      y: (tl[1] + br[1]) / 2
-    }
-  });
+  spans = boundsToSpans(bounds);
 
   features.forEach(function(d, i) {
-    // offsets are computed from the center of the bounding box, whereas
-    // comparea features are centered around the centroid.
-    var center = centers[i];
+    var span = spans[i];
     d.dx = 0; d.dy = 0;  // initial drag offsets
-    d.static_dx = layout.offsets[i].x - center.x;
-    d.static_dy = layout.offsets[i].y - center.y;
+    d.static_dx = layout.offsets[i].x;
+    d.static_dy = layout.offsets[i].y;
   });
 
   var dataEls = svg.select('.container').selectAll('.force')
@@ -129,12 +122,17 @@ function setDisplayForFeatures(features) {
       .attr('d', function(d, i) { return paths[i](d); });
       
    // ... for layout debugging
-   spans = boundsToSpans(bounds);
+   /*
    draggableG.append('rect')
-      .attr('x', function(d, i) { return centers[i].x - spans[i].width / 2 })
-      .attr('y', function(d, i) { return centers[i].y - spans[i].height / 2 })
+      .attr('x', function(d, i) { return spans[i].centerX - spans[i].width / 2 })
+      .attr('y', function(d, i) { return spans[i].centerY - spans[i].height / 2 })
       .attr('width', function(d, i) { return spans[i].width })
       .attr('height', function(d, i) { return spans[i].height; });
+   draggableG.append('circle')
+     .attr('cx', 0)
+     .attr('cy', 0)
+     .attr('r', 4);
+     */
 
   // update
   dataEls.select('.shape')
@@ -146,102 +144,6 @@ function setDisplayForFeatures(features) {
   svg.selectAll('.draggable').attr('transform', transformForDrag).call(drag);
   svg.call(zoom);
 }
-
-
-// Converts [[t,l], [b,r]] array to {width, height} array.
-function boundsToSpans(bounds) {
-  return bounds.map(function(b, i) {
-    return {
-      width: b[1][0] - b[0][0],
-      height: b[1][1] - b[0][1]
-    }
-  });
-}
-
-
-/**
- * Places the centroids of the features along the main (TL to BR) diagonal
- * of the svg area and adjusts the scale so that the features fit snugly.
- *
- * @param {{width:number, height:number}} svgArea
- * @param {Array.<Array.<Array.<number>>>} bounds List of [[t,l], [b,r]] pairs.
- * @return {{offsets: Array.<{x:number,y:number}>, scaleMult:number}} Computed
- *      offsets for each shape and a multiplier to apply to the scales.
- */
-function calculatePositionsAndScale(svgArea, bounds) {
-  // bounding boxes for the features under the current projections
-  var spans = boundsToSpans(bounds);
-
-  var DIR_X = 0, DIR_Y = 1; 
-
-  // This defines a line mapping a param, t \in [0, 1], to the main diagonal.
-  var svgScaleX = d3.scale.linear().domain([0,1]).range([0, svgArea.width]),
-      svgScaleY = d3.scale.linear().domain([0,1]).range([0, svgArea.height]);
-
-  // start with a guess for placement -- we'll adjust momentarily.
-  var centroidsT = [0.25, 0.75];
-
-  // compute the gap (or overlap) between the two features along the main
-  // diagonal. We could be limited by either dimension, so we compute both.
-  var yGapT = svgScaleY.invert(
-          (svgScaleY(centroidsT[1]) - spans[1].height / 2) -
-          (svgScaleY(centroidsT[0]) + spans[0].height / 2)),
-      xGapT = svgScaleX.invert(
-          (svgScaleX(centroidsT[1]) - spans[1].width / 2) -
-          (svgScaleX(centroidsT[0]) + spans[0].width / 2)),
-      dir = xGapT < yGapT ? DIR_X : DIR_Y,
-      tGap = Math.min(xGapT, yGapT);
-
-  centroidsT[0] += tGap / 2;
-  centroidsT[1] -= tGap / 2;
-
-  var offsets = [
-      {x: svgScaleX(centroidsT[0]), y: svgScaleY(centroidsT[0])},
-      {x: svgScaleX(centroidsT[1]), y: svgScaleY(centroidsT[1])} ];
-
-  // Now that we know how the features will stack up, we can rescale the UI.
-  var xSpan, ySpan;
-  if (dir == DIR_X) {
-    // feature will line up left/right
-    xSpan = spans[0].width + spans[1].width;
-    ySpan = (offsets[1].y + spans[1].height / 2) -
-        (offsets[0].y - spans[0].height / 2);
-  } else {
-    // features will line up top/bottom
-    ySpan = spans[0].height + spans[1].height;
-    xSpan = (offsets[1].x + spans[1].width / 2) -
-        (offsets[0].x - spans[0].width / 2);
-  }
-  var xScale = svgArea.width / xSpan,
-      yScale = svgArea.height / ySpan,
-      scaleMult = Math.min(xScale, yScale);
-
-  // The scale is nailed down. Now we have to reposition the features one
-  // more time.
-  spans.forEach(function(b) { b.width *= scaleMult; b.height *= scaleMult; });
-
-  yGapT = svgScaleY.invert(
-      (svgScaleY(centroidsT[1]) - spans[1].height / 2) -
-      (svgScaleY(centroidsT[0]) + spans[0].height / 2)),
-  xGapT = svgScaleX.invert(
-      (svgScaleX(centroidsT[1]) - spans[1].width / 2) -
-      (svgScaleX(centroidsT[0]) + spans[0].width / 2)),
-  dir = xGapT < yGapT ? DIR_X : DIR_Y,
-  tGap = Math.min(xGapT, yGapT);
-
-  centroidsT[0] += tGap / 2;
-  centroidsT[1] -= tGap / 2;
-
-  offsets = [
-      {x: svgScaleX(centroidsT[0]), y: svgScaleY(centroidsT[0])},
-      {x: svgScaleX(centroidsT[1]), y: svgScaleY(centroidsT[1])} ];
-
-  return {
-    offsets: offsets,
-    scaleMult: scaleMult
-  };
-}
-
 
 function featureForId(id) {
   for (var i = 0; i < geojson_features.length; i++) {

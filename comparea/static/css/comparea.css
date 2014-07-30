@@ -126,11 +126,14 @@ circle, rect {
   stroke-width: 1;
   fill: none;
 }
-.force0 circle, .force0 rect {
+.force0 rect {
   stroke: rgb(128,255,128);
 }
-.force1 circle, .force1 rect {
+.force1 rect {
   stroke: rgb(128,128,255);
+}
+circle {
+  stroke: black;
 }
 
 body.about {
