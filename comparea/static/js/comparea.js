@@ -88,18 +88,18 @@ function getPacker() {
       'scootch': scootchedOverlappingPacker,
       'horizontal': horizontalPacker,
       'vertical': verticalPacker,
-      'diagonal': diagonalPacker
+      'diagonal': diagonalPacker,
+      'combined': combinedPacker
     }[packerName];
     if (!packer) throw "Invalid packer: " + packerName;
   } else {
-    packer = scootchedOverlappingPacker;
+    packer = combinedPacker;
   }
   return insetPacker(packer, 0.1);
 }
 
 function setDisplayForFeatures(features) {
   if (features.length != 2) throw "Only two shapes supported (for now!)";
-  if (features[0] == null || features[1] == null) return;
 
   var paths = features.map(function(feature) {
     var proj = projectionForCountry(feature);
@@ -107,17 +107,14 @@ function setDisplayForFeatures(features) {
   });
 
   var bounds = features.map(function(d, i) { return paths[i].bounds(d); });
-  /*var*/ spans = boundsToSpans(bounds);
-  origSpans = spans;
-  console.log(origSpans);
-  var layout = getPacker()({width: width, height: height}, bounds);
+  var layout = getPacker()({width: width, height: height}, bounds, features);
 
   paths.forEach(function(path) {
     var proj = path.projection();
     proj.scale(layout.scaleMult * proj.scale());
   });
   bounds = features.map(function(d, i) { return paths[i].bounds(d); });
-  spans = boundsToSpans(bounds);
+  var spans = boundsToSpans(bounds);
 
   features.forEach(function(d, i) {
     var span = spans[i];
@@ -154,11 +151,16 @@ function setDisplayForFeatures(features) {
      */
 
   // update
+  // BUG: need to update static transforms here, too.
   dataEls.select('.shape')
       .attr('d', function(d, i) { return paths[i](d); });
 
   // exit
   dataEls.exit().remove();
+
+  if ('topShapeIndex' in layout) {
+    svg.selectAll('.force' + layout.topShapeIndex).moveToFront();
+  }
 
   svg.selectAll('.draggable').attr('transform', transformForDrag).call(drag);
   svg.call(zoom);

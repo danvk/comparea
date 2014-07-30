@@ -1,3 +1,10 @@
+// Percentage gap to leave between shapes for horizontal/vertical packing.
+var ADJACENT_PACK_PADDING = 0.1;
+
+// Threshold for switching between horizontal/vertical packing and overlap
+// packing.
+var MIN_RATIO_FOR_OVERLAP_PACKING = 4;
+
 // Converts [[t,l], [b,r]] array to {width, height} array.
 function boundsToSpans(bounds) {
   return bounds.map(function(b, i) {
@@ -146,9 +153,6 @@ function adjustLayoutToFit(svgArea, origSpans, offsets) {
   };
 }
 
-// Percentage gap to leave between shapes for {horizontal,vertical}Packer.
-var ADJACENT_PACK_PADDING = 0.1;
-
 /**
  * Places the shapes side-by-side, with their centroids vertically aligned.
  */
@@ -188,16 +192,40 @@ function verticalPacker(svgArea, bounds) {
  * Modifies a packer to add some amount of padding along the edges.
  */
 function insetPacker(packer, paddingPercentage) {
-  return function(svgArea, bounds) {
+  return function(svgArea, bounds, features) {
     var shrunkSvgArea = {
       width: (1 - paddingPercentage) * svgArea.width,
       height: (1 - paddingPercentage) * svgArea.height
     };
-    var layout = packer(shrunkSvgArea, bounds);
+    var layout = packer(shrunkSvgArea, bounds, features);
     layout.offsets.forEach(function(offset) {
       offset.x += paddingPercentage * svgArea.width / 2;
       offset.y += paddingPercentage * svgArea.height / 2;
     });
     return layout;
   };
+}
+
+/**
+ * Overall packing strategy:
+ * - For similarly-sized shapes, use horizontal or vertical packing.
+ * - For skewed comparisons, use overlap packing.
+ */
+function combinedPacker(svgArea, bounds, features) {
+  var spans = boundsToSpans(bounds);
+  var areas = features.map(function(f) { return f.properties.area_km2; });
+
+  var ratio = Math.max(areas[1] / areas[0], areas[0] / areas[1]);
+  var layout;
+  if (ratio < MIN_RATIO_FOR_OVERLAP_PACKING) {
+    // use horizontal/vertical.
+    var h = horizontalPacker(svgArea, bounds),
+        v = verticalPacker(svgArea, bounds);
+    layout = h.scaleMult < v.scaleMult ? v : h;
+  } else {
+    layout = overlappingPacker(svgArea, bounds);
+    layout.topShapeIndex = areas[0] < areas[1] ? 0 : 1;
+  }
+
+  return layout;
 }

@@ -7,12 +7,6 @@ Path forward:
   - Bug: change "USA" to "United Kingdom" on home page
     --> placement is different than if you reload.
   - Get a new UI from Raven
-  - Tweak layout algorithm:
-    - Use diagonal positioning to show larger shapes?
-    - Show shapes on top of one another?
-    - Detect where the info boxes are and avoid them.
-    - Idea: put centroids on longest diagonal of <svg>
-            scootch shapes to avoid overlap & shrink to fit.
   - Expand the <svg> behind the info boxes
   - Show "20% larger" in the UI somewhere
   - Add a favicon
@@ -32,6 +26,12 @@ Path forward:
   - Add hand icon when hovering/dragging
   - Center scrollwheel zoom around the cursor
   - Change packers to take spans, not bounds (optimization)
+  x Tweak layout algorithm:
+    / Use diagonal positioning to show larger shapes?
+    x Show shapes on top of one another?
+    - Detect where the info boxes are and avoid them.
+    / Idea: put centroids on longest diagonal of <svg>
+            scootch shapes to avoid overlap & shrink to fit.
   x Write an About page and link to it.
   x Add Google Analytics
   x Plug in -Chosen- Select2 for the dropdown lists
@@ -39,6 +39,8 @@ Path forward:
 - Productionization
   - Set up Cloudfront, with an appropriate versioning scheme.
   - Use a CDN where appropriate (jQuery, D3, ...)
+  - Remove unused packers (diagonal, scootched)
+  - Minify JS & CSS?
 
 - Data curation:
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
@@ -120,3 +122,9 @@ I've come up with a few strategies:
 When there's a huge size disparity, pure overlap is pretty good, so long as
 the smaller shape goes on top. I'm torn between fitting the bbox and keeping
 the centroids in the center.
+
+Here's an idea for a strategy:
+  - If the shapes are within a factor of 4 in area:
+      Use either horizontalPacker or verticalPacker, whichever produces the
+      largest scaleMult.
+  - Otherwise, use overlappingPacker.
