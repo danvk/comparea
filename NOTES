@@ -47,6 +47,9 @@ Path forward:
   - Generate my own continent features w/ higher resolution
   - What are the other polygons in geometry.coordintes? (after index 0)
     --> e.g. in KGZ. Are they negative polygons?
+  - Detect small islands which significantly affect bounding boxes
+    --> e.g. AUS, NZL
+  - Represent US, AUS, CAN as FeatureCollection of admin-1
   x Compare calculated and displayed areas
     x Try total area instead of land area
     x Update cia-area.txt one more time
