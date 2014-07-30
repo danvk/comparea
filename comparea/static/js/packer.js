@@ -34,13 +34,7 @@ function offsetSpans(spans, offsets) {
 
 
 /**
- * Places the centroids of the features along the main (TL to BR) diagonal
- * of the svg area and adjusts the scale so that the features fit snugly.
- *
- * @param {{width:number, height:number}} svgArea
- * @param bounds
- * @return {{offsets: Array.<{x:number,y:number}>, scaleMult:number}} Computed
- *      offsets for each shape and a multiplier to apply to the scales.
+ * Places the centroids of the features along the main (TL to BR) diagonal.
  */
 function diagonalPacker(svgArea, bounds) {
   // bounding boxes for the features under the current projections
@@ -73,47 +67,7 @@ function diagonalPacker(svgArea, bounds) {
       {x: svgScaleX(centroidsT[0]), y: svgScaleY(centroidsT[0])},
       {x: svgScaleX(centroidsT[1]), y: svgScaleY(centroidsT[1])} ];
 
-  // Now that we know how the features will stack up, we can rescale the UI.
-  var xSpan, ySpan;
-  if (dir == DIR_X) {
-    // feature will line up left/right
-    xSpan = spans[0].width + spans[1].width;
-    ySpan = (offsets[1].y + spans[1].height / 2 + spans[1].centerY) -
-        (offsets[0].y - spans[0].height / 2 + spans[0].centerY);
-  } else {
-    // features will line up top/bottom
-    ySpan = spans[0].height + spans[1].height;
-    xSpan = (offsets[1].x + spans[1].width / 2 + spans[1].centerX) -
-        (offsets[0].x - spans[0].width / 2 + spans[0].centerX);
-  }
-  var xScale = svgArea.width / xSpan,
-      yScale = svgArea.height / ySpan,
-      scaleMult = Math.min(xScale, yScale);
-
-  // The scale is nailed down. Now we have to reposition the features one
-  // more time.
-  spans.forEach(function(b) { b.width *= scaleMult; b.height *= scaleMult; });
-
-  yGapT = svgScaleY.invert(
-      (svgScaleY(centroidsT[1]) - spans[1].height / 2 + spans[1].centerY) -
-      (svgScaleY(centroidsT[0]) + spans[0].height / 2 + spans[0].centerY)),
-  xGapT = svgScaleX.invert(
-      (svgScaleX(centroidsT[1]) - spans[1].width / 2 + spans[1].centerX) -
-      (svgScaleX(centroidsT[0]) + spans[0].width / 2 + spans[0].centerX)),
-  dir = xGapT < yGapT ? DIR_X : DIR_Y,
-  tGap = Math.min(xGapT, yGapT);
-
-  centroidsT[0] += tGap / 2;
-  centroidsT[1] -= tGap / 2;
-
-  offsets = [
-      {x: svgScaleX(centroidsT[0]), y: svgScaleY(centroidsT[0])},
-      {x: svgScaleX(centroidsT[1]), y: svgScaleY(centroidsT[1])} ];
-
-  return {
-    offsets: offsets,
-    scaleMult: scaleMult
-  };
+  return adjustLayoutToFit(svgArea, spans, offsets);
 }
 
 
@@ -196,6 +150,7 @@ function adjustLayoutToFit(svgArea, origSpans, offsets) {
 var ADJACENT_PACK_PADDING = 0.1;
 
 /**
+ * Places the shapes side-by-side, with their centroids vertically aligned.
  */
 function horizontalPacker(svgArea, bounds) {
   var spans = boundsToSpans(bounds);
@@ -212,6 +167,8 @@ function horizontalPacker(svgArea, bounds) {
 
 
 /**
+ * Places the shapes on top of one another, with their centroids horizontally
+ * aligned.
  */
 function verticalPacker(svgArea, bounds) {
   var spans = boundsToSpans(bounds);

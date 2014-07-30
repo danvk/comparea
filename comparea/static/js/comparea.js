@@ -87,7 +87,8 @@ function getPacker() {
       'overlap': overlappingPacker,
       'scootch': scootchedOverlappingPacker,
       'horizontal': horizontalPacker,
-      'vertical': verticalPacker
+      'vertical': verticalPacker,
+      'diagonal': diagonalPacker
     }[packerName];
     if (!packer) throw "Invalid packer: " + packerName;
   } else {
