@@ -194,6 +194,11 @@ def adjust_countries(countries, subunits):
     nz = geojson_util.subset_feature(find(countries, 'NZL'),
             [164, 179], [-49, -32.7])
 
+    # Remove Macquarie Island from Australia (sorry, Penguins!)
+    subaus = geojson_util.subset_feature(find(countries, 'AUS'),
+            [109, 157], [-45, -9])
+    find(countries, 'AUS')['geometry'] = subaus['geometry']
+
     delete(countries, 'NZL')
     countries.append(nz)
 
