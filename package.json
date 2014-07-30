@@ -1,0 +1,6 @@
+{
+  "name": "comparea",
+  "dependencies": {
+    "bower": "latest"
+  }
+}
