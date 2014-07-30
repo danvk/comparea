@@ -1,40 +1,25 @@
 Path forward:
 - UI
   - Click+drag on background should pan both shapes
-  - Touch: two finger both zooms and drags one of the shapes
   - Add share links which preserve the position of the features
   - Add transitions
-  - Bug: change "USA" to "United Kingdom" on home page
-    --> placement is different than if you reload.
-  - Get a new UI from Raven
   - Expand the <svg> behind the info boxes
   - Show "20% larger" in the UI somewhere
   - Add a favicon
-  - Make the UI responsive:
-    - Use standard CSS @media breakpoints
-    ~ Hide the URL bar on mobile
-    x Look into making the mobile UI landscape-only (not possible)
-    x Hide the descriptions on mobile, tablet/portrait
-    x Tablet/Portrait: panels side-by-side
-    x Phone/Portrait: panels on top of one another
-  - Bug: shapes disappear when you rotate to lanscape on mobile
-  - Bug: expanding window should expand existing shapes.
-  - Get Heroku to run "bower install"
+  - Use standard CSS @media breakpoints
+  ~ Hide the URL bar on mobile (works on some iOS, not Android)
   - Write perceptual diff tests for various browser resolutions
   - Add links to github on about page (for data download)
   - Add zoom in/out buttons
   - Add hand icon when hovering/dragging
   - Center scrollwheel zoom around the cursor
   - Change packers to take spans, not bounds (optimization)
-  x Tweak layout algorithm:
-    / Use diagonal positioning to show larger shapes?
-    x Show shapes on top of one another?
-    - Detect where the info boxes are and avoid them.
-    / Idea: put centroids on longest diagonal of <svg>
-            scootch shapes to avoid overlap & shrink to fit.
-  x Write an About page and link to it.
-  x Add Google Analytics
-  x Plug in -Chosen- Select2 for the dropdown lists
+  - Bug: two finger touch both zooms and drags the shapes (should just drag)
+  - Bug: shapes disappear when you rotate to lanscape on mobile
+  - Bug: expanding window should expand existing shapes.
+  - Bug: Keyboard doesn't go away at the right time on mobile
+  - Bug: change "USA" to "United Kingdom" on home page
+    --> placement is different than if you reload.
 
 - Productionization
   - Set up Cloudfront, with an appropriate versioning scheme.
@@ -50,28 +35,6 @@ Path forward:
   - Detect small islands which significantly affect bounding boxes
     --> e.g. AUS, NZL
   - Represent US, AUS, CAN as FeatureCollection of admin-1
-  x Compare calculated and displayed areas
-    x Try total area instead of land area
-    x Update cia-area.txt one more time
-    x Add Somaliland to Somalia
-    x Add Western Sahara to Morocco
-    x Add North Cyprus to Cyprus
-    x Remove "France (Overseas Territories)"
-    x Blacklist Western Sahara
-    x Use Total Area for Eritrea (not sure why land area is so different)
-  x Rename "Korea" and "Dem. Rep. Korea"
-  x Missing features:
-    x Add "Spain (Overseas territories)"
-    x Remove "New Zealand (South Island)"
-    x Add "France (Metropolitan)"
-  x Update information:
-    x No missing data
-    x Figure out why Brazil, Germany and friends are missing Freebase topics
-    x Add wiki URLs (and Freebase data) for generated features
-    x Source areas & populations from CIA factbook
-    x Source state areas & populations from Wikipedia
-  x Download Freebase Topics for all features & regenerate metadata
-  x Lots of missing population sources
 
 
 
