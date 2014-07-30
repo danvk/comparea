@@ -214,6 +214,16 @@ function horizontalPacker(svgArea, bounds) {
 /**
  */
 function verticalPacker(svgArea, bounds) {
+  var spans = boundsToSpans(bounds);
+  var cx = svgArea.width / 2, cy = svgArea.height / 2;
+  var totalHeight = spans[0].height + spans[1].height;
+  var padding = totalHeight * ADJACENT_PACK_PADDING;
+
+  var offsets = [
+    {x: cx, y: cy - spans[0].bottom - padding/2},
+    {x: cx, y: cy - spans[0].top + padding/2}
+  ];
+  return adjustLayoutToFit(svgArea, spans, offsets);
 }
 
 
