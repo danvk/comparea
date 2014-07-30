@@ -14,11 +14,12 @@ Path forward:
   - Add hand icon when hovering/dragging
   - Center scrollwheel zoom around the cursor
   - Bug: two finger touch both zooms and drags the shapes (should just drag)
-  - Bug: shapes disappear when you rotate to lanscape on mobile
+  - Bug: shapes disappear when you rotate to landscape on mobile
   - Bug: expanding window should expand existing shapes.
   - Bug: Keyboard doesn't go away at the right time on mobile
   - Bug: change "USA" to "United Kingdom" on home page
     --> placement is different than if you reload.
+  - Bug: occasional vertical scrollbars.
   x Change packers to take spans, not bounds (optimization)
 
 - Productionization
@@ -30,7 +31,7 @@ Path forward:
 - Data curation:
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
   - Generate my own continent features w/ higher resolution
-  - What are the other polygons in geometry.coordintes? (after index 0)
+  - What are the other polygons in geometry.coordinates? (after index 0)
     --> e.g. in KGZ. Are they negative polygons?
   - Detect small islands which significantly affect bounding boxes
     --> e.g. AUS, NZL

@@ -46,6 +46,12 @@ var drag = d3.behavior.drag()
   .on('dragstart', function(d, i) {
     // TODO(danvk): look into selection.order() or selection.sort()
     d3.select(this.parentNode).moveToFront();
+    d3.select(this).classed('in-transit', true);
+    console.log('Adding class to', this);
+  })
+  .on('dragend', function() {
+    d3.select(this).classed('in-transit', false);
+    console.log('Removing class from', this);
   });
 
 var zoom = d3.behavior.zoom().on('zoom', function() {

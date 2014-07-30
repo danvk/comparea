@@ -136,6 +136,16 @@ circle, rect {
 circle {
   stroke: black;
 }
+.draggable {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.in-transit {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
 
 body.about {
   overflow-y: auto;
