@@ -120,7 +120,7 @@ line { stroke: black; }
 .shape {
   fill-opacity: 0.9;
   stroke-width: 0.5;
-  stroke: black;
+  stroke: gray;
   /*shape-rendering: crispEdges;*/
 }
 circle, rect {
