@@ -15,6 +15,24 @@ function boundsToSpans(bounds) {
 }
 
 
+// Add offsets to the spans, returning new spans.
+function offsetSpans(spans, offsets) {
+  return spans.map(function(span, i) {
+    var offset = offsets[i];
+    return {
+      left: span.left + offset.x,
+      right: span.right + offset.x,
+      top: span.top + offset.y,
+      bottom: span.bottom + offset.y,
+      width: span.width,
+      height: span.height,
+      centerX: span.centerX + offset.x,
+      centerY: span.centerY + offset.y
+    };
+  });
+}
+
+
 /**
  * Places the centroids of the features along the main (TL to BR) diagonal
  * of the svg area and adjusts the scale so that the features fit snugly.
@@ -103,30 +121,12 @@ function diagonalPacker(svgArea, bounds) {
  * Put the two shapes right on top of one another, expanded/shrunk to fit.
  */
 function overlappingPacker(svgArea, bounds) {
-  var spans = boundsToSpans(bounds);
-
-  // The two features both have their centroids at (0, 0)
-  // We just have to figure out the limits of the combined bbox and adjust.
-  var cs = {
-    left: Math.min(spans[0].left, spans[1].left),
-    right: Math.max(spans[0].right, spans[1].right),
-    top: Math.min(spans[0].top, spans[1].top),
-    bottom: Math.max(spans[0].bottom, spans[1].bottom)
-  };
+  // Stick the two shapes on top of one another in the center.
   var cx = svgArea.width / 2, cy = svgArea.height / 2;
-
-  var scaleMults = [
-    /* left */  cx / (-cs.left),
-    /* right */ cx / (cs.right),
-    /* top */   cy / (-cs.top),
-    /* bot. */  cy / (cs.bottom)
-  ];
-  var scaleMult = Math.min.apply(null, scaleMults);
-
-  return {
-    offsets: [{x: cx, y: cy}, {x: cx, y: cy}],
-    scaleMult: scaleMult
-  }
+  return adjustLayoutToFit(
+      svgArea,
+      boundsToSpans(bounds),
+      [{x: cx, y: cy}, {x: cx, y: cy}]);
 }
 
 
@@ -154,6 +154,54 @@ function scootchedOverlappingPacker(svgArea, bounds) {
   layout.offsets[1].x += Math.max(0, svgArea.width - (cx + spans[1].right));
 
   return layout;
+}
+
+
+/**
+ * Takes offsets which may put the shapes off-screen, or may not fully utilize
+ * screen space and rescales so that the shapes snugly fit the svg area.
+ * Returns a Layout object.
+ */
+function adjustLayoutToFit(svgArea, origSpans, offsets) {
+  var spans = offsetSpans(origSpans, offsets);
+
+  var cs = {
+    left: Math.min(spans[0].left, spans[1].left),
+    right: Math.max(spans[0].right, spans[1].right),
+    top: Math.min(spans[0].top, spans[1].top),
+    bottom: Math.max(spans[0].bottom, spans[1].bottom)
+  };
+  var cx = svgArea.width / 2, cy = svgArea.height / 2;
+
+  var scaleMults = [
+    /* left */  cx / (cx - cs.left),
+    /* right */ cx / (cs.right - cx),
+    /* top */   cy / (cy - cs.top),
+    /* bot. */  cy / (cs.bottom - cy)
+  ];
+  var scaleMult = Math.min.apply(null, scaleMults);
+
+  return {
+    offsets: offsets.map(function(o) {
+      return {
+        x: cx + (o.x - cx) * scaleMult,
+        y: cy + (o.y - cy) * scaleMult
+      };
+    }),
+    scaleMult: scaleMult
+  };
+}
+
+
+/**
+ */
+function horizontalPacker(svgArea, bounds) {
+}
+
+
+/**
+ */
+function verticalPacker(svgArea, bounds) {
 }
 
 

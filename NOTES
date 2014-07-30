@@ -30,6 +30,7 @@ Path forward:
   - Add links to github on about page (for data download)
   - Add zoom in/out buttons
   - Add hand icon when hovering/dragging
+  - Center scrollwheel zoom around the cursor
   x Write an About page and link to it.
   x Add Google Analytics
   x Plug in -Chosen- Select2 for the dropdown lists
@@ -112,3 +113,9 @@ I've come up with a few strategies:
   - scootchedOverlap: same as above, but scootch the shapes apart to fill any
         available space around them.
   - insetPacker: wrapper around any packer, adds some empty margins
+  - horizontalPacker: put the shapes side-by-side, aligning their centroids.
+  - verticalPacker: put the shapes top-to-bottom, aligning their centroids.
+
+When there's a huge size disparity, pure overlap is pretty good, so long as
+the smaller shape goes on top. I'm torn between fitting the bbox and keeping
+the centroids in the center.

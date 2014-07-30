@@ -78,6 +78,24 @@ var zoom = d3.behavior.zoom().on('zoom', function() {
 
 var geojson_features;
 
+function getPacker() {
+  var m = /pack=([a-zA-Z]+)/.exec(location.search)
+  var packer;
+  if (m) {
+    var packerName = m[1];
+    packer = {
+      'overlap': overlappingPacker,
+      'scootch': scootchedOverlappingPacker,
+      'horizontal': horizontalPacker,
+      'vertical': horizontalPacker
+    }[packerName];
+    if (!packer) throw "Invalid packer: " + packerName;
+  } else {
+    packer = scootchedOverlappingPacker;
+  }
+  return insetPacker(packer, 0.1);
+}
+
 function setDisplayForFeatures(features) {
   if (features.length != 2) throw "Only two shapes supported (for now!)";
   if (features[0] == null || features[1] == null) return;
@@ -91,10 +109,8 @@ function setDisplayForFeatures(features) {
   /*var*/ spans = boundsToSpans(bounds);
   origSpans = spans;
   console.log(origSpans);
-  var layout = insetPacker(scootchedOverlappingPacker, 0.1)({width: width, height: height}, bounds);
-  //     scootchedOverlappingPacker({width: width, height: height}, bounds);
-  //     overlappingPacker({width: width, height: height}, bounds);
-  //     calculatePositionsAndScale({width: width, height: height}, bounds);
+  var layout = getPacker()({width: width, height: height}, bounds);
+
   paths.forEach(function(path) {
     var proj = path.projection();
     proj.scale(layout.scaleMult * proj.scale());
@@ -170,6 +186,7 @@ function updateEl(changedIdx, newId) {
     .success(function(data) {
       geojson_features[changedIdx] = data.feature;
       $('#side-panel' + changedIdx + ' .feature-panel').html(data.panel);
+      zoom.scale(1);
       setDisplayForFeatures(geojson_features);
     })
     .fail(function(e) {
