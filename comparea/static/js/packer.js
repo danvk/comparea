@@ -192,10 +192,22 @@ function adjustLayoutToFit(svgArea, origSpans, offsets) {
   };
 }
 
+// Percentage gap to leave between shapes for {horizontal,vertical}Packer.
+var ADJACENT_PACK_PADDING = 0.1;
 
 /**
  */
 function horizontalPacker(svgArea, bounds) {
+  var spans = boundsToSpans(bounds);
+  var cx = svgArea.width / 2, cy = svgArea.height / 2;
+  var totalWidth = spans[0].width + spans[1].width;
+  var padding = totalWidth * ADJACENT_PACK_PADDING;
+
+  var offsets = [
+    {x: cx - spans[0].right - padding/2, y: cy},
+    {x: cx - spans[0].left + padding/2, y: cy}
+  ];
+  return adjustLayoutToFit(svgArea, spans, offsets);
 }
 
 

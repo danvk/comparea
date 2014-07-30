@@ -31,6 +31,7 @@ Path forward:
   - Add zoom in/out buttons
   - Add hand icon when hovering/dragging
   - Center scrollwheel zoom around the cursor
+  - Change packers to take spans, not bounds (optimization)
   x Write an About page and link to it.
   x Add Google Analytics
   x Plug in -Chosen- Select2 for the dropdown lists
