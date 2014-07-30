@@ -14,25 +14,6 @@ var svg = d3.select("#svg-container").append("svg")
 svg.append('g')
     .attr('class', 'container');
 
-// Determine a scaling factor which will make both shapes fit on screen.
-// This uses the initial scale of 1000 as a guess, then adjusts to fit.
-function setScalingFactor(features, paths) {
-  var bounds = features.map(function(d, i) { return paths[i].bounds(d); });
-  var curWidth = 0, curHeight = 0;
-  bounds.forEach(function(b) {
-    curWidth += (b[1][0] - b[0][0])
-    curHeight = Math.max(curHeight, b[1][1] - b[0][1]);
-  });
-
-  var horizScale = curWidth / (0.7 * width);
-  var vertScale = curHeight / (0.7 * height);
-
-  var scaleAdjustment = 1.0 / Math.max(horizScale, vertScale);
-  paths.forEach(function(path) {
-    var proj = path.projection();
-    proj.scale(scaleAdjustment * proj.scale());
-  });
-}
 
 function projectionForCountry(feature) {
   var centroid = d3.geo.centroid(feature);
@@ -107,14 +88,15 @@ function setDisplayForFeatures(features) {
   });
 
   var bounds = features.map(function(d, i) { return paths[i].bounds(d); });
-  var layout = getPacker()({width: width, height: height}, bounds, features);
+  var spans = boundsToSpans(bounds);
+  var layout = getPacker()({width: width, height: height}, spans, features);
 
   paths.forEach(function(path) {
     var proj = path.projection();
     proj.scale(layout.scaleMult * proj.scale());
   });
   bounds = features.map(function(d, i) { return paths[i].bounds(d); });
-  var spans = boundsToSpans(bounds);
+  spans = boundsToSpans(bounds);
 
   features.forEach(function(d, i) {
     var span = spans[i];

@@ -43,10 +43,8 @@ function offsetSpans(spans, offsets) {
 /**
  * Places the centroids of the features along the main (TL to BR) diagonal.
  */
-function diagonalPacker(svgArea, bounds) {
+function diagonalPacker(svgArea, spans) {
   // bounding boxes for the features under the current projections
-  var spans = boundsToSpans(bounds);
-
   var DIR_X = 0, DIR_Y = 1; 
 
   // This defines a line mapping a param, t \in [0, 1], to the main diagonal.
@@ -81,12 +79,12 @@ function diagonalPacker(svgArea, bounds) {
 /**
  * Put the two shapes right on top of one another, expanded/shrunk to fit.
  */
-function overlappingPacker(svgArea, bounds) {
+function overlappingPacker(svgArea, spans) {
   // Stick the two shapes on top of one another in the center.
   var cx = svgArea.width / 2, cy = svgArea.height / 2;
   return adjustLayoutToFit(
       svgArea,
-      boundsToSpans(bounds),
+      spans,
       [{x: cx, y: cy}, {x: cx, y: cy}]);
 }
 
@@ -95,9 +93,8 @@ function overlappingPacker(svgArea, bounds) {
  * Like overlappingPacker, but attempts to scootch the shapes away from one
  * another without affecting the scale.
  */
-function scootchedOverlappingPacker(svgArea, bounds) {
-  var layout = overlappingPacker(svgArea, bounds);
-  var spans = boundsToSpans(bounds);
+function scootchedOverlappingPacker(svgArea, spans) {
+  var layout = overlappingPacker(svgArea, spans);
   spans.forEach(function(span) {
     for (var k in span) {
       span[k] *= layout.scaleMult;
@@ -156,8 +153,7 @@ function adjustLayoutToFit(svgArea, origSpans, offsets) {
 /**
  * Places the shapes side-by-side, with their centroids vertically aligned.
  */
-function horizontalPacker(svgArea, bounds) {
-  var spans = boundsToSpans(bounds);
+function horizontalPacker(svgArea, spans) {
   var cx = svgArea.width / 2, cy = svgArea.height / 2;
   var totalWidth = spans[0].width + spans[1].width;
   var padding = totalWidth * ADJACENT_PACK_PADDING;
@@ -174,8 +170,7 @@ function horizontalPacker(svgArea, bounds) {
  * Places the shapes on top of one another, with their centroids horizontally
  * aligned.
  */
-function verticalPacker(svgArea, bounds) {
-  var spans = boundsToSpans(bounds);
+function verticalPacker(svgArea, spans) {
   var cx = svgArea.width / 2, cy = svgArea.height / 2;
   var totalHeight = spans[0].height + spans[1].height;
   var padding = totalHeight * ADJACENT_PACK_PADDING;
@@ -192,12 +187,12 @@ function verticalPacker(svgArea, bounds) {
  * Modifies a packer to add some amount of padding along the edges.
  */
 function insetPacker(packer, paddingPercentage) {
-  return function(svgArea, bounds, features) {
+  return function(svgArea, spans, features) {
     var shrunkSvgArea = {
       width: (1 - paddingPercentage) * svgArea.width,
       height: (1 - paddingPercentage) * svgArea.height
     };
-    var layout = packer(shrunkSvgArea, bounds, features);
+    var layout = packer(shrunkSvgArea, spans, features);
     layout.offsets.forEach(function(offset) {
       offset.x += paddingPercentage * svgArea.width / 2;
       offset.y += paddingPercentage * svgArea.height / 2;
@@ -211,19 +206,18 @@ function insetPacker(packer, paddingPercentage) {
  * - For similarly-sized shapes, use horizontal or vertical packing.
  * - For skewed comparisons, use overlap packing.
  */
-function combinedPacker(svgArea, bounds, features) {
-  var spans = boundsToSpans(bounds);
+function combinedPacker(svgArea, spans, features) {
   var areas = features.map(function(f) { return f.properties.area_km2; });
 
   var ratio = Math.max(areas[1] / areas[0], areas[0] / areas[1]);
   var layout;
   if (ratio < MIN_RATIO_FOR_OVERLAP_PACKING) {
     // use horizontal/vertical.
-    var h = horizontalPacker(svgArea, bounds),
-        v = verticalPacker(svgArea, bounds);
+    var h = horizontalPacker(svgArea, spans),
+        v = verticalPacker(svgArea, spans);
     layout = h.scaleMult < v.scaleMult ? v : h;
   } else {
-    layout = overlappingPacker(svgArea, bounds);
+    layout = overlappingPacker(svgArea, spans);
     layout.topShapeIndex = areas[0] < areas[1] ? 0 : 1;
   }
 
