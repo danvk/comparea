@@ -91,7 +91,9 @@ function setDisplayForFeatures(features) {
   /*var*/ spans = boundsToSpans(bounds);
   origSpans = spans;
   console.log(origSpans);
-  var layout = overlappingPacker({width: width, height: height}, bounds);
+  var layout = insetPacker(scootchedOverlappingPacker, 0.1)({width: width, height: height}, bounds);
+  //     scootchedOverlappingPacker({width: width, height: height}, bounds);
+  //     overlappingPacker({width: width, height: height}, bounds);
   //     calculatePositionsAndScale({width: width, height: height}, bounds);
   paths.forEach(function(path) {
     var proj = path.projection();

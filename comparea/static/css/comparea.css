@@ -119,8 +119,9 @@ line { stroke: black; }
 }
 .shape {
   fill-opacity: 0.9;
-  stroke-width: 1;
+  stroke-width: 0.5;
   stroke: black;
+  /*shape-rendering: crispEdges;*/
 }
 circle, rect {
   stroke-width: 1;

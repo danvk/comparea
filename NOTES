@@ -106,3 +106,9 @@ significantly affects its bounding box.
 
 Using convex hulls, or dropping polygons representing <1% of the total area
 could help here.
+
+I've come up with a few strategies:
+  - overlap: line up the centroids, expand to fill the svg area
+  - scootchedOverlap: same as above, but scootch the shapes apart to fill any
+        available space around them.
+  - insetPacker: wrapper around any packer, adds some empty margins

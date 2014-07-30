@@ -128,3 +128,49 @@ function overlappingPacker(svgArea, bounds) {
     scaleMult: scaleMult
   }
 }
+
+
+/**
+ * Like overlappingPacker, but attempts to scootch the shapes away from one
+ * another without affecting the scale.
+ */
+function scootchedOverlappingPacker(svgArea, bounds) {
+  var layout = overlappingPacker(svgArea, bounds);
+  var spans = boundsToSpans(bounds);
+  spans.forEach(function(span) {
+    for (var k in span) {
+      span[k] *= layout.scaleMult;
+    }
+  });
+
+  var cx = svgArea.width / 2, cy = svgArea.height / 2;
+
+  // The first shape may move up or left.
+  layout.offsets[0].y -= Math.max(0, cy + spans[0].top);
+  layout.offsets[0].x -= Math.max(0, cx + spans[0].left);
+
+  // The second shape may move right or down.
+  layout.offsets[1].y += Math.max(0, svgArea.height - (cy + spans[1].bottom));
+  layout.offsets[1].x += Math.max(0, svgArea.width - (cx + spans[1].right));
+
+  return layout;
+}
+
+
+/**
+ * Modifies a packer to add some amount of padding along the edges.
+ */
+function insetPacker(packer, paddingPercentage) {
+  return function(svgArea, bounds) {
+    var shrunkSvgArea = {
+      width: (1 - paddingPercentage) * svgArea.width,
+      height: (1 - paddingPercentage) * svgArea.height
+    };
+    var layout = packer(shrunkSvgArea, bounds);
+    layout.offsets.forEach(function(offset) {
+      offset.x += paddingPercentage * svgArea.width / 2;
+      offset.y += paddingPercentage * svgArea.height / 2;
+    });
+    return layout;
+  };
+}
