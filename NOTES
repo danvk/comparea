@@ -8,17 +8,17 @@ Path forward:
   - Add a favicon
   - Use standard CSS @media breakpoints
   ~ Hide the URL bar on mobile (works on some iOS, not Android)
-  - Write perceptual diff tests for various browser resolutions
   - Add links to github on about page (for data download)
   - Add zoom in/out buttons
   - Center scrollwheel zoom around the cursor
   - Bug: two finger touch both zooms and drags the shapes (should just drag)
-  - Bug: shapes disappear when you rotate to landscape on mobile
-  - Bug: expanding window should expand existing shapes.
   - Bug: Keyboard doesn't go away at the right time on mobile
   - Bug: occasional vertical scrollbars.
   - Bug: select boxes on mobile don't have equal left/right margin
   - Bug: select boxes visibly expand on load with jQuery.select2() call
+  x Write perceptual diff tests for various browser resolutions
+  x Bug: shapes disappear when you rotate to landscape on mobile
+  x Bug: expanding window should expand existing shapes.
   x Bug: change "USA" to "United Kingdom" on home page
     --> placement is different than if you reload.
   x Add hand icon when hovering/dragging
