@@ -11,11 +11,13 @@ Path forward:
   - Add links to github on about page (for data download)
   - Add zoom in/out buttons
   - Center scrollwheel zoom around the cursor
+  - Add home screen install for iOS and Android
   - Bug: two finger touch both zooms and drags the shapes (should just drag)
   - Bug: Keyboard doesn't go away at the right time on mobile
   - Bug: occasional vertical scrollbars.
   - Bug: select boxes on mobile don't have equal left/right margin
   - Bug: select boxes visibly expand on load with jQuery.select2() call
+  - Bug: uses the wrong layout on my Moto X
   x Write perceptual diff tests for various browser resolutions
   x Bug: shapes disappear when you rotate to landscape on mobile
   x Bug: expanding window should expand existing shapes.
