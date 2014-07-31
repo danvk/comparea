@@ -117,7 +117,6 @@ function setDisplayForFeatures(features) {
   // enter
   var draggableG = dataEls.enter().append('g')
     .attr('class', function(d, i) { return 'force force' + i; })
-    .attr('transform', transformStatic)
       .append('g')
       .attr('class', 'draggable');
 
@@ -139,9 +138,9 @@ function setDisplayForFeatures(features) {
      */
 
   // update
-  // BUG: need to update static transforms here, too.
   dataEls.select('.shape')
       .attr('d', function(d, i) { return paths[i](d); });
+  dataEls.attr('transform', transformStatic);
 
   // exit
   dataEls.exit().remove();

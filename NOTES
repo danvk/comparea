@@ -16,11 +16,11 @@ Path forward:
   - Bug: shapes disappear when you rotate to landscape on mobile
   - Bug: expanding window should expand existing shapes.
   - Bug: Keyboard doesn't go away at the right time on mobile
-  - Bug: change "USA" to "United Kingdom" on home page
-    --> placement is different than if you reload.
   - Bug: occasional vertical scrollbars.
   - Bug: select boxes on mobile don't have equal left/right margin
   - Bug: select boxes visibly expand on load with jQuery.select2() call
+  x Bug: change "USA" to "United Kingdom" on home page
+    --> placement is different than if you reload.
   x Add hand icon when hovering/dragging
   x Change packers to take spans, not bounds (optimization)
 
