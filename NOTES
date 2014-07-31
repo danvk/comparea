@@ -11,7 +11,6 @@ Path forward:
   - Write perceptual diff tests for various browser resolutions
   - Add links to github on about page (for data download)
   - Add zoom in/out buttons
-  - Add hand icon when hovering/dragging
   - Center scrollwheel zoom around the cursor
   - Bug: two finger touch both zooms and drags the shapes (should just drag)
   - Bug: shapes disappear when you rotate to landscape on mobile
@@ -20,6 +19,9 @@ Path forward:
   - Bug: change "USA" to "United Kingdom" on home page
     --> placement is different than if you reload.
   - Bug: occasional vertical scrollbars.
+  - Bug: select boxes on mobile don't have equal left/right margin
+  - Bug: select boxes visibly expand on load with jQuery.select2() call
+  x Add hand icon when hovering/dragging
   x Change packers to take spans, not bounds (optimization)
 
 - Productionization

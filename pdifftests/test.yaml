@@ -1,0 +1,30 @@
+setup: |
+    ./run.py
+
+aliases:
+  - &widescreen-config
+      viewportSize:
+        width: 1280
+        height: 600
+      injectCss: |
+        body {
+          background-color: white;
+        }
+
+tests:
+  - name: widescreen
+    url: http://localhost:5000/
+    config: *widescreen-config
+
+  - name: load_vs_update
+    ref:
+      url: http://localhost:5000/USA48+GBR
+      config: *widescreen-config
+    run:
+      url: http://localhost:5000/
+      config:
+        <<: *widescreen-config
+        injectJs: |
+          $('#choose1')
+              .val('GBR')
+              .trigger('change');
