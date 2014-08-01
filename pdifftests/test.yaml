@@ -16,6 +16,12 @@ aliases:
   - &iPhone4LandscapeViewport
       width: 480
       height: 320
+  - &iPhone5PortraitViewport
+      width: 320
+      height: 568
+  - &iPhone5LandscapeViewport
+      width: 568
+      height: 320
   - &iPad3PortraitViewport
       width: 768
       height: 1024
@@ -59,6 +65,12 @@ tests:
       <<: *widescreen-config
       viewportSize: *iPhone4LandscapeViewport
 
+  - name: tall_mobile_portrait
+    url: http://localhost:5000/
+    config:
+      <<: *widescreen-config
+      viewportSize: *iPhone5PortraitViewport
+
   - name: tablet_portrait
     url: http://localhost:5000/
     config:
@@ -70,3 +82,11 @@ tests:
     config:
       <<: *widescreen-config
       viewportSize: *iPad3LandscapeViewport
+
+  - name: narrow_desktop
+    url: http://localhost:5000/
+    config:
+      <<: *widescreen-config
+      viewportSize:
+        width: 421
+        height: 706

@@ -66,19 +66,13 @@ html,body{
 }
 
 /* Responsive UI for mobile/tablet */
-@media only screen and (max-width: 768px) and (max-height: 800px) {
-  /* This covers phones in either orientation, but not tablets */
-  .feature-panel .description {
-    display: none;
-  }
-}
-@media only screen and (max-width: 320px) and (max-height: 800px) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
   /* This covers phones in portrait */
   #sidebar {
     left: 0;
     right: 0;
     width: auto;
-    height: 290px;
+    height: 290px;  /* TODO: calculate this! */
   }
   .side-panel {
     width: 90%;  /* hack! TODO: undo margins or move them into @media */
@@ -87,15 +81,33 @@ html,body{
     top: 290px;
     right: 0;
   }
+  .feature-panel .description {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  /* Only show descriptions if we're swimming in vertical pixels */
+  .feature-panel .description {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 500px) and (orientation: portrait) {
+  /* On short phones, use less space for stats and more for shapes. */
+  .population {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-height: 800px) {
   /* tablet, portrait mode */
   #sidebar {
     left: 0;
-    right: auto;
+    right: 0;
     height: 375px;
     width: auto;
+    bottom: auto;
   }
   .side-panel {
     width: 47%;
