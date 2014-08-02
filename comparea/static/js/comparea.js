@@ -47,11 +47,9 @@ var drag = d3.behavior.drag()
     // TODO(danvk): look into selection.order() or selection.sort()
     d3.select(this.parentNode).moveToFront();
     d3.select(this).classed('in-transit', true);
-    console.log('Adding class to', this);
   })
   .on('dragend', function() {
     d3.select(this).classed('in-transit', false);
-    console.log('Removing class from', this);
   });
 
 var zoom = d3.behavior.zoom().on('zoom', function() {
@@ -82,11 +80,47 @@ function getPacker() {
   } else {
     packer = combinedPacker;
   }
-  return insetPacker(packer, 0.1);
+  return offsetPacker(insetPacker(packer, 0.1));
 }
 
+function getVisibleSvgArea() {
+  var windowSize = {
+    width: $(window).width(),
+    height: $(window).height()
+  }, panel = {
+    width: $('#sidebar').width(),
+    height: $('#sidebar').height()
+  };
+
+  if (panel.width / windowSize.width > panel.height / windowSize.height) {
+    return {
+      top: panel.height,
+      left: 0,
+      width: windowSize.width,
+      height: windowSize.height - panel.height
+    };
+  } else {
+    return {
+      top: 0,
+      left: 0,
+      width: windowSize.width - panel.width,
+      height: panel.height
+    };
+  }
+}
+
+// This is the main "display" function. It configures the projection and
+// layout and creates the shapes.
 function setDisplayForFeatures(features) {
   if (features.length != 2) throw "Only two shapes supported (for now!)";
+
+  // TODO: get rid of these globals.
+  width = document.getElementById('svg-container').offsetWidth;
+  height = document.getElementById('svg-container').offsetHeight;
+  d3.select('#svg-container svg')
+      .attr('width', width)
+      .attr('height', height);
+  var svgArea = getVisibleSvgArea();
 
   var paths = features.map(function(feature) {
     var proj = projectionForCountry(feature);
@@ -95,7 +129,7 @@ function setDisplayForFeatures(features) {
 
   var bounds = features.map(function(d, i) { return paths[i].bounds(d); });
   var spans = boundsToSpans(bounds);
-  var layout = getPacker()({width: width, height: height}, spans, features);
+  var layout = getPacker()(svgArea, spans, features);
 
   paths.forEach(function(path) {
     var proj = path.projection();

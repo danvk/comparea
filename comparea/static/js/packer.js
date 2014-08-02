@@ -202,6 +202,20 @@ function insetPacker(packer, paddingPercentage) {
 }
 
 /**
+ * Adjusts a packer to account for "left" and "top" properties in svgArea.
+ */
+function offsetPacker(packer) {
+  return function(svgArea, spans, features) {
+    var layout = packer(svgArea, spans, features);
+    layout.offsets.forEach(function(offset) {
+      offset.x += svgArea.left;
+      offset.y += svgArea.top;
+    });
+    return layout;
+  };
+}
+
+/**
  * Overall packing strategy:
  * - For similarly-sized shapes, use horizontal or vertical packing.
  * - For skewed comparisons, use overlap packing.

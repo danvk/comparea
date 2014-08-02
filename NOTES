@@ -1,6 +1,5 @@
 Path forward:
 - UI
-  - Expand the <svg> behind the info boxes
   - Click+drag on background should pan both shapes
   - Add share links which preserve the position of the features
   - Add transitions
@@ -18,6 +17,7 @@ Path forward:
   - Bug: select boxes on mobile don't have equal left/right margin
   - Bug: select boxes visibly expand on load with jQuery.select2() call
   - Bug: uses the wrong layout on my Moto X
+  x Expand the <svg> behind the info boxes
   x Hide population on phones in portrait
   x Write perceptual diff tests for various browser resolutions
   x Bug: shapes disappear when you rotate to landscape on mobile

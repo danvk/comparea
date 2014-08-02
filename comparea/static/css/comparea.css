@@ -21,7 +21,7 @@ html,body{
   top: 0;
   bottom: 0;
   left: 0;
-  right: 275px;
+  right: 0;
 }
 
 #sidebar {
@@ -71,15 +71,11 @@ html,body{
   #sidebar {
     left: 0;
     right: 0;
-    width: auto;
-    height: 290px;  /* TODO: calculate this! */
+    width: 100%;
+    display: table;
   }
   .side-panel {
     width: 90%;  /* hack! TODO: undo margins or move them into @media */
-  }
-  #svg-container {
-    top: 290px;
-    right: 0;
   }
   .feature-panel .description {
     display: none;
@@ -105,19 +101,15 @@ html,body{
   #sidebar {
     left: 0;
     right: 0;
-    height: 375px;
+    height: 210px;
     width: auto;
     bottom: auto;
+    display: table;
   }
   .side-panel {
-    width: 47%;
-    display: inline-block;
+    width: 46%;
+    display: inline-table;
     vertical-align: top;
-    height: 100%;
-  }
-  #svg-container {
-    top: 290px;
-    right: 0;
   }
 }
 
