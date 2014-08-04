@@ -5,8 +5,8 @@ Must-haves for launch:
   - Bug: Keyboard doesn't go away at the right time on mobile
   - Incorporate the easy parts of Raven's designs
   - Link to "About" page
-  - Enable logging in Heroku
-  ~ Add a "production" config and use it from Heroku
+  x Enable logging in Heroku
+  x Add a "production" config and use it from Heroku
   x Use a CDN where appropriate (for jQuery, D3, ...)
   x Add links to github on about page (for data download)
   x Make sure comparea.org redirects to www.comparea.org
