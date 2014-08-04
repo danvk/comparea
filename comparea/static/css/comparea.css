@@ -171,5 +171,13 @@ circle {
 body.about {
   overflow-y: auto;
   padding: 5px 20px;
+}
+body.about .wrapper {
   max-width: 800px;
+}
+body.about img {
+  display: inline-block;
+}
+body.about .references {
+  font-size: small;
 }
