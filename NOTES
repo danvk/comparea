@@ -1,9 +1,11 @@
 Must-haves for launch:
   - Add a logo (favicon, home screen icon for touch)
   - Bug: occasional vertical scrollbars.
-  - Bug: Keyboard doesn't go away at the right time on mobile
+      e.g. 727x706
+      worst is iOS rotate to landscape
   - Incorporate the easy parts of Raven's designs
   - Come up with a better way to do versioning :(
+  x Bug: Keyboard doesn't go away at the right time on mobile
   x Bug: long press on iOS does rapid-fire selection
   x Bug: two finger touch both zooms and drags the shapes (should just drag)
   x Link to "About" page
@@ -27,6 +29,7 @@ Path forward:
   - Center scrollwheel zoom around the cursor
   - Add home screen install for iOS and Android
   - Make the feature border zoom-independent
+  - Bug: selecting the same feature twice only shows one shape.
   - Bug: two finger touch both zooms and drags the shapes (should just drag)
   - Bug: Keyboard doesn't go away at the right time on mobile
   - Bug: occasional vertical scrollbars.

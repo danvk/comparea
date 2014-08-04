@@ -197,6 +197,12 @@ function featureForId(id) {
   return null;
 }
 
+// See http://stackoverflow.com/a/20293441/388951
+function isTouch() {
+  try{ document.createEvent("TouchEvent"); return true; }
+  catch(e){ return false; }
+}
+
 function addChooserListeners() {
   $('select.choose').on('change', function(e) {
     var id = $(this).val();
@@ -204,6 +210,11 @@ function addChooserListeners() {
     var changedIdx = $('select.choose').index(this);
     updateEl(changedIdx, ids[changedIdx]);
     history.pushState(null, '', '/' + ids[0] + '+' + ids[1]);
+
+    // forcibly dismiss keyboard on mobile.
+    if (isTouch()) {
+      document.activeElement.blur();
+    }
   });
 }
 
