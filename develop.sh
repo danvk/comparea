@@ -1,4 +1,4 @@
 #!/bin/bash
 
-export APP_CONFIG_FILE=$(pwd)/config/development.py
+export APP_CONFIG=config.Development
 ./run.py
