@@ -18,7 +18,7 @@ def pair(id1, id2):
     if not shape2:
         return "No feature with id %s" % id2, 400
 
-    return render_template('index.html', shape1=shape1, shape2=shape2, name_id_pairs=name_id_pairs)
+    return render_template('index.html', shape1=shape1, shape2=shape2, name_id_pairs=name_id_pairs, version=app.config['VERSION'])
 
 
 @app.route('/shape/<shape_id>')
@@ -42,4 +42,4 @@ def reloadfish():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', version=app.config['VERSION'])

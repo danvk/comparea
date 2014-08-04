@@ -1,1 +1,2 @@
-debug=True
+DEBUG=True
+VERSION=1

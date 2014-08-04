@@ -206,7 +206,7 @@ function addChooserListeners() {
 }
 
 function updateEl(changedIdx, newId) {
-  $.get('/shape/' + newId)
+  $.get('/shape/' + newId + '?v=' + version)
     .success(function(data) {
       geojson_features[changedIdx] = data.feature;
       $('#side-panel' + changedIdx + ' .feature-panel').html(data.panel);
