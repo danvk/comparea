@@ -1,4 +1,5 @@
 setup: |
+    export APP_CONFIG=config.Testing
     ./run.py
 
 aliases:
@@ -34,7 +35,7 @@ tests:
     description:
       Home page on a relatively wide browser. Should be USA vs AUS
       side-by-side.
-    url: http://localhost:5000/
+    url: http://localhost:5001/
     config: *widescreen-config
 
   - name: load_vs_update
@@ -42,10 +43,10 @@ tests:
       This test ensures that loading USA vs. UK looks identical to loading USA
       vs. AUS and then choosing "United Kingdom" from the dropdown menu.
     ref:
-      url: http://localhost:5000/USA48+GBR
+      url: http://localhost:5001/USA48+GBR
       config: *widescreen-config
     run:
-      url: http://localhost:5000/
+      url: http://localhost:5001/
       config:
         <<: *widescreen-config
         injectJs: |
@@ -54,37 +55,37 @@ tests:
               .trigger('change');
 
   - name: mobile_portrait
-    url: http://localhost:5000/
+    url: http://localhost:5001/
     config:
       <<: *widescreen-config
       viewportSize: *iPhone4PortraitViewport
 
   - name: mobile_landscape
-    url: http://localhost:5000/
+    url: http://localhost:5001/
     config:
       <<: *widescreen-config
       viewportSize: *iPhone4LandscapeViewport
 
   - name: tall_mobile_portrait
-    url: http://localhost:5000/
+    url: http://localhost:5001/
     config:
       <<: *widescreen-config
       viewportSize: *iPhone5PortraitViewport
 
   - name: tablet_portrait
-    url: http://localhost:5000/
+    url: http://localhost:5001/
     config:
       <<: *widescreen-config
       viewportSize: *iPad3PortraitViewport
 
   - name: tablet_landscape
-    url: http://localhost:5000/
+    url: http://localhost:5001/
     config:
       <<: *widescreen-config
       viewportSize: *iPad3LandscapeViewport
 
   - name: narrow_desktop
-    url: http://localhost:5000/
+    url: http://localhost:5001/
     config:
       <<: *widescreen-config
       viewportSize:

@@ -5,6 +5,8 @@ Must-haves for launch:
   - Bug: Keyboard doesn't go away at the right time on mobile
   - Incorporate the easy parts of Raven's designs
   - Link to "About" page
+  - Make the feature border zoom-independent
+  - Come up with a better way to do versioning :(
   x Enable logging in Heroku
   x Add a "production" config and use it from Heroku
   x Use a CDN where appropriate (for jQuery, D3, ...)
@@ -24,13 +26,13 @@ Path forward:
   - Add zoom in/out buttons
   - Center scrollwheel zoom around the cursor
   - Add home screen install for iOS and Android
-  - Add a flag to run the dev server on a different port (for testing)
   - Bug: two finger touch both zooms and drags the shapes (should just drag)
   - Bug: Keyboard doesn't go away at the right time on mobile
   - Bug: occasional vertical scrollbars.
   - Bug: select boxes on mobile don't have equal left/right margin
   - Bug: select boxes visibly expand on load with jQuery.select2() call
   - Bug: uses the wrong layout on my Moto X
+  x Add a flag to run the dev server on a different port (for testing)
   x Expand the <svg> behind the info boxes
   x Hide population on phones in portrait
   x Write perceptual diff tests for various browser resolutions
