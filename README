@@ -1,3 +1,5 @@
+Read more about Comparea on its about page: http://comparea.org/about
+
 To get started:
 
     virtualenv env
@@ -7,7 +9,7 @@ To get started:
 
 To iterate on the UI:
 
-    ./run.py
+    ./develop.sh
     open http://localhost:5000/
 
 To regenerate GeoJSON:
