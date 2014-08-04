@@ -65,6 +65,13 @@ html,body{
   color: blue;
 }
 
+.about-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 8px;
+}
+
 /* Responsive UI for mobile/tablet */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   /* This covers phones in portrait */
@@ -78,6 +85,9 @@ html,body{
     width: 90%;  /* hack! TODO: undo margins or move them into @media */
   }
   .feature-panel .description {
+    display: none;
+  }
+  .about-link {
     display: none;
   }
 }
@@ -110,6 +120,9 @@ html,body{
     width: 46%;
     display: inline-table;
     vertical-align: top;
+  }
+  .about-link {
+    display: none;
   }
 }
 
