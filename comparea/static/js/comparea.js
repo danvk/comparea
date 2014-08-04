@@ -47,6 +47,7 @@ var drag = d3.behavior.drag()
     // TODO(danvk): look into selection.order() or selection.sort()
     d3.select(this.parentNode).moveToFront();
     d3.select(this).classed('in-transit', true);
+    d3.event.sourceEvent.stopPropagation(); // silence other listeners, e.g. zoom
   })
   .on('dragend', function() {
     d3.select(this).classed('in-transit', false);
