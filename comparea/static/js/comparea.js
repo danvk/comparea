@@ -210,6 +210,7 @@ function addChooserListeners() {
     var changedIdx = $('select.choose').index(this);
     updateEl(changedIdx, ids[changedIdx]);
     history.pushState(null, '', '/' + ids[0] + '+' + ids[1]);
+    trackAnalyticsPageView();
 
     // forcibly dismiss keyboard on mobile.
     if (isTouch()) {
@@ -229,4 +230,11 @@ function updateEl(changedIdx, newId) {
     .fail(function(e) {
       console.log(e);
     });
+}
+
+// Ping Google Analytics with the current URL (e.g. after history.pushState).
+// See http://stackoverflow.com/a/4813223/388951
+function trackAnalyticsPageView() {
+  var url = location.pathname + location.search  + location.hash;
+  ga('send', 'pageview', { 'page': url });
 }

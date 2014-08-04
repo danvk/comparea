@@ -1,10 +1,10 @@
 Must-haves for launch:
   - Add a logo (favicon, home screen icon for touch)
+  - Incorporate the easy parts of Raven's designs
   - Bug: occasional vertical scrollbars.
       e.g. 727x706
       worst is iOS rotate to landscape
-  - Incorporate the easy parts of Raven's designs
-  - Add Google Analytics events for AJAX requests
+  x Add Google Analytics events for AJAX requests
   x Come up with a better way to do versioning :(  -- CloudFlare!
   x Bug: Keyboard doesn't go away at the right time on mobile
   x Bug: long press on iOS does rapid-fire selection
