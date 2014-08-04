@@ -90,6 +90,9 @@ html,body{
   .about-link {
     display: none;
   }
+  .population {
+    display: none;
+  }
 }
 
 @media only screen and (max-height: 500px) {
@@ -101,7 +104,7 @@ html,body{
 
 @media only screen and (max-height: 500px) and (orientation: portrait) {
   /* On short phones, use less space for stats and more for shapes. */
-  .population {
+  .statistics {
     display: none;
   }
 }

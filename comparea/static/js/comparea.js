@@ -48,6 +48,7 @@ var drag = d3.behavior.drag()
     d3.select(this.parentNode).moveToFront();
     d3.select(this).classed('in-transit', true);
     d3.event.sourceEvent.stopPropagation(); // silence other listeners, e.g. zoom
+    d3.event.sourceEvent.preventDefault();
   })
   .on('dragend', function() {
     d3.select(this).classed('in-transit', false);
