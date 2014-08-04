@@ -22,7 +22,6 @@ def pair(id1, id2):
             shape1=shape1,
             shape2=shape2,
             name_id_pairs=name_id_pairs,
-            version=app.config['VERSION'],
             use_third_party_cdn=app.config['USE_THIRD_PARTY_CDN'])
 
 
@@ -47,4 +46,4 @@ def reloadfish():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', version=app.config['VERSION'])
+    return render_template('about.html')

@@ -1,6 +1,5 @@
 class Default:
     DEBUG=False
-    VERSION=1
     USE_THIRD_PARTY_CDN=False
     PORT = None  # default
 
@@ -13,4 +12,3 @@ class Testing:
 
 class Production:
     USE_THIRD_PARTY_CDN=True
-    VERSION="2014-08-03"
