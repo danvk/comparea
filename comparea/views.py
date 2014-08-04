@@ -18,7 +18,12 @@ def pair(id1, id2):
     if not shape2:
         return "No feature with id %s" % id2, 400
 
-    return render_template('index.html', shape1=shape1, shape2=shape2, name_id_pairs=name_id_pairs, version=app.config['VERSION'])
+    return render_template('index.html',
+            shape1=shape1,
+            shape2=shape2,
+            name_id_pairs=name_id_pairs,
+            version=app.config['VERSION'],
+            use_third_party_cdn=app.config['USE_THIRD_PARTY_CDN'])
 
 
 @app.route('/shape/<shape_id>')

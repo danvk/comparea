@@ -8,11 +8,18 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <link rel="stylesheet" href="/static/css/comparea.css?v={{version}}">
-<link rel="stylesheet" href="/static/lib/select2/select2.css?v={{version}}">
 
+{% if use_third_party_cdn %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.js"></script>
+{% else %}
+<link rel="stylesheet" href="/static/lib/select2/select2.css?v={{version}}">
 <script src="/static/lib/d3/d3.min.js?v={{version}}"></script>
 <script src="/static/lib/jquery/dist/jquery.min.js?v={{version}}"></script>
 <script src="/static/lib/select2/select2.min.js?v={{version}}"></script>
+{% endif %}
 </head>
 
 <body>
