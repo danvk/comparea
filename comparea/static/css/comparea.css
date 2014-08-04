@@ -81,9 +81,6 @@ html,body{
     width: 100%;
     display: table;
   }
-  .side-panel {
-    width: 90%;  /* hack! TODO: undo margins or move them into @media */
-  }
   .feature-panel .description {
     display: none;
   }
@@ -92,6 +89,9 @@ html,body{
   }
   .population {
     display: none;
+  }
+  .statistics p {
+    margin: 0.5em auto;
   }
 }
 
