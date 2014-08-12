@@ -2,11 +2,16 @@ Must-haves for launch:
   - Add a logo (favicon, home screen icon for touch)
   - Incorporate the easy parts of Raven's designs
   - Bug: occasional vertical scrollbars.
-      e.g. 727x706
+      e.g. 727x706 or 434x706
+      --> <body> has exact same size as window
+      --> $('#svg-container').height() != $('#svg-container').get(0).scrollHeight (706 vs. 710)
+      --> deleting the <svg> fixes this problem. deleting everything in the <svg> does not.
+      --> same thing happens when I replace <svg> with <img width=434 height=706>
+      --> comparea/static/test.html is a minimal-ish repro
       worst is iOS rotate to landscape
+      --> seems to have something to do with "minimal-ui" meta tag.
   x Add Google Analytics events for AJAX requests
   x Come up with a better way to do versioning :(  -- CloudFlare!
-  x Bug: Keyboard doesn't go away at the right time on mobile
   x Bug: long press on iOS does rapid-fire selection
   x Bug: two finger touch both zooms and drags the shapes (should just drag)
   x Link to "About" page
@@ -30,13 +35,17 @@ Path forward:
   - Center scrollwheel zoom around the cursor
   - Add home screen install for iOS and Android
   - Make the feature border zoom-independent
+  - Bug: back button doesn't do anything.
   - Bug: selecting the same feature twice only shows one shape.
   - Bug: two finger touch both zooms and drags the shapes (should just drag)
-  - Bug: Keyboard doesn't go away at the right time on mobile
   - Bug: occasional vertical scrollbars.
   - Bug: select boxes on mobile don't have equal left/right margin
   - Bug: select boxes visibly expand on load with jQuery.select2() call
-  - Bug: uses the wrong layout on my Moto X
+  - Bug: shapes consistently showed up partially off-screen on the left on Nate's Android tablet.
+  - Bug: keyboard doesn't show up at the right time on Android.
+  - Bug: keyboard doesn't go away when you do a second tap on the <select> on iOS.
+  x Bug: Keyboard doesn't go away at the right time on mobile
+  x Bug: uses the wrong layout on my Moto X
   x Add a flag to run the dev server on a different port (for testing)
   x Expand the <svg> behind the info boxes
   x Hide population on phones in portrait
