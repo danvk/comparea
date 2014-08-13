@@ -23,6 +23,9 @@ html,body{
   left: 0;
   right: 0;
 }
+svg {
+  display: block;  /* see http://stackoverflow.com/q/25273926/388951 */
+}
 
 #sidebar {
   position: absolute;
