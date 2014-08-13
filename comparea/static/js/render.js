@@ -12,4 +12,9 @@ $(function() {
   $(window).on('resize', function() {
     setDisplayForFeatures(geojson_features);
   });
+
+  // See http://stackoverflow.com/a/22590727/388951
+  window.matchMedia("(orientation: portrait)").addListener(function() {
+    window.scrollTo(0, 0);
+  });
 });

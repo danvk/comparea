@@ -1,7 +1,7 @@
 Must-haves for launch:
   - Add a logo (favicon, home screen icon for touch)
   - Incorporate the easy parts of Raven's designs
-  ~ Bug: occasional vertical scrollbars.
+  x Bug: occasional vertical scrollbars.
       x e.g. 727x706 or 434x706
       --> <body> has exact same size as window
       --> $('#svg-container').height() != $('#svg-container').get(0).scrollHeight (706 vs. 710)
