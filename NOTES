@@ -24,22 +24,22 @@ Must-haves for launch:
 
 Path forward:
 - UI
-  - Click+drag on background should pan both shapes
-  - Add share links which preserve the position of the features
-  - Add transitions
+  / Click+drag on background should pan both shapes
+  / Add share links which preserve the position of the features
+  / Add transitions
   - Show "20% larger" in the UI somewhere
   - Add a favicon
   ~ Hide the URL bar on mobile (works on some iOS, not Android)
-  - Add links to github on about page (for data download)
-  - Add zoom in/out buttons
-  - Center scrollwheel zoom around the cursor
+  x Add links to github on about page (for data download)
+  / Add zoom in/out buttons
+  / Center scrollwheel zoom around the cursor
   - Add home screen install for iOS and Android
   - Make the feature border zoom-independent
-  - Bug: back button doesn't do anything.
-  - Bug: selecting the same feature twice only shows one shape.
-  - Bug: two finger touch both zooms and drags the shapes (should just drag)
-  - Bug: occasional vertical scrollbars.
-  - Bug: select boxes on mobile don't have equal left/right margin
+  / Bug: back button doesn't do anything.
+  / Bug: selecting the same feature twice only shows one shape.
+  x Bug: two finger touch both zooms and drags the shapes (should just drag)
+  x Bug: occasional vertical scrollbars.
+  x Bug: select boxes on mobile don't have equal left/right margin
   - Bug: select boxes visibly expand on load with jQuery.select2() call
   - Bug: shapes consistently showed up partially off-screen on the left on Nate's Android tablet.
   - Bug: keyboard doesn't show up at the right time on Android.
@@ -58,12 +58,12 @@ Path forward:
   x Change packers to take spans, not bounds (optimization)
 
 - Productionization
-  x Set up Cloudfront, with an appropriate versioning scheme.
-  - Use a CDN where appropriate (jQuery, D3, ...)
   - Remove unused packers (diagonal, scootched)
   - Minify JS & CSS?
   - Add Cache-control headers
-  - Make sure comparea.org redirects to www.comparea.org
+  x Set up Cloudfront, with an appropriate versioning scheme.
+  x Use a CDN where appropriate (jQuery, D3, ...)
+  x Make sure comparea.org redirects to www.comparea.org
 
 - Data curation:
   - Consider down-sampling some shapes? (perf boost on mobile/tablet)
