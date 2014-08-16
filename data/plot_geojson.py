@@ -56,13 +56,23 @@ def show_feature(feature):
     return map
 
 
-def show_feature_centered(feature):
+# TODO: choose resolution based on geographic extent
+def show_feature_centered(feature, resolution='l'):
     fig, ax = plt.subplots(figsize=(12,12))
     cx, cy = geojson_util.centroid_of_feature(feature)
 
+
+    # Calculate a good bounding box and pad it.
+    minlat, minlon, maxlat, maxlon = geojson_util.bbox_of_feature(feature)
+    latext = maxlat - minlat
+    lonext = maxlon - minlon
+
     map = Basemap(projection='aea',
-            width=8000000,height=7000000,
-            resolution='l',
+            llcrnrlon = minlon - 0.5*lonext,
+            llcrnrlat = minlat - 0.5*latext,
+            urcrnrlon = maxlon + 0.5*lonext,
+            urcrnrlat = maxlat + 0.5*latext,
+            resolution=resolution,
             lat_1=40.,lat_2=60,lon_0=cx,lat_0=cy)
 
     land_color = 'lightgray'

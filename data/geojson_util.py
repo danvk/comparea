@@ -100,6 +100,32 @@ def _centroid_of_polygon(lon_lats):
     return s.centroid, s.area
 
 
+def bbox_of_feature(feature):
+    '''Returns [minlat, minlon, maxlat, maxlon].'''
+    geom = feature['geometry']
+    if geom['type'] == 'Polygon':
+        return _bbox_of_polygon(geom['coordinates'][0])
+    elif geom['type'] == 'MultiPolygon':
+        bbox = None
+        for part in geom['coordinates']:
+            this_bbox = _bbox_of_polygon(part[0])
+            if not bbox:
+                bbox = this_bbox
+            else:
+                bbox[0] = min(bbox[0], this_bbox[0])
+                bbox[1] = min(bbox[1], this_bbox[1])
+                bbox[2] = max(bbox[2], this_bbox[2])
+                bbox[3] = max(bbox[3], this_bbox[3])
+
+        return bbox
+
+
+def _bbox_of_polygon(lon_lats):
+    lons = map(lambda x: x[0], lon_lats)
+    lats = map(lambda x: x[1], lon_lats)
+    return [min(lats), min(lons), max(lats), max(lons)]
+
+
 def _make_multiploygon(geom, proj):
     if geom['type'] == 'Polygon':
         return _lon_lats_to_shape(geom['coordinates'][0], proj)
