@@ -22,12 +22,16 @@ def _plot_polygon(map, lon_lats):
 
 
 def plot_feature(map, feature):
-    geom = feature['geometry']
-    if geom['type'] == 'Polygon':
-        _plot_polygon(map, geom['coordinates'][0])
-    elif geom['type'] == 'MultiPolygon':
-        for part in geom['coordinates']:
-            _plot_polygon(map, part[0])
+    if feature['type'] == 'FeatureCollection':
+        for feat in feature['features']:
+            plot_feature(map, feat)
+    elif feature['type'] == 'Feature':
+        geom = feature['geometry']
+        if geom['type'] == 'Polygon':
+            _plot_polygon(map, geom['coordinates'][0])
+        elif geom['type'] == 'MultiPolygon':
+            for part in geom['coordinates']:
+                _plot_polygon(map, part[0])
 
 
 def show_feature(feature):
@@ -60,7 +64,6 @@ def show_feature(feature):
 def show_feature_centered(feature, resolution='l'):
     fig, ax = plt.subplots(figsize=(12,12))
     cx, cy = geojson_util.centroid_of_feature(feature)
-
 
     # Calculate a good bounding box and pad it.
     minlat, minlon, maxlat, maxlon = geojson_util.bbox_of_feature(feature)

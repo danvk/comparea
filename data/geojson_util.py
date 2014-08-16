@@ -80,6 +80,16 @@ def get_convex_area_of_feature(feature):
 
 
 def centroid_of_feature(feature):
+    if feature['type'] == 'FeatureCollection':
+        sums = [0, 0, 0]
+        for feat in feature['features']:
+            pt = centroid_of_feature(feat)
+            A = get_area_of_feature(feat)
+            sums[0] += pt[0] * A
+            sums[1] += pt[1] * A
+            sums[2] += A
+        return sums[0] / sums[2], sums[1] / sums[2]
+
     geom = feature['geometry']
     if geom['type'] == 'Polygon':
         pt, _ = _centroid_of_polygon(geom['coordinates'][0])
@@ -102,6 +112,19 @@ def _centroid_of_polygon(lon_lats):
 
 def bbox_of_feature(feature):
     '''Returns [minlat, minlon, maxlat, maxlon].'''
+    if feature['type'] == 'FeatureCollection':
+        bbox = None
+        for feat in feature['features']:
+            this_bbox = bbox_of_feature(feat)
+            if not bbox:
+                bbox = this_bbox
+            else:
+                bbox[0] = min(bbox[0], this_bbox[0])
+                bbox[1] = min(bbox[1], this_bbox[1])
+                bbox[2] = max(bbox[2], this_bbox[2])
+                bbox[3] = max(bbox[3], this_bbox[3])
+        return bbox
+
     geom = feature['geometry']
     if geom['type'] == 'Polygon':
         return _bbox_of_polygon(geom['coordinates'][0])
@@ -116,7 +139,6 @@ def bbox_of_feature(feature):
                 bbox[1] = min(bbox[1], this_bbox[1])
                 bbox[2] = max(bbox[2], this_bbox[2])
                 bbox[3] = max(bbox[3], this_bbox[3])
-
         return bbox
 
 
