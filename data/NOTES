@@ -1,3 +1,171 @@
+Path forward for smaller features:
+
+x Finish downloading OSM data
+x Finish downloading Freebase data
+x Look into subsetting the parks
+x Filter admin regions to those with >100,000 people
+- De-dupe features by Wikipedia article
+- Subtract water regions from all relevant polygons
+- Generate entries in comparea.geo.json
+  - Re-title features
+  - Add in populations
+  - Add in areas
+  - Integrate with fetch_metadata.py and generate_geojson.py
+
+
+-----------
+
+
+Natural Earth Data is great, but smaller shapes like cities, counties,
+boroughs and parks are even better.
+
+The government provides shapefiles for every county, which covers San
+Francisco and the five boroughs of NYC. OSM provides this data as well via
+relations. The problem is that you need to remove water from the shapes.
+
+Here's a sequence that works for Brooklyn:
+
+ogr2ogr /tmp/bk.shp -where 'NAME10="Kings"' ny-counties/tl_2010_36_county10.shp
+ogr2ogr -f GeoJSON /tmp/bk-land.json -clipsrc /tmp/bk.shp ~/Downloads/land-polygons-complete-4326/land_polygons.shp
+
+These files come from
+- http://openstreetmapdata.com/data/land-polygons
+- TIGER2010
+
+Probably a better, more general way forward is to pull OSM relations.
+For example, here's Brooklyn on OSM:
+http://www.openstreetmap.org/relation/369518
+
+It includes lots of water.
+curl 'http://www.openstreetmap.org/api/0.6/relation/369518/full' > /tmp/bk.osm.xml
+
+Just need to convert that to GeoJSON, intersect with the water, simplify
+the shape and add annotations and I'm good to go!
+
+SF: relation #111968
+London: relation #65606
+Chicago: relation #122604
+
+
+To build an OSM filterer:
+
+  brew install protobuf
+  git clone https://github.com/scrosby/OSM-binary.git
+  cd OSM-binary
+  make -C src
+  make -C src install
+  cd ..
+  git clone https://github.com/CanalTP/libosmpbfreader.git
+  cd libosmpbfreader
+  make
+
+The pace is something like 1G/minute on my MacBook Pro.
+
+There are:
+
+  117,211 ways with Wikipedia tags
+  156,064 relations with Wikipedia tags
+
+This needs to be culled further:
+- many of the Wikipedia articles are non-English (do I care about that?)
+- many ways have identical articles (e.g. 33614514, 33614515, ...)
+  --> a possible solution here is to either throw them out
+  --> another solution is to throw out ways which are part of a relation.
+  --> though the Hiland Park relation does not have a wikipedia tag.
+- many of the ways won't be closed.
+- many will refer to Wikipedia articles that I already cover.
+
+Wikipedia titles may make better titles than the OSM names, e.g.:
+
+  relation        369518  en:Brooklyn     Kings County
+
+There are 52,966 ways & relations with English Wikipedia articles.
+
+The "land-polygons-complete" file _does_ include river coastlines
+(e.g. the Hudson), which are essential for clipping the borders of NYC
+boroughs. I'm not sure what the best way to clip thousands of polygons is.
+
+One pathway is:
+
+  osmtogeojson /tmp/bk.osm > /tmp/bk.json
+  # remove everything but polygons
+  ogr2ogr -skipfailures /tmp/bk.shp /tmp/bk.json
+  ogr2ogr -f GeoJSON /tmp/bkclip.json -clipsrc /tmp/bk.shp land_polygons.shp
+
+Total runtime is ~4 minutes. This is too long to run for all OSM polygons,
+but perhaps it's reasonable for just a few "admin" regions. Presumably
+parks don't need to be cropped in this way.
+
+The SF polygon is clipping significantly more slowly. Its GeoJSON file is
+~20x larger, so it seems that clipping speed is proportional to file
+complexity. Simplifying the polygons could help.
+
+Ideas:
+1. Simplify polygons
+2. Clip land_polygons to the bbox, then the shape.
+  --> This works great! Takes ~2 minutes independent of shape.
+
+
+leisure:park -- 177/14294 features
+admin: level 0-10, meaning depends on country see http://wiki.openstreetmap.org/wiki/Tag:admin%20level=8?uselang=en-US
+  0: 1
+  2: 39
+  3: 12
+  4: 96
+  5: 22
+  6: 1319
+  7: 33
+  8: 6262 / 14294, i.e. 43%
+  9: 3
+  10: 103
+  total: 7890 / 14294, i.e. 55% of the features
+
+Two minutes per feature for 25,000 features = 50,000 minutes = 30 days :(
+
+Maybe the thing to do is look at a random sample and get a sense of how to
+proceed.
+--> https://docs.google.com/spreadsheets/d/177KZcy09_JB46rq-tqNJ5zrxr444nKCS6-AayYLzSiI/edit#gid=0
+  Sample of 25, only one is worth considering for inclusion.
+  A useful restriction would be:
+  - Parks with Wikipedia articles
+  - Admin regions with populations > 100,000
+
+A further restriction on parks might be "with Wikipedia articles in
+multiple languages," say 10 or more languages.
+
+Central Park: http://www.openstreetmap.org/way/161202890
+Prospect Park: http://www.openstreetmap.org/way/19853889
+Golden Gate Park: http://www.openstreetmap.org/way/158602261
+
+There are ~250 features with admin_level > 4 and >1,000,000 people.
+Many of these are counties, which probably aren't interesting when they
+don't also happen to be NYC boroughs.
+
+There are...
+  60 non-counties with population >1M
+ 449 non-counties wiht population >100,000
+  86 parks with articles in >=10 languages on Wikipedia
+
+--> 535 new features, not too bad!
+
+Validation list:
+- Brooklyn
+- Queens
+- Manhattan
+- Staten Island
+- The Bronx
+- NYC
+- Chicago
+- San Francisco
+- Houston
+- Central Park
+- Prospect Park
+- Golden Gate Park
+
+
+-----
+
+
 There are 20 features with missing data that I care about:
 ATA	Antarctica
 USA48	United States (Contiguous 48)

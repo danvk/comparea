@@ -73,6 +73,8 @@ def get_area_of_feature(feature):
         return get_area_of_polygon(geom['coordinates'][0])
     elif geom['type'] == 'MultiPolygon':
         return sum([get_area_of_polygon(part[0]) for part in geom['coordinates']])
+    else:
+        return 0
 
 
 def get_convex_area_of_feature(feature):
@@ -102,6 +104,8 @@ def centroid_of_feature(feature):
             sums[1] += pt.y * A
             sums[2] += A
         return sums[0] / sums[2], sums[1] / sums[2]
+    else:
+        return 0, 0  # placeholder
 
 
 def _centroid_of_polygon(lon_lats):
@@ -115,14 +119,17 @@ def bbox_of_feature(feature):
     if feature['type'] == 'FeatureCollection':
         bbox = None
         for feat in feature['features']:
-            this_bbox = bbox_of_feature(feat)
-            if not bbox:
-                bbox = this_bbox
-            else:
-                bbox[0] = min(bbox[0], this_bbox[0])
-                bbox[1] = min(bbox[1], this_bbox[1])
-                bbox[2] = max(bbox[2], this_bbox[2])
-                bbox[3] = max(bbox[3], this_bbox[3])
+            try:
+                this_bbox = bbox_of_feature(feat)
+                if not bbox:
+                    bbox = this_bbox
+                else:
+                    bbox[0] = min(bbox[0], this_bbox[0])
+                    bbox[1] = min(bbox[1], this_bbox[1])
+                    bbox[2] = max(bbox[2], this_bbox[2])
+                    bbox[3] = max(bbox[3], this_bbox[3])
+            except ValueError:
+                pass
         return bbox
 
     geom = feature['geometry']
@@ -140,6 +147,8 @@ def bbox_of_feature(feature):
                 bbox[2] = max(bbox[2], this_bbox[2])
                 bbox[3] = max(bbox[3], this_bbox[3])
         return bbox
+    else:
+        raise ValueError('Unsupported geometry: %s' % geom['type'])
 
 
 def _bbox_of_polygon(lon_lats):

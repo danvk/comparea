@@ -10,3 +10,4 @@ env
 *.iml
 comparea/static/lib
 .DS_Store
+node_modules

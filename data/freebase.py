@@ -8,6 +8,7 @@ import os
 import json
 import sys
 import urllib
+import urllib2
 
 from data import mqlkey
 
@@ -35,7 +36,7 @@ class Freebase(object):
         self._use_cache = use_cache
 
     def _cache_file(self, title):
-        title = title.replace(' ', '_')
+        title = title.replace(' ', '_').replace('/', '_')
         return os.path.join(self.cache_dir, '%s.json' % title)
 
     def _get_from_cache(self, title):
@@ -79,7 +80,7 @@ class Freebase(object):
 
         url = self._construct_url(title)
         sys.stderr.write('Fetching %s\n' % url)
-        data = urllib.urlopen(url).read()
+        data = urllib2.urlopen(url, None, 10.0).read()
         #if self._use_cache:
         open(self._cache_file(title), 'w').write(data)
         return json.loads(data)

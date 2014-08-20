@@ -32,6 +32,8 @@ def plot_feature(map, feature):
         elif geom['type'] == 'MultiPolygon':
             for part in geom['coordinates']:
                 _plot_polygon(map, part[0])
+        else:
+            pass
 
 
 def show_feature(feature):
