@@ -22,7 +22,7 @@ if __name__ == '__main__':
     fb = freebase.Freebase()
 
     for idx, row in enumerate(csv):
-        osm_type, osm_id, wiki_title, name = row
+        osm_type, osm_id, wiki_title, name = row[:4]
         if wiki_title.startswith("en:"):
             wiki_title = wiki_title[3:]
         if '://' in wiki_title:

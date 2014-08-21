@@ -67,7 +67,7 @@ if __name__ == '__main__':
     osm = OSM()
 
     for row in csv:
-        osm_type, osm_id, wiki_title, name = row
+        osm_type, osm_id, wiki_title, name = row[:4]
         try:
             osm.get_osm_data(osm_type, osm_id)
         except IOError:
