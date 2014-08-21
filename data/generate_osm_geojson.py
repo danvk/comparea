@@ -25,7 +25,7 @@ from data import osm_filter
 def apply_monkey_patches(d):
     # Most people don't care about the Farralons, and they mess up the view.
     if d['id'] == 'relation111968':
-        new_sf = geojson_util.subset_feature(d, [-122.547892, 0], [-90, 90])
+        new_sf = geojson_util.subset_feature(d, [-122.547892, 0], [-90, 37.839085])
         # is there a more canonical way to do this in Python?
         for k in d.keys(): d[k] = new_sf[k]
 
