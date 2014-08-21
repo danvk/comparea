@@ -68,13 +68,22 @@ def get_area_of_feature(feature):
     if feature['type'] == 'FeatureCollection':
         return sum([get_area_of_feature(feat) for feat in feature['features']])
 
+
     geom = feature['geometry']
-    if geom['type'] == 'Polygon':
-        return get_area_of_polygon(geom['coordinates'][0])
-    elif geom['type'] == 'MultiPolygon':
-        return sum([get_area_of_polygon(part[0]) for part in geom['coordinates']])
+    geoms = []
+    if geom['type'] == 'GeometryCollection':
+        geoms = geom['geometries']
     else:
-        return 0
+        geoms = [geom]
+
+    area = 0.0
+    for geom in geoms:
+        if geom['type'] == 'Polygon':
+            if len(geom['coordinates']) > 0:
+                area += get_area_of_polygon(geom['coordinates'][0])
+        elif geom['type'] == 'MultiPolygon':
+            area += sum([get_area_of_polygon(part[0]) for part in geom['coordinates']])
+    return area
 
 
 def get_convex_area_of_feature(feature):
@@ -93,19 +102,31 @@ def centroid_of_feature(feature):
         return sums[0] / sums[2], sums[1] / sums[2]
 
     geom = feature['geometry']
-    if geom['type'] == 'Polygon':
-        pt, _ = _centroid_of_polygon(geom['coordinates'][0])
-        return pt.x, pt.y
-    elif geom['type'] == 'MultiPolygon':
-        sums = [0, 0, 0]
-        for part in geom['coordinates']:
-            pt, A = _centroid_of_polygon(part[0])
-            sums[0] += pt.x * A
-            sums[1] += pt.y * A
-            sums[2] += A
-        return sums[0] / sums[2], sums[1] / sums[2]
+    geoms = []
+    if geom['type'] == 'GeometryCollection':
+        geoms = geom['geometries']
     else:
-        return 0, 0  # placeholder
+        geoms = [geom]
+
+    sum_A = 0.0
+    sum_x, sum_y = 0.0, 0.0
+    for geom in geoms:
+        if geom['type'] == 'Polygon':
+            if len(geom['coordinates']) > 0:
+                pt, A = _centroid_of_polygon(geom['coordinates'][0])
+                sum_x += pt.x * A
+                sum_y += pt.y * A
+                sum_A += A
+        elif geom['type'] == 'MultiPolygon':
+            for part in geom['coordinates']:
+                pt, A = _centroid_of_polygon(part[0])
+                sum_x += pt.x * A
+                sum_y += pt.y * A
+                sum_A += A
+    if sum_A != 0:
+        return sum_x / sum_A, sum_y / sum_A
+    else:
+        return 0.0, 0.0
 
 
 def _centroid_of_polygon(lon_lats):

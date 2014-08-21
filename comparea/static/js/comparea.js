@@ -16,7 +16,15 @@ svg.append('g')
 
 
 function projectionForCountry(feature) {
-  var centroid = d3.geo.centroid(feature);
+  // d3.geo.centroid is unstable, see https://github.com/mbostock/d3/issues/1883
+  var props = feature['properties'];
+  var centroid;
+  if (props.centroid_lat) {
+    centroid = [props.centroid_lon, props.centroid_lat];
+  } else {
+    centroid = d3.geo.centroid(feature);
+  }
+
   var lon = centroid[0], lat = centroid[1];
   var proj = d3.geo.albers()
     .center([0, 0])

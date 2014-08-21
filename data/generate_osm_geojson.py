@@ -80,16 +80,25 @@ def main(args):
         if 'area_km2' in props: del props['area_km2']
         props.update({
             'description': 'A nice place!',
-            'area_km2': '1234',
-            'area_km2_source': 'calculated',
-            'name': wiki_title
+            'name': wiki_title,
         })
 
-        d['properties'] = props
         only_polygons.remove_non_polygons(d)
         geojson_util.make_polygons_clockwise(d)
 
         apply_monkey_patches(d)
+        area_km2 = geojson_util.get_area_of_feature(d) / 1e6
+        if area_km2 == 0:
+            sys.stderr.write('Discarding %s (no area)\n' % wiki_title)
+            continue
+        c_lon, c_lat = geojson_util.centroid_of_feature(d)
+        props.update({
+            'area_km2': area_km2,
+            'area_km2_source': 'calculated',
+            'centroid_lon': c_lon,
+            'centroid_lat': c_lat
+        })
+        d['properties'] = props
 
         features_out.append(d)
 
