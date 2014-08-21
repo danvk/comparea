@@ -208,6 +208,11 @@ def make_polygons_clockwise(feature):
 def subset_feature(in_feature, lng_range, lat_range):
     '''Return a feature containing only polygons centered in the box.'''
     feature = copy.deepcopy(in_feature)
+
+    if feature['type'] == 'FeatureCollection':
+        feature['features'] = [subset_feature(f, lng_range, lat_range) for f in feature['features']]
+        return feature
+
     geom = feature['geometry']
 
     def is_in_bounds(polygon):
@@ -215,18 +220,24 @@ def subset_feature(in_feature, lng_range, lat_range):
         return (lng_range[0] < pt.x < lng_range[1] and
                 lat_range[0] < pt.y < lat_range[1])
 
-    if geom['type'] == 'Polygon':
-        if not is_in_bounds(geom['coordinates'][0]):
-            del geom['coordinates'][0]  # empty shape
-        return feature
-    elif geom['type'] == 'MultiPolygon':
-        indices_to_kill = []
-        for idx, part in enumerate(geom['coordinates']):
-            if not is_in_bounds(part[0]):
-                indices_to_kill.append(idx)
-        for idx in reversed(indices_to_kill):
-            del geom['coordinates'][idx]
-        return feature
+    geoms = []
+    if geom['type'] == 'GeometryCollection':
+        geoms = geom['geometries']
+    else:
+        geoms = [geom]
+
+    for geom in geoms:
+        if geom['type'] == 'Polygon':
+            if not is_in_bounds(geom['coordinates'][0]):
+                del geom['coordinates'][0]  # empty shape
+        elif geom['type'] == 'MultiPolygon':
+            indices_to_kill = []
+            for idx, part in enumerate(geom['coordinates']):
+                if not is_in_bounds(part[0]):
+                    indices_to_kill.append(idx)
+            for idx in reversed(indices_to_kill):
+                del geom['coordinates'][idx]
+    return feature
 
 
 def add_feature_geometry(base_feature, new_feature):

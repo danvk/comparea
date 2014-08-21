@@ -5,13 +5,21 @@ x Finish downloading Freebase data
 x Look into subsetting the parks
 x Filter admin regions to those with >100,000 people
 x Subtract water regions from all relevant polygons
+x Clean up SF polygon (remove Farralons?)
 - De-dupe features by Wikipedia article
-- Simplify polygons
+- Calculate centroid in Python
+- Why is "Quezon Memorial Circle" included? (way #82699870)
+- Remove the need for population when it doesn't make sense (parks)
+- Simplify polygons in a more adaptive way
 - Generate entries in comparea.geo.json
   - Re-title features
   - Add in populations
   - Add in areas
   - Integrate with fetch_metadata.py and generate_geojson.py
+
+
+- Why no Detroit? Paris? Sacramento?
+- San Diego is broken. So is Kansas City.
 
 
 -----------

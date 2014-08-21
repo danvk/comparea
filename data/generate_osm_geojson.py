@@ -22,6 +22,14 @@ from data import osm
 from data import osm_filter
 
 
+def apply_monkey_patches(d):
+    # Most people don't care about the Farralons, and they mess up the view.
+    if d['id'] == 'relation111968':
+        new_sf = geojson_util.subset_feature(d, [-122.547892, 0], [-90, 90])
+        # is there a more canonical way to do this in Python?
+        for k in d.keys(): d[k] = new_sf[k]
+
+
 def main(args):
     osm_fetcher = osm.OSM()
     fb = freebase.Freebase()
@@ -48,6 +56,7 @@ def main(args):
         freebase_extract = fetch_metadata.extract_freebase_metadata(
                 '', wiki_title, freebase_data)
 
+        #land_json = path.replace('.xml.json', '.xml.land.simple.json')
         land_json = path.replace('.xml.json', '.xml.land.json')
         if os.path.exists(land_json):
             try:
@@ -60,7 +69,12 @@ def main(args):
 
         # TODO: assign id, override properties.
         d['id'] = '%s%s' % (osm_type, osm_id)  # do better!
-        props = {}
+        props = {
+                'population': 0,
+                'population_date': '',
+                'population_source': '',
+                'population_source_url': '',
+                }
         props.update(fetch_metadata.extract_freebase_metadata(
             '', wiki_title, freebase_data))
         if 'area_km2' in props: del props['area_km2']
@@ -74,6 +88,9 @@ def main(args):
         d['properties'] = props
         only_polygons.remove_non_polygons(d)
         geojson_util.make_polygons_clockwise(d)
+
+        apply_monkey_patches(d)
+
         features_out.append(d)
 
 
