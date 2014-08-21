@@ -34,9 +34,6 @@ def main(args):
         # GeoJSON data.
         path = os.path.join(osm_fetcher.cache_dir,
                 '%s%s.xml.json' % (osm_type, osm_id))
-        #land_json = path.replace('.xml.json', '.land.xml.json')
-        #if os.path.exists(land_json):
-        #    path = land_json
         try:
             d = json.load(file(path))
         except (ValueError, IOError):
@@ -50,6 +47,16 @@ def main(args):
 
         freebase_extract = fetch_metadata.extract_freebase_metadata(
                 '', wiki_title, freebase_data)
+
+        land_json = path.replace('.xml.json', '.xml.land.json')
+        if os.path.exists(land_json):
+            try:
+                d = json.load(file(land_json))
+            except (ValueError, IOError):
+                continue
+        else:
+            sys.stderr.write('Could not find %s\n' % land_json)
+
 
         # TODO: assign id, override properties.
         d['id'] = '%s%s' % (osm_type, osm_id)  # do better!

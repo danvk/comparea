@@ -4,8 +4,9 @@ x Finish downloading OSM data
 x Finish downloading Freebase data
 x Look into subsetting the parks
 x Filter admin regions to those with >100,000 people
+x Subtract water regions from all relevant polygons
 - De-dupe features by Wikipedia article
-- Subtract water regions from all relevant polygons
+- Simplify polygons
 - Generate entries in comparea.geo.json
   - Re-title features
   - Add in populations
