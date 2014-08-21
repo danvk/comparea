@@ -1,587 +1,547 @@
-way	33004396	en:Huntsville,_Alabama		admin_pop	8	183739.0
+way	33152215	Centennial,_Colorado		admin_pop	8	103743.0
+way	33144568	Costa_Mesa,_California	Costa Mesa	admin_pop	8	111918.0
+relation	115280	Denton,_Texas		admin_pop	8	121123.0
+way	33103007	El_Monte,_California	El Monte	admin_pop	8	115111.0
+way	33261344	Fairfield,_California		admin_pop	8	107684.0
+relatoin	112443	Fresno,_California		admin_pop	8	505882.0
+way	33010910	Glendale,_Arizona		admin_pop	8	232143.0
+way	33149401	Huntington_Beach,_California	Huntington Beach	admin_pop	8	194708.0
+way	33259631	Irving,_Texas	Irving	admin_pop	8	225427.0
+way	33113203	Lakewood,_Colorado		admin_pop	8	145516.0
+way	33300912	Lubbock,_Texas		admin_pop	8	236065.0
+way	32975878	Mobile,_Alabama		admin_pop	8	194822.0
+relation	111729	Modesto,_California		admin_pop	8	203547.0
+way	33098468	Moreno_Valley,_California	Moreno Valley	admin_pop	8	199552.0
+way	33126498	Oxnard,_California	Oxnard	admin_pop	8	201555.0
+way	33077385	Rancho_Cucamonga,_California	Rancho Cucamonga	admin_pop	8	170746.0
+way	33077572	Rialto,_California	Rialto	admin_pop	8	101740.0
+relation	114484	Roseville,_California		admin_pop	8	124519.0
+way	33297693	Round_Rock,_Texas		admin_pop	8	106573.0
+way	106716910	Santa_Maria,_California	Santa Maria	admin_pop	8	101459.0
+way	33127512	Thousand_Oaks,_California		admin_pop	8	128412.0
+way	33196750	Wichita_Falls,_Texas		admin_pop	8	104552.0
+relation	3488539	en:Abilene, Texas	Abilene	admin_pop	8	118887.0
+relation	2176999	en:Acadia National Park	Acadia National Park	park	51
+relation	2964144	en:Adhamiyah	ألأعظمية	admin_pop	6	464151.0
+relation	182644	en:Akron, Ohio	Akron	admin_pop	8	198549.0
+relation	171262	en:Albuquerque, New_Mexico	Albuquerque	admin_pop	8	555417.0
+relation	206637	en:Alexandria, Virginia	Alexandria	admin_pop	8	146294.0
+relation	910784	en:Algonquin Provincial Park	Algonquin Provincial Park	park	29
+way	224894996	en:Allan Gardens	Allan Gardens	park	10
+relation	188525	en:Allentown, Pennsylvania	Allentown	admin_pop	8	118974.0
+relation	115286	en:Amarillo, Texas	Amarillo	admin_pop	8	195250.0
+relation	253985	en:Anaheim, California	Anaheim	admin_pop	8	343248.0
+relation	2605259	en:Anchorage, Alaska	Anchorage	admin_pop	6	298610.0
+relation	3560109	en:Anguo	安国市 (Anguo)	admin_pop	6	378830.0
+relation	135130	en:Ann_Arbor,_Michigan	Ann Arbor	admin_pop	8	116121.0
+relation	3468758	en:Anqiu	安丘市 (Anqiu)	admin_pop	6	1096782.0
+relation	3705567	en:Antioch,_California	Antioch	admin_pop	8	105508.0
+way	27524719	en:Arches National Park	Arches National Park	park	61
+relation	206845	en:Arlington County, Virginia	Arlington	admin_pop	8	221045.0
+relation	115329	en:Arlington, Texas	Arlington	admin_pop	8	375600.0
+relation	112912	en:Arvada,_Colorado	Arvada	admin_pop	8	109745.0
+relation	1836607	en:Ascension Parish, Louisiana	Ascension Parish	admin_pop	6	112286.0
+relation	119557	en:Atlanta	Atlanta	admin_pop	8	443775.0
+relation	124817	en:Aurora, Colorado	Aurora	admin_pop	8	199932.0
+relation	112875	en:Aurora, illinois	Aurora	admin_pop	8	199932.0
+relation	113314	en:Austin, Texas	Austin	admin_pop	8	842592.0
+way	47121540	en:Ayresome Park	Ayresome Gardens	park	25
+way	36326582	en:Badlands National Park	Badlands National Park	park	49
+relation	113006	en:Bakersfield, California	Bakersfield	admin_pop	8	358597.0
+relation	133345	en:Baltimore	Baltimore	admin_pop	6	621342.0
+way	28281517	en:Bandelier National Monument	Bandelier National Monument	park	15
+relation	3442995	en:Baoding	保定市 / Baoding	admin_pop	5	902496.0
+relation	132206	en:Baton Rouge, Louisiana	Baton Rouge	admin_pop	8	230058.0
+way	5029111	en:Battery Park	Battery Park	park	41
+relation	3722235	en:Bauchi	Bauchi	admin_pop	6	206537.0
+relation	254079	en:Bayamón, Puerto Rico	Bayamón	admin_pop	8	205693.0
+way	4253431	en:Bedford_Square	Bedford Square	park	12
+relation	2100680	en:Beihai	北海市	admin_pop	5	558635.0
+relation	237868	en:Bellevue, Washington	Bellevue	admin_pop	8	126439.0
+relation	3262334	en:Bengbu	蚌埠市 / Bengbu	admin_pop	5	809399.0
+relation	2833528	en:Berkeley, California	Berkeley	admin_pop	8	115403.0
+relation	3718387	en:Bida	Bida	admin_pop	6	111245.0
+relation	142497	en:Billings, Montana	Billings	admin_pop	8	106954.0
+relation	111031	en:Birmingham, Alabama	Birmingham	admin_pop	8	212038.0
+relation	1382817	en:Bnei_Brak	בני ברק	admin_pop	8	156663.0
+relation	121360	en:Boise, Idaho	Boise City	admin_pop	8	212303.0
+relation	1827484	en:Bossier Parish, Louisiana	Bossier Parish	admin_pop	6	122197.0
+relation	2315704	en:Boston	Boston	admin_pop	8	636479.0
+way	23787732	en:Boston Common	Boston Common	park	20
+relation	112298	en:Boulder,_Colorado	Boulder	admin_pop	8	101808.0
+way	112692313	en:Bowling	Bowling Green	park	20
+relation	3245950	en:Bozhou	亳州市 / Bozhou	admin_pop	5	1351939.0
+relation	72615	en:Brest,_Belarus	Брест	admin_pop	6	313333.0
+way	33271442	en:Bridgeport, Connecticut		admin_pop	8	146425.0
+relation	184225	en:Broken Arrow, Oklahoma	Broken Arrow	admin_pop	8	102019.0
+relation	369518	en:Brooklyn	Kings County	admin_pop	6	2565635.0
+way	157016745	en:Brooklyn Botanic Garden	Brooklyn Botanic Garden	park	21
+way	27511137	en:Bryce Canyon National Park	Bryce Canyon National Park	park	63
+way	45589944	en:Bukhara	Buxoro	admin_pop	6	237361.0
+relation	3529574	en:Burbank, California	Burbank	admin_pop	8	104391.0
+way	44500971	en:Cabrillo National Monument	Cabrillo National Monument	park	16
+relation	1827485	en:Caddo Parish, Louisiana	Caddo Parish	admin_pop	6	257093.0
+relation	254090	en:Caguas, Puerto Rico	Caguas	admin_pop	8	142678.0
+relation	1838144	en:Calcasieu Parish, Louisiana	Calcasieu Parish	admin_pop	6	194493.0
+relation	273242	en:Caloocan	Caloocan	admin_pop	6	1381610.0
+relation	1933745	en:Cambridge, Massachusetts	Cambridge	admin_pop	8	106471.0
+relation	3443418	en:Cangzhou	沧州市 / Cangzhou	admin_pop	5	443561.0
+way	27524669	en:Canyonlands National Park	Canyonlands NP - Island in the Sky District	park	55
+relation	118881	en:Cape Coral, Florida	Cape Coral	admin_pop	8	161248.0
+way	156829281	en:Capitol Reef National Park	Capitol Reef National Park	park	45
+relation	2305279	en:Carlsbad, California	Carlsbad	admin_pop	8	109318.0
+relation	254080	en:Carolina, Puerto Rico	Carolina	admin_pop	8	175129.0
+relation	179796	en:Cary, North Carolina	Cary	admin_pop	8	145693.0
+relation	129088	en:Cedar Rapids, Iowa	Cedar Rapids	admin_pop	8	128119.0
+relation	112951	en:Centennial,_Colorado	Centennial	admin_pop	8	103743.0
+way	161202890	en:Central Park	Central Park	park	77
+relation	3283881	en:Changge	长葛市 (Changge)	admin_pop	6	646306.0
+relation	3468760	en:Changyi, Shandong	昌邑市 (Changyi)	admin_pop	6	683182.0
+relation	2963917	en:Changzhi	长治市 / Changzhi	admin_pop	5	648981.0
+relation	3288958	en:Chaohu	巢湖市 (Chaohu)	admin_pop	6	778864.0
+relation	3244431	en:Chaozhou	潮州市 / Chaozhou	admin_pop	5	363582.0
+relation	194119	en:Charleston, South Carolina	Charleston	admin_pop	8	125583.0
+relation	177415	en:Charlotte, North Carolina	Charlotte	admin_pop	8	775202.0
+relation	197273	en:Chattanooga, Tennessee	Chattanooga	admin_pop	8	171279.0
+way	194296032	en:Chehel Sotoun	چهل ستون	park	29
+relation	206671	en:Chesapeake, Virginia	Chesapeake	admin_pop	8	228417.0
+relation	3084896	en:Chibi City	赤壁市 (Chibi)	admin_pop	6	510926.0
+relation	122604	en:Chicago	Chicago	admin_pop	8	2714856.0
+relation	111848	en:Chula Vista, California	Chula Vista	admin_pop	8	252422.0
+relation	183453	en:Cincinnati	Cincinnati	admin_pop	8	296550.0
+relation	196122	en:Clarksville, Tennessee	Clarksville	admin_pop	8	142519.0
+relation	118909	en:Clearwater, Florida	Clearwater	admin_pop	8	108732.0
+relation	182130	en:Cleveland	Cleveland	admin_pop	8	390928.0
+way	37962191	en:Clinton Presidential Center	William J Clinton Presidential Park	park	18
+way	243083346	en:Colcamar District	Plaza de Armas Colcamar	park	12
+relation	141403	en:Columbia, Missouri	Columbia	admin_pop	8	113225.0
+relation	194000	en:Columbia, South Carolina	Columbia	admin_pop	8	131686.0
+relation	1850813	en:Columbus, Georgia	Columbus	admin_pop	8	198413.0
+relation	182706	en:Columbus, Ohio	Columbus	admin_pop	8	809798.0
+relation	3705569	en:Concord,_California	Concord	admin_pop	8	124711.0
+relation	122576	en:Cook County, Illinois	Cook County	admin_pop	6	5231351.0
+relation	1216638	en:Coral Springs, Florida	Coral Springs	admin_pop	8	125287.0
+relation	253988	en:Corpus Christi, Texas	Corpus Christi	admin_pop	8	312195.0
+relation	112271	en:Daly City, California	Daly City	admin_pop	8	103690.0
+relation	3008552	en:Datong	大同市 / Datong	admin_pop	5	1526744.0
+relation	129013	en:Davenport, Iowa	Davenport	admin_pop	8	101363.0
+relation	182954	en:Dayton, Ohio	Dayton	admin_pop	8	141359.0
+relation	3283763	en:Dengfeng	登封市 (Dengfeng)	admin_pop	6	609085.0
+way	26658458	en:Deoksugung	덕수궁 (Deoksugung)	park	27
+relation	128653	en:Des Moines, Iowa	Des Moines	admin_pop	8	206688.0
+relation	3485982	en:Dezhou	德州市 / Dezhou	admin_pop	5	552445.0
+relation	3560111	en:Dingzhou	定州市 (Dingzhou)	admin_pop	6	1107903.0
+relation	3671049	en:Doha	Doha	admin_pop	10	796947.0
+relation	3464319	en:Dongguan	东莞市 / Dongguan	admin_pop	5	6445777.0
+relation	3473531	en:Dongtai	东台市 (Dongtai)	admin_pop	6	1164653.0
+relation	3411717	en:Dongyang	东阳市 (Dongyang)	admin_pop	6	753094.0
+relation	3529373	en:Downey, California	Downey	admin_pop	8	112873.0
+relation	179868	en:Durham, North Carolina	Durham	admin_pop	8	239358.0
+relation	1836609	en:East Baton Rouge Parish, Louisiana	East Baton Rouge Parish	admin_pop	6	444526.0
+relation	2689434	en:Ebina, Kanagawa	海老名市	admin_pop	7	127707.0
+relation	113919	en:El Paso, Texas	El Paso City Limits	admin_pop	8	672538.0
+relation	125795	en:Elgin, Illinois	Elgin	admin_pop	8	109927.0
+relation	170505	en:Elizabeth, New Jersey	Elizabeth	admin_pop	8	126458.0
+relation	2319802	en:Elk Grove, California	Elk Grove	admin_pop	8	159038.0
+way	27459262	en:Ellis Island	Ellis Island	park	59
+relation	3032046	en:Enping	恩平市 (Enping)	admin_pop	6	464898.0
+relation	187550	en:Erie, Pennsylvania	Erie	admin_pop	8	101047.0
+relation	253827	en:Escondido,_California	Escondido	admin_pop	8	147575.0
+relation	186706	en:Eugene,_Oregon	Eugene	admin_pop	8	157986.0
+relation	127319	en:Evansville, Indiana	Evansville	admin_pop	8	120235.0
+relation	2605273	en:Fairbanks North Star Borough, Alaska	Fairbanks North Star	admin_pop	6	100272.0
+relation	181552	en:Fargo, North Dakota	Fargo	admin_pop	8	109779.0
+way	182025105	en:Fasil Ghebbi	Fasil Gebie	park	45
+relation	179846	en:Fayetteville, North Carolina	Fayetteville	admin_pop	8	202103.0
+relation	3316384	en:Fenghua	奉化市 (Fenghua)	admin_pop	6	471558.0
+relation	134624	en:Flint, Michigan	City of Flint	admin_pop	8	100515.0
+way	33076523	en:Fontana,_California	Fontana	admin_pop	8	201812.0
+relation	112524	en:Fort Collins, Colorado	Fort Collins	admin_pop	8	148612.0
+relation	117955	en:Fort Lauderdale, Florida	Fort Lauderdale	admin_pop	8	170747.0
+way	49666619	en:Fort McHenry	Fort McHenry National Monument and Historic Shrine	park	21
+way	12353668	en:Fort Sumter	Fort Sumter National Monument	park	43
+relation	127309	en:Fort Wayne, Indiana	Fort Wayne	admin_pop	8	254555.0
+relation	115274	en:Fort Worth, Texas	Fort Worth	admin_pop	8	777992.0
+relation	111943	en:Fremont, California	Fremont	admin_pop	8	221986.0
+relation	112443	en:Fresno, California	Fresno	admin_pop	8	505882.0
+relation	3277228	en:Fu'an	福安市 (Fu'an)	admin_pop	6	554057.0
+relation	3239346	en:Fuding	福鼎市 (Fuding)	admin_pop	6	521070.0
+relation	2312655	en:Fullerton, California	Fullerton	admin_pop	8	138574.0
+relation	3263977	en:Fuzhou	福州市 / Fuzhou	admin_pop	5	2124435.0
+relation	118870	en:Gainesville, Florida	Gainesville	admin_pop	8	126047.0
+relation	3551966	en:Gaobeidian	高碑店市 (Gaobeidian)	admin_pop	6	538582.0
+relation	3290455	en:Gaocheng	藁城市 (Gaocheng)	admin_pop	6	758269.0
+relation	3468762	en:Gaomi	高密市 (Gaomi)	admin_pop	6	842403.0
+relation	253954	en:Garland, Texas	Garland	admin_pop	8	233564.0
+relation	3716082	en:Gboko	Gboko	admin_pop	6	101281.0
+way	255072469	en:German Museum of Technology	Rotorblatt	park	27
+way	42825479	en:Gibraltar Botanic Gardens	Alameda Botanic Gardens	park	10
+relation	110803	en:Gilbert, Arizona		admin_pop	8	221140.0
+relation	2313082	en:Glendale, California	Glendale	admin_pop	8	194478.0
+way	158602261	en:Golden Gate Park	Golden Gate Park	park	45
+way	22901074	en:Gramercy Park	Gramercy Park	park	31
+way	109269750	en:Grand Army Plaza (Manhattan)	Grand Army Plaza	park	15
+relation	114449	en:Grand Prairie, Texas	Grand Prairie	admin_pop	8	181824.0
+relation	134444	en:Grand Rapids, Michigan	Grand Rapids	admin_pop	8	190411.0
+way	235558732	en:Grant_Park_(Chicago)	Grant Park	park	20
+way	48928137	en:Great Sand Dunes National Park and Preserve	Great Sand Dunes National Park and Preserve	park	45
+relation	251488	en:Green Bay, Wisconsin	Green Bay	admin_pop	8	104868.0
+relation	180261	en:Greensboro, North Carolina	Greensboro	admin_pop	8	277080.0
+way	4483968	en:Greenwich Park	Greenwich Park	park	42
+relation	186274	en:Gresham, Oregon	Gresham	admin_pop	8	108956.0
+relation	3287346	en:Guangzhou	广州市 / Guangzhou	admin_pop	5	8524826.0
+relation	3441528	en:Gujiao	古交市 (Gujiao)	admin_pop	6	205702.0
+relation	3706963	en:Gusau	Gusau	admin_pop	6	132393.0
+relation	2689438	en:Hadano, Kanagawa	秦野市	admin_pop	7	170145.0
+way	23512242	en:Hagaparken		park	16
+relation	206814	en:Hampton, Virginia	Hampton	admin_pop	8	136836.0
+relation	3290701	en:Handan	邯鄲市 / Handan	admin_pop	5	1329734.0
+relation	3221112	en:Hangzhou	杭州市 / Hangzhou	admin_pop	5	2451319.0
+relation	1560395	en:Harris County, Texas	Harris County	admin_pop	6	4253700.0
+relation	3909995	en:Hartford, Connecticut	Hartford	admin_pop	8	124893.0
+relation	253652	en:Hayward, California	Hayward	admin_pop	8	149392.0
+relation	3288965	en:Hefei	合肥市 / Hefei	admin_pop	5	1659075.0
+relation	170116	en:Henderson,_Nevada	Henderson	admin_pop	8	265679.0
+relation	3443419	en:Hengshui	衡水市 / Hengshui	admin_pop	5	422761.0
+relation	3463955	en:Heshan, Guangdong	鹤山市 (Heshan)	admin_pop	6	405779.0
+relation	3241970	en:Heyuan	河职院	admin_pop	5	227773.0
+relation	118853	en:Hialeah, Florida	Hialeah	admin_pop	8	231941.0
+way	37054313	en:High Line (New York City)	The High Line	park	32
+way	14344414	en:High Park	High Park	park	15
+relation	180329	en:High Point, North Carolina	High Point	admin_pop	8	106586.0
+relation	117954	en:Hollywood,_Florida	Hollywood	admin_pop	8	145236.0
+way	42255430	en:Hong Kong Park	香港公園 Hong Kong Park	park	11
+relation	3285993	en:Houma, Shanxi	侯马市 (Houma)	admin_pop	6	225123.0
+relation	2688911	en:Houston	Houston	admin_pop	8	2160821.0
+relation	2861139	en:Hovenweep National Monument	Hovenweep National Monument	park	15
+relation	3231910	en:Huaibei	淮北市 / Huaibei	admin_pop	5	741195.0
+relation	3262360	en:Huainan	淮南市 / Huainan	admin_pop	5	1357228.0
+relation	3236754	en:Huixian	辉县市 (Huixian)	admin_pop	6	776326.0
+relation	110673	en:Huntsville,_Alabama		admin_pop	8	183739.0
+relation	3285994	en:Huozhou	霍州市 (Huozhou)	admin_pop	6	274955.0
 way	19851241	en:Hyde_Park,_London	Hyde Park	park	67
-relation	3307448	en:Weihai	威海市 / Weihai	admin_pop	5	609219.0
-relation	3717988	en:Okene	Okene	admin_pop	6	312775.0
-relation	1314631	en:Riohacha	Riohacha	admin_pop	6	137224.0
-relation	198761	en:West Valley City, Utah	West Valley City	admin_pop	8	132434.0
+relation	3718474	en:Ijebu Ode	Ijebu Ode	admin_pop	6	124313.0
+relation	3718194	en:Ikorodu	Ikorodu	admin_pop	6	184674.0
+relation	3715373	en:Ikot Ekpene	Ikot Ekpene	admin_pop	6	119402.0
+relation	139824	en:Independence, Missouri	Independence	admin_pop	8	117270.0
+relation	112090	en:Inglewood, California	Inglewood	admin_pop	8	111182.0
+relation	114485	en:Irvine, California	Irvine	admin_pop	8	229985.0
+relation	3720570	en:Iseyin	Iseyin	admin_pop	6	170936.0
+way	32944969	en:Jackson, Mississippi		admin_pop	8	175437.0
+relation	119008	en:Jacksonville, Florida	Jacksonville	admin_pop	8	836507.0
+relation	1836614	en:Jefferson Parish, Louisiana	Jefferson Parish	admin_pop	6	433676.0
+relation	170953	en:Jersey City, New Jersey	Jersey City	admin_pop	8	254441.0
+relation	1381350	en:Jerusalem		admin_pop	8	780517.0
+relation	2998185	en:Jewel Cave National Monument	Jewel Cave National Monument	park	18
+relation	3221113	en:Jiande	建德市 (Jiande)	admin_pop	6	473062.0
+relation	3463901	en:Jiangmen	江门市 / Jiangmen	admin_pop	5	536317.0
+relation	3278462	en:Jiangshan	江山市 (Jiangshan)	admin_pop	6	473222.0
+relation	3237564	en:Jiaozuo	焦作市 / Jiaozuo	admin_pop	5	747299.0
+relation	3308626	en:Jiaxing	嘉兴市 / Jiaxing	admin_pop	5	881923.0
+relation	3245997	en:Jieshou	界首市 (Jieshou)	admin_pop	6	640878.0
+relation	3298438	en:Jiexiu	介休市 (Jiexiu)	admin_pop	6	372993.0
+relation	3282749	en:Jieyang	揭阳市 / Jieyang	admin_pop	5	633570.0
+relation	3486449	en:Jinan	济南市 / Jinan	admin_pop	5	2999934.0
+relation	3237073	en:Jincheng	晋城市 / Jincheng	admin_pop	5	304221.0
+relation	3224017	en:Jingdezhen	景德镇市 / Jingdezhen	admin_pop	5	444720.0
+relation	3296587	en:Jinzhong	晋中市 / Jinzhong	admin_pop	5	534357.0
+relation	3290457	en:Jinzhou, Hebei	晋州市 (Jinzhou)	admin_pop	6	520942.0
+way	187378187	en:John Marshall	John Marshall Place Park	park	60
+relation	124820	en:Joliet, Illinois	Joliet	admin_pop	8	148268.0
+relation	3032047	en:Kaiping	开平市 (Kaiping)	admin_pop	6	668692.0
+relation	2689445	en:Kamakura, Kanagawa	鎌倉市	admin_pop	7	174314.0
+relation	129568	en:Kansas City, Kansas	Kansas City	admin_pop	8	147268.0
+relation	141008	en:Kansas City, Missouri	Kansas City	admin_pop	8	464310.0
+relation	3711502	en:Katsina	Katsina	admin_pop	6	259315.0
+relation	251671	en:Kenosha, Wisconsin	Kenosha	admin_pop	8	100150.0
+relation	237875	en:Kent, Washington	Kent	admin_pop	8	122999.0
+relation	396480	en:Kings County, California	Kings County	admin_pop	6	151364.0
+relation	197353	en:Knoxville, Tennessee	Knoxville	admin_pop	8	182200.0
+relation	1837810	en:Lafayette Parish, Louisiana	Lafayette Parish	admin_pop	6	227055.0
+relation	131949	en:Lafayette, Louisiana	Lafayette	admin_pop	8	122761.0
+relation	3486493	en:Laiwu	莱芜市 / Laiwu	admin_pop	5	1233525.0
+way	33113201	en:Lakewood,_Colorado		admin_pop	8	145516.0
+way	33104058	en:Lancaster,_California	Lancaster	admin_pop	8	159055.0
+relation	134997	en:Lansing, Michigan	Lansing	admin_pop	8	113996.0
 relation	113253	en:Laredo, Texas	Laredo	admin_pop	8	244731.0
 relation	171260	en:Las Cruces, New Mexico	Las Cruces	admin_pop	8	101047.0
-way	80442502	en:Lodi Gardens	Lodi Garden	park	12
-relation	122576	en:Cook County, Illinois	Cook County	admin_pop	6	5231351.0
-relation	3486472	en:Zhangqiu	章丘市 (Zhangqiu)	admin_pop	6	977324.0
-relation	114449	en:Grand Prairie, Texas	Grand Prairie	admin_pop	8	181824.0
-relation	119009	en:Tallahassee, Florida	Tallahassee	admin_pop	8	186971.0
-relation	112524	en:Fort Collins, Colorado	Fort Collins	admin_pop	8	148612.0
-relation	131949	en:Lafayette, Louisiana	Lafayette	admin_pop	8	122761.0
-relation	197239	en:Memphis, Tennessee	Memphis	admin_pop	8	655155.0
-relation	254118	en:Bayamón, Puerto Rico	Bayamón	admin_pop	8	205693.0
-relation	175905	en:New York City	New York City	admin_pop	5	8336697.0
-relation	251671	en:Kenosha, Wisconsin	Kenosha	admin_pop	8	100150.0
-relation	182706	en:Columbus, Ohio	Columbus	admin_pop	8	809798.0
-way	33196750	Wichita_Falls,_Texas		admin_pop	8	104552.0
-relation	3290455	en:Gaocheng	藁城市 (Gaocheng)	admin_pop	6	758269.0
-relation	2833530	en:Oakland, California	Oakland	admin_pop	8	400740.0
-relation	420422	en:Richmond County, Georgia	Richmond County	admin_pop	6	202587.0
-relation	113786	en:McAllen, Texas	McAllen	admin_pop	8	134719.0
-way	33127424	en:Thousand_Oaks,_California		admin_pop	8	128412.0
-way	33004403	en:Huntsville,_Alabama		admin_pop	8	183739.0
-relation	129568	en:Kansas City, Kansas	Kansas City	admin_pop	8	147268.0
-way	33073533	en:Modesto,_California		admin_pop	8	203547.0
-relation	3224017	en:Jingdezhen	景德镇市 / Jingdezhen	admin_pop	5	444720.0
-relation	3864704	en:Newport News, Virginia	Newport News City	admin_pop	6	180726.0
-way	26658458	en:Deoksugung	덕수궁 (Deoksugung)	park	27
-relation	3473531	en:Dongtai	东台市 (Dongtai)	admin_pop	6	1164653.0
-way	22901074	en:Gramercy Park	Gramercy Park	park	31
-way	28281517	en:Bandelier National Monument	Bandelier National Monument	park	15
-way	33073650	Modesto,_California		admin_pop	8	203547.0
-relation	179846	en:Fayetteville, North Carolina	Fayetteville	admin_pop	8	202103.0
-relation	237868	en:Bellevue, Washington	Bellevue	admin_pop	8	126439.0
-relation	2528730	en:Orange County, North Carolina	Orange County	admin_pop	6	137941.0
-relation	3431881	en:Shihezi	石河子市 (Shihezi)	admin_pop	5	590115.0
-relation	3718474	en:Ijebu Ode	Ijebu Ode	admin_pop	6	124313.0
-relation	112875	en:Aurora, illinois	Aurora	admin_pop	8	199932.0
-relation	3222248	en:Xuancheng	宣城市 / Xuancheng	admin_pop	5	822707.0
-relation	135048	en:Warren, Michigan	Warren	admin_pop	8	134141.0
-relation	197273	en:Chattanooga, Tennessee	Chattanooga	admin_pop	8	171279.0
-way	33261344	Fairfield,_California		admin_pop	8	107684.0
-relation	119008	en:Jacksonville, Florida	Jacksonville	admin_pop	8	836507.0
-relation	1804307	en:Louisville, Kentucky	Louisville	admin_pop	8	602011.0
-way	38218904	en:Ontario,_California	Ontario	admin_pop	8	167211.0
-relation	910784	en:Algonquin Provincial Park	Algonquin Provincial Park	park	29
-way	211087381	en:Lincoln Park, Chicago	Lincoln Park	park	10
-relation	3306055	en:Stamford, Connecticut	Stamford	admin_pop	8	125109.0
-way	33113201	en:Lakewood,_Colorado		admin_pop	8	145516.0
-relation	1180533	en:St. Louis	City of St. Louis	admin_pop	6	318172.0
-relation	185049	en:Norman, Oklahoma	Norman	admin_pop	8	115562.0
-relation	3464829	en:Zhuhai	珠海市 / Zhuhai	admin_pop	5	833908.0
-way	33104058	en:Lancaster,_California	Lancaster	admin_pop	8	159055.0
-relation	3105450	en:Murrieta, California	Murrieta	admin_pop	8	106810.0
-relation	237599	en:Spokane, Washington	Spokane	admin_pop	8	209525.0
-relation	206637	en:Alexandria, Virginia	Alexandria	admin_pop	8	146294.0
-way	33152215	Centennial,_Colorado		admin_pop	8	103743.0
-relation	1532363	en:Pomona, California	Pomona	admin_pop	8	150812.0
-relation	141008	en:Kansas City, Missouri	Kansas City	admin_pop	8	464310.0
-relation	171262	en:Albuquerque, New_Mexico	Albuquerque	admin_pop	8	555417.0
-relation	111968	en:San Francisco	San Francisco	admin_pop	8	825863.0
-relation	3478414	en:Linhai	临海市 (Linhai)	admin_pop	6	948618.0
-way	33127198	en:Simi_Valley,_California		admin_pop	8	125793.0
-relation	3237564	en:Jiaozuo	焦作市 / Jiaozuo	admin_pop	5	747299.0
-way	33113560	Santa_Maria,_California	Santa Maria	admin_pop	8	101459.0
-relation	126326	en:Springfield, Illinois	Springfield	admin_pop	8	117126.0
-relation	1590433	en:Vērmanes Garden	Vērmanes dārzs	park	12
-way	33297693	Round_Rock,_Texas		admin_pop	8	106573.0
-relation	115329	en:Arlington, Texas	Arlington	admin_pop	8	375600.0
-relation	206672	en:Norfolk, Virginia	Norfolk	admin_pop	6	245782.0
-relation	1216638	en:Coral Springs, Florida	Coral Springs	admin_pop	8	125287.0
-relation	129590	en:Overland Park, Kansas	Overland Park	admin_pop	8	178919.0
-relation	103716	en:Makati	Makati	admin_pop	6	548983.0
-relation	3291031	en:Zunhua	遵化市 (Zunhua)	admin_pop	6	683662.0
-relation	3864712	en:Richmond, Virginia	Richmond City	admin_pop	6	210309.0
-relation	113314	en:Austin, Texas	Austin	admin_pop	8	842592.0
-relation	117652	en:Palm Bay, Florida	Palm Bay	admin_pop	8	104124.0
-relation	3260816	en:Ma'anshan	马鞍山市 / Ma'anshan	admin_pop	5	567576.0
-relation	2689434	en:Ebina, Kanagawa	海老名市	admin_pop	7	127707.0
-relation	963806	en:Princes Street Gardens	West Princes Street Gardens	park	12
-relation	3716082	en:Gboko	Gboko	admin_pop	6	101281.0
-relation	2313082	en:Glendale, California	Glendale	admin_pop	8	194478.0
-way	199925533	en:Marcus Garvey Park	Marcus Garvey Memorial Park	park	10
-relation	3864689	en:Chesapeake, Virginia	Chesapeake City	admin_pop	6	228417.0
-relation	3429711	en:Yangzhong	扬中市 (Yangzhong)	admin_pop	6	301672.0
-way	33151987	en:Centennial,_Colorado	Centennial	admin_pop	8	103743.0
-way	49666619	en:Fort McHenry	Fort McHenry National Monument and Historic Shrine	park	21
-way	157016745	en:Brooklyn Botanic Garden	Brooklyn Botanic Garden	park	21
-relation	170726	en:Paterson, New Jersey	Paterson	admin_pop	8	145219.0
-relation	253824	en:Tucson, Arizona	Tucson	admin_pop	8	524295.0
-way	33103007	El_Monte,_California	El Monte	admin_pop	8	115111.0
-relation	186479	en:Salem, Oregon	Salem	admin_pop	8	157429.0
-relation	170120	en:Reno, Nevada	Reno	admin_pop	8	231027.0
-relation	3551920	en:Zhuozhou	涿州市 (Zhuozhou)	admin_pop	6	546754.0
-way	33105060	en:Palmdale,_California		admin_pop	8	155650.0
-relation	3468769	en:Zhucheng	诸城市 (Zhucheng)	admin_pop	6	1053695.0
-way	60510422	en:Theodore Roosevelt National Park	Theodore Roosevelt National Park	park	43
-relation	3290463	en:Xinji	辛集市 (Xinji)	admin_pop	6	623219.0
-relation	251488	en:Green Bay, Wisconsin	Green Bay	admin_pop	8	104868.0
-relation	254000	en:San Juan, Puerto Rico	San Juan	admin_pop	8	389714.0
-relation	3258833	en:Tianmen	天门市 / Tianmen	admin_pop	5	1613739.0
-relation	121360	en:Boise, Idaho	Boise City	admin_pop	8	212303.0
-way	33300912	Lubbock,_Texas		admin_pop	8	236065.0
-way	208356899	en:Rideau Hall	Rideau Hall	park	20
-relation	3718194	en:Ikorodu	Ikorodu	admin_pop	6	184674.0
-relation	112777	en:Westminster,_Colorado	Westminster	admin_pop	8	109169.0
-way	32944969	en:Jackson, Mississippi		admin_pop	8	175437.0
-relation	2305279	en:Carlsbad, California	Carlsbad	admin_pop	8	109318.0
-relation	3286960	en:Zoucheng	邹城市 (Zoucheng)	admin_pop	6	1101003.0
-way	4045303	en:University_Botanical_Garden_(Oslo)	Botanisk hage	park	14
-relation	117973	en:Port St. Lucie, Florida	Port St. Lucie	admin_pop	8	168716.0
-relation	2176999	en:Acadia National Park	Acadia National Park	park	51
-relation	3463955	en:Heshan, Guangdong	鹤山市 (Heshan)	admin_pop	6	405779.0
-relation	115286	en:Amarillo, Texas	Amarillo	admin_pop	8	195250.0
-relation	1836620	en:Terrebonne Parish, Louisiana	Terrebonne Parish	admin_pop	6	111893.0
-relation	206655	en:Newport News, Virginia	Newport News	admin_pop	8	180726.0
-relation	3259366	en:Zhumadian	驻马店 / Zhumadian	admin_pop	5	338036.0
-relation	170505	en:Elizabeth, New Jersey	Elizabeth	admin_pop	8	126458.0
-relation	129088	en:Cedar Rapids, Iowa	Cedar Rapids	admin_pop	8	128119.0
-relation	3298438	en:Jiexiu	介休市 (Jiexiu)	admin_pop	6	372993.0
-relation	3443419	en:Hengshui	衡水市 / Hengshui	admin_pop	5	422761.0
-way	33120286	Fresno,_California		admin_pop	8	505882.0
-way	33004404	en:Huntsville,_Alabama		admin_pop	8	183739.0
-relation	124820	en:Joliet, Illinois	Joliet	admin_pop	8	148268.0
-relation	2688911	en:Houston	Houston	admin_pop	8	2160821.0
-way	33300880	en:Lubbock,_Texas		admin_pop	8	236065.0
-relation	396466	en:Orange County, California	Orange County	admin_pop	6	3090132.0
-relation	3259442	en:Ruzhou	汝州市 (Ruzhou)	admin_pop	6	923245.0
-way	33098468	Moreno_Valley,_California	Moreno Valley	admin_pop	8	199552.0
-way	45589944	en:Bukhara	Buxoro	admin_pop	6	237361.0
-relation	3722235	en:Bauchi	Bauchi	admin_pop	6	206537.0
-way	22899302	en:Washington Square Park	Washington Square Park	park	41
-way	37054313	en:High Line (New York City)	The High Line	park	32
-relation	3290457	en:Jinzhou, Hebei	晋州市 (Jinzhou)	admin_pop	6	520942.0
-relation	112298	en:Boulder,_Colorado	Boulder	admin_pop	8	101808.0
-relation	72615	en:Brest,_Belarus	Брест	admin_pop	6	313333.0
-way	109269750	en:Grand Army Plaza (Manhattan)	Grand Army Plaza	park	15
-way	33017279	en:Montgomery,_Alabama		admin_pop	8	205293.0
-relation	253639	en:San Bernardino, California	San Bernardino	admin_pop	8	213295.0
-relation	3231858	en:Suzhou, Anhui	宿州市 / Suzhou	admin_pop	5	1601181.0
-way	33073639	Modesto,_California		admin_pop	8	203547.0
-relation	162069	en:Washington, D.C.	District of Columbia	admin_pop	6	632323.0
-relation	194968	en:Sioux Falls, South Dakota	Sioux Falls	admin_pop	8	159908.0
-relation	3237011	en:Xinxiang	新乡市 / Xinxiang	admin_pop	5	775941.0
-relation	3218566	en:Pizhou	邳州市 (Pizhou)	admin_pop	6	1539922.0
-way	41922120	en:Majorelle Garden	Jardin Majorelle	park	16
-way	33073648	Modesto,_California		admin_pop	8	203547.0
-way	33073642	Modesto,_California		admin_pop	8	203547.0
-relation	170117	en:Las Vegas	Las Vegas	admin_pop	8	596424.0
-way	23512242	en:Hagaparken		park	16
-relation	3709376	en:Zaria	Zaria	admin_pop	6	612257.0
-relation	3290701	en:Handan	邯鄲市 / Handan	admin_pop	5	1329734.0
-way	158602261	en:Golden Gate Park	Golden Gate Park	park	45
-relation	122940	en:Parañaque	Parañaque	admin_pop	6	552660.0
-relation	3671049	en:Doha	Doha	admin_pop	10	796947.0
-relation	3464717	en:Sanshui District	三水区 (Sanshui)	admin_pop	6	440119.0
-relation	198765	en:West Jordan, Utah	West Jordan	admin_pop	8	108383.0
-relation	130192	en:Olathe, Kansas	Olathe	admin_pop	8	130045.0
-relation	3864703	en:Hampton, Virginia	Hampton City	admin_pop	6	136836.0
-way	33073640	Modesto,_California		admin_pop	8	203547.0
-relation	182130	en:Cleveland	Cleveland	admin_pop	8	390928.0
-relation	184225	en:Broken Arrow, Oklahoma	Broken Arrow	admin_pop	8	102019.0
-relation	176069	en:Rochester, New York	Rochester	admin_pop	7	210532.0
-relation	3464718	en:Shunde District	顺德区 (Shunde)	admin_pop	6	1694152.0
-relation	237687	en:Tacoma, Washington	Tacoma	admin_pop	8	202010.0
-relation	180329	en:High Point, North Carolina	High Point	admin_pop	8	106586.0
-relation	3221183	en:Xiaoshan District	萧山区 (Xiaoshan)	admin_pop	6	1233348.0
-relation	112533	en:Vallejo, California	Vallejo	admin_pop	8	117796.0
-way	33010681	en:Gilbert, Arizona		admin_pop	8	221140.0
-way	45284482	en:Mesa Verde National Park	Mesa Verde National Park	park	58
-relation	3231584	en:Mingguang	明光市 (Mingguang)	admin_pop	6	569585.0
-relation	3468766	en:Qingzhou	青州市 (Qingzhou)	admin_pop	6	894468.0
-relation	139824	en:Independence, Missouri	Independence	admin_pop	8	117270.0
-way	60510385	en:Theodore Roosevelt National Park	Theodore Roosevelt National Park	park	43
-relation	2689438	en:Hadano, Kanagawa	秦野市	admin_pop	7	170145.0
-relation	253832	en:San Diego	San Diego	admin_pop	8	1338348.0
-way	156366633	en:Mill Ends Park	Mill Ends Park	park	37
-relation	3245997	en:Jieshou	界首市 (Jieshou)	admin_pop	6	640878.0
-relation	253827	en:Escondido,_California	Escondido	admin_pop	8	147575.0
-way	33127512	Thousand_Oaks,_California		admin_pop	8	128412.0
-relation	3648972	en:Matsumoto,_Nagano	松本市	admin_pop	7	243037.0
-relation	3285994	en:Huozhou	霍州市 (Huozhou)	admin_pop	6	274955.0
-relation	118870	en:Gainesville, Florida	Gainesville	admin_pop	8	126047.0
-relation	3218104	en:Xinyang	信阳市 / Xinyang	admin_pop	5	1255750.0
-relation	2311446	en:Santa Ana, California	Santa Ana	admin_pop	8	330920.0
-relation	3286952	en:Qufu	曲阜市 (Qufu)	admin_pop	6	625313.0
-relation	3715373	en:Ikot Ekpene	Ikot Ekpene	admin_pop	6	119402.0
-way	33004406	en:Huntsville,_Alabama		admin_pop	8	183739.0
-relation	3282749	en:Jieyang	揭阳市 / Jieyang	admin_pop	5	633570.0
-relation	3262334	en:Bengbu	蚌埠市 / Bengbu	admin_pop	5	809399.0
-relation	179032	en:Wilmington, North Carolina	Wilmington	admin_pop	8	109922.0
-way	3241371	en:Russell_Square	Russell Square	park	31
-relation	3560109	en:Anguo	安国市 (Anguo)	admin_pop	6	378830.0
-relation	179796	en:Cary, North Carolina	Cary	admin_pop	8	145693.0
-relation	3308626	en:Jiaxing	嘉兴市 / Jiaxing	admin_pop	5	881923.0
-relation	112382	en:Stockton, California	Stockton	admin_pop	8	297984.0
-relation	3464319	en:Dongguan	东莞市 / Dongguan	admin_pop	5	6445777.0
-way	182025105	en:Fasil Ghebbi	Fasil Gebie	park	45
-way	33297589	en:Round Rock, Texas		admin_pop	8	106573.0
-relation	254046	en:Mobile, Alabama	Mobile	admin_pop	8	194822.0
-relation	3447967	en:Malang	Malang	admin_pop	5	820243.0
-way	33120283	Fresno,_California		admin_pop	8	505882.0
-way	106716910	Santa_Maria,_California	Santa Maria	admin_pop	8	101459.0
-way	42255430	en:Hong Kong Park	香港公園 Hong Kong Park	park	11
-way	227207626	en:Parc del Laberint d'Horta	Parc del Laberint d'Horta	park	18
-relation	188022	en:Philadelphia	Philadelphia	admin_pop	8	1547607.0
-relation	181552	en:Fargo, North Dakota	Fargo	admin_pop	8	109779.0
-relation	1837810	en:Lafayette Parish, Louisiana	Lafayette Parish	admin_pop	6	227055.0
-way	33004395	en:Huntsville,_Alabama		admin_pop	8	183739.0
-relation	1216810	en:Pompano_Beach,_Florida	Pompano Beach	admin_pop	8	102984.0
-relation	3442995	en:Baoding	保定市 / Baoding	admin_pop	5	902496.0
-relation	1346849	en:Muntinlupa	Muntinlupa	admin_pop	6	452943.0
-relation	1382817	en:Bnei_Brak	בני ברק	admin_pop	8	156663.0
-relation	3320347	en:Lianyungang	连云港市 / Lianyungang	admin_pop	5	687242.0
-way	4471866	en:Phoenix Park	Phoenix Park	park	33
-relation	2175925	en:Acadia National Park	Acadia National Park	park	51
-relation	1838157	en:Rapides Parish, Louisiana	Rapides Parish	admin_pop	6	132373.0
-relation	117954	en:Hollywood,_Florida	Hollywood	admin_pop	8	145236.0
-relation	1128379	en:Orlando, Florida	Orlando	admin_pop	8	249562.0
-relation	3206301	en:Nanping	南平市 / Nanping	admin_pop	5	488818.0
-relation	125795	en:Elgin, Illinois	Elgin	admin_pop	8	109927.0
-way	185770360	en:Wimbledon Common	Richardson Memorial Playing Fields	park	12
-relation	3477550	en:Taizhou, Zhejiang	台州市 / Taizhou	admin_pop	5	1491963.0
-relation	2284210	en:San Juan, Metro Manila	San Juan	admin_pop	6	125338.0
-relation	117955	en:Fort Lauderdale, Florida	Fort Lauderdale	admin_pop	8	170747.0
-way	4483968	en:Greenwich Park	Greenwich Park	park	42
-relation	3263823	en:Xiaoyi	孝义市 (Xiaoyi)	admin_pop	6	414154.0
-way	194296032	en:Chehel Sotoun	چهل ستون	park	29
-way	42825479	en:Gibraltar Botanic Gardens	Alameda Botanic Gardens	park	10
-relation	1560395	en:Harris County, Texas	Harris County	admin_pop	6	4253700.0
-relation	3468758	en:Anqiu	安丘市 (Anqiu)	admin_pop	6	1096782.0
-relation	3276849	en:Putian	莆田市 / Putian	admin_pop	5	443926.0
-relation	114485	en:Irvine, California	Irvine	admin_pop	8	229985.0
-relation	3258834	en:Xiantao	仙桃市 / Xiantao	admin_pop	5	1474078.0
-relation	112912	en:Arvada,_Colorado	Arvada	admin_pop	8	109745.0
-relation	2605259	en:Anchorage, Alaska	Anchorage	admin_pop	6	298610.0
-way	219828356	en:Houston		admin_pop	8	2160821.0
-relation	3237007	en:Weihui	卫辉市 (Weihui)	admin_pop	6	464371.0
-relation	182954	en:Dayton, Ohio	Dayton	admin_pop	8	141359.0
-relation	3706963	en:Gusau	Gusau	admin_pop	6	132393.0
 relation	2095594	en:Las Piñas	Las Piñas	admin_pop	6	532330.0
-way	33126498	Oxnard,_California	Oxnard	admin_pop	8	201555.0
-relation	1838144	en:Calcasieu Parish, Louisiana	Calcasieu Parish	admin_pop	6	194493.0
-relation	253954	en:Garland, Texas	Garland	admin_pop	8	233564.0
-way	27459262	en:Ellis Island	Ellis Island	park	59
-relation	3221016	en:Xingping	兴平市 (Xingping)	admin_pop	6	551523.0
-way	33120281	Fresno,_California		admin_pop	8	505882.0
-relation	134624	en:Flint, Michigan	City of Flint	admin_pop	8	100515.0
-way	32929677	en:Wright Brothers National Memorial	Wright Brothers National Memorial	park	15
-relation	1933745	en:Cambridge, Massachusetts	Cambridge	admin_pop	8	106471.0
-relation	2314273	en:Torrance, California	Torrance	admin_pop	8	147027.0
-relation	3246762	en:Zaozhuang	枣庄市 / Zaozhuang	admin_pop	5	1996798.0
-way	27511137	en:Bryce Canyon National Park	Bryce Canyon National Park	park	63
-way	33128312	Roseville,_California		admin_pop	8	124519.0
-relation	3058331	en:Shengzhou	嵊州市 (Shengzhou)	admin_pop	6	671221.0
-relation	1838156	en:Ouachita Parish, Louisiana	Ouachita Parish	admin_pop	6	155363.0
-relation	122604	en:Chicago	Chicago	admin_pop	8	2714856.0
-relation	170116	en:Henderson,_Nevada	Henderson	admin_pop	8	265679.0
-way	178306947	en:Tallinn_Botanic_Garden	Tallinna Botaanikaaed	park	12
-way	33137624	en:Westminster,_Colorado		admin_pop	8	109169.0
-way	19853889	en:Prospect Park (Brooklyn)	Prospect Park	park	38
-relation	206670	en:Virginia Beach, Virginia	Virginia Beach	admin_pop	6	447021.0
-relation	324211	en:Toronto	Toronto	admin_pop	8	2503280.0
-relation	2725551	en:Saratov	Саратов	admin_pop	6	837900.0
-relation	3283763	en:Dengfeng	登封市 (Dengfeng)	admin_pop	6	609085.0
-relation	119867	en:Savannah, Georgia	Savannah	admin_pop	8	142022.0
-relation	2319802	en:Elk Grove, California	Elk Grove	admin_pop	8	159038.0
-relation	113006	en:Bakersfield, California	Bakersfield	admin_pop	8	358597.0
-relation	2963917	en:Changzhi	长治市 / Changzhi	admin_pop	5	648981.0
-way	33010788	en:Gilbert,_Arizona		admin_pop	8	221140.0
-relation	180261	en:Greensboro, North Carolina	Greensboro	admin_pop	8	277080.0
-way	224894996	en:Allan Gardens	Allan Gardens	park	10
-relation	112143	en:San Jose, California	San José	admin_pop	8	982765.0
-way	4259687	en:Victoria Tower Gardens	Victoria Tower Gardens	park	16
-relation	197353	en:Knoxville, Tennessee	Knoxville	admin_pop	8	182200.0
-relation	3243393	en:Lu'an	六安市 / Lu'an	admin_pop	5	1559037.0
-relation	124817	en:Aurora, Illinois	Aurora	admin_pop	8	199932.0
-way	33077385	Rancho_Cucamonga,_California	Rancho Cucamonga	admin_pop	8	170746.0
-relation	2689445	en:Kamakura, Kanagawa	鎌倉市	admin_pop	7	174314.0
-way	33113203	Lakewood,_Colorado		admin_pop	8	145516.0
-relation	114481	en:Richmond, California	Richmond	admin_pop	8	106516.0
-way	4253431	en:Bedford_Square	Bedford Square	park	12
-relation	113858	en:Pasay	Pasay	admin_pop	6	403064.0
-way	33010910	Glendale,_Arizona		admin_pop	8	232143.0
-way	32975878	Mobile,_Alabama		admin_pop	8	194822.0
-relation	2100680	en:Beihai	北海市	admin_pop	5	558635.0
-relation	118853	en:Hialeah, Florida	Hialeah	admin_pop	8	231941.0
-relation	251075	en:Milwaukee	Milwaukee	admin_pop	8	598916.0
-relation	3485816	en:Liaocheng	聊城市 / Liaocheng	admin_pop	5	950319.0
-relation	3718407	en:Suleja	Suleja	admin_pop	6	105075.0
-way	156829281	en:Capitol Reef National Park	Capitol Reef National Park	park	45
-relation	124885	en:Naperville, Illinois	Naperville	admin_pop	8	143684.0
-way	33077572	Rialto,_California	Rialto	admin_pop	8	101740.0
-relation	3245950	en:Bozhou	亳州市 / Bozhou	admin_pop	5	1351939.0
-relation	3032047	en:Kaiping	开平市 (Kaiping)	admin_pop	6	668692.0
-relation	112443	en:Fresno, California	Fresno	admin_pop	8	505882.0
-way	161202890	en:Central Park	Central Park	park	77
-way	187378187	en:John Marshall	John Marshall Place Park	park	60
-way	36326588	en:Badlands National Park	Badlands National Park	park	49
-relation	170486	en:Newark, New Jersey	Newark	admin_pop	8	277727.0
-relation	131885	en:New Orleans	New Orleans	admin_pop	8	369250.0
-relation	134444	en:Grand Rapids, Michigan	Grand Rapids	admin_pop	8	190411.0
-relation	3436503	en:Parliament Square	Parliament Square	park	29
-relation	198903	en:Provo, Utah	Provo	admin_pop	8	115919.0
-way	30613392	en:Lincoln's Inn Fields	Lincoln's Inn Fields	park	10
-relation	253988	en:Corpus Christi, Texas	Corpus Christi	admin_pop	8	312195.0
-relation	396479	en:Los Angeles County, California	Los Angeles County	admin_pop	6	9962789.0
-relation	1836619	en:Tangipahoa Parish, Louisiana	Tangipahoa Parish	admin_pop	6	123441.0
-relation	3296587	en:Jinzhong	晋中市 / Jinzhong	admin_pop	5	534357.0
-relation	3705567	en:Antioch,_California	Antioch	admin_pop	8	105508.0
-relation	132139	en:Shreveport, Louisiana	Shreveport	admin_pop	8	201867.0
-relation	3718387	en:Bida	Bida	admin_pop	6	111245.0
-way	36326582	en:Badlands National Park	Badlands National Park	park	49
-relation	115274	en:Fort Worth, Texas	Fort Worth	admin_pop	8	777992.0
-way	48928137	en:Great Sand Dunes National Park and Preserve	Great Sand Dunes National Park and Preserve	park	45
-relation	3296588	en:Taiyuan	太原市 (Taiyuan)	admin_pop	5	2558382.0
-way	219828372	en:Houston		admin_pop	8	2160821.0
-relation	2312655	en:Fullerton, California	Fullerton	admin_pop	8	138574.0
-relation	206814	en:Hampton, Virginia	Hampton	admin_pop	8	136836.0
-relation	254079	en:Bayamón, Puerto Rico	Bayamón	admin_pop	8	205693.0
-way	33073645	Modesto,_California		admin_pop	8	203547.0
-relation	3485666	en:Rizhao	日照市 / Rizhao	admin_pop	5	1148190.0
-relation	3283325	en:Puning	普宁市 (Puning)	admin_pop	6	1856402.0
-relation	3289204	en:Longquan	龙泉市 (Longquan)	admin_pop	6	250398.0
-relation	1836607	en:Ascension Parish, Louisiana	Ascension Parish	admin_pop	6	112286.0
-way	27524719	en:Arches National Park	Arches National Park	park	61
-relation	3484419	en:Zhanjiang	湛江市 / Zhanjiang	admin_pop	5	1350665.0
-relation	1850813	en:Columbus, Georgia	Columbus	admin_pop	8	198413.0
-way	37962191	en:Clinton Presidential Center	William J Clinton Presidential Park	park	18
-relation	206671	en:Chesapeake, Virginia	Chesapeake	admin_pop	8	228417.0
-relation	142497	en:Billings, Montana	Billings	admin_pop	8	106954.0
-way	33144568	Costa_Mesa,_California	Costa Mesa	admin_pop	8	111918.0
-relation	3463958	en:Taishan	台山市 (Taishan)	admin_pop	6	948716.0
-relation	3463901	en:Jiangmen	江门市 / Jiangmen	admin_pop	5	536317.0
-relation	3084896	en:Chibi City	赤壁市 (Chibi)	admin_pop	6	510926.0
-relation	1844209	en:Worcester, Massachusetts	Worcester	admin_pop	8	182669.0
-relation	3478385	en:Wenling	温岭市 (Wenling)	admin_pop	6	1162783.0
-way	98628503	en:Riverside, California	Riverside	admin_pop	8	313673.0
-way	22899286	en:Madison Square	Madison Square Park	park	31
-way	220416402	en:Mammoth Cave National Park	Mammoth Cave National Park	park	67
-relation	1382494	en:Tel_Aviv	תל אביב-יפו	admin_pop	8	410000.0
-relation	115365	en:Pasadena, Texas	Pasadena	admin_pop	8	152272.0
-way	231308770	en:Mahmoud Darwish	Mahmoud Darwish Museum (Al-Birweh Park)	park	54
-relation	133345	en:Baltimore	Baltimore	admin_pop	6	621342.0
-relation	3529373	en:Downey, California	Downey	admin_pop	8	112873.0
-relation	253985	en:Anaheim, California	Anaheim	admin_pop	8	343248.0
-way	33276062	Denton,_Texas		admin_pop	8	121123.0
-relation	389011	en:Orange County, Florida	Orange County	admin_pop	6	1202234.0
-relation	126009	en:Peoria, Illinois	Peoria	admin_pop	8	115687.0
-way	243083346	en:Colcamar District	Plaza de Armas Colcamar	park	12
-way	5029111	en:Battery Park	Battery Park	park	41
-relation	2999110	en:West Potomac Park	West Potomac Park	park	14
-relation	237385	en:Seattle	Seattle	admin_pop	8	634535.0
-relation	112100	en:Long Beach, California	Long Beach	admin_pop	8	467892.0
-relation	110691	en:Peoria,_Arizona	Peoria	admin_pop	8	159789.0
-relation	3221113	en:Jiande	建德市 (Jiande)	admin_pop	6	473062.0
-relation	2964144	en:Adhamiyah	ألأعظمية	admin_pop	6	464151.0
-relation	3295555	en:Zhangjiakou	张家口市 / Zhangjiakou	admin_pop	5	903348.0
-way	14344414	en:High Park	High Park	park	15
-relation	3263819	en:Lishi District	离石区 (Lishi)	admin_pop	6	235678.0
-relation	403176	en:Malabon	Malabon	admin_pop	6	363681.0
-relation	270191	en:New Haven, Connecticut	New Haven	admin_pop	8	130741.0
-relation	117925	en:West Palm Beach, Florida	West Palm Beach	admin_pop	8	101903.0
-relation	1836609	en:East Baton Rouge Parish, Louisiana	East Baton Rouge Parish	admin_pop	6	444526.0
-way	33271442	en:Bridgeport, Connecticut		admin_pop	8	146425.0
-relation	3529725	en:Pasadena, California	Pasadena	admin_pop	8	138547.0
-relation	137100	en:Rochester, Minnesota	Rochester	admin_pop	8	108992.0
-relation	117950	en:Pembroke Pines, Florida	Pembroke Pines	admin_pop	8	160306.0
-relation	186706	en:Eugene,_Oregon	Eugene	admin_pop	8	157986.0
-relation	2998185	en:Jewel Cave National Monument	Jewel Cave National Monument	park	18
-relation	3242114	en:Longhai City	龙海市 (Longhai)	admin_pop	6	816318.0
-relation	179868	en:Durham, North Carolina	Durham	admin_pop	8	239358.0
-relation	118881	en:Cape Coral, Florida	Cape Coral	admin_pop	8	161248.0
-way	33004804	en:Peoria,_Arizona	Peoria	admin_pop	8	159789.0
-relation	184985	en:Tulsa, Oklahoma	Tulsa	admin_pop	8	393987.0
-relation	3320332	en:Qidong, Jiangsu	启东市 (Qidong)	admin_pop	6	1057073.0
-relation	3237073	en:Jincheng	晋城市 / Jincheng	admin_pop	5	304221.0
-relation	3278462	en:Jiangshan	江山市 (Jiangshan)	admin_pop	6	473222.0
-way	33078146	en:Victorville,_California	Victorville	admin_pop	8	120336.0
-way	27758590	en:Saguaro National Park	Saguaro National Park West	park	45
-relation	2315704	en:Boston	Boston	admin_pop	8	636479.0
-relation	135130	en:Ann_Arbor,_Michigan	Ann Arbor	admin_pop	8	116121.0
-relation	3218282	en:Yongcheng	永城市 (Yongcheng)	admin_pop	6	1264607.0
-relation	369519	en:Queens	Queens County	admin_pop	6	2272771.0
-relation	237875	en:Kent, Washington	Kent	admin_pop	8	122999.0
-relation	112951	en:Centennial,_Colorado	Centennial	admin_pop	8	103743.0
-relation	3411719	en:Yongkang, Zhejiang	永康市 (Yongkang)	admin_pop	6	557067.0
-relation	1836613	en:Livingston Parish, Louisiana	Livingston Parish	admin_pop	6	131942.0
-relation	305467	en:Manchester, New Hampshire	Manchester	admin_pop	8	110209.0
-relation	3287346	en:Guangzhou	广州市 / Guangzhou	admin_pop	5	8524826.0
-way	33076523	en:Fontana,_California	Fontana	admin_pop	8	201812.0
-relation	3262360	en:Huainan	淮南市 / Huainan	admin_pop	5	1357228.0
-way	129835611	en:National September 11 Memorial & Museum	National September 11 Memorial	park	33
-relation	170953	en:Jersey City, New Jersey	Jersey City	admin_pop	8	254441.0
-way	33011698	en:Phoenix,_Arizona		admin_pop	8	1488750.0
-relation	1827485	en:Caddo Parish, Louisiana	Caddo Parish	admin_pop	6	257093.0
-relation	3485982	en:Dezhou	德州市 / Dezhou	admin_pop	5	552445.0
-relation	182514	en:Toledo, Ohio	Toledo	admin_pop	8	284012.0
-relation	146949	en:Marikina	Marikina	admin_pop	6	424610.0
-way	235558732	en:Grant_Park_(Chicago)	Grant Park	park	20
-relation	3283881	en:Changge	长葛市 (Changge)	admin_pop	6	646306.0
-way	39635209	en:National Capital Commission	Nepean Point	park	10
-relation	254192	en:Ponce, Puerto Rico	Ponce	admin_pop	8	163727.0
-relation	3032046	en:Enping	恩平市 (Enping)	admin_pop	6	464898.0
-relation	1827484	en:Bossier Parish, Louisiana	Bossier Parish	admin_pop	6	122197.0
-relation	396480	en:Kings County, California	Kings County	admin_pop	6	151364.0
-way	112692313	en:Bowling	Bowling Green	park	20
-relation	140167	en:St. Louis	St. Louis	admin_pop	8	318172.0
-way	33015064	en:Surprise,_Arizona	Surprise	admin_pop	8	121287.0
-relation	129013	en:Davenport, Iowa	Davenport	admin_pop	8	101363.0
-relation	184776	en:Taguig	Taguig	admin_pop	6	613343.0
-way	30811010	en:Wulingyuan	武陵源	park	51
-relation	2833528	en:Berkeley, California	Berkeley	admin_pop	8	115403.0
-way	33259631	Irving,_Texas	Irving	admin_pop	8	225427.0
-relation	3288965	en:Hefei	合肥市 / Hefei	admin_pop	5	1659075.0
-relation	111031	en:Birmingham, Alabama	Birmingham	admin_pop	8	212038.0
-relation	112145	en:Sunnyvale, California	Sunnyvale	admin_pop	8	146197.0
-relation	118894	en:St. Petersburg, Florida	St. Petersburg	admin_pop	8	246541.0
-relation	129814	en:Wichita, Kansas	Wichita	admin_pop	8	385577.0
-relation	307470	en:Valenzuela, Philippines	Valenzuela	admin_pop	6	568928.0
-relation	2312830	en:Norwalk, California	Norwalk	admin_pop	8	106278.0
-relation	309778	en:Ponce, Puerto Rico	Ponce Municipio	admin_pop	6	163727.0
-way	233666906	en:Windsor Great Park	GREAT park	park	11
-way	33073638	Modesto,_California		admin_pop	8	203547.0
-way	23888253	en:Millennium Park	Millennium Park	park	31
-way	178575123	en:Riverside Park (Manhattan)	Riverside Park	park	22
-relation	206815	en:Richmond, Virginia	Richmond	admin_pop	8	210309.0
-way	27524669	en:Canyonlands National Park	Canyonlands NP - Island in the Sky District	park	55
-way	33276075	Denton,_Texas		admin_pop	8	121123.0
-relation	194000	en:Columbia, South Carolina	Columbia	admin_pop	8	131686.0
+relation	170117	en:Las Vegas	Las Vegas	admin_pop	8	596424.0
 way	171595983	en:Levanto District	Plaza de Armas Levanto	park	10
-relation	196122	en:Clarksville, Tennessee	Clarksville	admin_pop	8	142519.0
-relation	3551966	en:Gaobeidian	高碑店市 (Gaobeidian)	admin_pop	6	538582.0
-relation	3468767	en:Shouguang	寿光市 (Shouguang)	admin_pop	6	1081991.0
-way	33115306	en:Daly City, California		admin_pop	8	103690.0
-relation	2313083	en:Santa Clarita, California	Santa Clarita	admin_pop	8	179013.0
-relation	111848	en:Chula Vista, California	Chula Vista	admin_pop	8	252422.0
-relation	3286003	en:Linfen	临汾市 / Linfen	admin_pop	5	724403.0
-way	33004402	en:Huntsville,_Alabama		admin_pop	8	183739.0
-relation	186274	en:Gresham, Oregon	Gresham	admin_pop	8	108956.0
-relation	1835362	en:Orange County, New York	Orange County	admin_pop	6	374512.0
-relation	3216520	en:Suizhou	随州市 / Suizhou	admin_pop	5	1598752.0
-relation	112972	en:Orange, California	Orange	admin_pop	8	139419.0
-relation	254090	en:Caguas, Puerto Rico	Caguas	admin_pop	8	142678.0
-relation	3468564	en:Weifang	潍坊市 / Weifang	admin_pop	5	1380300.0
-way	12353668	en:Fort Sumter	Fort Sumter National Monument	park	43
-relation	186579	en:Portland, Oregon	Portland	admin_pop	8	603106.0
-relation	3488539	en:Abilene, Texas	Abilene	admin_pop	8	118887.0
-relation	3216406	en:Xiaogan	孝感市 / Xiaogan	admin_pop	5	883123.0
-relation	169759	en:Omaha, Nebraska	Omaha	admin_pop	8	421570.0
-relation	3443418	en:Cangzhou	沧州市 / Cangzhou	admin_pop	5	443561.0
-way	219828344	en:Houston		admin_pop	8	2160821.0
-way	33073644	Modesto,_California		admin_pop	8	203547.0
-relation	103703	en:Manila	Manila	admin_pop	6	1660714.0
-relation	180101	en:Winston-Salem, North Carolina	Winston-Salem	admin_pop	8	234349.0
-relation	3721188	en:Maiduguri	Maiduguri	admin_pop	6	618278.0
-relation	1216766	en:Miami Gardens, Florida	Miami Gardens	admin_pop	8	110754.0
-way	33276072	Denton,_Texas		admin_pop	8	121123.0
-way	33120274	Fresno,_California		admin_pop	8	505882.0
-relation	3705569	en:Concord,_California	Concord	admin_pop	8	124711.0
-way	33147755	en:Arvada,_Colorado		admin_pop	8	109745.0
-way	33261351	Roseville,_California		admin_pop	8	124519.0
-relation	3486449	en:Jinan	济南市 / Jinan	admin_pop	5	2999934.0
-relation	182644	en:Akron, Ohio	Akron	admin_pop	8	198549.0
-relation	3263977	en:Fuzhou	福州市 / Fuzhou	admin_pop	5	2124435.0
-relation	253652	en:Hayward, California	Hayward	admin_pop	8	149392.0
-relation	3720570	en:Iseyin	Iseyin	admin_pop	6	170936.0
-relation	3008552	en:Datong	大同市 / Datong	admin_pop	5	1526744.0
-way	33269833	en:Waterbury, Connecticut		admin_pop	8	109915.0
-relation	112090	en:Inglewood, California	Inglewood	admin_pop	8	111182.0
+relation	3320347	en:Lianyungang	连云港市 / Lianyungang	admin_pop	5	687242.0
+relation	3485816	en:Liaocheng	聊城市 / Liaocheng	admin_pop	5	950319.0
+way	211087381	en:Lincoln Park, Chicago	Lincoln Park	park	10
+way	30613392	en:Lincoln's Inn Fields	Lincoln's Inn Fields	park	10
 relation	169588	en:Lincoln, Nebraska	Lincoln	admin_pop	8	265404.0
-relation	379812	en:Navotas	Navotas	admin_pop	6	245344.0
-relation	390960	en:Rocky Mountain National Park	Rocky Mountain National Park	park	49
-way	37913364	en:West_Covina,_California	West Covina	admin_pop	8	107440.0
-relation	1836614	en:Jefferson Parish, Louisiana	Jefferson Parish	admin_pop	6	433676.0
-way	243083063	en:San Isidro de Maino District	Plaza de Armas San Isidro del Mayno (Maino)	park	12
-relation	185048	en:Oklahoma City	Oklahoma City	admin_pop	8	599199.0
-relation	113870	en:Waco, Texas	Waco	admin_pop	8	127018.0
-relation	3241970	en:Heyuan	河职院	admin_pop	5	227773.0
-relation	170118	en:North Las Vegas, Nevada	North Las Vegas	admin_pop	8	223491.0
-relation	3468762	en:Gaomi	高密市 (Gaomi)	admin_pop	6	842403.0
-relation	3316384	en:Fenghua	奉化市 (Fenghua)	admin_pop	6	471558.0
-relation	127646	en:South Bend, Indiana	South Bend	admin_pop	8	100800.0
-relation	110826	en:Scottsdale,_Arizona	Scottsdale	admin_pop	8	223514.0
-relation	3236754	en:Huixian	辉县市 (Huixian)	admin_pop	6	776326.0
-relation	254080	en:Carolina, Puerto Rico	Carolina	admin_pop	8	175129.0
-way	4943389	en:Saxon Garden	Ogród Saski	park	14
-way	33073652	Modesto,_California		admin_pop	8	203547.0
-relation	141244	en:Springfield, Missouri	Springfield	admin_pop	8	162191.0
-relation	106569	en:Quezon City	Quezon City	admin_pop	6	2679450.0
-relation	112277	en:Pueblo, Colorado	Pueblo	admin_pop	8	107772.0
-relation	128653	en:Des Moines, Iowa	Des Moines	admin_pop	8	206688.0
-relation	111943	en:Fremont, California	Fremont	admin_pop	8	221986.0
-relation	183453	en:Cincinnati	Cincinnati	admin_pop	8	296550.0
-way	255072469	en:German Museum of Technology	Rotorblatt	park	27
-relation	112339	en:Salinas, California	Salinas	admin_pop	8	154484.0
-relation	206845	en:Arlington County, Virginia	Arlington	admin_pop	8	221045.0
-relation	3244431	en:Chaozhou	潮州市 / Chaozhou	admin_pop	5	363582.0
-relation	119557	en:Atlanta	Atlanta	admin_pop	8	443775.0
-relation	3909995	en:Hartford, Connecticut	Hartford	admin_pop	8	124893.0
-relation	136712	en:Minneapolis	Minneapolis	admin_pop	8	392880.0
-relation	187550	en:Erie, Pennsylvania	Erie	admin_pop	8	101047.0
-way	82699870	en:Quezon Memorial Circle	Quezon City Memorial Circle	park	10
-relation	177415	en:Charlotte, North Carolina	Charlotte	admin_pop	8	775202.0
-relation	3469843	en:Yantai	烟台市 / Yantai	admin_pop	5	1724404.0
-relation	134997	en:Lansing, Michigan	Lansing	admin_pop	8	113996.0
-relation	3468760	en:Changyi, Shandong	昌邑市 (Changyi)	admin_pop	6	683182.0
-relation	197137	en:Murfreesboro, Tennessee	Murfreesboro	admin_pop	8	114038.0
-way	33011187	en:Mesa, Arizona		admin_pop	8	452084.0
-relation	191210	en:Providence, Rhode Island	Providence	admin_pop	8	178432.0
-relation	3468503	en:Zibo	淄博市 / Zibo	admin_pop	5	2817479.0
-way	33004405	en:Huntsville,_Alabama		admin_pop	8	183739.0
-relation	3289341	en:Wenzhou	温州市 / Wenzhou	admin_pop	5	1915548.0
-relation	174494	en:Yonkers, New York	Yonkers	admin_pop	8	198449.0
-relation	3441528	en:Gujiao	古交市 (Gujiao)	admin_pop	6	205702.0
+relation	3286003	en:Linfen	临汾市 / Linfen	admin_pop	5	724403.0
+relation	3478414	en:Linhai	临海市 (Linhai)	admin_pop	6	948618.0
+relation	3263819	en:Lishi District	离石区 (Lishi)	admin_pop	6	235678.0
+relation	1836613	en:Livingston Parish, Louisiana	Livingston Parish	admin_pop	6	131942.0
+way	80442502	en:Lodi Gardens	Lodi Garden	park	12
+relation	112100	en:Long Beach, California	Long Beach	admin_pop	8	467892.0
+relation	3242114	en:Longhai City	龙海市 (Longhai)	admin_pop	6	816318.0
+relation	3289204	en:Longquan	龙泉市 (Longquan)	admin_pop	6	250398.0
+relation	396479	en:Los Angeles County, California	Los Angeles County	admin_pop	6	9962789.0
+relation	1804307	en:Louisville, Kentucky	Louisville	admin_pop	8	602011.0
 relation	1805416	en:Lowell, Massachusetts	Lowell	admin_pop	8	108522.0
-relation	3307138	en:Yinchuan	银川市 / Yinchuan	admin_pop	5	807487.0
-relation	3469133	en:Qingdao	青岛市 / Qingdao	admin_pop	5	2720972.0
-relation	188525	en:Allentown, Pennsylvania	Allentown	admin_pop	8	118974.0
-relation	1836431	en:St. Tammany Parish, Louisiana	St. Tammany Parish	admin_pop	6	239453.0
-relation	3529574	en:Burbank, California	Burbank	admin_pop	8	104391.0
-relation	3282750	en:Shantou	汕头市 / Shantou	admin_pop	5	1270112.0
-relation	3711502	en:Katsina	Katsina	admin_pop	6	259315.0
-relation	3239346	en:Fuding	福鼎市 (Fuding)	admin_pop	6	521070.0
-way	44500971	en:Cabrillo National Monument	Cabrillo National Monument	park	16
-relation	136612	en:Saint Paul, Minnesota	St. Paul	admin_pop	8	290770.0
-relation	3464878	en:Zhongshan	中山市 / Zhongshan	admin_pop	5	2363322.0
-relation	188553	en:Pittsburgh	Pittsburgh	admin_pop	8	306211.0
-relation	118909	en:Clearwater, Florida	Clearwater	admin_pop	8	108732.0
-relation	2284209	en:Mandaluyong	Mandaluyong	admin_pop	6	305576.0
-relation	134529	en:Sterling Heights, Michigan	Sterling Heights	admin_pop	8	130410.0
-relation	3277228	en:Fu'an	福安市 (Fu'an)	admin_pop	6	554057.0
-relation	127020	en:Rockford, Illinois	Rockford	admin_pop	8	150843.0
-relation	1216762	en:Miramar, Florida	Miramar	admin_pop	8	128729.0
-relation	2552450	en:The Bronx	Bronx County	admin_pop	6	1408473.0
-relation	3293941	en:Suqian	宿迁市 / Suqian	admin_pop	5	244651.0
-relation	3560111	en:Dingzhou	定州市 (Dingzhou)	admin_pop	6	1107903.0
-relation	1381350	en:Jerusalem		admin_pop	8	780517.0
-relation	141403	en:Columbia, Missouri	Columbia	admin_pop	8	113225.0
-relation	2998186	en:Wind Cave National Park	Wind Cave National Park	park	39
-way	23787732	en:Boston Common	Boston Common	park	20
-relation	112271	en:Daly City, California	Daly City	admin_pop	8	103690.0
-relation	3478607	en:Ningbo	宁波市 / Ningbo	admin_pop	5	1567499.0
-relation	3486493	en:Laiwu	莱芜市 / Laiwu	admin_pop	5	1233525.0
-relation	3219964	en:Zhongxiang	钟祥市 (Zhongxiang)	admin_pop	6	1021998.0
-relation	3288958	en:Chaohu	巢湖市 (Chaohu)	admin_pop	6	778864.0
+relation	3243393	en:Lu'an	六安市 / Lu'an	admin_pop	5	1559037.0
+way	33300880	en:Lubbock,_Texas		admin_pop	8	236065.0
 relation	3246491	en:Luoyang	洛阳市 / Luoyang	admin_pop	5	1491680.0
-relation	273242	en:Caloocan	Caloocan	admin_pop	6	1381610.0
-way	156751112	en:Petrified Forest National Park	Petrified Forest National Park	park	53
-relation	3718750	en:Osogbo	Osogbo	admin_pop	6	250951.0
-way	33149401	Huntington_Beach,_California	Huntington Beach	admin_pop	8	194708.0
-relation	179052	en:Raleigh, North Carolina	Raleigh	admin_pop	8	423179.0
-relation	112574	en:Visalia, California	Visalia	admin_pop	8	127081.0
+relation	3260816	en:Ma'anshan	马鞍山市 / Ma'anshan	admin_pop	5	567576.0
+way	22899286	en:Madison Square	Madison Square Park	park	31
+way	231308770	en:Mahmoud Darwish	Mahmoud Darwish Museum (Al-Birweh Park)	park	54
+relation	3721188	en:Maiduguri	Maiduguri	admin_pop	6	618278.0
+way	41922120	en:Majorelle Garden	Jardin Majorelle	park	16
+relation	103716	en:Makati	Makati	admin_pop	6	548983.0
+relation	403176	en:Malabon	Malabon	admin_pop	6	363681.0
+relation	3447967	en:Malang	Malang	admin_pop	5	820243.0
+way	220416402	en:Mammoth Cave National Park	Mammoth Cave National Park	park	67
+relation	305467	en:Manchester, New Hampshire	Manchester	admin_pop	8	110209.0
+relation	2284209	en:Mandaluyong	Mandaluyong	admin_pop	6	305576.0
 relation	2552485	en:Manhattan	New York County	admin_pop	6	1619090.0
-relation	2605273	en:Fairbanks North Star Borough, Alaska	Fairbanks North Star	admin_pop	6	100272.0
-relation	113919	en:El Paso, Texas	El Paso City Limits	admin_pop	8	672538.0
-relation	131703	en:Pasig	Pasig	admin_pop	6	627445.0
-relation	2305280	en:Oceanside, California	Oceanside	admin_pop	8	171293.0
-way	236996360	en:Waza National Park	Waza National Park	park	21
-relation	2861139	en:Hovenweep National Monument	Hovenweep National Monument	park	15
-relation	3285993	en:Houma, Shanxi	侯马市 (Houma)	admin_pop	6	225123.0
-relation	132206	en:Baton Rouge, Louisiana	Baton Rouge	admin_pop	8	230058.0
+relation	103703	en:Manila	Manila	admin_pop	6	1660714.0
+way	199925533	en:Marcus Garvey Park	Marcus Garvey Memorial Park	park	10
+relation	146949	en:Marikina	Marikina	admin_pop	6	424610.0
+relation	3648972	en:Matsumoto,_Nagano	松本市	admin_pop	7	243037.0
+relation	113786	en:McAllen, Texas	McAllen	admin_pop	8	134719.0
+relation	197239	en:Memphis, Tennessee	Memphis	admin_pop	8	655155.0
+way	45284482	en:Mesa Verde National Park	Mesa Verde National Park	park	58
+way	33011187	en:Mesa, Arizona		admin_pop	8	452084.0
+relation	1216766	en:Miami Gardens, Florida	Miami Gardens	admin_pop	8	110754.0
+way	156366633	en:Mill Ends Park	Mill Ends Park	park	37
+way	23888253	en:Millennium Park	Millennium Park	park	31
+relation	251075	en:Milwaukee	Milwaukee	admin_pop	8	598916.0
+relation	3231584	en:Mingguang	明光市 (Mingguang)	admin_pop	6	569585.0
+relation	136712	en:Minneapolis	Minneapolis	admin_pop	8	392880.0
+relation	1216762	en:Miramar, Florida	Miramar	admin_pop	8	128729.0
+relation	254046	en:Mobile, Alabama	Mobile	admin_pop	8	194822.0
+way	33073533	en:Modesto,_California		admin_pop	8	203547.0
+way	33017279	en:Montgomery,_Alabama		admin_pop	8	205293.0
+relation	1346849	en:Muntinlupa	Muntinlupa	admin_pop	6	452943.0
+relation	197137	en:Murfreesboro, Tennessee	Murfreesboro	admin_pop	8	114038.0
+relation	3105450	en:Murrieta, California	Murrieta	admin_pop	8	106810.0
+relation	3206301	en:Nanping	南平市 / Nanping	admin_pop	5	488818.0
+relation	124885	en:Naperville, Illinois	Naperville	admin_pop	8	143684.0
+way	39635209	en:National Capital Commission	Nepean Point	park	10
+way	129835611	en:National September 11 Memorial & Museum	National September 11 Memorial	park	33
+relation	379812	en:Navotas	Navotas	admin_pop	6	245344.0
+relation	270191	en:New Haven, Connecticut	New Haven	admin_pop	8	130741.0
+relation	131885	en:New Orleans	New Orleans	admin_pop	8	369250.0
+relation	175905	en:New York City	New York City	admin_pop	5	8336697.0
+relation	170486	en:Newark, New Jersey	Newark	admin_pop	8	277727.0
+relation	206655	en:Newport News, Virginia	Newport News	admin_pop	8	180726.0
+relation	3478607	en:Ningbo	宁波市 / Ningbo	admin_pop	5	1567499.0
 relation	3222246	en:Ningguo	宁国市 (Ningguo)	admin_pop	6	381842.0
-relation	130140	en:Topeka, Kansas	Topeka	admin_pop	8	127939.0
-relation	3246488	en:Yanshi	偃师市 (Yanshi)	admin_pop	6	816026.0
-way	39459300	en:Redwood National and State Parks	Redwood National Park	park	63
-relation	962876	en:Staten Island	Richmond County	admin_pop	6	470728.0
-relation	174916	en:Syracuse, New York	Syracuse	admin_pop	8	144170.0
-relation	3464353	en:Shenzhen	深圳市 / Shenzhen	admin_pop	5	7008831.0
-way	47121540	en:Ayresome Park	Ayresome Gardens	park	25
-relation	369518	en:Brooklyn	Kings County	admin_pop	6	2565635.0
-relation	127319	en:Evansville, Indiana	Evansville	admin_pop	8	120235.0
-relation	3231910	en:Huaibei	淮北市 / Huaibei	admin_pop	5	741195.0
-relation	127309	en:Fort Wayne, Indiana	Fort Wayne	admin_pop	8	254555.0
-relation	3242930	en:Xiamen	厦门市 / Xiamen	admin_pop	5	2053070.0
-relation	3411717	en:Dongyang	东阳市 (Dongyang)	admin_pop	6	753094.0
+relation	206672	en:Norfolk, Virginia	Norfolk	admin_pop	6	245782.0
+relation	185049	en:Norman, Oklahoma	Norman	admin_pop	8	115562.0
 relation	194134	en:North Charleston, South Carolina	North Charleston	admin_pop	8	101989.0
-relation	3246759	en:Tengzhou	滕州市 (Tengzhou)	admin_pop	6	1548817.0
-relation	3221112	en:Hangzhou	杭州市 / Hangzhou	admin_pop	5	2451319.0
-relation	194119	en:Charleston, South Carolina	Charleston	admin_pop	8	125583.0
-relation	3307098	en:Shizuishan	石嘴山市 / Shizuishan	admin_pop	5	314296.0
+relation	170118	en:North Las Vegas, Nevada	North Las Vegas	admin_pop	8	223491.0
+relation	2312830	en:Norwalk, California	Norwalk	admin_pop	8	106278.0
+relation	2833530	en:Oakland, California	Oakland	admin_pop	8	400740.0
+relation	2305280	en:Oceanside, California	Oceanside	admin_pop	8	171293.0
+relation	3717988	en:Okene	Okene	admin_pop	6	312775.0
+relation	185048	en:Oklahoma City	Oklahoma City	admin_pop	8	599199.0
+relation	130192	en:Olathe, Kansas	Olathe	admin_pop	8	130045.0
+relation	169759	en:Omaha, Nebraska	Omaha	admin_pop	8	421570.0
+way	38218904	en:Ontario,_California	Ontario	admin_pop	8	167211.0
+relation	396466	en:Orange County, California	Orange County	admin_pop	6	3090132.0
+relation	389011	en:Orange County, Florida	Orange County	admin_pop	6	1202234.0
+relation	1835362	en:Orange County, New York	Orange County	admin_pop	6	374512.0
+relation	2528730	en:Orange County, North Carolina	Orange County	admin_pop	6	137941.0
+relation	112972	en:Orange, California	Orange	admin_pop	8	139419.0
+relation	1128379	en:Orlando, Florida	Orlando	admin_pop	8	249562.0
+relation	3718750	en:Osogbo	Osogbo	admin_pop	6	250951.0
+relation	1838156	en:Ouachita Parish, Louisiana	Ouachita Parish	admin_pop	6	155363.0
+relation	129590	en:Overland Park, Kansas	Overland Park	admin_pop	8	178919.0
+relation	117652	en:Palm Bay, Florida	Palm Bay	admin_pop	8	104124.0
+way	33105060	en:Palmdale,_California		admin_pop	8	155650.0
+relation	122940	en:Parañaque	Parañaque	admin_pop	6	552660.0
+way	227207626	en:Parc del Laberint d'Horta	Parc del Laberint d'Horta	park	18
+relation	3436503	en:Parliament Square	Parliament Square	park	29
+relation	3529725	en:Pasadena, California	Pasadena	admin_pop	8	138547.0
+relation	115365	en:Pasadena, Texas	Pasadena	admin_pop	8	152272.0
+relation	113858	en:Pasay	Pasay	admin_pop	6	403064.0
+relation	131703	en:Pasig	Pasig	admin_pop	6	627445.0
+relation	170726	en:Paterson, New Jersey	Paterson	admin_pop	8	145219.0
+relation	117950	en:Pembroke Pines, Florida	Pembroke Pines	admin_pop	8	160306.0
+relation	126009	en:Peoria, Illinois	Peoria	admin_pop	8	115687.0
+relation	110691	en:Peoria,_Arizona	Peoria	admin_pop	8	159789.0
+way	156751112	en:Petrified Forest National Park	Petrified Forest National Park	park	53
+relation	188022	en:Philadelphia	Philadelphia	admin_pop	8	1547607.0
+way	4471866	en:Phoenix Park	Phoenix Park	park	33
+way	33011698	en:Phoenix,_Arizona		admin_pop	8	1488750.0
+relation	188553	en:Pittsburgh	Pittsburgh	admin_pop	8	306211.0
+relation	3218566	en:Pizhou	邳州市 (Pizhou)	admin_pop	6	1539922.0
+relation	1532363	en:Pomona, California	Pomona	admin_pop	8	150812.0
+relation	1216810	en:Pompano_Beach,_Florida	Pompano Beach	admin_pop	8	102984.0
+relation	254192	en:Ponce, Puerto Rico	Ponce	admin_pop	8	163727.0
+relation	117973	en:Port St. Lucie, Florida	Port St. Lucie	admin_pop	8	168716.0
+relation	186579	en:Portland, Oregon	Portland	admin_pop	8	603106.0
+relation	963806	en:Princes Street Gardens	West Princes Street Gardens	park	12
+way	19853889	en:Prospect Park (Brooklyn)	Prospect Park	park	38
+relation	191210	en:Providence, Rhode Island	Providence	admin_pop	8	178432.0
+relation	198903	en:Provo, Utah	Provo	admin_pop	8	115919.0
+relation	112277	en:Pueblo, Colorado	Pueblo	admin_pop	8	107772.0
+relation	3283325	en:Puning	普宁市 (Puning)	admin_pop	6	1856402.0
+relation	3276849	en:Putian	莆田市 / Putian	admin_pop	5	443926.0
+relation	3320332	en:Qidong, Jiangsu	启东市 (Qidong)	admin_pop	6	1057073.0
+relation	3469133	en:Qingdao	青岛市 / Qingdao	admin_pop	5	2720972.0
+relation	3468766	en:Qingzhou	青州市 (Qingzhou)	admin_pop	6	894468.0
+relation	369519	en:Queens	Queens County	admin_pop	6	2272771.0
+relation	106569	en:Quezon City	Quezon City	admin_pop	6	2679450.0
+way	82699870	en:Quezon Memorial Circle	Quezon City Memorial Circle	park	10
+relation	3286952	en:Qufu	曲阜市 (Qufu)	admin_pop	6	625313.0
+relation	179052	en:Raleigh, North Carolina	Raleigh	admin_pop	8	423179.0
+relation	1838157	en:Rapides Parish, Louisiana	Rapides Parish	admin_pop	6	132373.0
+way	39459300	en:Redwood National and State Parks	Redwood National Park	park	63
+relation	170120	en:Reno, Nevada	Reno	admin_pop	8	231027.0
+relation	420422	en:Richmond County, Georgia	Richmond County	admin_pop	6	202587.0
+relation	114481	en:Richmond, California	Richmond	admin_pop	8	106516.0
+relation	206815	en:Richmond, Virginia	Richmond	admin_pop	8	210309.0
+way	208356899	en:Rideau Hall	Rideau Hall	park	20
+relation	1314631	en:Riohacha	Riohacha	admin_pop	6	137224.0
+way	178575123	en:Riverside Park (Manhattan)	Riverside Park	park	22
+way	98628503	en:Riverside, California	Riverside	admin_pop	8	313673.0
+relation	3485666	en:Rizhao	日照市 / Rizhao	admin_pop	5	1148190.0
+relation	137100	en:Rochester, Minnesota	Rochester	admin_pop	8	108992.0
+relation	176069	en:Rochester, New York	Rochester	admin_pop	7	210532.0
+relation	127020	en:Rockford, Illinois	Rockford	admin_pop	8	150843.0
+relation	390960	en:Rocky Mountain National Park	Rocky Mountain National Park	park	49
+way	33297589	en:Round Rock, Texas		admin_pop	8	106573.0
+way	3241371	en:Russell_Square	Russell Square	park	31
+relation	3259442	en:Ruzhou	汝州市 (Ruzhou)	admin_pop	6	923245.0
+way	27758590	en:Saguaro National Park	Saguaro National Park West	park	45
+relation	136612	en:Saint Paul, Minnesota	St. Paul	admin_pop	8	290770.0
+relation	186479	en:Salem, Oregon	Salem	admin_pop	8	157429.0
+relation	112339	en:Salinas, California	Salinas	admin_pop	8	154484.0
+relation	253639	en:San Bernardino, California	San Bernardino	admin_pop	8	213295.0
+relation	253832	en:San Diego	San Diego	admin_pop	8	1338348.0
+relation	111968	en:San Francisco	San Francisco	admin_pop	8	825863.0
+way	243083063	en:San Isidro de Maino District	Plaza de Armas San Isidro del Mayno (Maino)	park	12
+relation	112143	en:San Jose, California	San José	admin_pop	8	982765.0
+relation	2284210	en:San Juan, Metro Manila	San Juan	admin_pop	6	125338.0
+relation	254000	en:San Juan, Puerto Rico	San Juan	admin_pop	8	389714.0
+relation	3464717	en:Sanshui District	三水区 (Sanshui)	admin_pop	6	440119.0
+relation	2311446	en:Santa Ana, California	Santa Ana	admin_pop	8	330920.0
+relation	2313083	en:Santa Clarita, California	Santa Clarita	admin_pop	8	179013.0
 relation	2567380	en:Sarajevo	Grad Sarajevo	admin_pop	6	527049.0
+relation	2725551	en:Saratov	Саратов	admin_pop	6	837900.0
+relation	119867	en:Savannah, Georgia	Savannah	admin_pop	8	142022.0
+way	4943389	en:Saxon Garden	Ogród Saski	park	14
+relation	110826	en:Scottsdale,_Arizona	Scottsdale	admin_pop	8	223514.0
+relation	237385	en:Seattle	Seattle	admin_pop	8	634535.0
+relation	3282750	en:Shantou	汕头市 / Shantou	admin_pop	5	1270112.0
+relation	3058331	en:Shengzhou	嵊州市 (Shengzhou)	admin_pop	6	671221.0
+relation	3464353	en:Shenzhen	深圳市 / Shenzhen	admin_pop	5	7008831.0
+relation	3431881	en:Shihezi	石河子市 (Shihezi)	admin_pop	5	590115.0
+relation	3307098	en:Shizuishan	石嘴山市 / Shizuishan	admin_pop	5	314296.0
+relation	3468767	en:Shouguang	寿光市 (Shouguang)	admin_pop	6	1081991.0
+relation	132139	en:Shreveport, Louisiana	Shreveport	admin_pop	8	201867.0
+relation	3464718	en:Shunde District	顺德区 (Shunde)	admin_pop	6	1694152.0
+way	33127198	en:Simi_Valley,_California		admin_pop	8	125793.0
+relation	194968	en:Sioux Falls, South Dakota	Sioux Falls	admin_pop	8	159908.0
+relation	127646	en:South Bend, Indiana	South Bend	admin_pop	8	100800.0
+relation	237599	en:Spokane, Washington	Spokane	admin_pop	8	209525.0
+relation	126326	en:Springfield, Illinois	Springfield	admin_pop	8	117126.0
+relation	141244	en:Springfield, Missouri	Springfield	admin_pop	8	162191.0
+relation	140167	en:St. Louis	St. Louis	admin_pop	8	318172.0
+relation	118894	en:St. Petersburg, Florida	St. Petersburg	admin_pop	8	246541.0
+relation	1836431	en:St. Tammany Parish, Louisiana	St. Tammany Parish	admin_pop	6	239453.0
+relation	3306055	en:Stamford, Connecticut	Stamford	admin_pop	8	125109.0
+relation	962876	en:Staten Island	Richmond County	admin_pop	6	470728.0
+relation	134529	en:Sterling Heights, Michigan	Sterling Heights	admin_pop	8	130410.0
+relation	112382	en:Stockton, California	Stockton	admin_pop	8	297984.0
+relation	3216520	en:Suizhou	随州市 / Suizhou	admin_pop	5	1598752.0
+relation	3718407	en:Suleja	Suleja	admin_pop	6	105075.0
+relation	112145	en:Sunnyvale, California	Sunnyvale	admin_pop	8	146197.0
+relation	3293941	en:Suqian	宿迁市 / Suqian	admin_pop	5	244651.0
+way	33015064	en:Surprise,_Arizona	Surprise	admin_pop	8	121287.0
+relation	3231858	en:Suzhou, Anhui	宿州市 / Suzhou	admin_pop	5	1601181.0
+relation	174916	en:Syracuse, New York	Syracuse	admin_pop	8	144170.0
+relation	237687	en:Tacoma, Washington	Tacoma	admin_pop	8	202010.0
+relation	184776	en:Taguig	Taguig	admin_pop	6	613343.0
+relation	3463958	en:Taishan	台山市 (Taishan)	admin_pop	6	948716.0
+relation	3296588	en:Taiyuan	太原市 (Taiyuan)	admin_pop	5	2558382.0
+relation	3477550	en:Taizhou, Zhejiang	台州市 / Taizhou	admin_pop	5	1491963.0
+relation	119009	en:Tallahassee, Florida	Tallahassee	admin_pop	8	186971.0
+way	178306947	en:Tallinn_Botanic_Garden	Tallinna Botaanikaaed	park	12
+relation	1836619	en:Tangipahoa Parish, Louisiana	Tangipahoa Parish	admin_pop	6	123441.0
+relation	1382494	en:Tel_Aviv	תל אביב-יפו	admin_pop	8	410000.0
+relation	3246759	en:Tengzhou	滕州市 (Tengzhou)	admin_pop	6	1548817.0
+relation	1836620	en:Terrebonne Parish, Louisiana	Terrebonne Parish	admin_pop	6	111893.0
+relation	2552450	en:The Bronx	Bronx County	admin_pop	6	1408473.0
+relation	941209	en:Theodore Roosevelt National Park	Theodore Roosevelt National Park	park	43
+way	33127424	en:Thousand_Oaks,_California		admin_pop	8	128412.0
+relation	3258833	en:Tianmen	天门市 / Tianmen	admin_pop	5	1613739.0
+relation	182514	en:Toledo, Ohio	Toledo	admin_pop	8	284012.0
+relation	130140	en:Topeka, Kansas	Topeka	admin_pop	8	127939.0
+relation	324211	en:Toronto	Toronto	admin_pop	8	2503280.0
+relation	2314273	en:Torrance, California	Torrance	admin_pop	8	147027.0
+relation	253824	en:Tucson, Arizona	Tucson	admin_pop	8	524295.0
+relation	184985	en:Tulsa, Oklahoma	Tulsa	admin_pop	8	393987.0
+way	4045303	en:University_Botanical_Garden_(Oslo)	Botanisk hage	park	14
+relation	307470	en:Valenzuela, Philippines	Valenzuela	admin_pop	6	568928.0
+relation	112533	en:Vallejo, California	Vallejo	admin_pop	8	117796.0
 relation	237278	en:Vancouver, Washington	Vancouver	admin_pop	8	165489.0
+way	4259687	en:Victoria Tower Gardens	Victoria Tower Gardens	park	16
+way	33078146	en:Victorville,_California	Victorville	admin_pop	8	120336.0
+relation	206670	en:Virginia Beach, Virginia	Virginia Beach	admin_pop	6	447021.0
+relation	112574	en:Visalia, California	Visalia	admin_pop	8	127081.0
+relation	1590433	en:Vērmanes Garden	Vērmanes dārzs	park	12
+relation	113870	en:Waco, Texas	Waco	admin_pop	8	127018.0
+relation	135048	en:Warren, Michigan	Warren	admin_pop	8	134141.0
+way	22899302	en:Washington Square Park	Washington Square Park	park	41
+relation	162069	en:Washington, D.C.	District of Columbia	admin_pop	6	632323.0
+way	33269833	en:Waterbury, Connecticut		admin_pop	8	109915.0
+way	236996360	en:Waza National Park	Waza National Park	park	21
+relation	3468564	en:Weifang	潍坊市 / Weifang	admin_pop	5	1380300.0
+relation	3307448	en:Weihai	威海市 / Weihai	admin_pop	5	609219.0
+relation	3237007	en:Weihui	卫辉市 (Weihui)	admin_pop	6	464371.0
+relation	3478385	en:Wenling	温岭市 (Wenling)	admin_pop	6	1162783.0
+relation	3289341	en:Wenzhou	温州市 / Wenzhou	admin_pop	5	1915548.0
+relation	198765	en:West Jordan, Utah	West Jordan	admin_pop	8	108383.0
+relation	117925	en:West Palm Beach, Florida	West Palm Beach	admin_pop	8	101903.0
+relation	2999110	en:West Potomac Park	West Potomac Park	park	14
+relation	198761	en:West Valley City, Utah	West Valley City	admin_pop	8	132434.0
+way	37913364	en:West_Covina,_California	West Covina	admin_pop	8	107440.0
+relation	112777	en:Westminster,_Colorado	Westminster	admin_pop	8	109169.0
+relation	129814	en:Wichita, Kansas	Wichita	admin_pop	8	385577.0
+relation	179032	en:Wilmington, North Carolina	Wilmington	admin_pop	8	109922.0
+way	185770360	en:Wimbledon Common	Richardson Memorial Playing Fields	park	12
+relation	2998186	en:Wind Cave National Park	Wind Cave National Park	park	39
+way	233666906	en:Windsor Great Park	GREAT park	park	11
+relation	180101	en:Winston-Salem, North Carolina	Winston-Salem	admin_pop	8	234349.0
+relation	1844209	en:Worcester, Massachusetts	Worcester	admin_pop	8	182669.0
+way	32929677	en:Wright Brothers National Memorial	Wright Brothers National Memorial	park	15
+way	30811010	en:Wulingyuan	武陵源	park	51
+relation	3242930	en:Xiamen	厦门市 / Xiamen	admin_pop	5	2053070.0
+relation	3258834	en:Xiantao	仙桃市 / Xiantao	admin_pop	5	1474078.0
+relation	3216406	en:Xiaogan	孝感市 / Xiaogan	admin_pop	5	883123.0
+relation	3221183	en:Xiaoshan District	萧山区 (Xiaoshan)	admin_pop	6	1233348.0
+relation	3263823	en:Xiaoyi	孝义市 (Xiaoyi)	admin_pop	6	414154.0
+relation	3221016	en:Xingping	兴平市 (Xingping)	admin_pop	6	551523.0
+relation	3290463	en:Xinji	辛集市 (Xinji)	admin_pop	6	623219.0
+relation	3237011	en:Xinxiang	新乡市 / Xinxiang	admin_pop	5	775941.0
+relation	3218104	en:Xinyang	信阳市 / Xinyang	admin_pop	5	1255750.0
+relation	3222248	en:Xuancheng	宣城市 / Xuancheng	admin_pop	5	822707.0
+relation	3429711	en:Yangzhong	扬中市 (Yangzhong)	admin_pop	6	301672.0
+relation	3246488	en:Yanshi	偃师市 (Yanshi)	admin_pop	6	816026.0
+relation	3469843	en:Yantai	烟台市 / Yantai	admin_pop	5	1724404.0
+relation	3307138	en:Yinchuan	银川市 / Yinchuan	admin_pop	5	807487.0
+relation	3218282	en:Yongcheng	永城市 (Yongcheng)	admin_pop	6	1264607.0
+relation	3411719	en:Yongkang, Zhejiang	永康市 (Yongkang)	admin_pop	6	557067.0
+relation	174494	en:Yonkers, New York	Yonkers	admin_pop	8	198449.0
+relation	3246762	en:Zaozhuang	枣庄市 / Zaozhuang	admin_pop	5	1996798.0
+relation	3709376	en:Zaria	Zaria	admin_pop	6	612257.0
+relation	3295555	en:Zhangjiakou	张家口市 / Zhangjiakou	admin_pop	5	903348.0
+relation	3486472	en:Zhangqiu	章丘市 (Zhangqiu)	admin_pop	6	977324.0
+relation	3484419	en:Zhanjiang	湛江市 / Zhanjiang	admin_pop	5	1350665.0
+relation	3464878	en:Zhongshan	中山市 / Zhongshan	admin_pop	5	2363322.0
+relation	3219964	en:Zhongxiang	钟祥市 (Zhongxiang)	admin_pop	6	1021998.0
+relation	3468769	en:Zhucheng	诸城市 (Zhucheng)	admin_pop	6	1053695.0
+relation	3464829	en:Zhuhai	珠海市 / Zhuhai	admin_pop	5	833908.0
+relation	3259366	en:Zhumadian	驻马店 / Zhumadian	admin_pop	5	338036.0
+relation	3551920	en:Zhuozhou	涿州市 (Zhuozhou)	admin_pop	6	546754.0
+relation	3468503	en:Zibo	淄博市 / Zibo	admin_pop	5	2817479.0
+relation	3286960	en:Zoucheng	邹城市 (Zoucheng)	admin_pop	6	1101003.0
+relation	3291031	en:Zunhua	遵化市 (Zunhua)	admin_pop	6	683662.0
