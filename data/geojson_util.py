@@ -182,6 +182,29 @@ def solidity_of_feature(feature):
     return get_area_of_feature(feature) / get_convex_area_of_feature(feature)
 
 
+def _is_coord_list_clockwise(coords):
+    # see http://stackoverflow.com/a/1165943/388951
+    return sum(map(lambda (c1, c2): (c2[0]-c1[0])*(c2[1]+c1[1]),
+        zip(coords, coords[1:] + [coords[-1]]))) > 0
+
+
+def make_polygons_clockwise(feature):
+    assert 'type' in feature
+    if feature['type'] == 'FeatureCollection':
+        for feat in feature['features']:
+            make_polygons_clockwise(feat)
+    elif feature['type'] == 'Feature':
+        geom = feature['geometry']['type']
+        polys = []
+        if geom == 'Polygon':
+            polys = feature['geometry']['coordinates']
+        elif geom == 'MultiPolygon':
+            polys = [x[0] for x in feature['geometry']['coordinates']]
+        for poly in polys:
+            if not _is_coord_list_clockwise(poly):
+                poly.reverse()
+
+
 def subset_feature(in_feature, lng_range, lat_range):
     '''Return a feature containing only polygons centered in the box.'''
     feature = copy.deepcopy(in_feature)

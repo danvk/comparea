@@ -16,6 +16,8 @@ import sys
 from data import osm_filter
 from data import fetch_metadata
 from data import freebase
+from data import geojson_util
+from data import only_polygons
 from data import osm
 from data import osm_filter
 
@@ -32,9 +34,9 @@ def main(args):
         # GeoJSON data.
         path = os.path.join(osm_fetcher.cache_dir,
                 '%s%s.xml.json' % (osm_type, osm_id))
-        land_json = path.replace('.xml.json', '.land.xml.json')
-        if os.path.exists(land_json):
-            path = land_json
+        #land_json = path.replace('.xml.json', '.land.xml.json')
+        #if os.path.exists(land_json):
+        #    path = land_json
         try:
             d = json.load(file(path))
         except (ValueError, IOError):
@@ -50,19 +52,21 @@ def main(args):
                 '', wiki_title, freebase_data)
 
         # TODO: assign id, override properties.
-        d['id'] = '%s/%s' % (osm_type, osm_id)  # do better!
+        d['id'] = '%s%s' % (osm_type, osm_id)  # do better!
         props = {}
         props.update(fetch_metadata.extract_freebase_metadata(
             '', wiki_title, freebase_data))
+        if 'area_km2' in props: del props['area_km2']
         props.update({
-            'description': '',
-            'area_km2': '',
+            'description': 'A nice place!',
+            'area_km2': '1234',
             'area_km2_source': 'calculated',
             'name': wiki_title
         })
-        del props['area_km2']
 
         d['properties'] = props
+        only_polygons.remove_non_polygons(d)
+        geojson_util.make_polygons_clockwise(d)
         features_out.append(d)
 
 
