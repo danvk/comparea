@@ -74,6 +74,7 @@ def main(args):
                 'population_date': '',
                 'population_source': '',
                 'population_source_url': '',
+                'area_km2_source_url': '#'
                 }
         props.update(fetch_metadata.extract_freebase_metadata(
             '', wiki_title, freebase_data))

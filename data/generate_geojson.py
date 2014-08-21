@@ -352,10 +352,13 @@ def run(args):
     continent_list = [c for c in continent_list if c]
     adjust_continents(continent_list, subunits)
 
+    osm_features = load_geojson('osm.json', lambda x: x)
+
     collections = [
         admin0,
         load_geojson('provinces.json', process_province),
-        continent_list
+        continent_list,
+        osm_features
             ]
 
     comparea_features = {

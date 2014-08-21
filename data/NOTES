@@ -7,16 +7,16 @@ x Filter admin regions to those with >100,000 people
 x Subtract water regions from all relevant polygons
 x Clean up SF polygon (remove Farralons?)
 x Calculate centroid in Python
+x De-dupe features by Wikipedia article
 - Show square miles in the UI
-- De-dupe features by Wikipedia article
 - Why is "Quezon Memorial Circle" included? (way #82699870)
 - Remove the need for population when it doesn't make sense (parks)
 - Simplify polygons in a more adaptive way
 - Generate entries in comparea.geo.json
+  - Re-title features
   x Add in populations
   x Add in areas
-  - Re-title features
-  - Integrate with fetch_metadata.py and generate_geojson.py
+  x Integrate with fetch_metadata.py and generate_geojson.py
 
 
 - Why no Detroit? Paris? Sacramento?
