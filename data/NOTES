@@ -8,18 +8,26 @@ x Subtract water regions from all relevant polygons
 x Clean up SF polygon (remove Farralons?)
 x Calculate centroid in Python
 x De-dupe features by Wikipedia article
+x Why is "Quezon Memorial Circle" included? (way #82699870)
+  --> many of the wikipedia articles are double-entered. It's fine.
 - Show square miles in the UI
-- Why is "Quezon Memorial Circle" included? (way #82699870)
 - Remove the need for population when it doesn't make sense (parks)
 - Simplify polygons in a more adaptive way
 - Generate entries in comparea.geo.json
   - Re-title features
+  - Add Wikipedia URLs
   x Add in populations
   x Add in areas
   x Integrate with fetch_metadata.py and generate_geojson.py
 
-
-- Why no Detroit? Paris? Sacramento?
+Data issues:
+- Why no Detroit?
+    --> /wikipedia/en_title isn't working for it
+    --> The WP article is "Detroit", not "Detroit, Michigan"
+- Why no Paris?
+    --> Because the Wikipedia article is "fr:Paris", not "en:Paris"
+- Why no Sacramento?
+    --> There's no town of Sacramento boundary in OSM
 - San Diego is broken.
   --> "The first and last points in a LinearRing must be the same".
   --> I need to fix this where it's broken.

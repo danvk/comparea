@@ -545,3 +545,4 @@ relation	3551920	en:Zhuozhou	涿州市 (Zhuozhou)	admin_pop	6	546754.0
 relation	3468503	en:Zibo	淄博市 / Zibo	admin_pop	5	2817479.0
 relation	3286960	en:Zoucheng	邹城市 (Zoucheng)	admin_pop	6	1101003.0
 relation	3291031	en:Zunhua	遵化市 (Zunhua)	admin_pop	6	683662.0
+relation	134591	en:Detroit	Detroit	admin_pop	8	681090

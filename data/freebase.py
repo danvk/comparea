@@ -105,6 +105,15 @@ def wiki_url_to_title(uurl):
     return title.decode('utf-8')
 
 
+def get_aliases(topic):
+    try:
+        aliases = topic['property']['/common/topic/alias']['values']
+    except KeyError:
+        return []
+
+    return [v['text'] for v in aliases]
+
+
 def quotekey(title):
     return mqlkey.quotekey(title.replace(' ', '_'))
 

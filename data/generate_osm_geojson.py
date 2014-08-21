@@ -30,6 +30,16 @@ def apply_monkey_patches(d):
         for k in d.keys(): d[k] = new_sf[k]
 
 
+def adjust_name(d, freebase_topic):
+    name = d['properties']['name']
+    if name in ['Brooklyn', 'Staten Island', 'Queens', 'The Bronx', 'Manhattan']:
+        d['properties']['name'] += ' (NYC borough)'
+
+    aliases = ' '.join(freebase.get_aliases(freebase_topic))
+    if ', China' in aliases:
+        d['properties']['name'] += ' (China)'
+
+
 def main(args):
     osm_fetcher = osm.OSM()
     fb = freebase.Freebase()
@@ -80,8 +90,7 @@ def main(args):
             '', wiki_title, freebase_data))
         if 'area_km2' in props: del props['area_km2']
         props.update({
-            'description': 'A nice place!',
-            'name': wiki_title,
+            'name': wiki_title.replace('_', ' '),
         })
 
         only_polygons.remove_non_polygons(d)
@@ -100,6 +109,7 @@ def main(args):
             'centroid_lat': c_lat
         })
         d['properties'] = props
+        adjust_name(d, freebase_data)
 
         features_out.append(d)
 
