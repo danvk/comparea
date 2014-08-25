@@ -26,10 +26,8 @@
 {% if props1.area_km2 < props2.area_km2 %}
   {{size_comparison(shape2, shape1, True)}}
 {% else %}
-  {% if props1.area_km2 > 2 * props2.area_km2 %}
-    <span class="{{class1}}">{{props1.name}}</span> is {{'%.2g' % (props1.area_km2 / props2.area_km2)}} times larger than <span class="{{class2}}">{{props2.name}}</span>.
-  {% else %}
-    <span class="{{class1}}">{{props1.name}}</span> is {{'%.2g' % (100 * (props1.area_km2 / props2.area_km2 - 1))}}% larger than <span class="{{class2}}">{{props2.name}}</span>.
-  {% endif %}
+    <span class="{{class1}}">{{props1.name}}</span> is
+    {{(props1.area_km2/props2.area_km2)|format_ratio}} larger than
+    <span class="{{class2}}">{{props2.name}}</span>.
 {% endif %}
 {% endmacro %}
