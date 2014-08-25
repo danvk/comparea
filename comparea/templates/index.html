@@ -28,7 +28,9 @@
 
 <body>
 
-<div id="size-comparison">{{size_comparison(shape1, shape2)}}</div>
+<div class="size-comparison-holder">
+<div class="size-comparison">{{size_comparison(shape1, shape2)}}</div>
+</div>
 
 <div id="svg-container"></div>
 
@@ -53,6 +55,7 @@
   </div>
 
   <a class="about-link" href="/about">About</a>
+  <div class="size-comparison">{{size_comparison(shape1, shape2)}}</div>
 </div>
 
 <script type="text/javascript">

@@ -101,20 +101,24 @@ function getVisibleSvgArea() {
     width: $('#sidebar').width(),
     height: $('#sidebar').height()
   };
+  
+  var $sc = $('.size-comparison:visible');
+  var comparisonBottom =
+      $sc.length ? $sc.offset().top + $sc.height() : 0;
 
   if (panel.width / windowSize.width > panel.height / windowSize.height) {
     return {
-      top: panel.height,
+      top: comparisonBottom,  // comparison is below panels.
       left: 0,
       width: windowSize.width,
-      height: windowSize.height - panel.height
+      height: windowSize.height - comparisonBottom
     };
   } else {
     return {
-      top: 0,
+      top: comparisonBottom,
       left: 0,
       width: windowSize.width - panel.width,
-      height: panel.height
+      height: panel.height - comparisonBottom
     };
   }
 }
@@ -236,7 +240,7 @@ function updateEl(changedIdx, newId) {
     .success(function(data) {
       geojson_features[changedIdx] = data.feature;
       $('#side-panel' + changedIdx + ' .feature-panel').html(data.panel);
-      $('#size-comparison').html(data.comparison);
+      $('.size-comparison').html(data.comparison);
       zoom.scale(1);
       setDisplayForFeatures(geojson_features);
     })
