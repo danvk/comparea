@@ -2,7 +2,6 @@ from . import app
 from . import models
 from flask import render_template, jsonify, request
 
-import sys
 
 @app.route('/')
 def index():
@@ -21,6 +20,7 @@ def pair(id1, id2):
         return "No feature with id %s" % id2, 400
 
     return render_template('index.html',
+            title=models.page_title(shape1, shape2),
             shape1=shape1,
             shape2=shape2,
             name_id_pairs=name_id_pairs,
@@ -39,10 +39,8 @@ def get_shape(shape_id):
     }
 
     other_shape_id = request.args.get('other_shape')
-    sys.stderr.write('Other shape id %s\n' % other_shape_id)
     if other_shape_id:
         shape_idx = request.args.get('shape_index')
-        sys.stderr.write('Shape index %s\n' % shape_idx)
         other_shape = models.feature_for_code(other_shape_id)
         if not other_shape:
             return "No feature with id %s" % other_shape_id, 400
@@ -50,8 +48,10 @@ def get_shape(shape_id):
             shape1, shape2 = shape, other_shape
         else:
             shape1, shape2 = other_shape, shape
-        d['comparison'] = (
-            render_template('comparison.html', shape1=shape1, shape2=shape2))
+        d.update({
+            'comparison': render_template('comparison.html', shape1=shape1, shape2=shape2),
+            'title': models.page_title(shape1, shape2)
+        })
 
     return jsonify(d)
 

@@ -241,6 +241,7 @@ function updateEl(changedIdx, newId) {
       geojson_features[changedIdx] = data.feature;
       $('#side-panel' + changedIdx + ' .feature-panel').html(data.panel);
       $('.size-comparison').html(data.comparison);
+      document.title = data.title;
       zoom.scale(1);
       setDisplayForFeatures(geojson_features);
     })
