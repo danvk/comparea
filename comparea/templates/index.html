@@ -1,4 +1,4 @@
-{% from "macros.html" import feature_panel with context %}
+{% from "macros.html" import feature_panel, size_comparison with context %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,6 +27,8 @@
 </head>
 
 <body>
+
+<div id="size-comparison">{{size_comparison(shape1, shape2)}}</div>
 
 <div id="svg-container"></div>
 

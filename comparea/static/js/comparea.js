@@ -228,10 +228,15 @@ function addChooserListeners() {
 }
 
 function updateEl(changedIdx, newId) {
-  $.get('/shape/' + newId)
+  var otherShapeId = geojson_features[1 - changedIdx].id;
+  $.get('/shape/' + newId, {
+      shape_index: changedIdx,
+      other_shape: otherShapeId
+    })
     .success(function(data) {
       geojson_features[changedIdx] = data.feature;
       $('#side-panel' + changedIdx + ' .feature-panel').html(data.panel);
+      $('#size-comparison').html(data.comparison);
       zoom.scale(1);
       setDisplayForFeatures(geojson_features);
     })

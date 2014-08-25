@@ -61,10 +61,10 @@ svg {
   width: 100%;
 }
 
-#side-panel0 .select2-chosen {
+#side-panel0 .select2-chosen, .feature1 {
   color: green;
 }
-#side-panel1 .select2-chosen {
+#side-panel1 .select2-chosen, .feature2 {
   color: blue;
 }
 
