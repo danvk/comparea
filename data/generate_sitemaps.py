@@ -57,7 +57,7 @@ def generate_index_file(num_sitemaps):
    <sitemap>
       <loc>http://www.comparea.org/static/sitemaps/%d.xml</loc>
       <lastmod>%s</lastmod>
-   </sitemap>''' % (index, datetime.now().replace(microsecond=0).isoformat())
+   </sitemap>''' % (index, datetime.now().strftime('%Y-%m-%d'))
     return '''<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">%s
 </sitemapindex>
