@@ -24,7 +24,7 @@ from data import osm_filter
 
 def apply_monkey_patches(d):
     # Most people don't care about the Farralons, and they mess up the view.
-    if d['id'] == 'relation111968':
+    if d['id'] == 'r111968':
         new_sf = geojson_util.subset_feature(d, [-122.547892, 0], [-90, 37.839085])
         # is there a more canonical way to do this in Python?
         for k in d.keys(): d[k] = new_sf[k]
@@ -38,6 +38,18 @@ def adjust_name(d, freebase_topic):
     aliases = ' '.join(freebase.get_aliases(freebase_topic))
     if ', China' in aliases:
         d['properties']['name'] += ' (China)'
+
+
+# TODO: it would be nice to have human-readable IDs.
+def make_comparea_id(osm_type, osm_id):
+    if osm_type == 'relation':
+        short_type = 'r'
+    elif osm_type == 'way':
+        short_type = 'w'
+    else:
+        raise ValueError('Invalid OSM type: %s' % osm_type)
+
+    return short_type + osm_id
 
 
 def main(args):
@@ -77,8 +89,7 @@ def main(args):
             sys.stderr.write('Could not find %s\n' % land_json)
 
 
-        # TODO: assign id, override properties.
-        d['id'] = '%s%s' % (osm_type, osm_id)  # do better!
+        d['id'] = make_comparea_id(osm_type, osm_id)
         props = {
                 'population': 0,
                 'population_date': '',
