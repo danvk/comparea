@@ -107,11 +107,12 @@ function getVisibleSvgArea() {
       $sc.length ? $sc.offset().top + $sc.height() : 0;
 
   if (panel.width / windowSize.width > panel.height / windowSize.height) {
+    var t = Math.max(panel.height, comparisonBottom);
     return {
-      top: comparisonBottom,  // comparison is below panels.
+      top: t,  // comparison is below panels.
       left: 0,
       width: windowSize.width,
-      height: windowSize.height - comparisonBottom
+      height: windowSize.height - t
     };
   } else {
     return {
