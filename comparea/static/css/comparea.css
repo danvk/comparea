@@ -96,6 +96,7 @@ svg {
   padding: 5px;
   display: inline-table;
   font-size: large;
+  margin: 0;
 }
 
 #sidebar .size-comparison {

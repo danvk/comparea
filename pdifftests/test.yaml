@@ -2,21 +2,9 @@ setup: |
     export APP_CONFIG=config.Testing
     ./run.py
 
-waitFor: |
-    timeout=$(($(date +%s) + 5))  # 5 second timeout
-    until \
-        curl --silent -I 'http://localhost:5001/' | grep '200 OK' || \
-        [[ $(date +%s) -gt $timeout ]]; do
-      echo 'Waiting for server to start up...'
-      sleep 1
-    done
-
-    if [[ $(date +%s) -gt $timeout ]]; then
-      echo 'Server failed to start.' 1>&2
-      exit 1
-    else
-      echo 'Server started!'
-    fi
+waitFor:
+    url: http://localhost:5001/
+    timeout_secs: 5
 
 aliases:
   - &widescreen-config
