@@ -53,7 +53,7 @@ def polygon_stats(d):
     raise ValueError('Unknown feature type %s' % d['type'])
 
 
-def is_english_wikititle(wikititle):
+def is_english_wikititle(wiki_title):
     if wiki_title.startswith("en:"):
         return True
     if '://' in wiki_title:
