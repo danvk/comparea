@@ -231,3 +231,28 @@ body.about img {
 body.about .references {
   font-size: small;
 }
+
+/* only show feedback button on desktop/tablet sizes */
+#feedback {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #feedback {
+    display: block;
+  }
+  #feedback a {
+    background-image: url('/static/img/feedback_tab_white.png');
+    text-indent: -1000px;
+    width: 22px;
+    height: 90px;
+    position: absolute;
+    left: 0px;
+    width: 22px;
+    height: 90px;
+    bottom: 100px;
+    padding: 2px;
+    background-color: #c33c3c;
+    border-left: none;
+  }
+}
