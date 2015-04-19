@@ -84,7 +84,7 @@ svg {
   left: 5px;
   top: 10px;
   right: 280px;
-  height: 25px;
+  height: 50px;
   text-align: center;
 }
 
@@ -95,7 +95,7 @@ svg {
   /* box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3); */
   padding: 5px;
   display: inline-table;
-  font-size: large;
+  font-size: x-large;
   margin: 0;
 }
 

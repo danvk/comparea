@@ -1,0 +1,27 @@
+setup: |
+    ./run.py
+
+waitFor:
+  url: http://localhost:5000/
+  timeout_secs: 5
+
+standard-config: &stdconfig
+  viewportSize:
+    width: 800
+    height: 600
+
+tests:
+  - name: Texas v. Germany
+    url: http://localhost:5000/US_TX+DEU
+    config:
+      <<: *stdconfig
+
+  - name: New Mexico v. Germany
+    url: http://localhost:5000/US_NM+DEU
+    config:
+      <<: *stdconfig
+
+  - name: Montana v. Germany
+    url: http://localhost:5000/US_MT+DEU
+    config:
+      <<: *stdconfig
