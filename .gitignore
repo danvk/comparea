@@ -12,3 +12,4 @@ comparea/static/lib
 .DS_Store
 node_modules
 data/osm.json
+venv

@@ -1,7 +1,2 @@
-flask==0.10.1
-Flask-DebugToolbar==0.9.0
-Flask-SQLAlchemy==1.0
-SQLAlchemy==0.9.6
-geojson==1.0.7
-pyshp==1.2.1
-gunicorn==19.0.0
+flask==2.3.2
+gunicorn==20.1.0

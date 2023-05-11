@@ -1,7 +1,7 @@
 class Default:
     DEBUG=False
     USE_THIRD_PARTY_CDN=False
-    PORT = None  # default
+    PORT = 5050  # port 5000 conflicts with AirPlay Receiver
 
 class Development:
     DEBUG=True
