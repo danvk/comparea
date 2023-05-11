@@ -12,3 +12,5 @@ class Testing:
 
 class Production:
     USE_THIRD_PARTY_CDN=True
+    PORT = 5000
+
