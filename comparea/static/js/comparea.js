@@ -67,7 +67,7 @@ var zoom = d3.behavior.zoom().on('zoom', function() {
 
   // See http://stackoverflow.com/questions/6711610/how-to-set-transform-origin-in-svg
   var matrix = [sx, 0, 0, sy, cx-sx*cx, cy-sy*cy];
-  
+
   d3.select('.container').attr('transform', 'matrix(' + matrix + ')')
 });
 
@@ -101,7 +101,7 @@ function getVisibleSvgArea() {
     width: $('#sidebar').width(),
     height: $('#sidebar').height()
   };
-  
+
   var $sc = $('.size-comparison:visible');
   var comparisonBottom =
       $sc.length ? $sc.offset().top + $sc.height() : 0;
@@ -172,7 +172,7 @@ function setDisplayForFeatures(features) {
    draggableG.append('path')
       .attr('class', function(d, i) { return 'shape shape' + i; })
       .attr('d', function(d, i) { return paths[i](d); });
-      
+
    // ... for layout debugging
    /*
    draggableG.append('rect')
@@ -223,7 +223,6 @@ function addChooserListeners() {
     var changedIdx = $('select.choose').index(this);
     updateEl(changedIdx, ids[changedIdx]);
     history.pushState(null, '', '/' + ids[0] + '+' + ids[1]);
-    trackAnalyticsPageView();
 
     // forcibly dismiss keyboard on mobile.
     if (isTouch()) {
@@ -249,11 +248,4 @@ function updateEl(changedIdx, newId) {
     .fail(function(e) {
       console.log(e);
     });
-}
-
-// Ping Google Analytics with the current URL (e.g. after history.pushState).
-// See http://stackoverflow.com/a/4813223/388951
-function trackAnalyticsPageView() {
-  var url = location.pathname + location.search  + location.hash;
-  ga('send', 'pageview', { 'page': url });
 }
