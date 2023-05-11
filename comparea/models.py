@@ -3,7 +3,7 @@ import os
 
 def _load_data():
     p = os.path.join(os.path.dirname(__file__), 'static/data/comparea.geo.json')
-    return json.load(file(p))
+    return json.load(open(p))
 
 def feature_for_code(code):
     for feature in DATA['features']:
