@@ -8,7 +8,6 @@ env
 
 .idea
 *.iml
-comparea/static/lib
 .DS_Store
 node_modules
 data/osm.json
