@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "ts-node server/server.ts"
+    "develop": "ts-node server/server.ts",
+    "format": "prettier --write server",
+    "format:check": "prettier --check server"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,7 @@
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^20.1.4",
+    "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   }
