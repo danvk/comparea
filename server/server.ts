@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import express from 'express';
+import express, { RequestHandler } from 'express';
 import fs from 'fs';
 import { Feature, FeatureCollection, Polygon, MultiPolygon } from 'geojson';
 import {
@@ -39,11 +39,12 @@ const nameIdPairs = _.sortBy(
   ([name, id]) => id
 );
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get('/', (req, res, next) => {
+  req.params = { shape1: 'USA48', shape2: 'AUS' };
+  pair(req, res, next);
 });
 
-app.get('/:shape1\\+:shape2', (req, res) => {
+const pair: RequestHandler = (req, res) => {
   const { shape1, shape2 } = req.params as unknown as {
     shape1: string;
     shape2: string;
@@ -67,7 +68,9 @@ app.get('/:shape1\\+:shape2', (req, res) => {
       useThirdPartyCdn: false,
     })
   );
-});
+};
+
+app.get('/:shape1\\+:shape2', pair);
 
 app.get('/shape/:shapeId', (req, res) => {
   const { shapeId } = req.params;
