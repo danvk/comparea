@@ -107,6 +107,8 @@ app.get('/shape/:shapeId', (req, res) => {
   res.json(sortKeys(response));
 });
 
+app.use('/static', express.static('comparea/static'));
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
