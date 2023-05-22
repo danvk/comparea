@@ -60,7 +60,7 @@ app.get('/shape/:shapeId', (req, res) => {
   }
 
   const response: ShapeResponseBase = {
-    panel: '',
+    panel: renderPanel(f),
     feature: f,
   };
 

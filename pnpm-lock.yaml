@@ -4,6 +4,9 @@ dependencies:
   express:
     specifier: ^4.18.2
     version: 4.18.2
+  html-template-tag:
+    specifier: ^4.0.1
+    version: 4.0.1
 
 devDependencies:
   '@types/express':
@@ -349,6 +352,16 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+    dev: false
+
+  /html-es6cape@2.0.2:
+    resolution: {integrity: sha512-utzhH8rq2VABdW1LsPdv5tmxeMNOtP83If0jKCa79xPBgLWfcMvdf9K+EZoxJ5P7KioCxTs6WBnSDWLQHJ2lWA==}
+    dev: false
+
+  /html-template-tag@4.0.1:
+    resolution: {integrity: sha512-c8a1i2G4aKkas2CXqagh89hB6uzUxlU65gUPQkGhkiFImTEboUmBmMqXZhmoBRqtJtYLtCc2wofT/I7qJF+1Jw==}
+    dependencies:
+      html-es6cape: 2.0.2
     dev: false
 
   /http-errors@2.0.0:
