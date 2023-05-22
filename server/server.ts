@@ -1,40 +1,18 @@
 import express from 'express';
 import fs from 'fs';
 import { Feature, FeatureCollection, Polygon, MultiPolygon } from 'geojson';
-
-interface CompareaProperties {
-  name: string;
-  description: string;
-  freebase_mid: string;
-  wikipedia_url: string;
-
-  // These fields are always set but may be 0 or "".
-  area_km2: number;
-  area_km2_source: string;
-  area_km2_source_url: string;
-
-  population: number;
-  population_date: string;
-  population_source: string;
-  population_source_url: string;
-}
-
-type CompareaFeature = Feature<Polygon | MultiPolygon, CompareaProperties>;
-interface ShapeRequest {
-  other_shape: string;
-  shape_index: number;
-}
-interface ShapeResponseBase {
-  panel: string;
-  feature: CompareaFeature;
-}
-interface ComparisonResponse extends ShapeResponseBase {
-  comparison: string;
-  title: string;
-}
+import {
+  CompareaFeature,
+  CompareaProperties,
+  ComparisonResponse,
+  ShapeResponseBase,
+} from './api';
+import { pageTitle, renderPanel } from './templates';
+import { sortKeys } from './util';
 
 const app = express();
 app.set('extended', false);
+app.set('json spaces', 2);
 const port = 3000;
 
 const features = JSON.parse(
@@ -57,6 +35,7 @@ app.get('/shape/:shapeId', (req, res) => {
   const f = idToFeature[shapeId];
   if (!f) {
     res.status(400).send(`No feature with ID ${shapeId}`);
+    return;
   }
 
   const response: ShapeResponseBase = {
@@ -69,17 +48,24 @@ app.get('/shape/:shapeId', (req, res) => {
     const otherFeature = idToFeature[otherShapeId];
     if (!otherFeature) {
       res.status(400).send(`No feature with ID ${otherShapeId}`);
+      return;
     }
     const shapeIndex = req.query['shape_index'] as string;
+    let shape1: CompareaFeature, shape2: CompareaFeature;
+    if (shapeIndex === '0') {
+      [shape1, shape2] = [f, otherFeature];
+    } else {
+      [shape1, shape2] = [otherFeature, f];
+    }
 
     const comparisonResponse: ComparisonResponse = {
       ...response,
-      comparison: '',
-      title: 'page title',
+      comparison: renderComparison(shape1, shape2),
+      title: pageTitle(shape1, shape2),
     };
-    res.json(comparisonResponse);
+    res.json(sortKeys(comparisonResponse));
   }
-  res.json(response);
+  res.json(sortKeys(response));
 });
 
 app.listen(port, () => {

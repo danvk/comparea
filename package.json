@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "ts-node server/server.ts",
+    "develop": "nodemon server/server.ts",
     "format": "prettier --write server",
     "format:check": "prettier --check server"
   },
@@ -20,8 +20,9 @@
     "@types/express": "^4.17.17",
     "@types/geojson": "^7946.0.10",
     "@types/node": "^20.1.4",
+    "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "5.1.1-rc"
   }
 }
