@@ -10,6 +10,7 @@ import {
 } from './api';
 import {
   pageTitle,
+  renderAbout,
   renderComparison,
   renderHTML,
   renderPanel,
@@ -108,6 +109,10 @@ app.get('/shape/:shapeId', (req, res) => {
     res.json(sortKeys(comparisonResponse));
   }
   res.json(sortKeys(response));
+});
+
+app.get('/about', (req, res) => {
+  res.send(renderAbout());
 });
 
 app.use('/static', express.static('comparea/static'));
