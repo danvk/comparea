@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import express from 'express';
 import fs from 'fs';
 import { Feature, FeatureCollection, Polygon, MultiPolygon } from 'geojson';
@@ -7,7 +8,12 @@ import {
   ComparisonResponse,
   ShapeResponseBase,
 } from './api';
-import { pageTitle, renderComparison, renderPanel } from './templates';
+import {
+  pageTitle,
+  renderComparison,
+  renderHTML,
+  renderPanel,
+} from './templates';
 import { sortKeys } from './util';
 
 const app = express();
@@ -25,9 +31,42 @@ for (const f of features.features) {
   }
   idToFeature[f.id] = f;
 }
+const nameIdPairs = _.sortBy(
+  Object.entries(idToFeature).map(
+    ([id, f]) => [f.properties.name, id] as [string, string]
+  ),
+  ([name, id]) => name,
+  ([name, id]) => id
+);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
+});
+
+app.get('/:shape1\\+:shape2', (req, res) => {
+  const { shape1, shape2 } = req.params as unknown as {
+    shape1: string;
+    shape2: string;
+  };
+
+  const f1 = idToFeature[shape1];
+  if (!f1) {
+    return res.status(400).send(`No feature with ID ${shape1}`);
+  }
+  const f2 = idToFeature[shape2];
+  if (!f2) {
+    return res.status(400).send(`No feature with ID ${shape2}`);
+  }
+
+  res.send(
+    renderHTML({
+      title: pageTitle(f1, f2),
+      shape1: f1,
+      shape2: f2,
+      nameIdPairs,
+      useThirdPartyCdn: false,
+    })
+  );
 });
 
 app.get('/shape/:shapeId', (req, res) => {
