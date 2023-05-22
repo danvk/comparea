@@ -1,9 +1,20 @@
 import safeHtml from 'html-template-tag';
+import { sprintf } from 'sprintf-js';
 
 import { CompareaFeature } from './api';
 
 export function renderPanel(f: CompareaFeature): string {
   return safeHtml`<p>Name: ${f.properties.name}</p>`;
+}
+
+/** Returns a string like '10%' or '123 times'. Assumes ratio>1. */
+export function formatRatio(ratio: number): string {
+  if (ratio < 2) {
+    return sprintf('%.2g%%', 100 * (ratio - 1));
+  } else if (ratio < 100) {
+    return sprintf('%.2g times', ratio);
+  }
+  return Math.round(ratio).toLocaleString() + ' times';
 }
 
 export function renderComparison(

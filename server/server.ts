@@ -7,7 +7,7 @@ import {
   ComparisonResponse,
   ShapeResponseBase,
 } from './api';
-import { pageTitle, renderPanel } from './templates';
+import { pageTitle, renderComparison, renderPanel } from './templates';
 import { sortKeys } from './util';
 
 const app = express();
