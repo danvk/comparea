@@ -279,6 +279,7 @@ export function renderAbout() {
   ${renderAnalytics()}
   </body>
 
+  <!-- Node.js version -->
   </html>
 `;
 }
