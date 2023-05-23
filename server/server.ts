@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import express, { RequestHandler } from 'express';
 import fs from 'fs';
-import { Feature, FeatureCollection, Polygon, MultiPolygon } from 'geojson';
+import { FeatureCollection, Polygon, MultiPolygon } from 'geojson';
 import {
   CompareaFeature,
   CompareaProperties,
@@ -106,9 +106,9 @@ app.get('/shape/:shapeId', (req, res) => {
       comparison: renderComparison(shape1, shape2),
       title: pageTitle(shape1, shape2),
     };
-    res.json(sortKeys(comparisonResponse));
+    return res.json(sortKeys(comparisonResponse));
   }
-  res.json(sortKeys(response));
+  return res.json(sortKeys(response));
 });
 
 app.get('/about', (req, res) => {
@@ -118,5 +118,6 @@ app.get('/about', (req, res) => {
 app.use('/static', express.static('comparea/static'));
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Loaded ${nameIdPairs.length} features to compare.`);
+  console.log(`Listening on port ${port}`);
 });

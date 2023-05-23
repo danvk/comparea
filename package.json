@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "nodemon server/server.ts",
     "build": "tsc",
-    "start": "dist/server/server.js",
+    "start": "node dist/server.js",
     "format": "prettier --write server",
     "format:check": "prettier --check server"
   },
