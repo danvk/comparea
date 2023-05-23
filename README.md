@@ -30,6 +30,7 @@ To regenerate metadata:
 
 To test deployment locally:
 
+    pnpm build
     heroku local web
 
 To deploy:

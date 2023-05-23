@@ -189,6 +189,7 @@ export function renderAnalytics() {
 }
 
 export function renderAbout() {
+  const version = process.env.SOURCE_VERSION ?? 'local';
   return `
   <!DOCTYPE html>
   <html>
@@ -279,7 +280,7 @@ export function renderAbout() {
   ${renderAnalytics()}
   </body>
 
-  <!-- Node.js version -->
+  <!-- Node.js version ${version} -->
   </html>
 `;
 }
