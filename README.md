@@ -13,7 +13,7 @@ Quickstart:
 
 To iterate on the UI:
 
-    ./develop.sh
+    pnpm develop
     open http://localhost:5000/
 
 (You may need to [turn off Airplay Receiver][airplay] on macOS for this to work.)
