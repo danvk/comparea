@@ -1,1 +1,1 @@
-web: gunicorn comparea:app --log-file=-
+web: pnpm start

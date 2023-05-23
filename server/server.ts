@@ -20,7 +20,7 @@ import { sortKeys } from './util';
 const app = express();
 app.set('extended', false);
 app.set('json spaces', 2);
-const port = 3000;
+const port = 5000;
 
 const features = JSON.parse(
   fs.readFileSync('comparea/static/data/comparea.geo.json', 'utf-8')

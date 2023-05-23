@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "nodemon server/server.ts",
+    "start": "ts-node --transpileOnly server/server.ts",
     "format": "prettier --write server",
     "format:check": "prettier --check server"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "keywords": [],
   "author": "",
